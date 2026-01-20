@@ -1,0 +1,49 @@
+@font-face {
+    font-family: "Epilogue SemiBold";
+    src: url(Epilogue-SemiBold.ttf);
+	font-weight: 600;
+}
+
+@font-face {
+    font-family: "Work Sans";
+    src: url(WorkSans-Regular.ttf);
+	font-weight: 400;
+}
+
+.footer__powered {
+    display: none !important;
+}
+
+.app__header {
+    background-color: #210532;
+}
+
+.app__footer {
+    background-color: #210532;
+}
+
+.wh-header__product-name,
+.title__content,
+.rs-h1,
+.rs-h2,
+.rs-h3 {
+    font-family: "Epilogue SemiBold";
+ }
+
+.article__p,
+.breadcrumb__item,
+.toc-item,
+.sub-title,
+.label__content,
+.rs-subtitle-2,
+.rs-text-2,
+.link,
+.navigation-links__prev,
+.navigation-links__next,
+.footer__copyright {
+    font-family: "Work Sans";
+}
+
+.inline-icon- {
+    vertical-align: baseline;
+}
