@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #4c10dd;
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+
+      .cls-3 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-2" width="16" height="16"/>
+    </clipPath>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g class="cls-3">
+      <g>
+        <path class="cls-1" d="M0,4.75c0-1.52,1.23-2.75,2.75-2.75h10.5c1.52,0,2.75,1.23,2.75,2.75v8.5c0,1.52-1.23,2.75-2.75,2.75H2.75c-1.52,0-2.75-1.23-2.75-2.75V4.75ZM2.75,3.5c-.69,0-1.25.56-1.25,1.25v8.5c0,.69.56,1.25,1.25,1.25h10.5c.69,0,1.25-.56,1.25-1.25V4.75c0-.69-.56-1.25-1.25-1.25H2.75Z"/>
+        <path class="cls-1" d="M4,0c.41,0,.75.34.75.75v3.5c0,.41-.34.75-.75.75s-.75-.34-.75-.75V.75c0-.41.34-.75.75-.75Z"/>
+        <path class="cls-1" d="M12,0c.41,0,.75.34.75.75v3.5c0,.41-.34.75-.75.75s-.75-.34-.75-.75V.75c0-.41.34-.75.75-.75Z"/>
+        <path class="cls-1" d="M3,6.75c0-.41.34-.75.75-.75h8.5c.41,0,.75.34.75.75s-.34.75-.75.75H3.75c-.41,0-.75-.34-.75-.75Z"/>
+      </g>
+    </g>
+  </g>
+</svg>
