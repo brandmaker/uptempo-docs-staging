@@ -962,7 +962,7 @@ Procedure: Adjust planned demand distribution for an activity
 
 ### View impact projections
 
-After you enter a planned demand target for an activity, the system uses it to generate and display an impact projection chart in the activity's details panel on the Impact > Chart tab:
+After you enter a planned demand target for an activity, the system uses it to generate and display an impact projection chart in the activity's details panel on the Impact > Planned tab:
 
 ![Impact tab 2](images/Impact%20tab%202.png)
 * After you enter planned demand targets, the chart displays line graphs to visualize planned demand (in purple) and planned revenue (in yellow) over time.
