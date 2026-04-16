@@ -3876,8 +3876,8 @@ Uptempo's activity access control system now supports permissions based on activ
 
 * Make attribute edit access dynamic: Control who can edit a specific attribute based on the activity's type, or on the values of other attributes. For example, you can allow a user to update the Channel attribute only for Tactic activity types, or only if the Region attribute is set to EMEA.
 
-![]()
-→ [Learn more about configuring access controls for Uptempo activities]()
+![Attribute access controls example](images/AttributeAccessControlsExample.png)
+→ [Learn more about available properties for creating access control statements](access-control-statement-properties-reference.html)
 
 ### Update Impact Modeler projections without losing historical data
 
@@ -3889,7 +3889,9 @@ You can now create additional pipeline models in Impact Modeler, allowing you to
 
 * Support for multiple active models: If you have more than one active model, the Impact section on activities displays a switcher that lets users change between the available active models on the fly — until actual results are pulled in, at which point the model locks to protect your data integrity.
 
-![]()
+* Improved interface and terminology: The Impact Modeler UI has been redesigned to improve usability. In addition to a visual refresh, key terms and help text have been updated for clarity. For example, you now configure "segment-specific metrics" instead of "drill-downs".
+
+![Impact modeler models menu](images/ImpactModelerModelsMenu.png)
 Note: Note
 
 Enabling this opt-in Preview feature in your Uptempo instance will also enable these bundled Impact Modeler enhancements:
@@ -3908,7 +3910,6 @@ To make your Impact Modeler projections more accurate, pipeline model segments n
 
 * Refine your model projections: Apply highly specific conversion rates, velocities, and average deal sizes to distinct activity type groups, ensuring your pipeline projections accurately reflect how different marketing initiatives actually perform in the real world.
 
-![]()
 Note: Note
 
 Enabling this opt-in Preview feature in your Uptempo instance will also enable these bundled Impact Modeler enhancements:
@@ -3917,7 +3918,7 @@ Enabling this opt-in Preview feature in your Uptempo instance will also enable t
 
 * [View the impact projection chart in a dedicated tab](#view-the-impact-projection-chart-in-a-dedicated-tab)
 
-→ [Learn more about]()
+→ [Learn more about configuring the pipeline model in Impact Modeler]()
 
 ## Campaign Management: Activities
 
@@ -3936,7 +3937,7 @@ Enabling this opt-in Preview feature in your Uptempo instance will also enable t
 
 * [Segment Impact Modeler pipeline models by activity type group](#segment-impact-modeler-pipeline-models-by-activity-type-group)
 
-→ [Learn more about]()
+→ [Learn more about analyzing the pipeline impact of your activities](track-analyze-pipeline-impact.html)
 
 ### Identify and search for activities faster
 
@@ -3983,6 +3984,8 @@ The system now automatically records the creator of investment line items, makin
 Note: Note
 
 The Created by field is populated automatically for all new line items created moving forward. This data is not available for line items created before this release.
+
+![In market dates warning](images/InMarketDatesWarning.png)
 
 ## Organization Settings
 
