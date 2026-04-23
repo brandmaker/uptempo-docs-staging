@@ -3567,7 +3567,7 @@ As an administrator, you must configure your pipeline model to enable Impact Mod
 
 * Your baseline funnel performance metrics. This includes typical conversion rates (the rate at which leads move from one funnel stage to the next), velocities (how fast they move between stages), and the average value of a closed/won deal.
 
-* Segment-specific custom metrics to enhance the baseline metrics. These provide alternative, more specific funnel performance assumptions based on a combination of dimensions, such as activity attribute values and activity groups. For example, you can set overrides for scenarios such as if the average deal size for a certain product is higher or lower, or if deals in a particular market close faster (or slower) than average.
+* Segment-specific custom metrics to enhance the baseline metrics. These provide alternative, more specific funnel performance assumptions based on a combination of activity attribute values. For example, you can set overrides for scenarios such as if the average deal size for a certain product is higher or lower, or if deals in a particular market close faster (or slower) than average.
 
 ## How the pipeline model works
 
@@ -3592,16 +3592,16 @@ When a user enters a planned number of inquiries for an activity, the model calc
 
 ### Segment-specific custom metrics
 
-Conversion rates, velocity, and average deal size may not be identical for every activity. You can define custom metrics for these activities. The custom metrics are applied to activities by defining segments based on specific values for one or more dimensions (activity type groups or attribute values).
+Conversion rates, velocity, and average deal size may not be identical for every activity. You can define custom metrics for these activities. The custom metrics are applied to activities by defining segments based on specific values for one or more activity attributes.
 
-The following example shows custom metrics that are defined according to the Business Unit attribute as the primary dimension, and Product as a secondary dimension:
+The following example shows custom metrics that are defined according to the Business Unit attribute as the primary attribute, and Product as a secondary attribute:
 
 ![Funnel 2](images/Funnel%202.png)
 
-Example 1: Custom conversion rates (2 dimensions)
+Example 1: Custom conversion rates (2 attributes)
 : The baseline conversion rate from the Inquiries stage to the next stage (MQL) is set to 40%:
 : ![Funnel 3](images/Funnel%203.png)
-: There are also custom conversion rates for several segments. These segments are defined using two dimensions: the Business Unit and Product attributes.
+: There are also custom conversion rates for several segments. These segments are defined using two attributes: the Business Unit and Product attributes.
 : When an activity is assigned to the B2B-Direct business unit, the conversion rate used for pipeline projections is determined by the product assigned to the activity:
 : * For Product A, the custom conversion rate of 55% is used.
 
@@ -3610,18 +3610,18 @@ Example 1: Custom conversion rates (2 dimensions)
 * For VR set, and any other product for which there is no custom conversion rate, the baseline conversion rate is used.
 : ![Funnel 4](images/Funnel%204.png)
 
-Example 2: Custom velocities (1 dimension)
+Example 2: Custom velocities (1 attribute)
 : The baseline velocity from the Inquiries stage to the next stage (MQL) is set to 5 days:
 : ![funnel 9](images/funnel%209.png)
-: There are also custom velocities for several segments. These segments are defined using a single dimension, the Persona attribute.
+: There are also custom velocities for several segments. These segments are defined using a single attribute, the Persona attribute.
 : * When an activity is assigned to the Economic Buyer persona, the custom velocity of 10 days is used.
 
 * For the Internal Influencer persona, and any other persona for which there is no custom velocity, the baseline velocity is used. ![funnel 10](images/funnel%2010.png)
 
-Example 3: Custom deal sizes (3 dimensions)
+Example 3: Custom deal sizes (3 attributes)
 : The default baseline deal size is set to $10,000:
 : ![funnel 5](images/funnel%205.png)
-: There are also custom deal sizes for several segments. These segments are defined using three dimensions: the Customer Segment, Product and Country attributes.
+: There are also custom deal sizes for several segments. These segments are defined using three attributes: the Customer Segment, Product and Country attributes.
 : When an activity is assigned to Enterprise and Product A, the deal size used for pipeline projections is determined by the country assigned to the activity:
 : * For Canada, the custom deal size of $12,000 is used.
 
@@ -3787,125 +3787,191 @@ This page describes features that are currently in Preview and are [available on
 
 If you have not enabled these features in your Uptempo instance, please refer to [Configure the Impact Modeler pipeline model](configure-impact-modeler.html) instead.
 
-In Uptempo Campaign Management, you can use the Impact Modeler to [track and analyze the impact of marketing activities on the demand pipeline](track-analyze-pipeline-impact.html).
+In Uptempo Campaign Management, marketers can use Impact Modeler to [project how marketing activities will influence the demand pipeline and drive revenue over time](track-analyze-pipeline-impact.html).
 
-As an administrator, you must configure your pipeline model to enable Impact Modeler for your organization. The model consists of the following parts:
+To generate these projections, an administrator must configure at least one demand generation pipeline model. A pipeline model maps how prospects progress from an initial lead to a closed/won deal. When users input the demand an activity is expected to generate, the model processes these inputs to forecast the resulting revenue and its timing.
 
-* The structure of your organization's demand generation funnel. This consists of the stages that you track as customers move through the sales pipeline, from lead to closed/won deal.
+You can create multiple models to continuously refine the performance metrics that power your projections. For example, if you gather more data about how fast deals move through the pipeline, you can create a new FY2026 model for current planning, while maintaining the previous FY2025 model for historical reference.
 
-* Your baseline funnel performance metrics. This includes typical conversion rates (the rate at which leads move from one funnel stage to the next), velocities (how fast they move between stages), and the average value of a closed/won deal.
+## How a pipeline model works
 
-* Segment-specific custom metrics to enhance the baseline metrics. These provide alternative, more specific funnel performance assumptions based on a combination of dimensions, such as activity attribute values and activity groups. For example, you can set overrides for scenarios such as if the average deal size for a certain product is higher or lower, or if deals in a particular market close faster (or slower) than average.
+Each pipeline model is built on three core components:
 
-## How the pipeline model works
+* Pipeline structure: The sequential stages of your customer journey and sales pipeline.
 
-The following screenshot shows a default setup of a pipeline model in Campaign Management:
+* Baseline funnel performance metrics: Baseline assumptions for your sales process, including typical stage-to-stage conversion rates, velocity (time spent in each stage), and average closed/won deal size.
 
-![Funnel 1](images/Funnel%201.png)
-The pipeline model is defined by the following properties:
+* Segment-specific custom metrics: Custom adjustments to your baseline metrics. These are used for specific segments defined by a combination of dimensions, such as activity attribute values and activity types. For example, you can set overrides for scenarios such as if the average deal size for a certain product is higher or lower, or if deals in a particular market close faster (or slower) than average.
+
+The following screenshot shows a default setup of a pipeline model in Impact Modeler:
+
+![Pipeline model funnel](images/PipelineModelFunnel.png)
+To build a pipeline model, you define the following parameters:
 
 Stage
-: A stage represents a step in the customer's journey towards making a purchase. A pipeline usually has 2 to 10 stages, depending on your marketing and sales processes.
+: Each stage represents a step in the customer's journey towards making a purchase. A pipeline usually has 2 to 10 stages, depending on your marketing and sales processes.
 
 Conversion rate
-: Represents the percentage of inquiries that reach the next stage.
+: The typical percentage of leads that move from one stage to the next stage on the journey.
 
 Velocity
-: The average number of days it takes a lead to progress from one funnel stage to the next.
+: How long (in days) it takes the average lead to progress from one funnel stage to the next.
 
-Average deal size
-: The average revenue generated for closed opportunities (B2B), or the average order size (B2C).
+Deal size
+: The average amount of revenue generated by closed opportunities.
 
-When a user enters a planned number of inquiries for an activity, the model calculates when to expect what number of inquiries and what projected revenue based on above funnel information.
+When users input the demand an activity is expected to generate, Impact Modeler runs those inputs through the pipeline model. The model uses the values you have defined for these parameters to project the anticipated pipeline and revenue, and when it will be realized.
 
 ### Segment-specific custom metrics
 
-Conversion rates, velocity, and average deal size may not be identical for every activity. You can define custom metrics for these activities. The custom metrics are applied to activities by defining segments based on specific values for one or more dimensions (activity type groups or attribute values).
+Conversion rates, velocities, and deal sizes often vary for different activities. To improve the precision of your projections, you can define particular segments in your pipeline model and then set custom metrics for these segments.
 
-The following example shows custom metrics that are defined according to the Business Unit attribute as the primary dimension, and Product as a secondary dimension:
+You can define a unique segment by selecting up to three dimensions. Your segment criteria can consist entirely of list-type activity attributes, or a combination of attributes and a single activity type group. For example, this screenshot shows custom conversion rates for a segment. The segment is defined based on the activity types in the Tactic activity type group (as the primary dimension), and the products in the Product attribute (as the secondary dimension):
 
-![Funnel 2](images/Funnel%202.png)
+![Custom conversion rates tactic product](images/CustomConversionRatesTacticProduct.png)
+Whenever an activity matches a segment for which you have defined custom metrics, the pipeline model automatically uses these custom metrics (instead of the baseline metrics) to calculate pipeline projections.
 
-Example 1: Custom conversion rates (2 dimensions)
-: The baseline conversion rate from the Inquiries stage to the next stage (MQL) is set to 40%:
-: ![Funnel 3](images/Funnel%203.png)
-: There are also custom conversion rates for several segments. These segments are defined using two dimensions: the Business Unit and Product attributes.
-: When an activity is assigned to the B2B-Direct business unit, the conversion rate used for pipeline projections is determined by the product assigned to the activity:
-: * For Product A, the custom conversion rate of 55% is used.
+Example 1: Custom conversion rates
+: The baseline conversion rate from the Inquiries stage to the next stage (MQL) is set to 10%:
+: ![Funnel 3](images/InquiriesBaseline.png)
+: There are also custom conversion rates for several segments. These segments are defined using two dimensions: the Tactic activity type group, and the Product attribute.
+: When an activity has a type belonging to the Tactic activity type group, the conversion rate used for pipeline projections is determined by the product assigned to the activity:
+: * For Enterprise Product, the custom conversion rate of 35% is used.
 
-* For Product B the custom conversion rate is 45% is used.
+* For Mid-Market Product the custom conversion rate of 30% is used.
 
-* For VR set, and any other product for which there is no custom conversion rate, the baseline conversion rate is used.
-: ![Funnel 4](images/Funnel%204.png)
+* For SMB Product, and for any other combination of a product and tactic for which no custom conversion rate is defined, the baseline conversion rate of 10% is used.
+: ![Inquiries custom rates](images/InquiriesCustomRates.png)
 
-Example 2: Custom velocities (1 dimension)
-: The baseline velocity from the Inquiries stage to the next stage (MQL) is set to 5 days:
-: ![funnel 9](images/funnel%209.png)
-: There are also custom velocities for several segments. These segments are defined using a single dimension, the Persona attribute.
-: * When an activity is assigned to the Economic Buyer persona, the custom velocity of 10 days is used.
+Example 2: Custom velocities
+: The baseline velocity from the Inquiries stage to the next stage (MQL) is set to 2 days:
+: ![Inquiries baseline](images/InquiriesBaseline.png)
+: There are also custom velocities for several segments. These segments are defined using a single dimension, the Lead Source attribute.
+: The velocity used for pipeline projections is determined by the lead source assigned to the activity:
+: * For Inbound, the custom velocity of 4 days is used.
 
-* For the Internal Influencer persona, and any other persona for which there is no custom velocity, the baseline velocity is used. ![funnel 10](images/funnel%2010.png)
+* For Outbound, the custom velocity of 10 days is used.
 
-Example 3: Custom deal sizes (3 dimensions)
-: The default baseline deal size is set to $10,000:
-: ![funnel 5](images/funnel%205.png)
-: There are also custom deal sizes for several segments. These segments are defined using three dimensions: the Customer Segment, Product and Country attributes.
-: When an activity is assigned to Enterprise and Product A, the deal size used for pipeline projections is determined by the country assigned to the activity:
-: * For Canada, the custom deal size of $12,000 is used.
+* For Field Events / Trade Shows, the custom velocity of 14 days is used.
 
-* For Mexico, the custom deal size of $9,000 is used.
+* For Referral /Partner, and for any activity which has no value for this attribute (or does not have the attribute), the baseline velocity of 2 days is used.
+: ![Inquiries custom velocities](images/InquiriesCustomVelocities.png)
 
-* For Germany, the custom deal size of $15,000 is used.
+Example 3: Custom deal sizes
+: The default baseline deal size is set to $45,000:
+: ![Baseline deal size](images/BaselineDealSize.png)
+: There are also custom deal sizes for several segments. These segments are defined using three dimensions: the Target Customer Segment, Region and Product Tier attributes.
+: When an activity is assigned to the Enterprise segment, the deal size used for pipeline projections is determined by the region and product tier assigned to the activity:
+: * For North America, the custom deal sizes used are: * $125,000 for the Standard tier * $200,000 for the Premium tier
 
-* For USA, UK, and any other country for which there is no custom deal size, the baseline deal size is used.
-: ![funnel 7](images/funnel%207.png)
+* For EMEA, the custom deal sizes used are: * $95,000 for the Standard tier * $165,000 for the Premium tier
 
-## Configure the pipeline model
+* For South America, APAC, and any other combination of segment, region, and product tier for which no custom deal size is defined, the baseline deal size of $45,000 is used.
+: ![Deal size custom](images/DealSizeCustom.png)
 
-### Configuration overview
+## Create and manage pipeline models
 
-To activate the Impact tab on activities and generate impact projections, you must set up your pipeline model. The setup process consists of the following steps:
+By default, a new Uptempo instance contains a single pipeline model. To start using Impact Modeler, you can [configure this default model](#configure-pipeline-models) and then [activate it](#activate-deactivate-and-delete-models).
 
-1. Define funnel stages: Set up the stages of your demand generation funnel.
+You can also create additional pipeline models, for example to adjust your pipeline metrics when you begin a new planning cycle. If you have multiple models, you can manage your models by setting which models are available for use, and removing models that are no longer needed.
 
-2. Set baseline performance metrics: Specify the typical conversion rate and velocity between each stage, and the average deal size, to use for revenue projections.
+### Create pipeline models
 
-3. Optional: Configure per-stage revenue projection: Choose if you want to project revenue at stages of the pipeline other than the last stage.
+You can create a new pipeline model at any time:
 
-4. Optional: Set segment-specific custom metrics: Specify custom conversion rates, velocities, and deal sizes to use for specific segments instead of the baseline metrics.
+* By default, new models start with empty settings, and you must manually configure all the model's parameters.
+
+* You can also create a new model by copying an existing model. This copies all baseline and segment-specific performance metrics from the source model to the new model.
 
 Tip: Tip
 
-In any model, the quality of the model's outputs is directly determined by the quality of the inputs. In the case of Impact Modeler, the more accurate your performance metrics are, the more accurate Impact Modeler's revenue projections will be.
+When you create a new model for the next planning cycle or fiscal year, you usually only need to make a few adjustments to the previous year's model. In this situation, copy the previous year's model as a starting point to save time and effort.
 
-For best results, analyze historical performance data about your deals before you begin setting up Impact Modeler. To get started, try to use the data to answer these questions:
+Procedure: Create a new blank pipeline model
 
-* What percentage of leads is lost at each stage of the pipeline? How does this vary based on factors such as region, business size, or product type?
+Procedure: Copy an existing pipeline model
 
-* How long does a lead typically spend in each stage? Are these times fairly consistent across your market, or is there a wide range?
+### Activate, deactivate, and delete models
 
-* What are your typical deal sizes? Can you segment deal sizes in a meaningful way?
+All new models are created in the Draft status, and are not yet available to be used by Impact Modeler. After you have [configured a new model](#configure-pipeline-models), you need to activate it to make it available for use. When a model is active, it can be used to generate projections in the Impact section of the activity details panel.
 
-Being able to answer questions like these will give you a good starting point for getting useful results with Impact Modeler.
+If there is more than one active model, the Impact > Planned tab displays a menu that allows users to switch between available active models:
 
-If you aren't 100% confident in your numbers initially, even an "educated guess" provides a reasonable starting point. From there, you can continue analyzing the data to refine and improve your model over time.
+![Impact model select](images/ImpactModelSelect.png)
+When there are multiple active models, you can [choose which model is selected by default](#rename-models-and-set-the-default-model) in this menu.
 
-Procedure: Open the Impact Modeler settings
+Note: Note
 
-### Set up funnel stages
+Switching models is only available on an activity before actual results have been recorded (under Impact > Actuals in the activity details panel). To protect historical data, entering actuals locks in the selected model on an activity.
+
+Procedure: Activate a model
+
+If a model should no longer be used for projections on new activities, you can deactivate it.
+
+Deactivating a model removes it as a selectable option from the menu on the Impact > Planned tab on activities. To maintain historical data, a deactivated model remains selected on all activities where it was previously selected. If needed, users can switch any activity on which a deactivated model is selected to any currently active model.
+
+Procedure: Deactivate a model
+
+If a model is unused and is no longer needed, you can delete it.
+
+Procedure: Delete a model
+
+### Rename models and set the default model
+
+You can rename your existing models at any time, including if they are already in use.
+
+Tip: Tip
+
+Model names are displayed on the Impact > Planned tab on activities, either as the label of the model in use (if only one model is active), or as one of the available model options in the model selection menu.
+
+To help users select a model (or understand which model is being used), we recommend naming your models in a way that clearly communicates how a model is meant to be used. For example, instead of a generic name like "Impact Model v2", consider naming models by planning year or similar.
+
+Procedure: Rename a model
+
+If you have multiple active models, you can set which model is used by default for projections on all newly created activities. This is useful if you create new model iterations for each planning cycle: set the new model as the default when the planning process begins to ensure it is used on all newly created activities from that point onward.
+
+Note: Note
+
+In both the Models panel on the Impact Modeler settings page and in the model selection menu on the Impact > Planned tab of activities, the model currently set as the default is marked with the ![Default](images/flag-priority-3.svg) Default model icon.
+
+Procedure: Set a model as the default model for projections
+
+## Configure pipeline models
+
+### Configuration overview
+
+To use a pipeline model to generate impact projections, you need to configure its parameters. The setup process consists of the following steps:
+
+1. Set up pipeline structure: Define the stages of your demand generation funnel.
+
+2. Set up baseline performance metrics: Specify the typical conversion rates and velocities between the stages, and the baseline deal size.
+
+3. Optional: Set segment-specific custom metrics: Specify custom conversion rates, velocities, and deal sizes to use for specific segments instead of the baseline metrics.
+
+4. Optional: Configure per-stage revenue projection: Choose if you want the model to generate pipeline value projections at intermediate stages of the funnel.
+
+Tip: Tip
+
+Accurate pipeline and revenue projections rely on accurate inputs. Before building your pipeline model, analyze your historical performance data to establish your baselines:
+
+* Conversion Rates: What percentage of leads progress to the next stage, and how does this fluctuate by region, product, or segment?
+
+* Velocity: How many days does a deal typically spend in each stage?
+
+* Deal Size: What is your average contract value, and does it vary meaningfully across segments?
+
+Don't let a lack of perfect data block you. You can start with internal estimates or industry benchmarks, then iteratively refine the model as you gather more data.
+
+### Set up pipeline structure
 
 The stages of your demand generation funnel form the foundation of the pipeline model. The model's default funnel contains two stages:
 
-1. The starting or "top of funnel" stage
+* The starting or "top of funnel" stage. The default name for this stage is Source.
 
-* This stage is named Source by default
+* The ending or "bottom of funnel" stage. The default name for this stage is Won.
 
-2. The ending or "bottom of funnel" stage
-
-1. This stage is named Won by default
-
-![ImpactModelerFunnelDefault](images/ImpactModelerFunnelDefault.png)
-Between these two default stages, you can add as many additional stages as you need. You can name your funnel stages (including the two default stages) however you like. A typical demand generation funnel consists of around five stages, for example:
+![Impact modeler funnel default new](images/ImpactModelerFunnelDefaultNew.png)
+Between these two default stages, you can add as many additional stages as you need. You can name your funnel stages (including the two default stages) however you like. For example, a typical demand generation funnel consists of around five stages, and might look like this:
 
 1. Inquiries
 
@@ -3915,95 +3981,88 @@ Between these two default stages, you can add as many additional stages as you n
 
 4. Opportunity
 
-5. Closed Won
+5. Closed/Won
 
-![ImpactModelerFunnelCustomized](images/ImpactModelerFunnelCustomized.png)
-The exact number of stages that you set up depends on how your organization defines the customer journey and tracks progress through the pipeline.
-
-Procedure: Configure funnel stages
+Procedure: Add funnel stages to a model
 
 ### Set up baseline performance metrics
 
-After you set up the stages of your demand generation funnel, you can define the baseline stage-to-stage performance metrics that Impact Modeler uses to generate revenue projections. There are three metrics you need to define:
+After you have set up the stages of your demand generation funnel, you can define the baseline stage-to-stage performance metrics. There are two metrics you need to define for each stage:
 
-Conversion Rate
+Baseline Conversion Rate
 : The average percentage rate at which leads move from one stage to the next. For example, if 100 unqualified leads typically generate 25 MQLs, that's a 25% conversion rate between those stages.
 
-Velocity
+Baseline Velocity (Days)
 : The average number of days that a lead takes to move from one stage to the next.
 
-Deal Size
+You also need to set the global multiplier used for calculating pipeline and revenue amount projections. This is only set once for the whole model, not per stage:
+
+Baseline deal size
 : The average amount of revenue generated when you close a deal and successfully convert an opportunity into a customer.
 
-You specify the conversion rate and velocity individually per stage. The deal size only applies to the final stage, so you only set it once, not per stage.
+Procedure: Set a model's baseline performance metrics
 
-Note: Note
+### Optional: Set up segment-specific custom metrics
 
-The baseline performance metrics you specify here are used to generate all Impact Modeler projections, except when there is an applicable segment-specific custom metric.
+Baseline metrics are broad averages. If factors like conversion rate, velocity, and deal size vary significantly across your customer base, relying solely on the baseline metrics will limit the accuracy of your projections.
 
-For instructions on how to set up custom metrics for specific segments, see the section [Set up segment-specific custom metrics](#set-up-segment-specific-custom-metrics).
+For more precise forecasting, assign custom metrics to specific segments. When an activity targets a defined segment (such as Enterprise prospects, which typically have slower velocities but larger deal sizes) the model automatically uses that segment's custom metrics instead of the baseline metrics.
 
-Procedure: Configure the model's baseline performance metrics
+In a pipeline model, you define segments using up to three dimensions. A dimension can either be an activity type group, or a list-type [activity attribute](activity-attribute-config-overview.html) (Drop-Down List or Multi-Select List). For each combination of values of the selected segments (such as activity types or attribute list options), you can define custom stage-to-stage conversion rates and velocities, as well as custom deal sizes.
 
-### Configure per-stage revenue projection
+Here are some examples of the types of segments you can define with different numbers of dimensions:
 
-By default, Impact Modeler projects revenue only for the final stage of the funnel (for closed deals). If you want to see projections throughout the pipeline, you can optionally turn on revenue projection for any other funnel stage.
-
-For each stage where revenue projection is enabled, you can also set a custom label that reflects the terminology your organization uses for projected revenue at that stage: for example, "Pipeline", "Bookings", etc.
-
-When revenue projection is turned on for a funnel stage, projections are displayed on the details panel of all activities where Impact Modeling is enabled, under the Impact section:
-
-* On the Planned tab, the funnel chart displays a revenue projection for each stage where it is enabled, using the custom label (if specified).
-
-* On the Actual tab, the actuals input table displays columns for manually entering stage-specific revenue, also using the custom label.
-
-Procedure: Enable revenue projection for a funnel stage
-
-### Set up segment-specific custom metrics
-
-The baseline performance metrics are averages across all of your demand generation efforts. The accuracy of your pipeline impact model's projections will be limited if you only use these values. In particular, you will see a lot of divergence from actual results if there is significant variability in conversion rate, velocity, and deal size for different segments of your customer base.
-
-To improve the quality of your model's projections, you can define specific segments, and assign custom performance metrics to those segments. Whenever an activity is specific to a defined segment, the model uses the more precise custom metrics to calculate projections (instead of the less precise baseline metrics). For example, if you tend to see slower velocities but higher conversion rates and deal sizes with enterprise prospects, you can set up custom metrics to improve the model's projections for this segment.
-
-In your pipeline impact model, you define segments with activity attributes. For each custom metric, you can select up to three list-type [activity attributes](activity-attribute-config-overview.html) (Drop-Down List or Multi-Select List), then define custom metrics for each combination of attribute values.
-
-Example 1: One Attribute
+Example 1: One Dimension
 : You can create large-scale segments based on just one attribute.
-: Example scenario attribute:
+: Example segment dimension:
 : * Industry
-: Example attribute values:
+: Example dimension values:
 : * Healthcare
 
 * Financial Services
 : Why:
 : Some industries have regulatory complexity that can significantly reduce velocity. For example, Financial Services and Healthcare can often have longer sales cycles due to regulatory compliance.
 
-Example 2: Two Attributes
-: You can combine two attributes to create more granular scenarios. This is especially useful for attributes that are strongly correlated in terms of their impact on the funnel.
-: Example scenario attributes:
+Example 2: Two Dimensions
+: You can combine two dimensions to define segments with more granularity. This is useful for dimensions that are strongly correlated in terms of their impact on the funnel.
+: Example segment dimensions:
 : * Product + Geography
-: Example attribute value combinations:
+: Example dimension value combinations:
 : * Product A + North America
 
 * Product A + APAC
 : Why:
 : Budgets and product-market fit can vary regionally. For example, a product might have a higher average deal size in North America, or prospects for the same product in APAC might take longer to go from SQL to Opportunity.
 
-Example 3: Three Attributes
-: If your organization has a lot of high-quality historical performance data and the ability to analyze it in depth, you can use up to three attributes to capture the most granular scenarios.
-: Example scenario attributes:
-: * Product + Geography + Channel
+Example 3: Three Dimensions
+: If your organization has high-quality historical performance data and the ability to analyze it in depth, you can use up to three dimensions to capture the most granular scenarios.
+: Example segment dimensions:
+: * Product + Region + Channel
 : Example attribute value combinations:
 : * Product A (SMB) + North America + Paid Search
 
 * Product B (Enterprise) + North America + Event
 : Why:
-: You might find that certain key attributes drive very large variances in your demand funnel's metrics. For example:
+: You might find that certain key attributes drive large variances in your demand funnel's metrics. For example:
 : * For an SMB-focused product in North America, digital ads might generate few MQLs from a lot of inquiries, but lead to short sales cycles for comparatively small deal sizes.
 
 * For an Enterprise-focused product in the same market, in-person events like trade shows might drive much higher conversion rates and larger deal sizes than for the SMB-focused product — but these deals might also come with longer sales cycles.
 
-Procedure: Configure custom performance metrics for specific segments
+Procedure: Define segments and set custom performance metrics
+
+### Optional: Configure per-stage pipeline projection
+
+By default, Impact Modeler projects revenue only for the final stage of the funnel (revenue generated by closed deals). If you want to see projections throughout the pipeline, you can optionally configure the model to calculate and show projections for other funnel stages as well.
+
+For each stage where projection amounts are enabled, you can also set a custom label that reflects the terminology your organization uses for that stage, such as "Bookings".
+
+When projections are turned on for a funnel stage, they are displayed on the details panel of all activities where Impact Modeling is enabled, on both tabs of the Impact section:
+
+* On the Planned tab, the funnel chart displays a projected amount beside each stage where projections are enabled.
+
+* On the Actual tab, the input table displays columns for recording stage-specific pipeline amounts.
+
+Procedure: Turn on projected amounts for a funnel stage
 
 
 
@@ -4505,7 +4564,7 @@ We've reorganized the Impact section in the activity details panel to make it ea
 
 * Impact projection charts on their own tab: You can now find the Impact over time chart on its own dedicated Chart tab, making the Planned tab less cluttered and easier to navigate.
 
-* Funnel visualization always visible: The demand pipeline funnel visualization is now displayed automatically on the Planned tab,so it's easier to find.
+* Funnel visualization always visible: The demand pipeline funnel visualization is now displayed automatically on the Planned tab, so it's easier to find.
 
 ![Impact new chart tab](images/ImpactNewChartTab.png)
 Note: Note
@@ -4555,11 +4614,9 @@ To help ensure that in-market dates are set correctly on all activities, the sys
 
 ### Creator tracking for investment line items
 
-The system now automatically records the creator of investment line items, making it easier to generate compliance reports and identify the origin of financial records.
+The system now automatically records the creator of investment line items, making it easier to identify the origin of financial records.
 
-* Automatic creator tracking: A new Created by field is now displayed on each investment line item's details panel. When a user adds a line item, the system automatically populates this field with their identity, making this information directly visible on the line item itself (instead of only in the audit trail).
-
-* Streamline compliance reporting: With the creator's identity captured directly on the line item, you can easily build holistic creator reports without needing to export and piece together time-limited audit logs.
+A new Created by field is now displayed on each investment line item's details panel. When a user adds a line item, the system automatically populates this field with their identity, making this information directly visible on the line item itself (instead of only in the audit trail).
 
 Note: Note
 
