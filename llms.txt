@@ -4620,9 +4620,7 @@ A new Created by field is now displayed on each investment line item's details p
 
 Note: Note
 
-The Created by field is populated automatically for all new line items created moving forward. This data is not available for line items created before this release.
-
-![In market dates warning](images/InMarketDatesWarning.png)
+The Created by field is populated automatically for all new line items created moving forward. This data is not available for historical line items created prior to this release.
 
 ## Organization Settings
 
