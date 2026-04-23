@@ -3013,24 +3013,24 @@ Access control statements use the following general structure:
 ```JAVASCRIPT
 
 {
-  "effect": "ALLOW | DENY",
-  "action": "<ActivityAction> | <ActivityTypeAction>",
-  "resourceType": "ACTIVITY | ACTIVITY_TYPE",
-  "resourceLocator": "<ActivityResource> | <ActivityTypeResource>",
+  "effect": "string",
+  "action": "string",
+  "resourceType": "string",
+  "resourceLocator": "string",
   "conditions": [
     {
       "field": {
-          "name": "ACTIVITY_TYPE | ACTIVITY_TYPE_GROUP"
+          "name": "string"
       },
-      "operator": "IS | IS_ONE_OF | IS_NOT",
-      "value": ["<activityTypeId>", "<activityTypeId>" | "<activityTypeGroupId>", "<activityTypeGroupId>"]
+      "operator": "string",
+      "value": ["<string", "string"]
     },
     {
       "field": {
-          "attributeDefinitionId": "<attributeDefinitionId>"
+          "attributeDefinitionId": "string"
       },
-      "operator": "IS | IS_ONE_OF | IS_NOT",
-      "value": ["<attributeOptionId>", "<attributeOptionId>"]
+      "operator": "string",
+      "value": ["string", "string"]
     }
   ]
 }
