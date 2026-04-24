@@ -4600,13 +4600,13 @@ To help ensure that in-market dates are set correctly on all activities, the sys
 
 ### Creator tracking for investment line items
 
-The system now automatically records the creator of investment line items, making it easier to identify the origin of financial records.
+The system now automatically records the creator of investment items, making it easier to identify the origin of financial records.
 
-A new Created by field is now displayed on each investment line item's details panel. When a user adds a line item, the system automatically populates this field with their identity, making this information directly visible on the line item itself (instead of only in the audit trail).
+A new Created by field is now displayed on the details panel of each investment category, sub-category, and line item. When a user adds an item to the investment hierarchy, the system automatically populates the Created by field with their identity, making this information directly visible on the investment item itself (instead of only in the audit trail).
 
 Note: Note
 
-The Created by field is populated automatically for all new line items created moving forward. This data is not available for historical line items created prior to this release.
+The Created by field is populated automatically for all new investment items created moving forward. This data is not available for historical line items created prior to this release.
 
 ## Organization Settings
 
