@@ -6936,6 +6936,396 @@ To resolve data access limitations related to the transition from legacy systems
 
 
 
+# v15.11.0
+
+Tip:
+
+Available from March 17, 2026.
+
+## Metric Name Qualifier Updates
+
+In conjunction with the update to Yield Curves, we're taking the opportunity to update the qualifiers we use for metric names so that they're more consistent across all products. For example, 'Modeled' will now be 'Incremental Realized' in Insight, and 'Forecasted' in Inspire and Intent. And 'Comp' or 'Comparison' will be used in Inspire and Intent to reflect the selected date range from the modeled time period. Your Client Success manager can provide more details.
+
+## Data Product and Report Updates
+
+The standard outputs from the system - Insight Reports and Data Products - will also reflect the above updates. Note that we have removed some (now) obsolete columns and renamed others, so some integration automations you have may be affected.
+
+## Media Plans Are Now Optimization Scenarios
+
+After considering feedback from many of you, Intent Media Plans will now be called Optimization Scenarios. This better aligns with how most users think about the output from Intent, and positions us well for some planned future updates.
+
+
+
+# v15.10.0
+
+Tip:
+
+Available from February 10, 2026.
+
+## Bug Fixes
+
+We squashed a few small bugs that have popped up recently.
+
+## Formatting Updates
+
+Mostly just tidying up some minor things we've noticed are slightly out of place, or just don't look quite right.
+
+
+
+# v15.08.0
+
+Tip:
+
+Available from December 9, 2025.
+
+## Updated Data Definitions
+
+The Data Definitions document, available in Insight Reports, has been updated to include all fields in the Media Pacing Execution Forecast Reports.
+
+## Bug Fixes
+
+Periodic cleanup of minor issues.
+
+
+
+# v15.05.0
+
+Tip:
+
+Available from September 30, 2025.
+
+## Process Updates
+
+Continued efforts on refactoring and general improvements to processing are groundwork for an exciting new set of features coming soon!
+
+
+
+# v15.04.0
+
+Tip:
+
+Available from September 8, 2025.
+
+## Performance Improvements
+
+Refactoring has improved page load times and enabled faster development on future features.
+
+
+
+# v15.03.0
+
+Tip:
+
+Available from July 30, 2025.
+
+## Tour Updates
+
+Updated product tours - in left nav - to align with recent changes.
+
+## Bug Fixes
+
+Mostly minor formatting updates.
+
+
+
+# v15.02.0
+
+Tip:
+
+Available from June 30, 2025.
+
+## Foundation Building
+
+Several new features are in the works, but we need to expand our foundation first to accommodate. More details to come in the near future!
+
+## Bug Fixes
+
+Little tweaks, here and there, to keep things running smoothly.
+
+
+
+# v15.01.0
+
+Tip:
+
+Available from June 9, 2025.
+
+## Processing Improvements
+
+Expanded resources will allow for more simultaneous processing.
+
+## Code Refactoring
+
+Think: a deep clean and purge.
+
+
+
+# v15.00.0
+
+Tip:
+
+Available from May 19, 2025.
+
+## Foundation Building
+
+We're developing the support structure for some exciting new updates.
+
+## Bug Fixes
+
+More Spring cleanup.
+
+
+
+# v14.63.0
+
+Tip:
+
+Available from April 28, 2025.
+
+## SSO Updates
+
+Improved SSO experience for those using the feature.
+
+## Performance Upgrades and Other Fixes
+
+Popped the hood, tightened some bolts, and topped off the fluids.
+
+
+
+# v14.62.0
+
+Tip:
+
+Available from April 7, 2025.
+
+## Minor Tweaks and Bug Fixes
+
+Think of this release mostly as Spring Cleaning.
+
+
+
+# v14.60.0
+
+Tip:
+
+Available from February 17, 2025.
+
+## Performance Upgrades and Other Fixes
+
+We've optimized some queries for visualizations to return faster, and addressed other minor issues that have popped up recently.
+
+
+
+# v15.07.0
+
+Tip:
+
+Available from November 11, 2025.
+
+## Ratio Metrics to 2 Decimal Places
+
+The values for the ratio metrics recently added to the Time Series card will now be displayed to 2 decimal places.
+
+## Select Group Updates
+
+The 3-dot menu options available for each group in the Select Groups tool have been updated. We are now using 'Sub-Level' to denote the hierarchy level below the selected one (vs. 'Children'). We've also added an 'Unselect All Sub-Levels' option to the top-level 3-dot menu, enabling you to easily unselect any and all selected groups across the entire hierarchy - i.e., a blank slate option.
+
+
+
+# v15.06.0
+
+Tip:
+
+Available from October 21, 2025.
+
+## Additional Ratios in Time Series Card
+
+Now available in the Time Series card metric selector are two new Ratio options - VPI (Value per Impression) and CPM (Cost per Thousand Impressions). There is one VPI for each KPI.
+
+
+
+# v15.03.0
+
+Tip:
+
+Available from July 30, 2025.
+
+## Quarterly Aggregation Option Added to Reports
+
+Users can now aggregate their Insight Reports by Quarter, as well as Daily, Weekly, Monthly, and Annually.
+
+
+
+# v14.59.0
+
+Tip:
+
+Available from January 21, 2025.
+
+## Formatting Updates and Other Fixes
+
+There are several updates across Insight on both the Dashboard and Reports.
+
+Updates include: better color-coding on visuals, label and axis improvements on graphs, date selector fixes, and download image upgrades.
+
+
+
+# v15.13.0
+
+Tip:
+
+Available from April 29, 2026.
+
+## Indexed Percent of Comp
+
+Recent improvements were made to how Percent of Comp is presented in the Inspire yield curve view. The baseline has shifted from 0 to 100 so values now read like an index: 100 equals comparison, above 100 is lift, below 100 is under-spend. In both the aggregated table and individual yield curve cards, labels now use 'Agg Pct of Comp' and 'Pct of Comp,' and the editable Spend input ranges from 0-250 (0-2.5x comparison).
+
+## Card Value Drift Indicator
+
+A yellow indicator appears when card-level values drift more than 1% from the aggregate, with a one-click option to sync all cards.
+
+## CSV Export Updates
+
+The CSV export now uses matching "Spend Pct of Comp" and "[KPI] Pct of Comp" headers, and exported values reflect the same 100-based baseline as the UI.
+
+
+
+# v15.12.0
+
+Tip:
+
+Available from April 7, 2026.
+
+## Set x Value as a Percent
+
+Following a recent update to the Aggregate View in Inspire, we've now enabled similar capabilities in the individual Yield Curves as well. Users can now manually set the x value as a percent of Comp Period Spend.
+
+
+
+# v15.11.0
+
+Tip:
+
+Available from March 17, 2026.
+
+## Yield Curves Updated to Show Full Future Value
+
+As of your next model refresh, the values in the Inspire Yield Curves (and, by extension, Intent optimization results) will now represent all value the media from the selected time period is forecasted to eventually drive, even outside of the selected time period. This update is also foundational to some related upgrades currently in the works. Your Client Success manager can provide more details.
+
+
+
+# v15.09.0
+
+Tip:
+
+Available from January 6, 2026.
+
+## Batch Adjust Spend Changes
+
+A user may now adjust all selected Yield Curves proportionally via the Total Performance Estimates table at the top of the screen. By manually entering a Spend amount or Percent Difference in this table, all component Yield Curves will be adjusted by the same amount.
+
+## Pin Total PE Section to Top of Screen
+
+Users can also choose to pin this section to the top of their screen by toggling Lock UI to ON.
+
+
+
+# v15.08.0
+
+Tip:
+
+Available from December 9, 2025.
+
+## Ability to Enter KPI Targets
+
+Users can now enter a target KPI value in a Yield Curve's data table (similar to manually entering a Spend amount) to see the related Spend needed to reach the KPI target.
+
+
+
+# v15.11.0
+
+Tip:
+
+Available from March 17, 2026.
+
+## Yield Curves Updated to Show Full Future Value
+
+As of your next model refresh, the values in the Inspire Yield Curves (and, by extension, Intent optimization results) will now represent all value the media from the selected time period is forecasted to eventually drive, even outside of the selected time period. This update is also foundational to some related upgrades currently in the works. Your Client Success manager can provide more details.
+
+
+
+# v15.06.0
+
+Tip:
+
+Available from October 21, 2025.
+
+## Media Plan Completion Notification Email
+
+Users who submit a new Media Plan will now receive an email as soon as it is complete and available in the UI.
+
+
+
+# v15.04.0
+
+Tip:
+
+Available from September 8, 2025.
+
+## FAQ Updates
+
+The Intent FAQ, available in the left nav, has been updated to include all constraint checks being handled during and after Media Plan creation and submission.
+
+
+
+# v15.03.0
+
+Tip:
+
+Available from July 30, 2025.
+
+## Reference Outdated Constraints in Copied Media Plans
+
+When copying a Media Plan from a prior Analysis Run, some constraints may no longer be valid due to changes in the hierarchy. Intent will now display any outdated constraints in a separate grid below the primary constraint grid, and it will stay visible for reference until the user dismisses it.
+
+
+
+# v14.61.0
+
+Tip:
+
+Available from March 10, 2025.
+
+## The Wait Is Over!
+
+We've been teasing this for a while - creating Media Plans in Intent just got a whole lot easier! Several updates, including a more intuitive layout, spreadsheet-like functionality in the new grid view, and a more flexible yet standardized convention for entering constraints, are now available to all users. For more information, contact your Account Lead, or reference the updated Tour snippets in Intent. And a special thank you to all who provided feedback and beta testing!
+
+
+
+# v14.60.0
+
+Tip:
+
+Available from February 17, 2025.
+
+## Upgrade Coming Soon!
+
+Beta testing is currently in process; full release in Q1 2025, though you might notice a few minor format changes in Intent before then.
+
+
+
+# v14.59.0
+
+Tip:
+
+Available from January 21, 2025.
+
+## Upgrade Coming Soon!
+
+Beta testing is currently in process; full release in Q1 2025, though you might notice a few minor format changes in Intent before then.
+
+
+
 # Release: November 2025
 
 The November 2025 release for Hive9 is available from November 26, 2025, and adds these features to the platform:
