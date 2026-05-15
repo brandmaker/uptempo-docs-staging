@@ -1547,7 +1547,7 @@ In an attribute dependency, the value selected for the first attribute (the cont
 
 Attribute dependencies help to protect the integrity of your data by ensuring that users select valid value combinations. They are also useful for attributes that have a very large number of values: dependencies make it much easier for users to select a value, because they limit the number of options that are displayed.
 
-Note:
+Note: Note
 
 For details about how attribute dependencies look and behave when working with activities in Uptempo Campaign Management, see [Attribute dependency user experience](#attribute-dependency-user-experience).
 
@@ -4475,6 +4475,100 @@ Procedure: Reset your Uptempo password
 Release notes
 
 We release new features every month. Find the latest release notes here.
+
+
+
+# What's new: 2026.5
+
+Discover all the new Uptempo functionality introduced with the 2026.5 release, available from May 27, 2026.
+
+Note: Note
+
+Features marked with the tags Preview and Beta are opt-in, and are not enabled in your Uptempo instance by default. Contact your Customer Success Manager to enable these features.
+
+For more information, see [Uptempo's feature release lifecycle](uptempo-s-feature-release-lifecycle.html).
+
+## Campaign Management: Activity Configuration
+
+### Create attribute dependencies across activity hierarchy levels
+
+You can now set up attribute dependencies that span multiple levels of the activity hierarchy, where one attribute controls another attribute on a different, lower-level activity.
+
+* Streamline data entry across levels: You no longer need to force high-level attributes down to lower levels of the hierarchy to use attribute dependencies. For example, you can now configure a dependency where users set the Country attribute on a parent activity, and the State attribute on all child activities is automatically filtered to the relevant options.
+
+* Reduce manual effort and input errors: Users now only need to set a controlling attribute once on the parent activity, instead of on every child activity. Eliminating these repeated selections lowers user workload, and reduces the risk of input errors.
+
+* Prevent accidental data loss: If a user attempts to change the value of the controlling attribute in a multi-level dependency, the system now displays a warning that the change may remove existing data in any dependent attributes.
+
+Note: Note
+
+Multi-level attribute dependencies currently do not support required attributes.
+
+If a [dependency chain](attribute-dependencies.html#chained-dependencies) includes a multi-level dependency, all attributes in the chain must set as optional on the activity types they are attached to.
+
+![Multi level dependency](images/MultiLevelDependency.png)
+→ [Learn more about setting up attribute dependencies](attribute-dependencies.html)
+
+## Campaign Management: Activities
+
+### Track activity funding by period
+
+You can now view activity funding breakdowns by quarter or fiscal year at every level of your activity hierarchy to get more visibility into when money is being spent.
+
+* View connected investments by quarter or fiscal year: On any activity, you can now view quarterly and annual breakdowns of connected investments to get a more granular view of spend timing. For investments that span multiple years, you can also see separate breakdowns for each fiscal year.
+
+* Prevent budget overages: At the tactical level, you can now see exactly when spend hits the ledger, making it easy to catch overspending in a quarter before it impacts your annual budget health.
+
+* Get big-picture oversight: You can view activity funding breakdowns at any level of the activity hierarchy, eliminating the need to drill into individual tactic-level activities or export data for manual reconciliation.
+
+![Time phasing connected investments](images/TimePhasingConnectedInvestments.png)
+→ [Learn more about tracking activity funding](track-and-analyze-budgets.html#trackspend)
+
+## Financial Management: Budgets
+
+### Invite users to budgets by their Permissions Role
+
+In Uptempo 1.0 instances, administrators can now invite users to the financial hierarchy using Permissions Roles, making it easier to manage access to Uptempo Financial Management at scale directly from your existing user management system.
+
+* Grant access by role: Instead of inviting individual users to the budget hierarchy, you can now invite any Permissions Role in the Budget module (under Administration > Permissions > Budget) to easily grant access to all users assigned to that role.
+
+* Automate access via SSO: To simplify large-scale user management, you can link your SSO groups directly to specific Budget module roles. This allows you to manage access to Uptempo Financial Management centrally through your organization's user management system.
+
+* Configure role mappings: When you invite a Permissions Role to a budget, you can conveniently grant the appropriate access level to Uptempo Financial Management by assigning a corresponding User Role, such as Editor or Viewer.
+
+![Invite by permissions role](images/InviteByPermissionsRole.png)
+→ [Learn more about inviting users to Uptempo Financial Management budgets]
+
+### Monitor the progress of data imports from any page
+
+You can now monitor the real-time progress of your POs and actuals imports from anywhere in Uptempo, allowing you to continue with other tasks without losing visibility into the import status.
+
+* Multitask during large imports: For large datasets that take several minutes to process, you no longer need to wait on the Import page. You can now safely navigate away to focus on other tasks while the import is processed in the background.
+
+* Real-time status updates: A new UI progress indicator displays real-time percentage updates and the exact state of your import (Processing, Completed, or Failed), and is accessible from any page.
+
+* Instant notifications and quick access: Receive immediate success or error notifications as soon as your import finishes. You can also click the progress indicator at any time to view specific details or return directly to the full Import page.
+
+→ [Learn more about importing data into Uptempo]
+
+### Expanded support for Persistent IDs
+
+Uptempo now supports Persistent IDs for budgets, columns, and column choices, enabling seamless year-over-year reporting even when your budget structures evolve.
+
+* Permanent identifiers for higher-level budget structures: In addition to investment line items, Uptempo now also assigns a Persistent ID to all budgets, columns, and column choices (predefined list option) created as copies of existing entities, such as during a rollover. In each case, the copied entity automatically inherits the Persistent ID of its source entity, ensuring data continuity across rollovers.
+
+* Eliminate manual reconciliation: If the name of a budget, column, or column choice is changed during an annual rollover, your data mappings will no longer break. The Persistent ID provides a consistent identifier for an entity across name changes, eliminating the need to manually rebuild data maps in BI tools and reconcile spending.
+
+* More reliable API integrations: Persistent IDs provide a permanent, immutable key for your data pipelines, ensuring that your connections to external systems remain stable and uninterrupted.
+
+## Financial Management: Investments
+
+### Search for activities to connect to investments by Activity ID
+
+When you connect activities to an investment, the search function in the Select activity to connect to... dialog now supports searching by Activity ID. This makes it easier to find a specific activity to connect, especially if a lot of your activities have similar names.
+
+![Connect activity search id](images/ConnectActivitySearchID.png)
+→ [Learn more about connecting activities to investments]
 
 
 
