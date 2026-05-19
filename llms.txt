@@ -4528,7 +4528,7 @@ You can now view activity funding breakdowns by quarter or fiscal year at every 
 
 ### Invite users to budgets by their Permissions Role
 
-In Uptempo 1.0 instances, administrators can now invite users to the financial hierarchy using Permissions Roles, making it easier to manage access to Uptempo Financial Management at scale directly from your existing user management system.
+In Uptempo 1.0 instances that use Single Sign-On (SSO), administrators can now invite users to the financial hierarchy using Permissions Roles, making it easier to manage access to Uptempo Financial Management at scale directly from your existing user management system.
 
 * Grant access by role: Instead of inviting individual users to the budget hierarchy, you can now invite any Permissions Role in the Budget module (under Administration > Permissions > Budget) to easily grant access to all users assigned to that role.
 
@@ -4537,6 +4537,10 @@ In Uptempo 1.0 instances, administrators can now invite users to the financial h
 * Configure role mappings: When you invite a Permissions Role to a budget, you can conveniently grant the appropriate access level to Uptempo Financial Management by assigning a corresponding User Role, such as Editor or Viewer.
 
 ![Invite by permissions role](images/InviteByPermissionsRole.png)
+Note: Note
+
+This feature requires Single Sign-On (SSO), and is not available in Uptempo 1.0 instances that use Uptempo accounts (email and password) to sign in.
+
 → [Learn more about inviting users to Uptempo Financial Management budgets]
 
 ### Monitor the progress of data imports from any page
