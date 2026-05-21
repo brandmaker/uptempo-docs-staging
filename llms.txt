@@ -1691,7 +1691,9 @@ Multi-level dependency
 
 Note: Note
 
-Attributes can be attached to either activity types, or to activity type groups. If an attribute is attached to an activity type group, it is also automatically attached to all activity types within the group. Attribute dependencies are acti
+Attributes can be attached directly to an activity type, or inherited from an activity type group. Whenever an attribute is attached to an activity type group, all activity types within that group automatically inherit it.
+
+In these definitions, an attribute "attached to an activity type" includes both directly attached and inherited attributes.
 
 Because local dependencies are displayed together on the same activity, they're simple for users to understand and work with. Local dependencies work well for most attributes that are logically related, in particular when the related attributes are all specific to the activity where they are shown.
 
