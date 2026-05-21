@@ -899,10 +899,6 @@ Procedure: View an activity's spend data
 
 ### Break down activity spend data by time period
 
-Note: Note
-
-This feature is available in Preview with the [2026.3 release](release-2026-3.html). To enable this feature in your Uptempo instance, please contact your Customer Success Manager, or Uptempo Support.
-
 By default, the system displays total amounts for the spend data on activities, representing the full time period covered by the connected investment.
 
 Because timing is often a critical consideration with budget spend, you can also view more granular annual and quarterly breakdowns of activity spend data. This gives you a more detailed view of exactly when spend is happening, which can help you to spot potential issues (such as overspending in a particular quarter).
@@ -988,7 +984,7 @@ You can enter targets at any level of the activity hierarchy. However, for any g
 
 Activities at higher levels automatically display roll-up impact data aggregated from all lower levels and use blended model assumptions from those levels when generating projections. Lower-level (descendant) activities, by contrast, do not display data entered at higher levels or projections derived from that data.
 
-For this reason, we recommend entering demand targets at the lowest level of the activity hierarchy. Doing so ensures that impact data and projections are visible and consistent at every level above.
+For this reason, enter demand targets at the lowest level of the activity hierarchy. Doing so ensures that impact data and projections are visible and consistent at every level above.
 
 Procedure: Enter planned demand targets for an activity
 
@@ -1088,7 +1084,7 @@ You can enter target demand values at any level of the activity hierarchy. Howev
 
 Activities at higher levels automatically display roll-up impact data aggregated from all lower levels and use blended model assumptions from those levels when generating projections. Lower-level (descendant) activities do not display data entered at higher levels or projections derived from that data.
 
-As a result, we recommend that you enter demand targets at the lowest level of the activity hierarchy. Doing so ensures that impact data and projections are visible and consistent at every level above.
+For this reason, enter demand targets at the lowest level of the activity hierarchy. Doing so ensures that impact data and projections are visible and consistent at every level above.
 
 Procedure: Enter planned demand targets for an activity
 
@@ -1203,7 +1199,7 @@ An Uptempo specialist likely configured Campaign Management for you during the i
 
 If you have an existing configuration and need to make changes to it, use the navigation menu to jump straight to the relevant pages in this section.
 
-If you're setting up Campaign Management in a new Uptempo instance, we recommend the following order of operations:
+If you're setting up Campaign Management in a new Uptempo instance, follow this order of operations:
 
 ### Step 1: Create custom attributes
 
@@ -1539,7 +1535,7 @@ Procedure: Delete an attribute
 
 # Set up attribute dependencies
 
-If two Drop-Down List or Multi-Select List attributes are logically related, you can create an attribute dependency to link them.
+If two Drop-Down List or Multi-Select List attributes are logically related, you can create an attribute dependency to make the selected option in one attribute control the available options for the other attribute.
 
 ## How attribute dependencies work
 
@@ -1659,6 +1655,187 @@ Whenever you select a value in a controlling attribute that leaves only one poss
 
 
 
+# Set up attribute dependencies (Preview)
+
+Note: Note
+
+This page describes features that are currently in Preview and are [available on an opt-in basis](uptempo-s-feature-release-lifecycle.html#stage-1-preview).
+
+If you have not enabled these features in your Uptempo instance, please refer to [Track and analyze pipeline impact](track-analyze-pipeline-impact.html) instead.
+
+If two Drop-Down List or Multi-Select List attributes are logically related, you can create an attribute dependency to make the selected option in one attribute control the available options for the other attribute.
+
+## How attribute dependencies work
+
+In an attribute dependency, the value selected for the first attribute (the controlling attribute) determines which values can be selected in the second attribute (the dependent attribute). The controlling attribute's value acts as a filter for the dependent attribute: after you select a value for the controlling attribute, the dependent attribute only displays list options that are valid for the controlling attribute's value, and hides options that are not valid.
+
+Attribute dependencies help to protect the integrity of your data by ensuring that users select valid value combinations. They are also useful for attributes that have a very large number of values: dependencies make it much easier for users to select a value, because they limit the number of options that are displayed.
+
+Note: Note
+
+For details about how attribute dependencies look and behave when working with activities in Uptempo Campaign Management, see [Attribute dependency user experience](#attribute-dependency-user-experience).
+
+Example
+: A common use case for attribute dependencies is for attributes that have hierarchical relationships: for example, geographic categories like State and City. Since City is a subcategory of State, only certain options for City are valid based on the option set for State: if State is set to California, setting City to Miami would not be valid.
+: If you set up an attribute dependency in which State is the controlling attribute and City is the dependent attribute, users would not be able to select Miami when the State attribute is already set to California. Instead, the City attribute would only display options for cities that are actually located in the selected state (such as Los Angeles, San Francisco, etc.).
+
+### Local vs. multi-level dependencies
+
+You can choose to configure any attribute dependency as local or multi-level:
+
+Local dependency
+: Both the controlling and the dependent attribute are attached to the same activity type. Users select values for both attributes on the same activity.
+
+Multi-level dependency
+: The controlling and dependent attributes are attached to different activity types, which are at different levels of the activity hierarchy. Users select the controlling attribute value on one activity, and the dependent attribute value on a separate activity that is a descendant of the first activity.
+
+Because local dependencies are displayed together on the same activity, they're simple for users to understand and work with. Local dependencies work well for most attributes that are logically related, in particular when the related attributes are all specific to the activity where they are shown.
+
+Multi-level dependencies are useful when a controlling attribute's value can be applied to multiple separate activities. By leveraging the fact that descendant activities [inherit the attribute values of their ancestor activities](about-activities.html#custom-attribute-inheritance), multi-level dependencies can reduce the amount of data entry on any given activity. This is because users only need to select the controlling attribute's value once on the higher-level activity, instead of individually on every lower-level activity.
+
+Multi-level dependencies also allow you to distribute attributes more evenly across the activity hierarchy, while still maintaining all the benefits of a dependency. For example, you can use multi-level dependencies to reduce the amount of attributes attached to the activity types at lowest level of your activity hierarchy, which creates a better experience for users when configuring this type of activity.
+
+Example
+: Say your Program activities are region-specific, so that all Tactic activities within a given Program would be assigned the same country in the Country attribute.
+: If you attach the Country attribute to the Program activity type, and the City attribute to the Tactic activity type, you can then set up a multi-level dependency between these two attributes.
+: This means that when a user selects the value of Country on a Program, the selected country is automatically applied to all Tactics under that Program. At the same time, the dependency ensures that when a user selects a value for Country on any of those Tactics, the list of cities they can choose between is automatically filtered based on the Country set on the parent Program.
+
+Note: Note
+
+One important difference between local and multi-level dependencies is that only local dependencies support required attributes. All attributes involved in a multi-level dependency, or in a dependency that is chained with a multi-level dependency, must be set as optional on all activity types where the dependencies are active.
+
+### Chained dependencies
+
+Each attribute dependency consists of two linked attributes. By setting the dependent attribute in one dependency as the controlling attribute in another dependency, you can "chain" dependencies to create a multi-attribute sequence of dependencies. For example, you can chain a Country-State dependency with a State-City dependency to create a three-attribute Country-State-City dependency.
+
+In chained dependencies, each attribute in the chain controls the available options for all of the attributes that follow it. For example, the selected Country determines the options available for State, and the selected State in turn determines the options available for City. As a result, Country indirectly controls City.
+
+You can chain both local and multi-level dependencies. Multi-level dependency chains can span multiple levels of the activity hierarchy, for example:
+
+Example 1: Multi-level dependency chain
+: This example shows a chain of two multi-level dependencies that spans three levels of the activity hierarchy:
+: * First dependency: The Country attribute on the top-level activity type Campaign (level 1) controls the State attribute on the mid-level activity type Program (level 2).
+
+* Second dependency: The State attribute on the mid-level activity type Program (level 2) controls the City attribute on the bottom-level activity type Tactic (level 3).
+
+You can also construct chains that contain both types of dependency. For example:
+
+Example 2: Mixed dependency chain
+: This example shows a mixed chain of two dependencies, one multi-level and one local:
+: 1. First dependency (multi-level): The Country attribute on the parent activity type Program controls the State attribute on the child activity type Tactic.
+
+2. Second dependency (local): The State attribute on the activity type Tactic controls the City attribute on the same activity type.
+
+### Required dependent attributes
+
+Local dependencies are active on any activity type where both the controlling attribute and the dependent attribute are attached. If the dependent attribute is set as required for that activity type, then it is also required within the attribute dependency on that activity type, so users must select a value for it.
+
+Note: Note
+
+Required attributes are only supported in local dependencies that are not chained with a multi-level dependency.
+
+When a dependent attribute is set as required, it is only conditionally required. This means that it is only required when its controlling attribute is set to an option that makes it relevant.
+
+If the controlling attribute is set to an option that does not have valid options in the dependent attribute, then the dependent attribute is not required in this situation (and is not displayed, see [Auto-hide attribute values](#auto-hide-attribute-values)). This ensures that you don't have to select a value for an attribute when it isn't relevant, but don't miss an attribute when it is needed.
+
+Example
+: In this example, the State attribute is a dependent of the Promotion Type attribute:
+: * If the Promotion Type is set to Samples, the State attribute is not relevant, so it's not required in this case (and not displayed): ![DependentNotRequired](images/DependentNotRequired.png)
+
+* If the Promotion Type is set to Coupon, the State attribute becomes relevant, so it is now conditionally required (and marked as required accordingly): ![DependentIsRequired](images/DependentIsRequired.png)
+
+## Create attribute dependencies
+
+You can create an attribute dependency between two attributes that meet the following requirements:
+
+* Both attributes must have the attribute type Drop-Down List or Multi-Select List.
+
+* For a local dependency, both attributes must be attached to the same activity type. The attributes may be set as required or optional.
+
+* For a multi-level dependency, the attributes must be attached to at least two different activity types, where: * The controlling attribute is attached to an activity type at a higher level of the hierarchy than the dependent attribute * The dependent attribute is attached to an activity type at a lower level of the hierarchy than the controlling attribute * Neither attribute is set as required on any activity type it is attached to * Neither attribute is part of a dependency chain where any attribute in the chain is set as required
+
+Tip: Tip
+
+A local dependency is automatically active on every activity type that both attributes are attached to.
+
+If you need to make a local dependency exclusive to a specific activity type, you can create new attributes that are used only on that activity type, then create a dependency between them.
+
+Procedure: Create a new attribute dependency
+
+## Edit attribute dependencies
+
+You can edit an existing attribute dependency at any time. You can:
+
+* Change which dependent list options are selected for each controlling list option
+
+* Change the description text displayed for the dependency
+
+* Change the dependency's scope (local or multi-level)
+
+Note: Note
+
+After an attribute dependency is created, the selected controlling and dependent attributes are fixed, and can't be changed later.
+
+If you need to change either attribute on an existing attribute dependency, create a new attribute dependency instead.
+
+Procedure: Edit an attribute dependency
+
+## Delete attribute dependencies
+
+If an attribute dependency is no longer needed, you can delete it at any time. When you delete an attribute dependency, this does not affect the actual values set in the controlling and dependent attributes on activities, and these values remain unchanged.
+
+Warning: Warning
+
+Deleting an attribute dependency is permanent. You can't undo this action.
+
+Procedure: Delete an attribute dependency
+
+## Attribute dependency user experience
+
+Attribute dependencies are useful for complex activity types that have a large number of attributes, but where not all attributes are relevant in every situation. Attribute dependencies are designed with several features to streamline the user experience when working with these types of activities.
+
+### Visual appearance of attribute dependencies
+
+When attributes are part of a dependency, they are presented differently within an activity's details panel than attributes that are not part of a dependency.
+
+#### Local attribute dependencies
+
+* On the details panel for an activity that has one or more local attribute dependencies, all the fields for attributes that are part of a local dependency are grouped into their own separate section in the list of attributes: ![DependenciesSection](images/DependenciesSection.png)
+
+* The attributes are marked with a ![Controlling Attribute](images/align-arrow-right.svg) Controlling Attribute or a ![Dependent Attribute](images/align-arrow-left.svg) Dependent Attribute icon to indicate that they are part of a dependency. Placing the pointer on an attribute's icon displays a hint that indicates what the attribute controls or is controlled by: ![Dependency icon tooltip](images/DependencyIconTooltip.png)
+
+* The links between attribute dependencies (and chains of dependencies) are visually represented: ![DependenciesSection2](images/DependenciesSection2.png) Note: Note The display order of attributes in an activity is defined centrally in Activity Configuration > Attributes > Attribute Definitions. This display order applies globally across all activity types. On activity types with attribute dependencies, the attribute dependencies section is inserted into the display order at the position of the first controlling attribute, based on the global attribute display order. Because this section also includes all other attributes that are part of dependencies, these attributes may appear higher (or lower) in the display order than they would if they weren’t part of a dependency.
+
+* When you select a value for any attribute in the local dependencies section, it is not automatically saved. Instead, you must click Save to manually save the selected values. This helps to ensure that any [required attributes in the dependency](#required-dependent-attributes) have a value set. Note: Note The attribute dependencies section appears in two places: the activity details panel (when you edit an existing activity) and the Details step of the [activity setup assistant](create-activities.html) (when you create a new activity). The section works the same way in both places, with one exception: the Save button and the missing value indicator icon are not used in the activity setup assistant version. Instead, the Next button of the activity setup assistant works the same way as the Save button in this context.
+
+#### Multi-level attribute dependencies
+
+* Attributes that are part of a multi-level dependency are usually not displayed within the local dependencies section. Instead, they look similar to standard non-dependency attributes, but are still marked with the ![Controlling Attribute](images/align-arrow-right.svg) Controlling Attribute and ![Dependent Attribute](images/align-arrow-left.svg) Dependent Attribute icons: ![Dependency multi level standalone](images/DependencyMultiLevelStandalone.png) Note: Note An attribute that is part of a multi-level dependency is displayed in the local dependencies section if it is chained with a local dependency (that is, if it is part of both a multi-level dependency and a local dependency).
+
+* Whenever a user changes the value in the controlling attribute of a multi-level dependency, the system displays a confirmation dialog. The dialog warns the user that their change might affect the values of linked attributes on other activities, and is intended to help prevent accidentally changing or removing values on attributes that aren't currently visible to the user.
+
+### Auto-hide attribute values
+
+When a local or multi-level dependent attribute is not (yet) relevant to the activity being created, it is automatically hidden. This minimizes the number of attributes that are initially visible when creating an activity, and reduces distracting visual clutter.
+
+A dependent attribute only becomes visible after you set the controlling attribute to a value for which the dependent attribute has valid options:
+
+* If there are no valid options in a dependent attribute, it remains hidden.
+
+* For dependency chains (multiple linked dependencies), additional dependent attributes are progressively revealed (as needed) after each controlling attribute selection.
+
+Example
+: In this example, only one attribute (Promotion Type) is visible initially. Making a selection for Promotion Type reveals the State attribute, and selecting a state further reveals the Radio Station attribute:
+: ![DependenciesSection4](images/DependenciesSection4.png)
+
+### Auto-select attribute value
+
+In some cases, a controlling attribute value has only a one valid option in the dependent attribute. This can happen if an attribute previously had more options that are no longer needed and have been removed, or if you want users to set a value for data consistency.
+
+Whenever you select a value in a local or multi-level controlling attribute that leaves only one possible option in the dependent attribute, the system automatically selects that option in the dependent attribute to save you time and unnecessary clicks.
+
+
+
 # Set up attribute groups
 
 To make it easier for users to enter and view attribute data when they are working with activities, you can organize related attributes into attribute groups. For example, you could create attribute groups for all marketing channel-related attributes or all budget-related attributes.
@@ -1739,7 +1916,9 @@ The basic process for setting up the activity hierarchy consists of three steps:
 
 You can create [activity type groups](activity-hierarchy-config-overview.html#what-are-activity-type-groups) at any time. However, you can only assign an activity type to a type group (or change the group it is assigned to) if no activities of that type have been created yet. After the first activity of an activity type has been created, you can no longer assign the activity type to a group, or change its group.
 
-As a result, we recommend that you design and set up at least a basic set of activity type groups right from the start, and assign your activity types to them before any activities have been created. When designing the structure of your activity type groups, aim to allow some flexibility for future expansion.
+Tip: Tip
+
+Design and set up at least a basic set of activity type groups from the start, and assign your activity types to them before any activities have been created. When designing the structure of your activity type groups, aim to allow some flexibility for future expansion.
 
 Procedure: Create an activity type group
 
@@ -1769,9 +1948,9 @@ Procedure: Edit an existing activity type group
 
 If you no longer need an activity type group, you have two options: you can either deactivate or delete the unneeded type group. Here's what each option does, and when you should use each one:
 
-* Deactivate an activity type group: When you deactivate an activity type group, you can no longer add activity types to the group. However, as long as the activity types within the group are still active, users can continue to use these activity types to create new activities. We recommend using this option in most cases when you no longer need an activity type group, as it retains data for reporting purposes.
+* Deactivate an activity type group: When you deactivate an activity type group, you can no longer add activity types to the group. However, as long as the activity types within the group are still active, users can continue to use these activity types to create new activities. Use this option in most cases when you no longer need an activity type group, as it retains data for reporting purposes.
 
-* Delete an activity type group: Deleting an activity type group will permanently remove it from your Uptempo instance. You can only delete an activity type group if there are no more activities of the activity types that belong to the group, or any rules that involve the group. This means that, to delete an activity type group, you must first delete all activities within the group, and all rules related to the group. As a result, we recommend using this option only in cases where you no longer need any of the data associated with these activities. Otherwise, you should use the option to deactivate the group instead.
+* Delete an activity type group: Deleting an activity type group will permanently remove it from your Uptempo instance. You can only delete an activity type group if there are no more activities of the activity types that belong to the group, or any rules that involve the group. This means that, to delete an activity type group, you must first delete all activities within the group, and all rules related to the group. As a result, use this option only when you no longer need any of the data associated with these activities. Otherwise, deactivate the group instead.
 
 Procedure: Deactivate an activity type group
 
@@ -1879,7 +2058,7 @@ Assigning activity types to groups also makes it easier to create and work with 
 
 Note: Note
 
-You can only assign activity types to type groups while there are no existing activities of the type. As a result, we recommend assigning activity types to groups immediately during creation, or as soon as possible after creating an activity type.
+You can only assign activity types to type groups while there are no existing activities of the type. Assign activity types to groups immediately during creation, or as soon as possible after creating an activity type.
 
 Procedure: Assign an activity type to a type group
 
@@ -1913,9 +2092,9 @@ Procedure: Edit an activity type
 
 If you no longer need an activity type, you have two options: you can either deactivate or delete the unneeded activity type. Here's what each option does, and when you should use each one:
 
-* Deactivate an activity type: When you deactivate an activity type, you can no longer create activities of that type. However, all previously created activities of the type remain. We recommend using this option in most cases when you no longer need an activity type, as it retains data for reporting purposes.
+* Deactivate an activity type: When you deactivate an activity type, you can no longer create activities of that type. However, all previously created activities of the type remain. Use this option in most cases when you no longer need an activity type, as it retains data for reporting purposes.
 
-* Delete an activity type group: Deleting an activity type will permanently remove it from your Uptempo instance. You can only delete an activity type if there are no more activities of the type, or any rules that involve the type. This means that, to delete an activity type, you must first delete all activities within it, and all rules related to the group. As a result, we recommend using this option only in cases where you no longer need any of the data associated with these activities. Otherwise, you should use the option to deactivate the activity type instead.
+* Delete an activity type group: Deleting an activity type will permanently remove it from your Uptempo instance. You can only delete an activity type if there are no more activities of the type, or any rules that involve the type. This means that, to delete an activity type, you must first delete all activities within it, and all rules related to the group. As a result, use this option only when you no longer need any of the data associated with these activities. Otherwise, deactivate the activity type instead.
 
 Procedure: Deactivate an activity type
 
@@ -2550,7 +2729,7 @@ You have linked users to a policy, and the policy's statements will take effect 
 
 ## Verify your access control configuration
 
-To ensure that access control policies are working as intended, we recommend using the following procedure to test newly created policies (or planned changes to existing policies) before enabling them for users in production:
+Before enabling a new policy or policy changes for users in production, test them using the following procedure to ensure they work as intended:
 
 Procedure: Test access control policies
 
@@ -3910,7 +4089,7 @@ Tip: Tip
 
 Model names are displayed on the Impact > Planned tab on activities, either as the label of the model in use (if only one model is active), or as one of the available model options in the model selection menu.
 
-To help users select a model (or understand which model is being used), we recommend naming your models in a way that clearly communicates how a model is meant to be used. For example, instead of a generic name like "Impact Model v2", consider naming models by planning year or similar.
+To help users select a model (or understand which model is being used), name your models in a way that clearly communicates how a model is meant to be used. For example, instead of a generic name like "Impact Model v2", consider naming models by planning year or similar.
 
 Procedure: Rename a model
 
@@ -4114,7 +4293,7 @@ If you change your mind later and decide to start tracking a KPI again, you can 
 
 Note: Note
 
-The system does not record or display the date and time when a KPI was deactivated. If this information is important to you, we recommend separately keeping a record of when you deactivated (and reactivated, if applicable) specific KPIs.
+The system does not record or display the date and time when a KPI was deactivated. If this information is important to you, keep a separate record of when you deactivated (and reactivated, if applicable) specific KPIs.
 
 Tip: Tip
 
@@ -4480,7 +4659,7 @@ We release new features every month. Find the latest release notes here.
 
 # What's new: 2026.5
 
-Discover all the new Uptempo functionality introduced with the 2026.5 release, available from May 27, 2026.
+Discover all the new Uptempo features introduced with the 2026.5 release, available from May 27, 2026.
 
 Note: Note
 
@@ -4507,7 +4686,7 @@ Multi-level attribute dependencies currently do not support required attributes.
 If a [dependency chain](attribute-dependencies.html#chained-dependencies) includes a multi-level dependency, all attributes in the chain must set as optional on the activity types they are attached to.
 
 ![Multi level dependency](images/MultiLevelDependency.png)
-→ [Learn more about setting up attribute dependencies](attribute-dependencies.html)
+→ [Learn more about setting up attribute dependencies](attribute-dependencies-preview.html)
 
 ## Campaign Management: Activities
 
@@ -4578,7 +4757,7 @@ When you connect activities to an investment, the search function in the Select 
 
 # What's new: 2026.4
 
-Discover all the new Uptempo functionality introduced with the 2026.4 release, available from April 29, 2026.
+Discover all the new Uptempo features introduced with the 2026.4 release, available from April 29, 2026.
 
 Note: Note
 
@@ -4725,7 +4904,7 @@ You can now configure your Uptempo instance to only allow users with approved IP
 
 # What's new: 2026.3
 
-Discover all the new Uptempo functionality introduced with the 2026.3 release, available from March 25, 2026.
+Discover all the new Uptempo features introduced with the 2026.3 release, available from March 25, 2026.
 
 Note: Note
 
@@ -4847,7 +5026,7 @@ To learn what else is new in Uptempo with this month's release, check out [What'
 
 # What's new: 2026.2
 
-Discover all the new Uptempo functionality introduced with the 2026.2 release, available from February 25, 2026.
+Discover all the new Uptempo features introduced with the 2026.2 release, available from February 25, 2026.
 
 Note: Note
 
@@ -4901,7 +5080,7 @@ Previously, the Persistent ID was easy to miss: it was hidden by default and req
 
 # What's new: 2026.1
 
-Discover all the new Uptempo functionality introduced with the 2026.1 release, available from January 28, 2026.
+Discover all the new Uptempo features introduced with the 2026.1 release, available from January 28, 2026.
 
 Note: Note
 
@@ -4985,7 +5164,7 @@ We’ve expanded the funds allocation options in the Activity Funding Panel to g
 
 # What's new: 2025.11
 
-Discover all the new Uptempo functionality introduced with the 2025.11 release, available from November 26, 2025.
+Discover all the new Uptempo features introduced with the 2025.11 release, available from November 26, 2025.
 
 Note: Note
 
@@ -5219,7 +5398,7 @@ Procedure: Auto-distribute funds only to in-market activities
 
 # What's new: 2025.10
 
-Discover all the new Uptempo functionality introduced with the 2025.10 release, available from October 29, 2025.
+Discover all the new Uptempo features introduced with the 2025.10 release, available from October 29, 2025.
 
 * For details about bugs that have been fixed this month, see the [bug fixes page](bug-fixes-2025-10.html).
 
@@ -5404,7 +5583,7 @@ The following bug fixes have been released over the past four weeks, between Sep
 
 # What's new: 2025.9
 
-Discover all the new Uptempo functionality introduced with the 2025.9 release, available from September 24, 2025.
+Discover all the new Uptempo features introduced with the 2025.9 release, available from September 24, 2025.
 
 * For details about bugs that have been fixed this month, see the [bug fixes page](bug-fixes-2025-9.html).
 
@@ -5743,7 +5922,7 @@ What's changed: Redesigned and reorganized for improved usability.
 
 # What's new: 2025.8
 
-Discover all the new Uptempo functionality introduced with the 2025.8 release, available from August 27, 2025.
+Discover all the new Uptempo features introduced with the 2025.8 release, available from August 27, 2025.
 
 * For details about bugs that have been fixed this month, see the [bug fixes page](bug-fixes-2025-8.html).
 
@@ -6006,7 +6185,7 @@ None this month.
 
 # What's new: 2025.7
 
-Discover all the new Uptempo functionality introduced with the 2025.7 release, available from July 30, 2025.
+Discover all the new Uptempo features introduced with the 2025.7 release, available from July 30, 2025.
 
 * For details about bugs that have been fixed this month, see the [bug fixes page](bug-fixes-2025-7.html).
 
@@ -6229,7 +6408,7 @@ None this month.
 
 # What's new: 2025.6
 
-Discover all the new Uptempo functionality introduced with the 2025.6 release, available from June 25, 2025.
+Discover all the new Uptempo features introduced with the 2025.6 release, available from June 25, 2025.
 
 * For details about bugs that have been fixed this month, see the [bug fixes page](bug-fixes-2025-6.html).
 
@@ -6366,7 +6545,7 @@ The following bug fixes have been released over the past four weeks, between May
 
 # What's new: 2025.5
 
-Discover all the new Uptempo functionality introduced with the 2025.5 release, available from May 28, 2025.
+Discover all the new Uptempo features introduced with the 2025.5 release, available from May 28, 2025.
 
 * For details about bugs that have been fixed this month, see the [bug fixes page](bug-fixes-2025-5.html).
 
@@ -6476,7 +6655,7 @@ The following bug fixes have been released over the past four weeks, between Apr
 
 # What's new: 2025.4
 
-Discover all the new Uptempo functionality introduced with the 2025.4 release, available from April 30, 2025.
+Discover all the new Uptempo features introduced with the 2025.4 release, available from April 30, 2025.
 
 * For details about bugs that have been fixed this month, see the [bug fixes page](bug-fixes-2025-3.html).
 
@@ -6652,7 +6831,7 @@ This change simplifies the interface by removing an unused setting. No action is
 
 # What's new: 2025.3
 
-Discover all the new Uptempo functionality introduced with the 2025.3 release, available from March 26, 2025.
+Discover all the new Uptempo features introduced with the 2025.3 release, available from March 26, 2025.
 
 * For details about bugs that have been fixed this month, see the [bug fixes page](bug-fixes-2025-3.html).
 
@@ -6758,7 +6937,7 @@ The following bug fixes have been released over the past four weeks, between Feb
 
 # What's new: 2025.2
 
-Discover all the new Uptempo functionality introduced with the 2025.2 release, available from February 26, 2025.
+Discover all the new Uptempo features introduced with the 2025.2 release, available from February 26, 2025.
 
 * For details about bugs that have been fixed this month, see the [bug fixes page](bug-fixes-2025-2.html).
 
@@ -6941,7 +7120,7 @@ None this month.
 
 # What's new: 2025.1
 
-Discover all the new Uptempo functionality introduced with the 2025.1 release, available from January 31, 2025.
+Discover all the new Uptempo features introduced with the 2025.1 release, available from January 31, 2025.
 
 Note: Note
 
