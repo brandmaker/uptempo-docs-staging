@@ -1038,7 +1038,7 @@ Procedure: Enter actual demand and revenue results for an activity
 
 Note: Note
 
-This page describes features that are currently in Preview and are [available on an opt-in basis](uptempo-s-feature-release-lifecycle.html#stage-1-preview).
+This document describes features that are currently in Preview and are [available on an opt-in basis](uptempo-s-feature-release-lifecycle.html#stage-1-preview).
 
 If you have not enabled these features in your Uptempo instance, please refer to [Track and analyze pipeline impact](track-analyze-pipeline-impact.html) instead.
 
@@ -1659,7 +1659,7 @@ Whenever you select a value in a controlling attribute that leaves only one poss
 
 Note: Note
 
-This page describes features that are currently in Preview and are [available on an opt-in basis](uptempo-s-feature-release-lifecycle.html#stage-1-preview).
+This document describes features that are currently in Preview and are [available on an opt-in basis](uptempo-s-feature-release-lifecycle.html#stage-1-preview).
 
 If you have not enabled these features in your Uptempo instance, please refer to [Track and analyze pipeline impact](track-analyze-pipeline-impact.html) instead.
 
@@ -1689,16 +1689,20 @@ Local dependency
 Multi-level dependency
 : The controlling and dependent attributes are attached to different activity types, which are at different levels of the activity hierarchy. Users select the controlling attribute value on one activity, and the dependent attribute value on a separate activity that is a descendant of the first activity.
 
+Note: Note
+
+Attributes can be attached to either activity types, or to activity type groups. If an attribute is attached to an activity type group, it is also automatically attached to all activity types within the group. Attribute dependencies are acti
+
 Because local dependencies are displayed together on the same activity, they're simple for users to understand and work with. Local dependencies work well for most attributes that are logically related, in particular when the related attributes are all specific to the activity where they are shown.
 
 Multi-level dependencies are useful when a controlling attribute's value can be applied to multiple separate activities. By leveraging the fact that descendant activities [inherit the attribute values of their ancestor activities](about-activities.html#custom-attribute-inheritance), multi-level dependencies can reduce the amount of data entry on any given activity. This is because users only need to select the controlling attribute's value once on the higher-level activity, instead of individually on every lower-level activity.
 
-Multi-level dependencies also allow you to distribute attributes more evenly across the activity hierarchy, while still maintaining all the benefits of a dependency. For example, you can use multi-level dependencies to reduce the amount of attributes attached to the activity types at lowest level of your activity hierarchy, which creates a better experience for users when configuring this type of activity.
+Multi-level dependencies also allow you to distribute attributes more evenly across the activity hierarchy, while still maintaining all the benefits of a dependency. For example, you can use multi-level dependencies to reduce the number of attributes attached to the activity types at lowest level of your activity hierarchy, which creates a better experience for users when configuring this type of activity.
 
 Example
-: Say your Program activities are region-specific, so that all Tactic activities within a given Program would be assigned the same country in the Country attribute.
-: If you attach the Country attribute to the Program activity type, and the City attribute to the Tactic activity type, you can then set up a multi-level dependency between these two attributes.
-: This means that when a user selects the value of Country on a Program, the selected country is automatically applied to all Tactics under that Program. At the same time, the dependency ensures that when a user selects a value for Country on any of those Tactics, the list of cities they can choose between is automatically filtered based on the Country set on the parent Program.
+: Say your Program activities are region-specific. For example, the Country attribute on all Tactic activities within a particular Program is set to United States.
+: If you attach the Country attribute to the Program activity type, and the State attribute to the Tactic activity type, you can then set up a multi-level dependency between these two attributes.
+: This means that when a user sets the Country attribute to United States on a Program, this value is automatically applied to all Tactics under that Program. The dependency then ensures that when a user selects a value for State on any of those Tactics, the list of states they can choose between is automatically filtered to only display US states (and not Canadian provinces, for instance).
 
 Note: Note
 
@@ -2567,7 +2571,7 @@ As an administrator, you can control access to the Campaign Management activitie
 
 For a more detailed explanation of how Uptempo's access controls for activities work, see [Activity access control configuration overview](activity-access-control-config-overview.html).
 
-This page provides an overview of the practical aspects of managing access control for your Uptempo activities, including where to find the access control settings, and how you can use them to create and maintain access control policies for your Uptempo instance.
+This document provides an overview of the practical aspects of managing access control for your Uptempo activities, including where to find the access control settings, and how you can use them to create and maintain access control policies for your Uptempo instance.
 
 Procedure: Open the access control policy settings
 
@@ -2803,7 +2807,7 @@ Procedure: Delete a statement from an access control policy
 
 Note: Note
 
-The features described on this page are available in Uptempo 2.0 instances. For instructions on how to use this feature in Uptempo 1.0 instances, please refer to [this guide](https://knowledge.uptempo.io/doc/BM_help_en_100100000001/en-us/Content/Administration/Topics/Benutzergruppen.htm).
+The features described in this document are available in Uptempo 2.0 instances. For instructions on how to use this feature in Uptempo 1.0 instances, please refer to [this guide](https://knowledge.uptempo.io/doc/BM_help_en_100100000001/en-us/Content/Administration/Topics/Benutzergruppen.htm).
 
 If you're not sure which version of Uptempo you're using, or if you're interested in upgrading, please get in touch with your Customer Success contact.
 
@@ -2992,7 +2996,7 @@ Teams
 
 Note: Note
 
-This page describes features that are currently in Preview and are [available on an opt-in basis](uptempo-s-feature-release-lifecycle.html#stage-1-preview).
+This document describes features that are currently in Preview and are [available on an opt-in basis](uptempo-s-feature-release-lifecycle.html#stage-1-preview).
 
 If you have not enabled these features in your Uptempo instance, please refer to [Statement properties reference](access-control-statement-properties-reference.html) instead.
 
@@ -3948,7 +3952,7 @@ Procedure: Configure custom performance metrics for specific segments
 
 Note: Note
 
-This page describes features that are currently in Preview and are [available on an opt-in basis](uptempo-s-feature-release-lifecycle.html#stage-1-preview).
+This document describes features that are currently in Preview and are [available on an opt-in basis](uptempo-s-feature-release-lifecycle.html#stage-1-preview).
 
 If you have not enabled these features in your Uptempo instance, please refer to [Configure the Impact Modeler pipeline model](configure-impact-modeler.html) instead.
 
@@ -4639,7 +4643,7 @@ If you have forgotten your password, you can also easily reset it at any time.
 
 Note: Note
 
-If you use Single Sign-On (SSO) to sign in to Uptempo, don't use the instructions on this page.
+If you use Single Sign-On (SSO) to sign in to Uptempo, don't use the instructions in this document.
 
 If you're having trouble accessing Uptempo via SSO, please contact your Uptempo administrator or IT team for help.
 
@@ -5795,7 +5799,7 @@ From time to time, we must remove functionality from the Uptempo platform for va
 
 2. Discontinuation: Discontinued functionality has been removed from the Uptempo platform as of the current release, and is no longer available.
 
-If functionality that you use is announced as deprecated on this page, we recommend that you begin preparing for its removal as soon as possible to ensure a smooth transition.
+If functionality that you use is announced as deprecated in this document, we recommend that you begin preparing for its removal as soon as possible to ensure a smooth transition.
 
 ## Deprecations
 
@@ -6101,7 +6105,7 @@ From time to time, we must remove functionality from the Uptempo platform for va
 
 2. Discontinuation: Discontinued functionality has been removed from the Uptempo platform as of the current release, and is no longer available.
 
-If functionality that you use is announced as deprecated on this page, we recommend that you begin preparing for its removal as soon as possible to ensure a smooth transition.
+If functionality that you use is announced as deprecated in this document, we recommend that you begin preparing for its removal as soon as possible to ensure a smooth transition.
 
 ## Deprecations
 
@@ -6348,7 +6352,7 @@ From time to time, we must remove functionality from the Uptempo platform for va
 
 2. Discontinuation: Discontinued functionality has been removed from the Uptempo platform as of the current release, and is no longer available.
 
-If functionality that you use is announced as deprecated on this page, we recommend that you begin preparing for its removal as soon as possible to ensure a smooth transition.
+If functionality that you use is announced as deprecated in this document, we recommend that you begin preparing for its removal as soon as possible to ensure a smooth transition.
 
 ## Deprecations
 
@@ -6803,7 +6807,7 @@ From time to time, we must remove functionality from the Uptempo platform for va
 
 2. Discontinuation: Discontinued functionality has been removed from the Uptempo platform as of the current release, and is no longer available.
 
-If functionality that you use is announced as deprecated on this page, we recommend that you begin preparing for its removal as soon as possible to ensure a smooth transition.
+If functionality that you use is announced as deprecated in this document, we recommend that you begin preparing for its removal as soon as possible to ensure a smooth transition.
 
 ## Deprecations
 
@@ -7084,7 +7088,7 @@ From time to time, we must remove functionality from the Uptempo platform for va
 
 2. Discontinuation: Discontinued functionality has been removed from the Uptempo platform as of the current release, and is no longer available.
 
-If functionality that you use is announced as deprecated on this page, we recommend that you begin preparing for its removal as soon as possible to ensure a smooth transition.
+If functionality that you use is announced as deprecated in this document, we recommend that you begin preparing for its removal as soon as possible to ensure a smooth transition.
 
 ## Deprecations
 
@@ -7872,7 +7876,7 @@ The feature release lifecycle is the process that Uptempo uses for adding new fe
 
 The Uptempo product lifecycle consists of three release stages for new features, and two deprecation stages for retiring features.
 
-This page describes these stages, and what you can expect at each stage.
+This document describes these stages, and what you can expect at each stage.
 
 ## Release stages
 
