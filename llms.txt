@@ -24,7 +24,7 @@ Activities are the basic building block of your marketing plans. You can create 
 
 Some types of activities represent specific marketing tactics, such as ads, email blasts, or trade show booths. Other types of activities organize your marketing plans into a multi-level structure: for example, you can create an activity to represent a broader campaign, and use that campaign activity to group the various initiatives you plan to execute as part of the campaign.
 
-In Uptempo, these activities and how they are structured into an overall plan are called the activity hierarchy. You manage the activity hierarchy and the activities within it in the Activities section of Uptempo.
+In Uptempo, these activities and how they are structured into an overall plan are called the activity hierarchy. You manage the activity hierarchy and the activities within it in the ![Activities](images/calendar.svg) Activities section of Uptempo.
 
 Procedure: Open the Activities section
 
@@ -32,7 +32,7 @@ To learn more about how activities and the activity hierarchy work, see [About a
 
 ## Activities overview
 
-The Activities section consists of the following areas:
+the ![Activities](images/calendar.svg) Activities section consists of the following areas:
 
 ![Activities Overview](images/ActivitiesOverview.png)
 1. Activity hierarchy: Your list of marketing activities, organized into a hierarchical parent-child structure (for example into plans, campaigns, tactics, etc.).
@@ -62,7 +62,7 @@ Procedure:
 
 To represent this tree-like structure, the activity hierarchy is displayed as a nested list in which the names of all available activities are shown in alphanumeric order (0-9, A-Z).
 
-The activity hierarchy is always visible in the Activities section, under the heading Activity:
+The activity hierarchy is always visible in the ![Activities](images/calendar.svg) Activities section, under the heading Activity:
 ![Activity Hierarchy](images/Acti%20Hierach.png)
 
 Note: Note
@@ -109,7 +109,7 @@ The columns in the Summary table are customizable, so you can choose what inform
 
 ## Customize display settings
 
-You can use the display settings in the toolbar of the Activities section to customize the activity hierarchy to your needs. Use these settings to control which activities are visible in the activity hierarchy, and how those activities are displayed.
+You can use the display settings in the toolbar of the ![Activities](images/calendar.svg) Activities section to customize the activity hierarchy to your needs. Use these settings to control which activities are visible in the activity hierarchy, and how those activities are displayed.
 
 Most of the display settings controls in the toolbar are available for both of the display modes (Timeline and Summary). Some toolbar controls are specific to a display mode and are only shown when that display mode is active.
 
@@ -203,7 +203,7 @@ In Uptempo Campaign Management, an activity is any planned initiative you create
 
 Activities are the core building blocks of Campaign Management and are used to represent every level of your marketing hierarchy. An activity can correspond to a high-level initiative (such as a plan, campaign, or program), or to an individual execution, such as a specific tactic. Regardless of its level, each activity is configured, scheduled, tracked, and measured so you can understand its contribution to inquiries, pipeline, and overall marketing impact.
 
-In Uptempo Campaign Management, activities are organized into a hierarchy and displayed in the Activities section:
+In Uptempo Campaign Management, activities are organized into a hierarchy and displayed in the ![Activities](images/calendar.svg) Activities section:
 
 ![Activity Representation](images/Activity%20Representation.png)
 
@@ -255,7 +255,7 @@ Understanding hierarchy paths, ancestors, and descendants is essential when work
 
 * Changes to an activity's attribute data affect all descendant activities, because an activity's attributes are inherited by all descendant activities.
 
-* Rollups for [performance metrics](track-and-analyze-kpis.html) and [estimated costs](track-and-analyze-budgets.html) follow paths through the hierarchy.
+* Roll-Ups for [performance metrics](track-and-analyze-kpis.html) and [estimated costs](track-and-analyze-budgets.html) follow paths through the hierarchy.
 
 * [Rules for connecting activities to investments](rules-for-connecting-investments.html) are based on hierarchy paths and relationships of activities.
 
@@ -573,7 +573,7 @@ When you save your display settings as a [view](save-activity-hierarchy-display-
 
 # Save activity display settings as a view
 
-You can use Views to save your display settings for the Activities section in Uptempo Campaign Management, such as applied [filters](filter-activities.html), [groupings](group-activities.html), and [color-coding](color-coding-timeline-activities.html). Saving display settings as a view lets you quickly and easily apply the same settings again at any time.
+You can use Views to save your display settings for the ![Activities](images/calendar.svg) Activities section in Uptempo Campaign Management, such as applied [filters](filter-activities.html), [groupings](group-activities.html), and [color-coding](color-coding-timeline-activities.html). Saving display settings as a view lets you quickly and easily apply the same settings again at any time.
 
 You can:
 
@@ -611,7 +611,7 @@ Procedure: Copy a view
 
 ## Apply a view
 
-After you have saved display settings as a view, you can quickly recall them by applying the view to the Timeline or Summary display modes in the Activities section.
+After you have saved display settings as a view, you can quickly recall them by applying the view to the Timeline or Summary display modes in the ![Activities](images/calendar.svg) Activities section.
 
 Procedure: Apply an existing view
 
@@ -1038,9 +1038,9 @@ Procedure: Enter actual demand and revenue results for an activity
 
 Note: Note
 
-This document describes features that are currently in Preview and are [available on an opt-in basis](uptempo-s-feature-release-lifecycle.html#stage-1-preview).
+This document describes a feature that is currently in Preview, and is [available on an opt-in basis](uptempo-s-feature-release-lifecycle.html#stage-1-preview). To learn more, see [What's new: 2026.4](release-2026-4.html).
 
-If you have not enabled these features in your Uptempo instance, please refer to [Track and analyze pipeline impact](track-analyze-pipeline-impact.html) instead.
+If you have not enabled this Preview feature in your Uptempo instance, please refer to [Track and analyze pipeline impact](track-analyze-pipeline-impact.html) instead.
 
 In Uptempo Campaign Management, impact modeling helps you to demonstrate the impact of your activities on the demand pipeline, and links your marketing efforts to business results.
 
@@ -1659,9 +1659,9 @@ Whenever you select a value in a controlling attribute that leaves only one poss
 
 Note: Note
 
-This document describes features that are currently in Preview and are [available on an opt-in basis](uptempo-s-feature-release-lifecycle.html#stage-1-preview).
+This document describes a feature that is currently in Preview, and is [available on an opt-in basis](uptempo-s-feature-release-lifecycle.html#stage-1-preview). To learn more, see [What's new: 2026.5](release-2026-5.html).
 
-If you have not enabled these features in your Uptempo instance, please refer to [Track and analyze pipeline impact](track-analyze-pipeline-impact.html) instead.
+If you have not enabled this Preview feature in your Uptempo instance, please refer to [Set up attribute dependencies](attribute-dependencies.html) instead.
 
 If two Drop-Down List or Multi-Select List attributes are logically related, you can create an attribute dependency to make the selected option in one attribute control the available options for the other attribute.
 
@@ -2048,7 +2048,7 @@ Estimated Costs
 * To hide the Estimated Costs tab, click the Estimated Costs toggle to set it to the off position.
 
 Connect to Spend
-: Sets whether investments (created in the Investments section of Uptempo) can be connected to activities of this type. This setting is useful if you want to ensure that all funding connections are made only at a specific level of your activity hierarchy, for example at the lowest level if you use bottom-up planning. For more information, see [Connect investments to track activity funding](connect-investments-to-activities.html).
+: Sets whether investments (created in ![Investments](images/spreadsheet.svg) Investments section of Uptempo) can be connected to activities of this type. This setting is useful if you want to ensure that all funding connections are made only at a specific level of your activity hierarchy, for example at the lowest level if you use bottom-up planning. For more information, see [Connect investments to track activity funding](connect-investments-to-activities.html).
 : To configure:
 : * This setting is turned on by default, so investments are allowed to be connected to all activities of this type.
 
@@ -2481,7 +2481,7 @@ Resources
 : The objects that the ABAC system is protecting. In Campaign Management, these are your activities and their data.
 
 Users
-: The entities who are requesting access to the resources. In Campaign Management, these are user accounts with access to Campaign Management (the Activities section).
+: The entities who are requesting access to the resources. In Campaign Management, these are user accounts with access to Campaign Management (the ![Activities](images/calendar.svg) Activities section).
 
 Actions
 : The operations that users are requesting to perform on a resource, such as viewing, creating, editing, deleting, etc. In Campaign Management, these actions include the basic user operations such as viewing or creating an activity, but can also be defined more specifically: for example, placing an activity in the hierarchy as a child of another activity is an action that can be defined and controlled.
@@ -2569,7 +2569,7 @@ As an administrator, you can control access to the Campaign Management activitie
 
 * After creating an access control policy, you enforce it by linking users or teams to it.
 
-* Whenever a user in your Uptempo instance interacts with Uptempo Campaign Management (the Activities section), the access control system evaluates the statements within the policies that apply to that user, and makes a decision whether to grant or deny access to the user for the interaction.
+* Whenever a user in your Uptempo instance interacts with Uptempo Campaign Management (the ![Activities](images/calendar.svg) Activities section), the access control system evaluates the statements within the policies that apply to that user, and makes a decision whether to grant or deny access to the user for the interaction.
 
 For a more detailed explanation of how Uptempo's access controls for activities work, see [Activity access control configuration overview](activity-access-control-config-overview.html).
 
@@ -2998,9 +2998,9 @@ Teams
 
 Note: Note
 
-This document describes features that are currently in Preview and are [available on an opt-in basis](uptempo-s-feature-release-lifecycle.html#stage-1-preview).
+This document describes a feature that is currently in Preview, and is [available on an opt-in basis](uptempo-s-feature-release-lifecycle.html#stage-1-preview). To learn more, see [What's new: 2026.5](release-2026-5.html).
 
-If you have not enabled these features in your Uptempo instance, please refer to [Statement properties reference](access-control-statement-properties-reference.html) instead.
+If you have not enabled this Preview feature in your Uptempo instance, please refer to [Statement properties reference](access-control-statement-properties-reference.html) instead.
 
 ## Overview
 
@@ -3954,9 +3954,9 @@ Procedure: Configure custom performance metrics for specific segments
 
 Note: Note
 
-This document describes features that are currently in Preview and are [available on an opt-in basis](uptempo-s-feature-release-lifecycle.html#stage-1-preview).
+This document describes a feature that is currently in Preview, and is [available on an opt-in basis](uptempo-s-feature-release-lifecycle.html#stage-1-preview). To learn more, see [What's new: 2026.4](release-2026-4.html).
 
-If you have not enabled these features in your Uptempo instance, please refer to [Configure the Impact Modeler pipeline model](configure-impact-modeler.html) instead.
+If you have not enabled this Preview feature in your Uptempo instance, please refer to [Configure the Impact Modeler pipeline model](configure-impact-modeler.html) instead.
 
 In Uptempo Campaign Management, marketers can use Impact Modeler to [project how marketing activities will influence the demand pipeline and drive revenue over time](track-analyze-pipeline-impact.html).
 
@@ -4311,13 +4311,836 @@ Procedure: Deactivate a KPI
 
 
 
+# Uptempo Financial Management
+
+Uptempo Financial Management
+
+Learn how to use Uptempo Financial Management to forecast, manage, and optimize your marketing investments.
+
+
+
+# Get started with Financial Management
+
+Uptempo Financial Management is the system of record for managing your marketing budgets. Use it to plan your  investments, manage the funding of your campaigns, and optimize the impact of your marketing dollars.
+
+## The strategic operating model for marketing financial management
+
+Uptempo Financial Management is built around the way that high-performing marketing organizations define, execute on, and adjust the finances of their marketing plans:
+
+* In many organizations, marketing planning starts with a top-down plan, in which leaders define the major targets for the upcoming fiscal year, and allocate budgets.
+
+* After the targets and budgets are set, marketing operational teams build out the bottom-up plan by deciding on the tactics and investments they will use to achieve the top-down targets.
+
+* Leaders and operational teams then reconcile the top-down and bottom-up plans, adjust budgets, and agree on an overall plan.
+
+* When the overall plan has been approved, operational teams begin executing on it. For budget owners, this means refining initial investment estimates, as well as working with Finance to record final funding amounts as purchase orders and actuals become available.
+
+* As the execution stage progresses, budget owners evaluate actual spending against expected costs to maximize the use of their budget without overspending. They also measure the performance of initiatives, and tactically reallocate investments to impact.
+
+Uptempo Financial Management is designed to reflect this strategic operating model. It breaks marketing financial management down into three core phases:
+
+![Uptempo fm cycle](images/UptempoFMCycle.png)
+
+Phase 1: Plan
+: Corporate marketing starts with a top-down plan supporting corporate goals. This phase includes budgeting (managed by owners) and creating an initial estimate of your investments (the bottom-up plan) that equals the top-down target.
+: For more details on this phase, see:
+: * [Align planning with strategy](aligning-planning-with-strategic-objectives.html)
+
+* [](null)
+
+* [Plan investments](planning-investments.html).
+
+Phase 2: Execute
+: Once planning is complete and the Plan is locked, the Forecast becomes the record of your current estimate. You manage requisition amounts from your finance system as Purchase Orders (POs), and invoice data as Actuals.
+: For more details on this phase, see:
+: * [Forecasting](forecasting.html)
+
+* [Manage Purchase Orders (POs)](managing-pos.html)
+
+* [Manage actuals](managing-actuals.html).
+
+Phase 3: Optimize
+: Measure the performance of your investments, evaluate costs, and create reports. This allows you to assess success, make informed decisions, and adjust planning accordingly.
+: For more details, see [Optimize](optimize-phase.html).
+
+## Navigation overview
+
+Uptempo Financial Management consists of four sections to help you drive towards effective financial planning and execution:
+
+![Navigation](images/Navigation.png)
+* Strategy: Break down corporate goals into objectives for the marketing department and teams. See [Strategy section](strategy-section.html).
+
+* ![Budgets](images/coins.svg) Budgets: The access point for all budgets, allowing you to view collaborators, manage imports, POs, actuals, and budget transfers. See [Budgets section](budgets-section.html).
+
+* ![Investments](images/spreadsheet.svg) Investments: The workspace where marketing spend data is tracked and data entry occurs. See [Investments Tab](null).
+
+* ![Insights](images/chart-increase.svg) Insights: Contains dashboards and reports populated by your investments, POs, and actuals to answer critical business questions. See [Insights Tab](null).
+
+
+
+# Strategy section
+
+In the Strategy section, your marketing organization breaks down corporate goals into objectives for the marketing department and its teams. Objectives are set for the company and derived for the marketing department and team level. The objectives for each level are displayed in the respective column:
+
+![Strategic planner2](images/StrategicPlanner2.png)
+
+For more information, see [Align planning with strategy](aligning-planning-with-strategic-objectives.html).
+
+
+
+# Budgets section
+
+The ![Budgets](images/coins.svg) Budgets section is the access point for all budgets. It allows you to view collaborators and the currency of your investment plans. You can perform specific tasks around import, POs, actuals, and budget transfers. Administrators can view administrative functions such as configuring settings for the system.
+
+![Home tab](images/Home%20tab.png)
+
+1. The budget hierarchy. For details, see [About the budget hierarchy structure](#about-the-budget-hierarchy-structure).
+
+2. The list of users with access to budgets and investments. For details, see [User access to budgets and investments](#user-access-to-budgets-and-investments).
+
+3. Data import and budget management functions. For details, see [Imports and budget transfers](#imports-and-budget-transfers).
+
+4. Configuration and other administrative functions. For details, see [Administrator functions](#administrator-functions).
+
+## About the budget hierarchy structure
+
+Your organization's budget hierarchy structure was developed during the implementation phase, with the objectives of reflecting your organization's internal processes and aligning with its strategic priorities.
+
+![Hierarchy](images/Hierarchy.png)
+The structure of the hierarchy is represented by ![folders](images/fa-folder.svg) folders and ![sub-folders](images/fa-folder-open.svg) sub-folders. ![Investment plans](images/fa-table.svg) Investment plans are created on the lowest level. In the investment plans, you enter line items, for example, which expenses you're planning for a given investment, and compare this with the actual expenses.
+
+For each folder and sub-folder you can display a roll-up. To do so, click view roll-up in the respective row. Roll-ups show the bottom-up aggregated data of the child investment plans and sub-folders. Click go to investments to open the corresponding plan. For more information see [Plan](plan-phase.html).
+
+For each element of the hierarchy, you can also open a panel that displays the essential data for the element. The data was set during implementation. To open the panel, click ![Open Roll-Up Panel](images/fa-columns.svg) Open Roll-Up Panel in the Panel column.
+
+You can also see in which currency the data for the folder, sub-folder or investment plan is managed. This is displayed in the Currency column. You can plan and forecast in a local currency, and this will roll up to a top-level investment plan currency.
+
+### Structuring options
+
+Strategic decisions are made during the implementation process to structure the hierarchy in the ![Budgets](images/coins.svg) Budgets section, as it is foundational to the successful use and deployment of Uptempo Financial Management. Many factors are taken into consideration during this process, including Region, Functional Team, Product Line or Company Division, and Financial Systems.
+
+* Region: Many organizations structure investment plans by region since field marketers are running marketing programs within a specific geography. This method ensures currency issues are kept to a minimum.
+
+* Functions: Some companies structure budget plans according to a functional area of spend, for example demand generation, public relations or events.
+
+* Product Line or Company Division: This structure divides spend according to a product, business unit or even brand. It is a common format for B2C marketing organizations and may be used in combination with a regional structure.
+
+* Financial Systems: Since marketing budgets need to be reconciled with financial systems, many marketing teams classify their budget this way. However, this is not ideal as accounting codes tend to be broader than marketers prefer to think about their investments.
+
+Depending on your marketing organization structure, you may see any combination of hierarchy organization for a given year; as the hierarchy is designed to mirror your marketing organization.
+
+Note: Note
+
+The hierarchy contains budgets for a given year. Each year in Uptempo, a new hierarchy will be created for that year's budgets.
+
+### Who can edit the hierarchy structure?
+
+Only the system administrator can edit the budget hierarchy using the New, Delete, Copy and Move buttons above the hierarchy. For all other users in the system, these buttons are deactivated.
+
+If you need to make changes to the hierarchy, contact your Uptempo administrator.
+
+## User access to budgets and investments
+
+You can use the Users column to see which users have access to a folder or investment plan in the hierarchy:
+
+![Access hierarchy](images/Access%20Hierarchy.png)
+When you click ![Click to view users](images/fa-user.svg) Click to view users in a folder, sub-folder or investment plan row, the Shared with dialog opens:
+
+![User access hierarchy](images/User%20Access%20Hierarchy.png)
+The dialog lists all users who have access to the folder, sub-folder or investment plan with the following details:
+
+* Name (Title)
+
+* E-Mail Address
+
+* Role
+
+Your own details are always listed first. All other users are listed below in alphabetical order (by first name). Users who have been invited but have not registered in the system are listed at the end.
+
+Access to the folder, sub-folder and investment plans is organized by invitations. The tasks a user can perform are determined by the assigned role. For more information, see [](null)
+
+## Imports and budget transfers
+
+As a marketer, you also use the ![Budgets](images/coins.svg) Budgets section to perform various marketing operations duties:
+
+![Tasks marketers](images/Tasks%20Marketers.png)
+### Importing data and mapping it to line items
+
+You can click the Import button to  import data from external systems into Uptempo Financial Management. This includes data of an investment plan itself, as well as actuals and purchase orders (POs).
+
+When Uptempo is unable to identify certain items from an imported POs or actuals file, these items will automatically be placed in a high-level bucket in the ![Budgets](images/coins.svg) Budgets section. All unmapped items are located in the POs and Actuals columns in the ![Budgets](images/coins.svg) Budgets section. You can map these items by clicking map under the POs and Actuals columns.
+
+Note: Note
+
+You can also split POs from the mapping screen in the ![Budgets](images/coins.svg) Budgets section.
+
+You can click ![Import History and Schedules](images/fa-clock-rotate-left.svg) Import History and Schedules in the rightmost column of the table to view a list of all POs and Actuals files that have been imported into Uptempo Financial Management. This list contains details of which items were mapped, unmapped, replaced or considered duplicates, as well as the option to review scheduled imports.
+
+For more information, see:
+
+* [Import investment data](importing-investment-data.html)
+
+* [Create Purchase Orders (POs) by importing](creating-purchase-orders-pos-by-importing.html)
+
+* [Create actuals by importing](creating-actuals-by-importing.html)
+
+* [Import data](importing.html)
+
+### Reviewing budget transfers and budgets requests
+
+Note: Note
+
+Transfers are an optional feature that may not be used in your system.
+
+Click transfers the Transfers column on the row of a folder, sub-folder or investment plan, to open an overview of all requests for budget transfers and budget increases of the corresponding item. In the case of a budget transfer, an amount of money is transferred from one investment plan or sub-folder to another corresponding item. A budget increase requests more money for a sub-folder or investment plan.
+
+For more information on transfers, see [Approval workflow for plans and forecasts](approving-planning-or-forecasting.html).
+
+## Administrator functions
+
+The functions in the Manage Users and Edit Settings columns of the ![Budgets](images/coins.svg) Budgets section table are for administrators:
+
+![Admin tasks](images/Admin%20Tasks.png)
+In the Manage Users column, you can set which users have access to the different levels of the hierarchy. You can also invite new users to the hierarchy.
+
+In the Edit Settings column, you can configure various settings for Uptempo Financial Management, such as which data fields are displayed in the various panels.
+
+For more information, please see [Financial Management configuration overview](differentiating-between-master-settings-and-custom-settings.html).
+
+
+
+# Investments section
+
+The ![Investments](images/spreadsheet.svg) Investments section is the workspace where you track marketing spend data. It is the data entry area of Uptempo Financial Management, and allows you to compare your plan, forecast, purchase orders (POs) and actuals. You can see how the bottom-up plan has changed throughout the year, and view your current spend at any time. The ![Investments](images/spreadsheet.svg) Investments section has numerous basic and advanced features to assist you at all stages of the planning phase.
+
+![Investment tab](images/Investment%20tab.png)
+
+* The selected investment plan (1). For details, see [Navigate investment plans](#navigate-investment-plans).
+
+* The investment hierarchy (2), and the investment grid and display settings (3) For details, see [The investment hierarchy](#the-investment-hierarchy).
+
+* The performance insight cards (4). For details, see [Performance insight cards](#performance-insight-cards).
+
+## Navigate investment plans
+
+You can directly access any investment plan from the ![Budgets](images/coins.svg) Budgets section.
+
+Procedure: Open an investment plan
+
+Tip: Tip
+
+You can also go directly the ![Investments](images/spreadsheet.svg) Investments section in the navigation menu to open the last investment plan you viewed.
+
+While viewing any investment plan in the ![Investments](images/spreadsheet.svg) Investments section, you can quickly switch to another investment plan.
+
+Procedure: Switch between investment plans
+
+## The investment hierarchy
+
+![Investment tab hierarchy](images/Investment%20tab%20Hierarchy.png)
+When you view an investment plan in the ![Investments](images/spreadsheet.svg) Investments section, your investment data is displayed in a table called the investment grid.
+
+The first column in the investment grid is the Hierarchy column. This column displays the investment hierarchy, which represents the structure of the investment plan.
+
+### Investment items
+
+Each investment hierarchy consists of the following elements, which are collectively called investment items:
+
+![Category](images/fa-folder.svg) Category
+: A top-level folder, used to organize line items in the investment plan. Can contain sub-categories for further organization of the investment hierarchy.
+
+![Sub-category](images/fa-folder-open.svg) Sub-category
+: A subordinate folder, used to organize line items and placeholders within top-level categories. Can also be created within another sub-category to add additional investment hierarchy levels.
+
+![Line Item](images/fa-plus.svg) Line Item
+: An individual investment which is associated with cost and spend amounts. Can be created within a category or sub-category**.**
+
+![Placeholder](images/fa-bookmark.svg) Placeholder
+: A temporary line item used during the planning phase to earmark funds for future use. Can be created within a category or sub-category.
+
+You can use the buttons displayed above the investment grid to add these different investment items and build your investment hierarchy.
+
+Tip: Tip
+
+Use placeholders to plan at a high-level and track costs at a granular level when forecast amounts are unknown. A placeholder is generally used during the planning phase, when the specific investments have not yet been determined, but funds need to be reserved in the overall allocation.
+
+For example, when planning to attend a trade show you may have an estimated budget of $100,000, but you might not yet know exactly how that amount will be spent . To hold the funds in the budget you can add $100,000 in the Plan column of a placeholder for the month or quarter the trade show will take place.
+
+### Grand Total and sub-totals in the investment grid
+
+The Grand Total row is displayed as the first row in the investment grid. It displays the total of the line item and placeholder amounts in each column in the investment grid. You can use it to track total spend data according to your organization’s configured columns.
+
+Each category and sub-category row in the investment grid also displays a sub-total of amounts aggregated from line items and placeholders within it.
+
+### Identifying connected investments
+
+When you are viewing the investment hierarchy, [investment items that are connected to activities](connecting-activities-to-investments.html) have visual indicators to help you identify them at a glance.
+
+If an investment item (category, sub-category, or line item) is connected to an activity, its table row is highlighted in yellow (categories are displayed in a slightly darker shade than sub-categories and line items):
+![Connection highlighting](images/ConnectionHighlighting.png)
+
+Each connected investment items is also displayed with a special icon beside its name that indicates the type of connection. These icons replace the standard category, sub-category, and line items icons, and have the following meanings:
+
+* If an investment item is connected to a single activity and is using automatic allocation, the ![Link](images/link.svg) Activity Connected icon is displayed: ![Connection auto](images/ConnectionAuto.png)
+
+* If an investment item is connected to multiple activities, the ![Child elements custom](images/child-elements-custom.svg) Multi-Activity Funding icon is displayed: ![Connection manual](images/ConnectionManual.png)
+
+Note: Note
+
+The yellow highlighting only appears when an investment item is directly connected to an activity itself.
+
+Line items can also be "indirectly" connected to an activity if they belong to a category or sub-category that is connected to an activity. These line items are not directly connected to the activity, but inherit the connection from their parent category or sub-category. This is because categories and sub-categories are not associated with funds themselves, so the line items within them are actually funding any activity that the category or sub-category is connected to.
+
+In cases where line items are indirectly connected through their parent category or sub-category, only the parent item's row is highlighted in yellow, while the rows for the line items (and any sub-categories under the connected item) are not. These line items still display the ![Link](images/link.svg) Activity Connected icon to indicate that they are funding the activity connected to their (highlighted) parent:
+
+![Connection direct indirect](images/ConnectionDirectIndirect.png)
+
+## Investment grid columns and display settings
+
+The columns in the investment grid table are where you enter and maintain the cost and spend data in your investment plan. You can use the display settings near the top of the page to control the data that is shown in the investment grid:
+
+![Investment tab workspace](images/Investment%20tab%20Workspace.png)
+For more information, see [Setting up the workspace](setting-up-the-workspace.html).
+
+## Performance insight cards
+
+![Investment tab cards](images/Investment%20tab%20Cards.png)
+Performance insight cards contain key marketing plan indicators and are displayed at the top of the ![Investments](images/spreadsheet.svg) Investments section for ease of access. This can assist when reallocating costs in your investments and provides key information through all stages of your fiscal year.
+
+* The Metrics card displays your top-down allocation. Common metrics cards include: * FY Investment Target, is total amount of budget allocated for the fiscal year * FY Left to plan, is remaining budget left to allocate to investments during the planning phase. This number will decrease as additional investments are planned * FY Plan, is total aggregated value of investments planned for the fiscal year
+
+* The Alignment scorecard shows what percentage your budget is aligned with strategic investments defined by your organization to help you meet strategic goals.
+
+
+
+# About the investment details panel
+
+The investment details panel in the ![Investments](images/spreadsheet.svg) Investments section displays data about each investment item (category, sub-category, line item, or placeholder). The details panel is divided into sections, which each show different types of data. These include:
+
+Details
+: Displays basic data about the investment, and lets you view and set attribute values for the investment.
+
+Metrics
+: Contains different metrics configured for your investment plans, for example your top-down targets, and variance between plan and actual spend, allowing you to view your metrics while planning your bottom up spend.
+
+Strategy
+: Displays objectives defined with Strategic Planner.
+
+Alignment
+: Contains information about your alignment score and provides calculations as you make updates to your investment plans while ensuring your plan aligns with your strategic objectives.
+
+Activities
+: Allows you to connect activities from Uptempo Campaign Management to the investment, and manage how the investment's funds are allocated to the connected activities.
+
+Note: Note
+
+The sections in the details panel vary depending on the features that are enabled in your Uptempo instance.
+
+Procedure: Open an investment's details panel
+
+## Uptempo ID and Persistent ID
+
+### Uptempo ID
+
+Marketing investment and spend data are often tracked across multiple systems such as a CRM, procurement system, finance ERP, event tracking platform, digital marketing platforms, and many others. With the data dispersed across the systems it can be challenging to accurately connect all data points for comprehensive reporting.
+
+Uptempo provides marketers with a solution to align their data across all systems with a single unique identifier. Uptempo Financial Management automatically generates unique IDs for each budget folder, sub-folder, and investment plan, and each investment category, sub-category, placeholder, and line item when it’s created. The unique ID for each item can be found on the Roll-Up and details panels, and is named according to the type of item, for example Line Item ID or Investments ID.
+
+An item's ID can be used at three levels.
+
+* At the budget hierarchy level, it can be connected to other planning tools.
+
+* At the investment category or sub-category level, it can be tagged to POs that contain multiple lines or campaigns that have many programs or a parent campaign with many children.
+
+* At the investment line item level, it can be tagged to individual PO line items, spend or expense transactions, campaigns, projects and/or investments where appropriate.
+
+### Persistent ID
+
+In addition to the Uptempo ID, Financial Management also generates a Persistent ID for each category, sub-category, or line item. This ID allows for one consistent reference ID to be used across multiple years. This way, only one ID will need to be used across the systems year over year.
+
+When line items are copied from one year to the next, during roll-over, a Persistent ID is created which indicates that there was an original version of this object in a previous year. If you copy an item, the original item's Persistent ID is retained on the copy, while a new Uptempo ID is also created (which is specific to the budget year).
+
+The Persistent ID links back to the original item, and exposes all related items. The items that share a Persistent ID do not impact each other: if a value changes in one item, it does not affect any other item with the same Persistent ID. If a new item is created for the first time in a hierarchy without being copied from a previous year, the Persistent ID will be the same as the Uptempo ID.
+
+Persistent IDs are not generated for budget level items like folders, sub-folders, and investment plans.
+
+Note: Note
+
+An item's Persistent ID can be changed, but only through the API. Reach out to your Customer Success Manager for more details.
+
+
+
+# Insights section
+
+The ![Insights](images/chart-increase.svg) Insights section contains dashboards and reports that are populated by entering your investments, PO’s and actuals and shows the current status of your marketing spend for all investments. You can leverage this powerful BI application directly within the ![Insights](images/chart-increase.svg) Insights section, to answer critical marketing budgeting and planning business questions.
+
+![Insights](images/Insights.png)
+
+For more information see [Optimize](optimize-phase.html).
+
+
+
+# Plan
+
+The work with Uptempo starts with the planning phase. But before you can plan your actual investments, your organization must first set the goals for the next fiscal year. This is done in strategic planning, see [Align planning with strategy](aligning-planning-with-strategic-objectives.html).
+
+In the second step, you can build on the strategic planning to plan the investments and create corresponding investment plans. This is described in the section [Plan investments](planning-investments.html).
+
+
+
+# Align planning with strategy
+
+Strategic Planner connects your organization's corporate goals to marketing investments by structuring them as objectives at the company, department, and team levels.
+
+## How Strategic Planner works
+
+Objectives break down company goals into departmental and team goals. You enter objectives in Uptempo at three levels: company, marketing department, and team. You then assign team-level objectives to investments to show how each investment contributes to your organization's goals.
+
+![Three-column view of objectives at corporate, marketing, and team levels](images/dataSamples_SM.png)
+For each objective, you specify Key Performance Indicators to make goals measurable. Objective owners maintain these throughout the year.
+
+To reflect priority, you can reorder objectives within each column. For more information, see [Objectives](objectives.html).
+
+Relationships map how objectives cascade through the organization. You can create relationships between Corporate and Marketing objectives, and between Marketing and Team objectives, but not directly between Corporate and Team objectives. For more information, see [Relationships](relationships.html).
+
+## Enable Strategic Planner
+
+Strategic Planner is an optional feature that isn't active by default. Contact your Customer Success Manager to enable it.
+
+When enabling the feature, define which users can access the Strategy tab. Discuss with your Customer Success Manager which users need edit access for objectives, relationships, and key results, and which should have read-only access.
+
+Make sure users who manage investments know they need to link investments to objectives. This is how Uptempo records whether and how spending contributes to goals.
+
+## Best practices
+
+1. Be collaborative
+
+Strategic Planner is a collaborative tool where all users share the same investment plans. Consider using it in a meeting room like an electronic whiteboard to guide planning sessions and support quick decision-making.
+
+Note: Note
+
+All users with access to Strategic Planner share the same investment plans. Adding, modifying, or deleting objectives at any level affects everyone.
+
+2. Make time for planning
+
+Planning takes time. Don't underestimate what it takes to think through what makes your business and teams successful. Brainstorming, collecting feedback, and discussing ideas are the first steps to crafting objectives that filter through all levels of your organization.
+
+3. Think top-down
+
+Setting clear objectives at the corporate level gives marketing departments and teams a foundation to align with. When objectives are visible, individuals can align their own goals accordingly.
+
+4. Plan for measurable results
+
+Set key results for objectives to make goals specific, measurable, and achievable. Quantifiable goals make it easier to track progress and evaluate completion.
+
+5. Link objectives at every tier
+
+Linking objectives across columns shows alignment visually and helps individuals see how their work contributes to key initiatives. Use the view connections mode to see which objectives are connected.
+
+## Next steps
+
+Begin strategic planning by entering your [Objectives](objectives.html).
+
+
+
+# Objectives
+
+Objectives are used to break down the company's goals into departmental and team goals. The CMO and their team enter the objectives in Uptempo for the company level, for the Marketing department and for the team level. The team members who manage the investments assign the team-level objectives to the investments. This records whether and how the investments contribute to the achievement of the objectives.
+
+The CMO and their team specify KPIs for each objective, creating meaningfulness to the objectives. These KPIs are maintained throughout the year by the team members assigned as owners to the objectives.
+
+To reflect the priority between the objectives, the team reorders them accordingly in the respective columns.
+
+## Who can manage objectives?
+
+Users who have access to the Strategy tab and whose role has permission to edit the tab can create objectives and relationships. Note that only the owner of an objective can edit or delete it. This includes editing attributes, ownership, and key results.
+
+## How to assign to levels?
+
+Objectives are created directly in the column of the corresponding level. Objectives can't be moved between columns, for example, Corporate objectives can't be moved to the Marketing or Team objectives columns and vice versa.
+
+If Corporate, Marketing and Team headings are not aligned to your organization, you can change the column labels. Do this
+by clicking on the header and overwriting the text.
+
+You can enter your objectives in all three columns. If this is too granular for your situation, enter the objectives in the Team column only or in the Team and Marketing columns.
+
+## Attributes
+
+| Attribute |Description |
+--------------------------
+| Title |Name your target.  Max. 100 characters |
+| Description |The Description field is where you can provide more contextual information on different aspects of these goals. Use this area to describe your approach to reaching the objective, the people who may be required or anything to help you through the planning and implementation process.  Max. 255 characters |
+| Owner |The user who creates the objective is initially entered as the owner. Only the owner can change this assignment and hand-over the objective to another user. |
+| Enter Key Result |This is the field where you can enter a key result. Describe as specifically as possible what measurable result you want to achieve.  Max. 255 characters |
+| Target Date |Set the date when the result should be achieved. |
+| Status Update |Note: Only visible when a key result is created.  This is the place where you can provide status updates to the key results. We recommend to update regularly and clearly describe the situation. Also remember to indicate via the colored marker whether the result is On track, Potentially at risk or At risk.  Max. 255 characters |
+
+## Related actions
+
+* [Create objectives](creating-objectives.html)
+
+* [Reorder objectives](reordering-objectives.html)
+
+* [Update key results](updating-key-results.html)
+
+* [Delete objectives](deleting-objectives.html)
+
+## Next steps
+
+Once you have created your objectives, use [Relationships](relationships.html) to show how the objectives cascade.
+
+
+
+# Create objectives
+
+The CMO and his team have set the objectives and corresponding key results for each necessary level. These objectives are now created in the Strategic Planner.
+
+Procedure: Create an objective
+
+## Next steps
+
+* [Reorder objectives](reordering-objectives.html) to reflect the objectives priorities
+
+* [Update key results](updating-key-results.html) by the objective's owner to get an up-to-date insight into the degree of achievement
+
+* [Delete objectives](deleting-objectives.html) if objectives are no longer current or were created in the wrong column.
+
+* [Create relationships between objectives](creating-relationships-between-objectives.html) to reflect the cascading of the objectives
+
+
+
+# Reorder objectives
+
+The team has created all objectives in Strategic Planner. However, the objectives in the column are not sorted by priority. This makes it difficult for team members to focus on the most important actions.
+
+Note: Note
+
+Coordinate with your team to determine the priority order of all objectives. We recommend that you put the objective with the highest priority at the top and then sort the other objectives in descending order of priority.
+
+Procedure: Reorder an objective
+
+
+
+# Update key results
+
+When the owner of an objective has received new data on the KPIs, they can enter this data in the Strategic Planner so that the target achievement can be measured.
+
+Procedure: Update a key result
+
+
+
+# Delete objectives
+
+When an objective has been completed or it has been created in the wrong column, the owner must delete it.
+
+Warning: Warning
+
+Deleting an objective is irreversible and will delete it from the view of all users. All connections that are associated with that objective will be unlinked.
+
+Procedure: Delete an objective
+
+
+
+# Relationships
+
+Relationships map how objectives cascade from Company to Marketing to Team tier. Note that relationships can be made between Corporate and Marketing objectives, and Marketing to Team objectives, but not between Corporate and Team objectives.
+
+## How relationships are displayed
+
+Relationships are denoted by the link icon in the lower right corner of each card. The left number indicates the number of parent objectives, while the right number indicates the number of child objectives. The example in the following screenshot shows an objective card in the Marketing column that is linked to one parent and two child objectives:
+
+![Relations overview](images/RelationsOverview.png)
+If an objective has at least one relationship, the link icon is blue. As long as an objective is not linked, the icon is gray:
+
+![Unlinked obj](images/UnlinkedObj.png)
+To view the relationships of an objective, click its link icon. The Strategic Planner opens in View mode.
+
+![Strategic planner2](images/StrategicPlanner2.png)
+In View mode, Uptempo shows the clicked objective with a thick blue frame. In addition, only the connected parent and child objectives are displayed with a thin blue frame. Using the buttons below you can switch to Edit mode or close the view by clicking Done.
+
+Alternatively, you can enter the View or Edit mode by clicking the desired objective card, and selecting the respective button in the Connections section.
+
+## Related actions
+
+* [Create relationships between objectives](creating-relationships-between-objectives.html)
+
+* [Delete relationships between objectives](deleting-relationship-between-objectives.html)
+
+
+
+# Create relationships between objectives
+
+The team has created all the objectives and sorted them. Now the team wants to use relationships to map how the objectives are related and cascade.
+
+Procedure: Create relationships between objectives
+
+
+
+# Delete relationships between objectives
+
+The team has created the objectives and the associated relationships. Now the team realizes that a relationship was created incorrectly and wants to delete it.
+
+Warning: Note
+
+Deleting a relationship is irreversible and deletes it from the view of all users.
+
+Procedure: Delete relationships between objectives
+
+
+
+# Plan investments
+
+When you start planning investments, you can structure the planned investments into categories and sub-categories. The investments are represented by line items.
+
+Example
+: Sheila plans to attend trade shows and summits for the America area. For the following year, she plans to attend the Oracle MME and Sirius Decision Summit. Oracle MME will incur costs in the following sections: registration, booth expenses, shipping, travel expenses. In general, there will be other costs that she will need to account for under one item. For Sirius Decision Summit, Sheila will need to plan costs for registration, booth costs, and travel to and from the event.
+: Sheila is also planning to visit another trade show. However, no final decision has been made yet, as there are several trade shows to choose from. Nevertheless, the money is to be budgeted.
+: In addition, Sheila plans for content creation costs. The content is to appear in the newsletter and provide information about the trade shows and summits.
+
+## What are categories, sub-categories, line items, and placeholders?
+
+The line items represent the investments, and you can enter cost or spend data only for line items. To keep the overview, you structure the line items by categories and sub-categories.
+
+Clicking the Category button inserts a folder on the top level. Clicking the Sub-category button adds a folder on the subordinate level of the marked row. The marked row is highlighted by the light purple shade. This allows sub-categories to be nested depending on how granular you are in organizing your marketing spend data.
+Line items can be entered at any level.
+
+## Best practices
+
+Be creative and organize your spend in a way that is intuitive to you by grouping similar investments (individual investment plans do not impact the types of reports that can be run from Uptempo, we arrange that separately from the investment plan organization).
+
+Using a placeholder allows you to plan at a high-level and track costs at a granular level when forecast amounts are unknown. A placeholder is generally used during the planning phase and holds funds for future spend. It is used when the specific investments have not yet been determined, but funds need to be reserved in the overall allocation.
+
+For example, when planning to attend a tradeshow you may have an estimated budget of $100,000 but may not specifically know how that money will be spent until further planning is done to determine individual investments at the tradeshow. To hold the funds in the budget you would add $100,000 in the Plan column of a placeholder for the month or quarter the tradeshow will take place.
+
+## Related actions
+
+* [Add investments](adding-investments.html)
+
+* [Add data to investments](adding-data-to-investments.html)
+
+* [Copy investments](copying-and-pasting-investments.html)
+
+* [Delete investments](deleting-investments.html)
+
+* [Restore deleted investments](restoring-investments.html)
+
+* [Approval workflow for plans and forecasts](approving-planning-or-forecasting.html)
+
+## Next steps
+
+Once investments are added, you add details and the planned spend for the investment, see [Add data to investments](adding-data-to-investments.html).
+
+
+
+# Add investments
+
+Procedure: Add an investment
+
+## Quick entry form
+
+To streamline data entry your organization can set up a quick entry form. If the quick entry form is activated, it will show up when you add a new line item. The form will contain the most important fields you have to fill when creating a line item. Fields you must fill are marked red as required fields.
+
+![Quick entry form](images/Quick%20Entry%20Form.png)
+
+## Next steps:
+
+Once investments are added, you add details and the planned spend for the investment, see [Add data to investments](adding-data-to-investments.html).
+
+
+
+# Add data to investments
+
+Once you have created the investments, you need to enter data in two steps for further planning.
+
+1. [Edit investment attributes](editing-the-details-panel.html): The details panel is where you can select attributes that allow you to align investments with objectives and also track metadata related to spend. The details panel lets you view and edit your Key Performance Indicators (KPIs), giving you information for running reports on Insights. When you fill out values in the details panel describing how your investment will align, you are also creating ways to slice and dice your marketing spend in the reporting.
+
+2. [Add spend data to investments](adding-spend-data-for-investments.html): In this step, you enter the planned costs for each investment per month. For example, say the entry of planned expenses is completed by the beginning of the fiscal year. The plan columns are then locked by an administrator and the spend data is updated in the forecast columns. Locking allows you to compare the plan data from the beginning of the fiscal year with the changes in the forecast columns.
+
+## Related actions
+
+* [Edit investment attributes](editing-the-details-panel.html)
+
+* [Add spend data to investments](adding-spend-data-for-investments.html)
+
+* [Add calculated costs to investments](adding-calculated-costs.html)
+
+* [Identify the investment plan currency](identifying-investment-plan-currency.html)
+
+* [Enter an amount in a different currency](setting-a-multi-currency-value.html)
+
+
+
+# Edit investment attributes
+
+The investment details panel is where you can select attributes that allow you to align investments with objectives and also track metadata related to spend. The details panel lets you view and edit your Key Performance Indicators (KPIs), giving you information for running reports on Insights. When you fill out values in the details panel describing how your investment will align, you are also creating ways to slice and dice your marketing spend in the reporting.
+
+Note: Note
+
+The details panel is always customized and adapted to the data by which your organization wants to characterize the investments as well as track and analyze performance. Types of attributes that can be typically found in the details panel are Objectives, Target Audience, Product, Region, Segment, Dates, Top of Funnel Metric or Notes.
+
+Procedure: Edit an investment's attributes
+
+## How to edit the attributes of an investment plan efficiently
+
+In the ![Investments](images/spreadsheet.svg) Investments section, attribute details can easily be added at the category and sub-category level. These attribute values then cascade down to the line items within the categories and sub-categories. This saves time and eliminates the need to complete detailed entries for every investment because the details filter down from the top-level folder. You can always go back and make minor adjustments at the investment level after the initial entries were made at the folder level.
+
+Note: Note
+
+If you add a investment under a category or sub-category after you have already filled in the details panel for that grouping, the new investment will automatically have those fields filled in.
+
+
+
+# Add spend data to investments
+
+In this step, you enter the planned costs for each investment per month. For example, say the entry of planned expenses is completed by the beginning of the fiscal year. The plan columns are then locked by an administrator and the spend data is updated in the forecast columns. Locking allows you to compare the plan data from the beginning of the fiscal year with the changes in the forecast columns.
+
+## Currency
+
+If your organization operates internationally and the different marketing teams manage their investments in their local currencies, an Uptempo administrator can define the appropriate currency for each investment plan. For more information see [Identify the investment plan currency](identifying-investment-plan-currency.html).
+
+Sometimes you need to enter expenses in currencies other than the investment plan currency, because spends are incurred in other countries. For example, say the investment plan is managed in USD, but an amount is spent in EUR. You can handle this by setting a multi-currency value. See [Enter an amount in a different currency](setting-a-multi-currency-value.html).
+
+## Requirements
+
+* To enter planned expenses, the plan columns must be displayed in the investment plan. Usually, the expenses are planned on a monthly basis. However, some companies plan quarterly.
+
+* You know your budget: The goal is to spend exactly the entire budget. The application helps you with the Metrics panel by showing you your target to spend in the FY Investment Target: ![Metrics panel](images/Metrics%20panel.png) The FY Left to plan number shows you how much money you can still plan for.
+
+Note: Note
+
+Your company may not use targets in the application. In this case, discuss with your system administrator how to plan.
+
+## Add spend data
+
+Procedure: Add spend data to an investment
+
+
+
+# Add calculated costs to investments
+
+Sometimes the amount to be entered is not fixed, for example because you need to enter a yearly amount month by month, or you have to calculate a total amount from several parts. You don't need to do these calculations with a calculator first — you can do these calculations directly as you enter amounts.
+
+## Calculator capabilities
+
+You can add, subtract, multiply, and divide in the cells and insert parentheses. This is possible for direct entries in the grid as well as for entries of amounts in another currency (see [Enter an amount in a different currency](setting-a-multi-currency-value.html)).
+
+It is important to begin inputs with an equals sign if you want Uptempo to perform a calculation. For example, if you want to sum the amounts 456.99, 856.45 and 89.74, the correct entry is:
+
+`=456.99+856.45+89.74`
+
+Without the equals sign, Uptempo does not interpret the input as a formula, and will not calculate the sum of the three values.
+
+If you enter an incomplete calculation or have an error in the formula syntax, the cell is outlined in red, and the calculation is not performed. The box is outlined in green after you have entered a valid calculation.
+
+Note: Note
+
+Uptempo only records the calculated result, not the formula that was entered. After a calculation is performed, there is no way to see the original equation.
+
+The result of a calculation is always displayed rounded to two decimal places.
+
+Example 1: Add calculated costs
+: Say you need to enter the sum of the following amounts in a cell: 260.56, 378.89 and one third of 951.23.
+: You click on the cell and enter:
+: `=260.56+378.89+951.23/3`
+: When you press `Enter`, the result 956.33 is displayed.
+
+Example 2: Add recurrent costs
+: Say you have an annual amount of $10,000, but it is drawn down equally each month.
+: On the investment that the cost applies to, click on a cell and enter:
+: `=10000/12`
+: You can now copy and paste the resulting calculated value into each of the other monthly cells.
+
+
+
+# Fund activities with investments
+
+To provide visibility into how your marketing activities are funded, you can create connections between your investments in Uptempo Financial Management, and your marketing activities in Uptempo Campaign Management.
+
+You can connect an investment to one or multiple activities. This means that a single investment can be used to fund multiple activities, or that a single activity can be funded from multiple investments. After you create a connection, you can decide how the funds from the investment line item are allocated to the connected activity (or activities).
+
+Connections between investments and activities are shown in both Uptempo Financial Management and Uptempo Campaign Management, when you view the details of the connected investment items and activities.
+
+Note: Note
+
+You can also make connections between investments and activities in Uptempo Campaign Management. For details, see [Connect investments to track activity funding](connect-investments-to-activities.html).
+
+## Allocation of funds to connected activities
+
+There are two parts to connecting an investment to an activity: connection and allocation.
+
+Connection
+: Establishing a link between a specific activity and a specific investment.
+
+Allocation
+: Assigning an amount of an investment's funds to connected activities.
+
+By default, Uptempo will automatically allocate all of an investment's funds to connected activities:
+
+* If only one activity is connected, 100% of the funds are allocated to that activity.
+
+* If multiple activities are connected, the funds are split equally between all connected activities.
+
+You also have additional options for customizing how funds are allocated to connected activities, including setting funds allocations manually. For details, see [Set how funds are distributed to connected activities](set-funds-allocation-distribution.html).
+
+## Connections at different levels of the investment hierarchy
+
+You can make connections between an activity and any category, sub-category, or line item. Of the three types of investment item, only line items are associated with funds amounts. When you connect a category or sub-category to an activity, the funds that are allocated to the activity are the funds that belong to line items within the category or sub-category. As a result, when a category or sub-category is connected to an activity, all line items within it are also considered to be "indirectly" connected to the same activity.
+
+If a line item has an indirect connection to an activity (because its parent category or sub-category is connected to that activity), you can still create direct connection between that line item and an activity. In this case, the activity you connect can be:
+
+* The same activity that is connected to the parent
+
+* A child activity of the activity connected to the parent
+
+* An unrelated activity from a different part of the activity hierarchy
+
+If you choose to connect the line item to an activity that is in an unrelated part of the activity hierarchy, this is called an out-of-boundary connection, because it is not compatible with the existing activity connection on the line item's parent category or sub-category.  When this happens, the system will automatically adjust the connections to resolve the situation.
+
+### Resolving out-of-boundary connections
+
+When you create an out-of-boundary connection on a line item, this creates a conflict with the existing activity connection on the line item's parent category or sub-category. To resolve this conflict, the system takes the following actions (after prompting you for confirmation):
+
+* Remove the existing connection between the parent category/sub-category and the original activity
+
+* Create the out-of-boundary connection to the new activity on the specified line item
+
+* Automatically create new connections at the line item level between all other existing line items in the parent category/sub-category and the original activity (to replace the parent-level connection)
+
+This procedure allows you to create the out-of-boundary connection, while still maintaining all existing connections between all other affected line items and the original activity (by replacing the indirect connections through the parent with direct connections on the line items themselves).
+
+## Next steps
+
+* For instructions on how to connect activities to investments and allocate their funds, see [Connect activities to investments](connecting-activities-to-investments.html).
+
+* For instructions on how to adjust funds allocations, see [Set how funds are distributed to connected activities](set-funds-allocation-distribution.html).
+
+
+
+# Connect activities to investments
+
+To use an investment item to fund marketing activities, you can connect one or multiple activities to it.
+
+If only one activity is connected to an investment, 100% of its funds are automatically allocated to the activity.
+
+If you connect two or more activities to an investment, you can choose how you want funds allocations to be distributed between these activities. For more information, see [Set how funds are distributed to connected activities](set-funds-allocation-distribution.html).
+
+Procedure: Connect activities to an investment
+
+## Adjust investment funds allocation
+
+When you connect multiple activities to an investment, Uptempo will automatically distribute the investment's funds equally between all connected activities. If you want to adjust these allocations, you can use the Activity Funding Panel.
+
+For instructions, see [Change how an investment's funds are allocated](set-funds-allocation-distribution.html#change-allocation)
+
+
+
 # Set how funds are distributed to connected activities
 
-When you [connect a single activity to an investment in Uptempo](https://knowledge.uptempo.io/doc/BM_Uptempo_en_109200000000/Content/02 Planung/Doku/05-3-6 ConnectActivitiesInvest.htm), all the investment's funds are simply allocated to that activity. If you connect more than one activity to an investment, you can choose how you want funds allocations to be distributed between these activities.
+When you [connect a single activity to an investment in Uptempo](connecting-activities-to-investments.html), all the investment's funds are initially allocated to that activity. If you connect more than one activity to an investment, you can choose how you want funds allocations to be distributed between these activities.
 
 ## Overview of allocation distribution methods
 
-You can either let Uptempo handle setting allocations with automatic distribution, or you can set allocations yourself with manual distribution. In both cases, you can choose between several options for how you want funds allocation to work.
+You can either let Uptempo handle investment funds allocations with automatic distribution, or you can set allocations yourself with manual distribution. In both cases, you can choose between several options for how you want funds allocation to work.
 
 ### Automatic distribution
 
@@ -4338,7 +5161,7 @@ Auto Distribution
 : ![Auto distribution percentages new](images/AutoDistributionPercentagesNew.png)
 : Note: Note
 
-The Auto Distribution method is only available on budget columns where it has been preconfigured by an administrator. For more information, see [Automatically Distributing Funds to Connected Activities](https://knowledge.uptempo.io/doc/BM_Uptempo_en_109200000000/Content/02 Planung/Doku/05-3-6-2 AutoDistribution.htm).
+The Auto Distribution method is only available on budget columns where it has been preconfigured by an administrator. For more information, see [](null).
 
 ### Manual distribution
 
@@ -4423,6 +5246,1637 @@ Example
 : If you turn on the option to only allocate funds within the November Plan column's date range, the system automatically allocates an equal one-half (50%) share to only these two activities. It allocates no funds (0%) to the other two activities, as they are not relevant to the column's date range.
 
 Procedure: Auto-distribute only to in-market activities
+
+
+
+# Identify the investment plan currency
+
+If your organization operates internationally and the global marketing teams manage their investments in their local currencies, your Uptempo administrator can set the local currently for each regional marketing plan.
+
+You can
+
+Procedure: Identify an investment plan's currency
+
+
+
+# Enter an amount in a different currency
+
+If a spend amount is incurred in another country, you may need to enter it in a currency that's different from the investment plan currency. For example, your investment plan may be set to use USD, but an invoice from a supplier in Europe is denominated in EUR.
+
+In this situation, you can use the set a multi-currency value option. With this option, you enter the amount in the original currency, and Uptempo automatically converts it (at the current exchange rate) and records the amount in the investment plan currency.
+
+Procedure: Set a multi-currency value
+
+
+
+# Tag line items with scenario tags
+
+You can tag line items with scenario tags to help you adjust your budgets and prioritize investments in case circumstances change. For example, you could tag expenses as options if additional budget becomes available, or tag other expenses as candidates for cuts if you need to reduce budget.
+
+## About scenario tags
+
+All untagged line items are considered the planned investments against the original budget target. Scenario tags can be used for "nice-to-have" items if there was extra budget and for new events/campaigns if additional funds became available. Uptempo has the following default scenario tags:
+
+* 15% Increase (blue) – Ideally what we could execute if there was a 15% increase in allocation.
+
+* 10% Increase (green) – What we want to execute in the event of a 10% increase in allocation.
+
+* Cancelled (yellow) – This investment will no longer be executed
+
+### Best practices
+
+* Tags can be customized and may vary between organizations. A best practice are the tags Wishlist, Out of Scope, and Cancelled.
+
+* Don't delete investments with scenarios even if the scenario is not realized. This can help provide additional context and serve as a reference point for next year’s scenario planning.
+
+## Tag line items with scenario tags
+
+Procedure: Apply a scenario tag to a line item
+
+
+
+# Undo an action
+
+If you make a mistake while working wiht the investment grid (such as entering an incorrect value or creating a duplicate entry), you can use the Undo action to quickly correct it.
+
+Note: Note
+
+The Undo history is cleared once you leave the ![Investments](images/spreadsheet.svg) Investments section, or when you refresh your browser tab.
+
+Procedure: Undo actions on the investent grid
+
+
+
+# Copy investments
+
+If some investments in your plan are used repeatedly, you can save time by copying and pasting them instead of creating them individually.
+
+## Options for copying investment items
+
+When you copy an investment item, you can choose between different options to define the scope of what will be copied.
+
+The following options are available for categories and sub-categories:
+
+Category/Sub-category Structure only (Includes Line Items)
+: Copies the selected category/sub-category row and the rows of all sub-categories and line items nested within it. Does not copy attribute values or cell values.
+
+Category/Sub-category Structure and Attributes
+: Copies the selected category/sub-category row and the rows of all sub-categories and line items nested within it. Also copies attribute values, but does not copy cell values.
+
+Category/Sub-category Structure, Attributes and Cell Values
+: Copies the selected category/sub-category row and the rows of all sub-categories and line items nested within it. Also copies all attribute values and cell values.
+
+The following options are available for line items and placeholders:
+
+Line Item/Placeholder Only
+: Copies only the selected line item/placeholder row. Does not copy attribute values or cell values.
+
+Line Item/Placeholder and Attributes
+: Copies the selected line item/placeholder row. Also copies attribute values, but does not copy cell values.
+
+Line Item/Placeholder, Attributes and Cell Values
+: Copies the selected line item/placeholder row. Also copies all attribute values and cell values.
+
+## Create copies of an investment
+
+Procedure: Copy an investment item
+
+
+
+# Move investments between investment plans
+
+Uptempo Financial Management allows you to collaborate with other teams to create strategic marketing plans. The ability to move investments (Line Items) between investment plans makes reallocating costs between different departments simple and efficient.
+
+Procedure: Move an investment to another investment plan
+
+
+
+# Delete investments
+
+If you have added investments that are no longer needed, you can delete them. If you delete a category or sub-category, all sub-categories and line items within it are also deleted.
+
+Procedure: Delete an investment
+
+
+
+# Restore deleted investments
+
+Deleted investment items are moved to the recycle bin for 30 days, where you can view and restore them if needed. After 30 days they are deleted permanently and can no longer be retrieved.
+
+## About restoring deleted investments
+
+Restoring an item restores the details panel attributes for that investment if the attributes were not edited at the parent level while the item was in the bin. If the details panel attributes are edited when the item was in the bin, the edits are lost when the item is restored.
+
+If there is a value in a column and users don’t have permission to edit that row or column, they will not be able to restore that item. Only an Owner or Administrator will be able to restore a investment that has a value in a locked column.
+
+If an item is deleted that has manually entered POs or Actuals, the POs or Actuals will be lost when the item is restored.
+
+## Restore deleted investments
+
+Procedure: Restore a deleted investment item
+
+
+
+# Import investment data
+
+If you previously managed investments and their associated data in spreadsheets, you can import this data into Uptempo
+
+Note: Note
+
+The prerequisite for importing investment data is that the associated investment plans have been created by an administrator. You can't import data on the folder or sub-folder level.
+
+## About investment data imports
+
+Note that when importing investment data, the existing records are always interpreted as full import when mapped with an existing line item. This means that all mapped cells are replaced by the value in the spreadsheet. You may have to correct any errors manually.
+
+You can only import XLSX and XLS files.
+
+The import uses only the first sheet of the Excel file. The first column is interpreted as the names of categories, sub-categories, line items and placeholders. All data up to the first empty cell in this column will be imported.
+
+### Structural annotation reference
+
+If you want to structure the rows in the import file into categories, sub-categories, line items and placeholders, use the following annotation:
+
+| Type |Structure Annotation |Notes |Example in Screenshot |
+------------------------------------------------------------
+| Root element: Grand Total |`*` in front of name |Not required in the import file |*Grand Total |
+| Category |`**` in front of name |  |**Trade Show |
+| Sub-category |`***` in front of name |Number of `*` indicates hierarchy level |***Oracle MME |
+| Line Item |No symbol in front of name |  |Registration |
+| Placeholder |`##` in front of name |  |##Additional Trade Show |
+
+![Import file investment data](images/Import%20file%20Investment%20data.png)
+
+### Updating existing investment items
+
+If you want to update existing categories, sub-categories, line items and placeholders, you must map the records in the spreadsheets with the already created items in the system.
+
+To do this, the second column of the imported spreadsheet must contain the Uptempo IDs. Name this column ID in the first row and enter the Uptempo IDs of the categories, sub-categories, line items and placeholders. You can determine the IDs by an export, see [Export investment data](exporting-investment-data.html). If an ID column is missing, the entries in the first column are interpreted as new items and will be added accordingly to the investment plan.
+
+In the subsequent columns you can enter the data of the line items. Note that during the import you have the possibility to decide for which columns data has to be transferred. If you have columns with no data or with data that is not up-to-date, you can simply exclude them from the import.
+
+## Import investment data into Uptempo
+
+Procedure: Import investment plan data
+
+
+
+# Export investment data
+
+You can export the data from your investment plans. For example, you can use exports to:
+
+* Share data with people who are not users in Uptempo.
+
+* Integrate the data into other systems.
+
+* Modify the exported data for reimporting it into Uptempo.
+
+## About data exports
+
+You can export data from one investment plan at a time. Data export options include:
+
+Export Current view
+: Exports only the data that is displayed in your current view to an Excel spreadsheet (.xls). The order of your columns in the export is the same as the order of the columns in your view.
+
+Export All fields
+: Exports all of the data in your account to an Excel spreadsheet (.xls). The order of your columns in the export is based on how your columns are listed in the Customize > Columns page. Categories and sub-categories are highlighted by colored rows. Placeholders aren't distinguishable from line items.
+
+Export All fields for Import
+: Exports all of the data in your account to an Excel spreadsheet (.xls). The order of columns in the export is based on how your columns are listed in the Customize > Columns page. Categories, sub-categories, line items and placeholders are annotated for import, for details see [Structural annotation reference](importing-investment-data.html#structural-annotation-reference).
+
+Tip: Tip
+
+If the order of columns in the export does not suit your needs, an administrator can adjust the order in the budget's master settings.
+
+## Export investment data from Uptempo
+
+Procedure: Export investment plan data
+
+
+
+# Lock plan amounts
+
+As a best practice, we recommend that you lock the plan amounts as soon as you complete the planning phase: depending on how your organization plans, you may need to do this on a monthly or quarterly basis.
+
+Locking the plan columns gives you a reference point that allows you to compare original planning and the current state of spending during the fiscal year.
+
+## Methods for locking plan amounts
+
+There are two methods your organization can use for locking plan amounts:
+
+### Locking the Plan column
+
+In this method, an Uptempo administrator locks the input in the Plan columns of the investment grid.
+
+* This is the most commonly used method.
+
+* Locking a column locks all inputs in that column, so that the amounts in its cells can no longer be edited.
+
+* Locked columns are marked with a ![Locked](images/fa-lock.svg) Locked icon in the column header.
+
+* When a column is locked, it's still possible to edit the name or attributes values in the details panel of a line item or placeholder.
+
+Note: Note
+
+Only administrators can lock or unlock Plan columns.
+
+### Approving planned spend
+
+If your organization uses the [approval functionality](approving-planning-or-forecasting.html), all planned amounts are reviewed and approved individually:
+
+* When an amount has been approved, any further edits require a change request.
+
+* Attribute values on the details panel can no longer be edited after approval.
+
+* You can check whether an amount has been approved by placing your pointer on its cell in the investment grid: approved amounts display a green bar on the left edge of the cell, as well as the ![Locked](images/fa-lock.svg) Locked icon.
+
+Note: Note
+
+Contact your Uptempo administrator if you're not sure which method your organization is using. They can also provide information about the internal processes your organization uses to support locking, such as the deadlines for when planning phases must be completed, and at what point columns are locked.
+
+
+
+# Execute
+
+After you have completed the planning, the management phase begins: in this phase, you begin executing on your activities and manage the corresponding investments.
+
+As a first point of reference, the expected spend amounts are entered in the Forecast columns. You start with the amounts you entered in the Plan columns during the planning phase. You can perform this transfer either manually or by an import, see [Forecasting](forecasting.html). The amount is automatically tagged with the Forecast status.
+
+Note: Note
+
+Tags may vary between organizations. Your organization may use different names, statuses or additional tags. If you have questions, ask your Uptempo administrator for help.
+
+After forecasting, quotations are obtained. These amounts are usually maintained in a third-party system and imported into the PO columns. By comparing the Forecast and PO cells of a line item, you can recognize whether you need to allocate more budget to the line item, or can allocate the excess budget to another line item. For more details on POs, see [Manage Purchase Orders (POs)](managing-pos.html). How reallocate budget is described in [Reallocate investment funds](reallocating-funds.html).
+
+As soon as you have placed an order, you can assign the status Committed to the amount in the Forecast cell. This signals that your organization is now contractually obligated to pay the amount, but the money has not yet been spent. At this point, the amounts in the Forecast and PO cells should be identical.
+
+Once the money is to be paid, you can enter the paid amount in the Actuals column, either manually or by an import. After creating the actuals, you set the status of the Forecast cell to Occurred. For more information see [Manage actuals](managing-actuals.html).
+
+To perform these tasks effectively, you should first set up your workspace according to your needs: see [Set up the workspace](setting-up-the-workspace.html) for details.
+
+When managing investments, data from external systems is usually required, for example from accounting software. To avoid time-consuming manual transfers, you can import this data. See [Import data](importing.html) for details.
+
+
+
+# Set up the workspace
+
+For effective management of investments, you must set up the workspace in the ![Investments](images/spreadsheet.svg) Investments section to meet you needs. To do this, answer the following questions:
+
+* Which line items of an investment plan do I need if I need to edit data or details? Do I need to search or filter the investment plan? If so, by which properties? The answer influences which categories, sub-categories, line items and placeholders are visible in the purple colored area in the following screenshot. For more information see [Searching and filtering investments](searching-and-filtering-marketing-investments.html).
+
+* What data do I need? Do I need plan, forecast or other data? The answer to the question influences which columns are displayed in the green area in the following screenshot. For more information see [Display needed data](display-needed-data.html).
+
+![Activities tab workspace](images/Activities%20Tab%20Workspace.png)
+
+Note: Note
+
+These filters and views are cumulative. You can sort your investments by two or more of these filters if desired. Filters will also persist even if you switch investment plans as long as they are in the same hierarchy.
+
+
+
+# Search and filter investments
+
+If you manage a very extensive investment plan, you have various options for filtering the displayed investent plan data according to your needs:
+
+* [Search within an investment plan](searching-within-the-investment-plan.html): In the search bar above the hierarchy you can enter a name or a line item ID. The line items displayed in the hierarchy are narrowed down to suitable matches by entering the first character.
+
+* [Filter by approval status](filter-by-approval-status.html): Filtering by approval status allows you to gain a quick understanding of approved spend, pending requests, and see the current status of investments. This lets you view areas that have been approved to move forward, and adjust areas that require change.
+
+* [Filter by scenarios](filter-by-scenarios.html): Scenario tags allow you to easily create and view different scenarios during planning to understand the impacts of a change in top-down allocation to the overall investment plan. When filtering by scenario, you reduce the displayed line items and placeholders in the hierarchy to those that match one (or several) scenarios.
+
+* [Group investments by details panel attribute](pivot-investments-by-details-panel-attribute.html): After you have entered details for each line item on the details panel, you can use the Group by filter to display line items grouped according to their attribute details (for example by their assigned target group).
+
+* [Filter investments by forecast status](view-by-forecast-status.html): If you use [forecast status tags](forecast-status-tags.html), you can see the total amounts in your investment plan that are forecasted, committed, or actually spent. This is a quick way to gain insight on the status of marketing costs to date.
+
+* [Filter by activity funding](filter-by-activity-funding.html): If your investments are linked to activities, you can see these investments and their amounts that are already allocated to activities (or the amounts not yet allocated) by using the Filter by Activity Funding options: ![Filter by activity funding updated](images/FilterByActivityFundingUpdated.png)
+
+* Hide or show rows without amounts: If you have created many investments, but have not entered planned or anticipated expenditures for each investment, you can use the Show $0 Rows option in the display settings above the investment grid. Select this option to get a clear view of investments that have associated amounts. When the filter is deselected, all investments that have no dollar value in any of the columns are hidden.
+
+* View original currency amounts: If you entered amounts in a different currency than the investment plan currency with [multi-currency values](setting-a-multi-currency-value.html), you can select the Show Original Currency option in the display settings above the investment grid to highlight cells where multi-currency entries have been made and, and to display the original currency amount alongside the converted plan currency amount: ![Multi currency](images/Multi-Currency.png)
+
+
+
+# Search within an investment plan
+
+In the search bar above the hierarchy you can enter a name or a line item ID. The line items displayed in the hierarchy are narrowed down to suitable matches by entering the first character.
+
+You can easily search for an investment using keywords or the Uptempo ID.
+
+Procedure: Search in an investment plan
+
+
+
+# Filter by approval status
+
+Filtering by approval status allows you to gain a quick understanding of approved spend, pending requests, and see the current status of investments. This empowers you to have a dynamic plan by allowing you to easily view areas that have been approved to move forward, and adjust areas that require change.
+
+Procedure: Filter investments by approval status
+
+
+
+# Filter by scenarios
+
+Scenario tags allow you to easily create and view different scenarios during planning to understand the impacts of a change in top-down allocation to the overall investment plan. When filtering by scenario, you reduce the displayed line items and placeholders in the hierarchy to those that match one (or several) scenarios.
+
+Procedure: Filter investments by scenario tags
+
+
+
+# Filter investments by forecast status
+
+If you use [forecast status tags](forecast-status-tags.html), you can see the total amounts in your investment plan that are forecasted, committed, or actually spent. This is a quick way to gain insight on the status of marketing costs to date.
+
+Example
+: Sheila wants to see what amounts are actually spent. In the Forecast columns, she has maintained a status for each line item and placeholder. When the event has taken place or services have been received, Sheila assigns the status Occurred (note that the statuses may have different names in your Uptempo instance).
+: Now, when Sheila restricts the view to the Occurred tag, only the amounts from the child cells that are tagged Occurred are totaled in the cells for categories and sub-categories and Grand Total.
+: Other amounts are shown crossed out and are not included in the sums. See following screenshot for forecasting in January:
+: ![Example view by forecast stat](images/Example%20ViewByForecastStat.png)
+
+Procedure: Filter investments by forecast status tags
+
+
+
+# Filter by activity funding
+
+If you [have connected activities to investments](funding-activities-with-investments.html), you can filter the investment hierarchy table in the ![Investments](images/spreadsheet.svg) Investments section to display:
+
+* The part of any investment that is already allocated to connected activities
+
+* The part of any investment that is not yet allocated to connected activities
+
+Both of these views are useful for understanding your current activity funding situation. They show you on a per-investment basis how much of your budget you have already committed, and how much is left for currently unfunded (or partially funded) activities.
+
+## Filter options
+
+You can select between three options for filtering the investment hierarchy based on activity funding:
+
+* Show Allocated Amounts Only: Select this option to see how much of each connected investment is already funding activities. When selected: * In the Hierarchy column: Displays only investments that (1) are connected to at least one activity, and (2) have funds that have been fully or partly allocated to those activities. All investments that are not connected to any activity are hidden from the table. * In all funding amount columns: Displays only the amount of each investment that is currently allocated (Currently Allocated Amount = Investment Total Funds - Unallocated Funds).
+
+* Show Unallocated Amounts Only: Select this option to see how much of each investment is still available to fund activities. When selected: * In the Hierarchy column: Displays only investments with funds that are not yet allocated. This includes both investments that are connected to activities but are only partly allocated, and investments that are not yet connected to any activity. All investments that are fully allocated to connected activities are hidden from the table. * In all funding amount columns: Displays only the amount of each investment that is currently unallocated (Currently Unallocated Amount = Investment Total Funds - Allocated Funds).
+
+* All Investments: Select this option to remove all filtering based on activity funding. When selected, displays all investments and their full amounts in the table, regardless of activity funding. * This is the default option.
+
+Note: Note
+
+The term ![Investments](images/spreadsheet.svg) Investments includes both line items and their parent categories and sub-categories. You can fund activities by connecting both line items and categories/sub-categories to them. However, if you connect an investment category or sub-category to an activity, any funds you allocate to that activity are actually "owned" by the category or sub-category's child line items.
+
+As a result, the Show unallocated amounts only filter option works slightly differently if the activity connection is at the parent category/sub-category level. In this case, only the category/sub-category is displayed in the Hierarchy column, while its child line items (and their amounts) are hidden — even if the child line items have unallocated amounts. This is because the child line items are not directly funding the activity themselves, but are instead "funding" the parent category/sub-category that is connected to the activity.
+
+## Filter investments by activity funding
+
+Procedure: Filter investments by activity funding
+
+
+
+# Group investments by details panel attribute
+
+After you have entered details for each line item on the details panel, you can use the Group by filter to display line items grouped according to their attribute details (for example by their assigned target group).
+
+Procedure: Group investments by attribute
+
+Tip: Tip
+
+You can easily tag unclassified investments while using the filter with the appropriate attribute by clicking on the details panel icon and choosing your input. The screen will then refresh and your investments will automatically be sorted according to the corresponding attribute.
+
+
+
+# Change the type of data that is displayed
+
+As you manage the investment plan through different phases (planning, forecasting, managing of POs and actuals etc.), you need to view different kinds of data in the ![Investments](images/spreadsheet.svg) Investments section. For example, in the planning phase you edit the Plan columns, while in the forecasting phase you work with the Forecast columns. You can change [views](views.html) to change the kind of data that is displayed according to your needs.
+
+
+
+# Change investment plan views
+
+As you manage the investment plan through different phases (planning, forecasting, managing of POs and actuals etc.), you need to view different kinds of data in the ![Investments](images/spreadsheet.svg) Investments section. For example, in the planning phase you edit the Plan columns, while in the forecasting phase you work with the Forecast columns. You can change views to change the kind of data that is displayed according to your needs.
+
+Note: Note
+
+Views were configured for your organization during the implementation phase based on your organization's needs and preferences. If you have any questions or need a different view, contact your Uptempo administrator.
+
+Procedure: Change the investment plan view
+
+
+
+# Forecasting
+
+Forecasting is the latest expected cost of investments as the marketer executes on the investments. The Forecast column differs from the Plan columns, as the Plan columns are recommended to only be used at the beginning of the budgeting and planning phase for your organization to record their original bottom up plan. This serves as a baseline your team can compare your Forecast against throughout and at the end of the fiscal year.
+
+It is crucial that your team records their up-to-date estimates on their spend as they carry out their day to day operations in the Forecast columns. The Forecast column will allow marketers to estimate whether they will be spending more or less than their original plan before the expenditures are recorded and imported into Uptempo. The Forecast is then used to better gauge how much in actuals are roughly still expected.
+
+If your forecast is $1200, and to date, your Actuals/PO amounts that have come through are $600, you would still expect to see another $600. Throughout the year, you typically want to compare Plan vs Actual, Forecast vs Actual and Plan vs Forecast. You would stop updating the Forecast when you have no more estimate changes for that period.
+
+## Transition from the plan to the forecast phase
+
+When the planning phase is complete and you enter the forecasting phase, there are usually two options:
+
+* You start with the amounts of the plan phase as a starting point. To avoid having to transfer the amounts manually, you can export them from the plan columns and import them into forecast columns. Note [Transfer plan amounts to forecast columns](transferring-plan-amounts-to-forecast-columns.html).
+
+* You start the forecast phase without amounts and enter the respective expected amounts as you execute on the investments.
+
+## Forecast status
+
+Forecast status enables you to gain a better understanding of where you have made financial commitments and where you are leaving money on the table. The status tags identify if investments are planned, have a signed contract, or have taken place. Investments that are planned can be cut if the budget gets cut, or the money can be reallocated to other investments where necessary. At the end of every month, any funds allocated to an investment that has not occurred should be reallocated to the month the investment will take place, or to another investment to keep financial records accurate.
+
+For more information on how to track the forecast status see [Use forecast status tags](forecast-status-tags.html).
+
+## Plan vs forecast variance
+
+The Plan column shows the bottom-up plan of investments that will be completed to spend the allocated budget and the Forecast reflects the latest expected costs. The Plan vs Forecast variance shows how much you are under or over forecasting against the original plan. Using the variance, you can identify if you are under forecasting due to changes in comparison to what we planned. This allows for reallocation of funds to investments that may require more funding, or to investments, we didn’t originally plan for, see [Reallocate investment funds](reallocating-funds.html).
+
+## Related actions
+
+Editing the cells in the Forecast columns is identical to the planning phase. For more information on editing amounts, refer to [Add spend data to investments](adding-spend-data-for-investments.html), [Add calculated costs to investments](adding-calculated-costs.html), and [Enter an amount in a different currency](setting-a-multi-currency-value.html).
+
+Specific to the Forecasting phase, consider the following actions:
+
+* [Transfer plan amounts to forecast columns](transferring-plan-amounts-to-forecast-columns.html)
+
+* [Use forecast status tags](forecast-status-tags.html)
+
+* [Reallocate investment funds](reallocating-funds.html)
+
+
+
+# Transfer plan amounts to forecast columns
+
+After your organization has completed the planning phase, you can start to execute on the investments and maintain the expected costs in the Forecast columns. In order to start with the values from the plan columns, you can exports the plan data and import it into the Forecast columns. This saves you the manual work of transferring it.
+
+Procedure: Transfer data from plan to forecast columns
+
+
+
+# Use forecast status tags
+
+As you place orders, your funds become contractually committed. Once the invoice is paid, those commitments turn into actual expenses.
+
+Because your spending moves through these different stages, the amounts in your Forecast columns will reflect various statuses. If you ever need to reallocate funds (such as shifting a planned expense to a different month) you can use forecast status tags to clearly mark and track those changes.
+
+## Default forecast status tags
+
+Uptempo provides the following default tags:
+
+* Forecast (taupe): What you think you are going to spend. Initially, this should be the same value as the planned amount but may change.
+
+* Committed (green): You are contractually obligated to this amount.
+
+* Occurred (blue): This spend has occurred during this month and should be recognized in this month's spend.
+
+Note: Note
+
+Tags may be different in your Uptempo instance: your organization may use different names, statuses or additional tags. Contact your Uptempo administrator if you have questions.
+
+## Set forecast status tags on investment amounts
+
+### Before you begin
+
+* To view and set forecast status tags, you must select a [view](views.html) that displays Forecast column in the investment grid.
+
+* To tag an investment with a forecast status tag, there must be an amount in the Forecast column for that investment.
+
+Procedure: Set a forecast status tag on an amount
+
+Tip: Tip
+
+To make it easy to see which amounts are in which status, you can restrict the view of Forecast columns to specific tags.
+
+See [Filter investments by forecast status](view-by-forecast-status.html) for details.
+
+
+
+# Reallocate investment funds
+
+Leaving funds unspent can signal that your budget was too high, putting you at risk for budget cuts next year. To protect your funding and stay in control, proactively track your variance using Forecast status tags and Forecasting.
+
+If you need to shift funds, you can reallocate them in two ways:
+
+* Within the same investment plan: [Reallocate investments](reallocating-investments.html)
+
+* Between different investment plans: [Reallocate budgets](reallocating-budgets.html)
+
+
+
+# Reallocate investments
+
+Procedure: Reallocate an investment
+
+
+
+# Reallocate budgets
+
+You may discover that one investment plan has surplus funds that are urgently needed elsewhere, which requires a budget transfer. Alternatively, you might need to cut funding for underperforming initiatives or add new funds entirely, which requires a budget adjustment.
+
+## Who can reallocate budgets?
+
+If you have the Editor or Administrator role, you can initiate transfers or adjustments to update investment budget totals.
+
+Once you submit a request, you can monitor its progress through a transparent approval workflow. This allows you to see whether reallocations are pending, completed, or denied. All users can view request details and history logs for audit purposes.
+
+## Process overview
+
+1. Submit a request: Start a new request from either the Roll-up panel or directly within an investment plan.
+
+2. Pending status: The request is captured in the Request view with a Pending status, and the required approvers are notified via email.
+
+3. Approval routing: The workflow depends on the type of reallocation:
+
+* Transfer: Moves budget from one investment plan to another. Both the outgoing and incoming sides must have at least one approver confirm the transfer. (Note: If an approver oversees both sides, their single confirmation covers the whole transfer.)
+
+* Adjustment: Increases or decreases the budget of a single investment plan. This only requires confirmation from an approver for that specific plan.
+
+Note: Note
+
+If you are requesting the reallocation and are also an assigned approver, your portion of the workflow is automatically self-approved.
+
+4. Completion: Once approved, the targeted investment budget totals are automatically updated, and you will receive a status email. You can review all past transfers and adjustments at any time in the Requests view.
+
+## Related tasks
+
+* [Request a budget transfer](requesting-a-budget-transfer.html)
+
+* [Request a budget adjustment](requesting-a-budget-adjustment.html)
+
+* [View and manage budget reallocation requests](monitor-a-request.html)
+
+* [Approve or deny reallocation requests](deciding-on-a-reallocation-request.html)
+
+
+
+# Request a budget transfer
+
+Use this process to reallocate funds from one investment plan to another, for example from a plan that is coming in under target to an investment plan that requires more budget.
+
+Procedure: Request a budget transfer
+
+If you are an assigned approver for the investment plan the request is auto-approved. If you are not eligible to approve budget transfers for this investment plan, the approvers are informed about your request by e-mail. Your request is in pending status and you can monitor the request, see [View and manage budget reallocation requests](monitor-a-request.html).
+
+
+
+# Request a budget adjustment
+
+If you need more budget for a plan that is performing well, you can request a budget adjustment.
+
+Procedure: Request a budget adjustment
+
+
+
+# View and manage budget reallocation requests
+
+After you have submitted budget reallocation requests, you can view your open requests and make changes to them if needed.
+
+Procedure: View budget reallocation requests
+
+On the Transfer Requests overview:
+
+* The buttons Deny and Approve are only active if you are an assigned approver for the applicable hierarchy level and if you have selected one of the pending requests.
+
+* If you want to see all requests or request with other statuses for this hierarchy level, use the Status filter on the right side above the table to display the requests.
+
+* If you want to see the requests for other activity plans, set the From and To filters accordingly.
+
+* In the last column of the overview table, click ![More actions](images/material-morevert.svg) More actions to view additional actions for each transfer request: * Click Edit to change details of the request. * Click Delete to delete the request. * Click Details to see detailed information of the request.
+
+Note: Note
+
+You can only edit or delete your own requests. Both editing and deleting are only possible in pending status.
+
+
+
+# Approve or deny reallocation requests
+
+As an assigned approver, you can choose whether to approve or deny any pending request.
+
+Procedure: Approve or deny a reallocation request
+
+
+
+# Manage Purchase Orders (POs)
+
+After forecasting, you will typically obtain quotations. These amounts are often maintained in a third-party system and imported into your Purchase Order (PO) columns. By comparing the Forecast and PO cells for a line item, you can quickly determine if you need to allocate more budget to that item or if you have excess budget you can reallocate elsewhere.
+
+## Manually creating vs. importing POs
+
+Whether you create purchase orders (POs) manually or import them depends on your company's established processes. This often relies on factors like whether PO data is already available in a third-party system and the effort required for manual entry. Contact your Uptempo administrator if you are unsure which method to use.
+
+Important to know:
+
+* Editing: You can edit a PO the exact same way, regardless of how it was created.
+
+* Deleting: The process for deleting a PO depends on its origin. You can delete an imported PO under the Budget menu. A manually created PO can be deleted under Investments > details panel > PO panel. For more details, see [Delete Purchase Orders (POs)](deleting-purchase-orders-po.html).
+
+## Key purchase order data
+
+The specific PO data you need to manage depends on your company's configuration, but you should generally be familiar with the following attributes:
+
+* Identifier: Most POs use one or more identifying attributes, such as a PO ID. These are especially important during imports to ensure existing POs are updated correctly rather than duplicated.
+
+* Splitting: If a single PO covers multiple line items, you will need to split the amount across those items.
+
+* Date: A PO must be assigned to at least one month to compare committed spends against planned spends. You must enter a start date to assign the PO to that specific month. If the PO is amortized over multiple months, you must also enter an end date.
+
+## Splitting: One PO, multiple line items
+
+You may receive a single PO that covers amounts for multiple line items. When this happens, you must split the PO.
+
+If you create a PO manually, you can split it during creation or while editing. For instructions, see [Manually create Purchase Orders (POs)](manually-creating-a-purchase-order-po.html) or [Create Purchase Orders (POs) by importing](creating-purchase-orders-pos-by-importing.html).
+
+You can view details for each split in the PO panel. This includes general PO details, a column showing the split allocation as a percentage, and a currency tooltip.
+
+The Manage Split for PO page provides a detailed overview of how the PO is divided across investments and locations. It displays the investment plan, category, specific investment, and the split percentage.
+
+To learn how to track and retrieve split data, see [Identify split Purchase Orders (POs)](po-splitting-identifying-a-po-split.html).
+
+## Amortizing: One PO, multiple months
+
+The costs for some orders do not accrue all in one month. For subscriptions or agreements where costs are spread out, you must amortize the invoice amount over several months.
+
+You can amortize POs regardless of whether they were created manually or imported. For split POs, you can even amortize each split separately over different months.
+
+To amortize a PO, you must enter both a start date and an end date (which must fall in a subsequent month). You can then distribute the PO or split amount across the months within that date range.
+
+Example 1
+: To amortize a PO amount you specify:
+: * Start date: 4/15
+
+* End date: 9/1
+: The amount can be divided between the months April, May, June, July, August and September.
+: Within the amortization period you can distribute the amount as you wish. The system will support you if you divide the amount evenly among the months.
+
+Example 2
+: Within the period of Example 1 the amount 6000 $ is to be distributed. You choose an even distribution.
+: For each month, the amount 1000 $ is entered in the PO columns.
+
+Example 3
+: Within the period of Example 1, the amount 6000 $ accrues in two installments, once at the beginning, once at the end of the period.
+: To implement this, enter $3000 each for April and September. The fields for the other months remain empty.
+
+Note: Note
+
+If you create amortization beyond the fiscal year, it is a rollover. You must manually carry forward the amount that will be incurred in the subsequent fiscal year.
+
+## Related actions
+
+* [Import Purchase Orders (POs)](importing-pos.html)
+
+* [Manually create Purchase Orders (POs)](manually-creating-a-purchase-order-po.html)
+
+* [Edit Purchase Orders (POs)](editing-purchase-order-po.html)
+
+* [Identify split Purchase Orders (POs)](po-splitting-identifying-a-po-split.html)
+
+* [Delete Purchase Orders (POs)](deleting-purchase-orders-po.html)
+
+
+
+# Import Purchase Orders (POs)
+
+When you order services, your purchasing department might compile the purchase order data into an external file, such as an Excel spreadsheet. To easily compare your forecast with these purchase orders, you can import the file directly into the system rather than entering the POs manually. See [Create Purchase Orders (POs) by importing](creating-purchase-orders-pos-by-importing.html).
+
+The import process will automatically map most POs to their corresponding line items. However, some POs might remain unmapped due to missing or incorrect identifiers. When this happens, you must manually map the unassociated PO to the correct line item. See [Map imported Purchase Orders (POs)](mapping-imported-purchase-orders.html).
+
+Purchase orders can also be split across multiple investments. If the imported file does not include these split details, you will need to manually create the split for the unmapped PO after importing. See [Split a Purchase Order (PO)](po-splitting-one-unmapped-purchase-order-to-multiple-investments.html).
+
+If you discover that a PO was assigned to the wrong line item during the import, you can easily correct it. In this case, unmap the PO first, and then manually map it to the correct line item. See [Unmap Purchase Orders (POs)](un-mapping-purchase-orders-po.html).
+
+
+
+# Create Purchase Orders (POs) by importing
+
+When you order services, your purchasing department might compile the purchase order data into an external file, such as an Excel spreadsheet. To easily compare your forecast with these purchase orders, you can import the file directly into the system rather than entering the POs manually.
+
+## Preparing the import spreadsheet
+
+* First Row: Your first row must have headers. If there is a blank row you will be prompted to add the headers prior to import. Duplicate header names will not be accepted.
+
+* Rows: Empty rows will not be accepted and you will be prompted to delete them.
+
+* Columns: You can keep columns you don't want to import into your spreadsheet and ignore them during the mapping process, saving you time in prepping your sheet for import.
+
+* Date Formats: Choose one date column as your primary date column. This is the date format that you will use in reporting. If amortizing POs, start dates can't be after end date. Note: Note Uptempo can recognize the following date formats: * 03/14/21 * 14/03/21 * 3/14/2021 * 14/3/2021 * 2021-03-14 * 14-Mar-21 * Mar-21 * Month (1-12) * 3/14/2021 18:25:16 * 2021/3/25 18:25:16 You must use the same date format for all date fields in the file.
+
+* Worksheets: The worksheet that you are importing must be the first tab in the workbook.
+
+* Linked Spreadsheets: Linked spreadsheets in your file will cause an error, remove these before importing. * If there are linked spreadsheets within your file it will result in the upload screen cycling, please refresh your screen and log back in.
+
+* Multi-select fields: The import recognizes Option, %, as one option in the multi-select field. Several options have to be separated by ::. For example, you can enter in a multi-select column Brand Awareness, 50.0::Lead Generation, 50.0. However, the multi-select field allocations must equal 100%, otherwise the import will fail. Note: Note Input options must match the multi-select field options exactly. Any variation in spelling, symbols, or otherwise will cause duplicate options to be created.
+
+## Notes for splitting or amortizing POs
+
+* If you need to split POs then include a PO Split column to indicate the split percentage for each PO. Enter percentage for each split, but ensure your split percentages for one split PO total exactly to 100 %. Do not include the percent symbol. Note: If there is a PO on the imported spreadsheet NOT being split, the PO Split column can be empty for that line.
+
+* Ensure all other fields are identical for each line of the PO Split such as PO Amount, Vendor Name, Start and End Date, etc. Be aware that the PO Amount value must represent the 100 % value, not the value of the split. ![Po split spreadsheet](images/POSplitSpreadsheet.png)
+
+* If you want to amortize POs, then include a column with an end date. The column will be empty for POs that are not amortized. Note: Note The PO Amount will automatically be equally split among the months of the PO period (start date to end date). If you need a different split, change the split manually after the import, see [Edit Purchase Orders (POs)](editing-purchase-order-po.html).
+
+## Handling duplicates
+
+When importing data, the Excel file may contain duplicates. The import allows you to effectively handle the following situations:
+
+* You are sure that none of the records in the Excel file is a duplicate. This will be especially the case when you import the records for a period for the first time.
+
+* You know that the file contains or may contain duplicates. You then need to determine which fields are used to detect the duplicates, or whether all fields must match for records to be detected as duplicates.
+
+* If you know that the file contains duplicates and all fields are identical, then you can ignore these duplicates and leave the records in the system untouched.
+
+* If duplicates are detected based on selected fields, you can decide whether to ignore the data in the Excel file or to update the records in the system. To update is helpful when data like Amount changed externally and you want to adjust the data in the system accordingly.
+
+## Import Purchase Orders (POs)
+
+Procedure: Import POs into Uptempo
+
+
+
+# Map imported Purchase Orders (POs)
+
+The import process will automatically map most POs to their corresponding line items. However, some POs might remain unmapped due to missing or incorrect identifiers. When this happens, you must manually map the unassociated PO to the correct line item.
+
+## Map Purchase Orders to line items
+
+Procedure: Map POs to line items
+
+## Map Purchase Orders in bulk
+
+You can use Bulk Map to map multiple POs to a single line item.
+
+Procedure: Map POs to a line item in bulk
+
+
+
+# Split a Purchase Order (PO)
+
+Purchase orders can be split across multiple investments. If the imported file does not include these split details, you will need to manually create the split for the unmapped PO after importing.
+
+Procedure: Split a PO between multiple investments
+
+
+
+# Unmap Purchase Orders (POs)
+
+If you discover that a PO was assigned to the wrong line item during the import, you can easily correct it. In this case, unmap the PO first, and then manually map it to the correct line item.
+
+Note: Note
+
+When a record is unmapped, any changes that had been made to the record will be lost.
+
+Procedure: Unmap a PO
+
+
+
+# Manually create Purchase Orders (POs)
+
+You can create Purchase Orders (POs) manually in Uptempo.
+
+Procedure: Manually create a PO
+
+
+
+# Edit Purchase Orders (POs)
+
+If you need to make changes to an existing Purchase Order, you can edit it.
+
+Procedure: Edit a PO
+
+
+
+# Identify split Purchase Orders (POs)
+
+Purchase Order (PO) splitting allows you to associate a PO amount with multiple investments. This provides a more granular and precise view into your actual spend, with the ability to break down and associate your POs to the exact investment.
+
+For later reference, you can identify and view split POs in both the ![Budgets](images/coins.svg) Budgets and ![Investments](images/spreadsheet.svg) Investments sections.
+
+Procedure: Identify and view split POs in the Budgets section
+
+Procedure: Identify and view split POs in the Investments section
+
+
+
+# Delete Purchase Orders (POs)
+
+If needed, you can delete all of the POs created by an import, or just a single PO.
+
+Note: Note
+
+Owners, Administrators, Editors and Editor-Data Entry Only users can delete POs that they have imported. Only Owners and Administrators can delete POs that other users have imported.
+
+## Delete imported POs
+
+Procedure: Delete all POs created by an import
+
+Procedure: Delete an individual imported PO
+
+## Delete manually created POs
+
+Procedure: Delete a manually created PO
+
+
+
+# Manage actuals
+
+Once a payment is ready to be made, you can enter the paid amount in the Actuals column, either manually or via an import. After recording the actuals, update the status of the corresponding Forecast cell to Occurred.
+
+## Manually creating vs. importing actuals
+
+Whether you create actuals manually or import them depends on your company's chosen process. This decision relies on factors such as whether the data is already available in a third-party system and the effort required for manual entry. Contact your system administrator if you are unsure which method to use.
+
+Important to know:
+
+* Editing an actual: You can edit an actual the exact same way, regardless of whether it was manually created or imported.
+
+* Deleting an actual: The deletion process depends on its origin. You can delete an imported actual under the Budget menu. A manually created actual can be deleted under Investments > details panel > Actuals panel. For more details, see [Delete actuals](deleting-actuals.html).
+
+## Key actual data
+
+The specific data you need to manage for actuals is determined by your company's configuration. However, you should generally be familiar with the following core attributes:
+
+* Amount: This is a mandatory field. Enter the total actual amount that applies to the line item.
+
+* Date: Enter the invoice date. This date is used to assign the actual to a specific month.
+
+Typically, additional custom attributes are created for actuals. If you have any questions about how to use these specific fields, contact your system administrator.
+
+## Related actions
+
+* [Import actuals](importing-actuals.html)
+
+* [Manually create actuals](manually-creating-an-actual.html)
+
+* [Edit actuals](editing-actuals.html)
+
+* [Delete actuals](deleting-actuals.html)
+
+
+
+# Import actuals
+
+After you have received and accepted your ordered services and the corresponding invoices have been processed, you can import the actuals into the system. This allows you to easily compare your forecast status with actual spending without needing to enter the data manually. See [Create actuals by importing](creating-actuals-by-importing.html).
+
+The import process will automatically map most actuals to their corresponding line items. However, some actuals might remain unmapped due to issues like missing or incorrect identifiers. When this happens, you must manually map the unassociated actuals to the correct line item. See [Map imported actuals](mapping-imported-actuals.html).
+
+If you discover that an actual was assigned to the wrong line item during the import, you can easily correct it. Simply unmap the actual first, and then manually map it to the correct line item. See [Unmap actuals](un-mapping-actuals.html).
+
+
+
+# Create actuals by importing
+
+After you have received and accepted your ordered services and the corresponding invoices have been processed, you can import the actuals into the system. This allows you to easily compare your forecast status with actual spending without needing to enter the data manually.
+
+## Preparing the import spreadsheet
+
+* First Row: Your first row must have headers. If there is a blank row you will be prompted to add the headers prior to import. Duplicate header names will not be accepted.
+
+* Rows: Empty rows will not be accepted and you will be prompted to delete them.
+
+* Columns: You can keep columns you don't want to import into your spreadsheet and ignore them during the mapping process, saving you time in prepping your sheet for import.
+
+* Date Formats: Choose one date column as your primary date column. This is the date format that you will use in reporting. Note: Note Uptempo can recognize the following date formats: * 03/14/21 * 14/03/21 * 3/14/2021 * 14/3/2021 * 2021-03-14 * 14-Mar-21 * Mar-21 * Month (1-12) * 3/14/2021 18:25:16 * 2021/3/25 18:25:16 You must use the same date format for all date fields in the file.
+
+* Worksheets: The worksheet that you are importing must be the first tab in the workbook.
+
+* Linked Spreadsheets: Linked spreadsheets in your file will cause an error, remove these before importing. * If there are linked spreadsheets within your file it will result in the upload screen cycling, please refresh your screen and log back in.
+
+* Multi-select fields: The import recognizes Option, %, as one option in the multi-select field. Several options have to be separated by ::. For example, you can enter in a multi-select column Brand Awareness, 50.0::Lead Generation, 50.0. However, the multi-select field allocations must equal 100%, otherwise the import will fail. Note: Note Input options must match the multi-select field options exactly. Any variation in spelling, symbols, or otherwise will cause duplicate options to be created.
+
+## Handling duplicates
+
+When importing data, the Excel file may contain duplicates. The import allows you to effectively handle the following situations:
+
+* You are sure that none of the records in the Excel file is a duplicate. This will be especially the case when you import the records for a period for the first time.
+
+* You know that the file contains or may contain duplicates. You then need to determine which fields are used to detect the duplicates, or whether all fields must match for records to be detected as duplicates.
+
+* If you know that the file contains duplicates and all fields are identical, then you can ignore these duplicates and leave the records in the system untouched.
+
+* If duplicates are detected based on selected fields, you can decide whether to ignore the data in the Excel file or to update the records in the system. To update is helpful when data like Amount changed externally and you want to adjust the data in the system accordingly.
+
+## Import actuals
+
+Procedure: Import actuals into Uptempo
+
+
+
+# Map imported actuals
+
+The import process will automatically map most actuals to their corresponding line items. However, some actuals might remain unmapped due to issues like missing or incorrect identifiers. When this happens, you must manually map the unassociated actuals to the correct line items.
+
+## Map actuals to line items
+
+Procedure: Map POs to line items
+
+## Map actuals in bulk
+
+You can use Bulk Map to map multiple actuals to a single line item.
+
+Procedure: Map actuals to a line item in bulk
+
+
+
+# Unmap actuals
+
+If you discover that an actual was assigned to the wrong line item during the import, you can easily correct it. Simply unmap the actual first, and then manually map it to the correct line item.
+
+Note: Note
+
+When a record is unmapped, any changes that had been made to the record will be lost.
+
+Procedure: Unmap an actual
+
+
+
+# Manually create actuals
+
+You can create actuals manually in Uptempo.
+
+Procedure: Manually create an actual
+
+
+
+# Edit actuals
+
+If you need to make changes to an existing actual, you can edit it.
+
+Procedure: Edit an actual
+
+
+
+# Delete actuals
+
+If needed, you can delete all of the actuals created by an import, or just a single actual.
+
+Note: Note
+
+Owners, Administrators, Editors and Editor-Data Entry Only users can delete actuals that they have imported. Only Owners and Administrators can delete actuals that other users have imported.
+
+## Delete imported actuals
+
+Procedure: Delete all actuals created by an import
+
+Procedure: Delete an individual imported actual
+
+## Delete manually created actuals
+
+Procedure: Delete a manually created actual
+
+
+
+# Import data
+
+When you and your team need to process large amounts of data effectively, you can use the import function.
+
+You can create and update investment plans, as well as purchase orders (POs) and actuals, through an import. This process is explained in detail in the following sections:
+
+* [Import investment data](importing-investment-data.html)
+
+* [Create Purchase Orders (POs) by importing](creating-purchase-orders-pos-by-importing.html)
+
+* [Create actuals by importing](creating-actuals-by-importing.html)
+
+Over time, you will likely develop a preferred file structure and import settings that optimally support your data management for POs and actuals. To avoid manually entering these settings for every import, you can save them as templates. For more details, see [Import templates](import-templates.html).
+
+## Currencies during import
+
+During an import, amounts are transferred from your file without a specified currency. When setting up your import files, keep the following interpretation rules in mind:
+
+* Investment plans: Amounts imported into an investment plan are interpreted in the local currency of that specific plan.
+
+* POs and actuals: A central system setting determines whether imported amounts for POs and actuals are interpreted in the local currency of the investment plan or in the master currency.
+
+## Mapping rules
+
+When importing, you can use unique and static rules to map imported records to their corresponding investments.
+
+### Unique rules
+
+Unique rules directly tie a PO or actual to a specific investment. For example, if each investment has a unique ID number, you can include that ID in your import file. The system will then use that ID to automatically connect the PO/actual record to the correct investment.
+
+You can also use regular expressions (search patterns used to identify a specific sequence of characters within a larger string) to extract a direct identifier.
+
+Example
+: Suppose an investment ID is buried at the end of a PO description field, such as ‘Registration for XYZ Event 7658159’. You can use the regular expression `\d{7}` to identify and extract that 7-digit number from the description, allowing the system to map it to the associated ID in your investment plan.
+
+### Static rules
+
+Static rules are broader and not specific to a single investment. They utilize specific columns in your import file to identify which area of the organization the PO or actual record belongs to.
+
+Example
+: If Finance tracks the business unit and region for all spending, those will be distinct columns in your import file. Using static rules, the import process will identify the business unit from the file and connect the PO/actual to that unit within your organizational hierarchy.
+
+Note: Note
+
+Static rules are applied after unique rules. They are only used if the PO or actual does not meet the criteria of a unique rule.
+
+## Scheduled imports
+
+Your system may be configured with scheduled imports. This means that data from a third-party system is imported automatically on a regular basis, ensuring your PO and actual data remains consistently up to date without manual intervention.
+
+Scheduled imports are managed by administrators. Contact your system administrator if you have any questions about this schedule or if you notice any data irregularities.
+
+
+
+# Import templates
+
+Over time, you will likely develop a preferred file structure and import settings that optimally support your data management for POs and actuals. To avoid manually entering these settings for every import, you can save them as templates.
+
+When you import data, you can select any existing template on step 1 (Upload File) of the import assistant for POs and actuals.
+
+## How import templates work
+
+When you select a template during the first step of the import assistant for POs and actuals, the settings for steps 2, 3, and 4 are automatically prefilled with the settings saved to the template. You can still adjust these settings as needed for your specific import.
+
+You can access these templates from the dropdown menu in step 1. Templates are visible at the specific folder, sub-folder, or investment plan level where they were originally created, as well as any levels below that. They are automatically shared with any users who have access to those specific levels.
+
+Import templates are organized into two distinct categories:
+
+* My Templates: These are the templates you created. As the owner, you have full rights to edit and delete them at any time.
+
+* Shared Templates: These are templates created by other users. To edit or delete a template owned by someone else, you must have extended permissions. Contact your system administrator if you have questions about your access rights.
+
+## Related actions
+
+* [Create import templates](creating-an-import-template.html)
+
+* [Edit import templates](editing-an-import-template.html)
+
+* [Delete import templates](deleting-an-import-template.html)
+
+
+
+# Create import templates
+
+If you regularly import data using the same file structure and the same settings, you can create an import template to save time and effort.
+
+Procedure: Create an import template
+
+
+
+# Edit import templates
+
+If you need to make a change to an existing import template, you can edit it.
+
+Procedure: Edit an import template
+
+
+
+# Delete import templates
+
+If you no longer need an import template, you can delete it at any time.
+
+Procedure: Delete an import template
+
+
+
+# Optimize
+
+The ![Insights](images/chart-increase.svg) Insights section contains dashboards and reports that are populated by entering your investments, PO’s and actuals and shows the current status of your marketing spend for all investments. You can leverage this powerful BI application directly within the ![Insights](images/chart-increase.svg) Insights section, to answer critical marketing budgeting and planning business questions.
+
+## Dashboards
+
+Dashboards are a visualization tool that displays the status of your marketing spend and contain a variety of dashboard tabs each with multiple reports, widget, and filter that segments data into related areas for efficiency and enhanced budget-related decision-making. It shows a set of insights in an area of focus and is a compilation of the entries that were made in the ![Investments](images/spreadsheet.svg) Investments section.
+
+## Reports
+
+Reports are charts or tables of data that display segmented sets of insights for a particular area. In Uptempo, reports are the output of the data that is entered in the ![Investments](images/spreadsheet.svg) Investments section.
+
+## Projects
+
+If your organization has a stand-alone analytics project per fiscal year, you can toggle between them using the Projects drop-down menu at the top left-hand corner of the page. The most recent project will appear at the top of the list.
+
+## Refresh
+
+Refreshing your data syncs your Insights projects to your most current marketing spend and ensures that the data reflected is up to date with any recent changes made on the ![Budgets](images/coins.svg) Budgets and ![Investments](images/spreadsheet.svg) Investments sections. Insights automatically refresh within a 24-hour period, however immediate changes in reports or dashboards can only be seen if modifications are made to entries in the ![Investments](images/spreadsheet.svg) Investments section through a manual refresh. You can also view specific details of a manual refresh, including a refreshing history, by clicking Refresh Details.
+
+Procedure: Manually refresh Insights data
+
+
+
+# Central functions
+
+This section describes functions of Uptempo Financial Management that are not specific to any phase of the marketing financial management cycle, but are used across the marketing financial management process.
+
+
+
+# Approval workflow for plans and forecasts
+
+Note: Note
+
+The approval workflow is an optional feature. Depending on your company's configuration, it may be turned off entirely, or only turned on for specific investment plans. Contact your Uptempo administrator if you have any questions.
+
+Many organizations use a dual-control (or "four-eyes") principle to verify planning. Under this process, after you create investments and enter your planned spends, you must submit them for approval.
+
+An authorized approver will see your request in the ![Budgets](images/coins.svg) Budgets section (highlighted in red under the Approvals column). The approver can review the request and choose to approve it, deny it, or send it back for rework.
+
+Once a decision is made, it will appear in your activity plan. If a request is denied or sent back, you must adjust the corresponding spends and resubmit them until they are fully approved.
+
+This same workflow can also be used for forecasting.
+
+## Related actions
+
+* [Request approval for investments](requesting-an-approval.html)
+
+* [Approve or deny investment approval requests](deciding-on-a-request.html)
+
+* [Manage decided approval requests](managing-a-decided-request.html)
+
+
+
+# Request approval for investments
+
+If your organization uses a dual-control governance to verify planning, you must submit your investments for approval after you create them.
+
+## Before you begin
+
+Before you can submit an investment for approval:
+
+* The Approval feature must be activated in your Uptempo instance. When it is activated, colored bars are displayed on the left border of the line item's and placeholder's cells in the Plan and/or Forecast columns.
+
+* You must finish setting up all the details of the investment. After you submit the investment, (when it is in the states Pending, Approved or Denied), you can no longer make any changes to the investment or its attributes.
+
+Procedure: Submit an investment for approval
+
+In the next step, the designated approver must review your request and approve or deny it. For details, see [Approve or deny investment approval requests](deciding-on-a-request.html).
+
+
+
+# Approve or deny investment approval requests
+
+After an investment has been submitted for approval, the designated approvers must review the approval request.
+
+As an approver, you can view open approval requests in the ![Budgets](images/coins.svg) Budgets section, and decide whether to approve or deny them.
+
+Procedure: Review and decide on approval requests
+
+
+
+# Manage decided approval requests
+
+After an approver has reviewed an approval request and has decided to approve or deny it, the outcome of the review is displayed in the investment plan. From here, you can adjust and resubmit amounts that were rejected or sent back, and submit change requests if you need to edit an approved amount.
+
+## Approval request statuses
+
+You can track the status of your approval requests directly on the investment grid in the ![Investments](images/spreadsheet.svg) Investments section. A colored bar next to the cell value indicates the current stage of the workflow:
+
+![Approval status](images/ApprovalStatus.png)
+
+Planning (Orange)
+: Your planned value has not yet been submitted for approval. By default, all newly entered values start with this status. Requests that are sent back for changes by the approver also have this status.
+: Planning line items and placeholders can be deleted, and you can edit their amounts and their attributes in the details panel.
+
+Pending (Blue)
+: You have submitted the amount, and the request is awaiting review. The cell becomes read-only.
+: Pending line items and placeholders can't be deleted, and you can't edit their attributes in the details panel.
+
+Approved (Green)
+: The requested amount has been approved by a designated approver. The cell remains read-only.
+: If you need to adjust an approved amount, you must submit a change request. The amount will only update if the change request is approved.
+: Approved line items and placeholders can't be deleted, and you can't edit their attributes in the details panel.
+
+Denied (Red)
+: The requested amount has been rejected and requires adjustment. The cell remains read-only. You must manually revert the cell back to the Planning state before you can edit and resubmit the value.
+: Denied line items and placeholders can't be deleted, and you can't edit their attributes in the details panel.
+
+Pending Change (Black)
+: You have submitted a change request for a previously approved amount. The cell becomes read-only.
+: Approved line items and placeholders with a pending change can't be deleted, and you can't edit their attributes in the details panel.
+
+## Resubmit requests that were not approved
+
+When an amount is sent back or denied by the approver, you can make changes, then resubmit the revised amount for approval again.
+
+### Adjust and resubmit sent back requests
+
+If an amount is marked as Planning (orange bar) after review, it has been sent back for changes. You can update the amount or investment attributes as needed, then resubmit the revised amount for approval.
+
+Procedure: Adjust and resubmit a request that was sent back
+
+### Adjust and resubmit denied requests
+
+If an amount is marked as Denied (red bar) after review, it has been rejected. If you want to make changes to the amount and request approval again, you can return a denied amount to the Planning status (orange bar), then edit and resubmit it for approval.
+
+Procedure: Adjust and resubmit a request that was denied
+
+## Submit change requests for approved amounts
+
+If you need to adjust an approved amount, you can submit a change request. Change requests are submitted for approval and reviewed in the same way as initial approval requests.
+
+After you submit a change request for an approved amount, it is marked as Pending Change (black bar). Approvers can either approve or deny the change request:
+
+* If the change is approved: The cell is marked as Approved (green bar) and displays the revised amount.
+
+* If the change is denied: The cell is marked as Approved (green bar) and displays the previous approved amount
+
+Procedure: Submit a change request for an approved amount
+
+
+
+# View a record of events on budgets and investments
+
+The audit trail automatically records events that take place in budgets and investments, providing you with a complete historical log of who did what and when.
+
+If any Uptempo user modifies a budget or investment plan, you can see exactly who made the change. This gives you full visibility into all user actions at both the budget and investment plan levels, ensuring clear accountability across your team.
+
+Note: Note
+
+To export the Audit Trail list open the Roll-up or details panel. The Audit Trail list will be exported as a .csv file. Please note that the export has a limit of 2000 entries.
+
+## Open the audit trail
+
+You can access the audit trail from either the ![Budgets](images/coins.svg) Budgets or ![Investments](images/spreadsheet.svg) Investments section. In both cases, the data you see is context-specific, and the audit trail lists events relevant to the area you're viewing:
+
+* ![Budgets](images/coins.svg) Budgets: If you open the audit trail from... * A folder or sub-folder: All events for all budget folders and sub-folders in the Uptempo instance. * An investment plan: Only events for the selected investment plan.
+
+* ![Investments](images/spreadsheet.svg) Investments: If you open the audit trail from... * A category or sub-category: All events for the category or sub-category, and for all sub-categories, line items, and placeholders within it. * A line item or placeholder: Only events for the selected line item or placeholder.
+
+Procedure: View the audit trail for a budget folder, sub-folder, or investment plan
+
+Procedure: View the audit trail for an investment item
+
+## Navigate and filter the audit trail
+
+### Audit trail table columns
+
+The Audit Trail dialog displays the list of events in a table with these columns:
+
+Time
+: The timestamp of the date and time the event took place.
+
+User
+: The email address of the user associated with the event (such as the user who performed the action).
+
+Investments/Folder (Budgets only)
+: The folder/sub-folder or investment plan that the event relates to. This column is only shown when viewing the audit trail from the ![Budgets](images/coins.svg) Budgets section.
+
+Area
+: The category of the event, such as the type of action or object that the event relates to.
+
+Details
+: A short description of the event and the specific resources involved.
+
+Tip: Tip
+
+Click any column header to sort the table by that column. Click the header once to sort in descending order, and click it a second time to sort in ascending order.
+
+### Filters
+
+To make it easier to find the event records you need, you can use the controls above the table to filter the data that it displays. The following filters are available:
+
+| Filter name |Description |To use |
+------------------------------------
+| Time |Only show events that took place within a specific date range |Choose between preset options (such as Last 1 Day, Last 30 Days, etc.), or manually specify a date range by selecting a From and To date |
+| User |Only show events related to a specified user  |Enter all or part of an email address to show all events where the keywords appear in the User column |
+| Area |Only show events related to a specified event category/type |Select the area you want to filter by from the list |
+| Action |Only show events related to a specified type of action, such as created or deleted |Select the action type you want to filter by from the list |
+
+You can specify one or multiple of the filters. After setting your filter parameters, click ![Search](images/fa-search.svg) Search to apply them to the table.
+
+## Export the audit trail
+
+You can export the data from the audit trail. The exported data is provided in the CSV file format, which you can view with any spreadsheet program.
+
+Each export:
+
+* Can contain up to 2000 event records (lines)
+
+* Includes all currently displayed records based on the filters applied
+
+Procedure: Export audit trail records as CSV
+
+
+
+# Add comments to investments
+
+Uptempo Financial Management allows you to tag different cells in the ![Investments](images/spreadsheet.svg) Investments section with comments. This promotes collaboration between teams, keeping collaborators up to date about changes to the plan.
+
+Note: Note
+
+Anybody who has Editor access to investment plans is able to add or delete comments from a cell. All updates to comments are recorded in the Audit Trail.
+
+Procedure: Add a comment to an investment grid cell
+
+
+
+# Financial Management configuration overview
+
+Uptempo Financial Management has two levels of settings that let you configure features globally, or for specific parts of your budget hierarchy: master settings and custom settings.
+
+## Master settings
+
+Master settings are the global settings where you turn on and configure features across the entire budget hierarchy. Changes to master settings affect all investments in the hierarchy.
+
+In some cases, you may want to configure different features for a specific sub-folder. For example:
+
+* If sub-folders are organized by region, you can add specific columns and components for regions that track different Key Performance Indicators (KPIs).
+
+* Administrators can be assigned at different levels of the hierarchy, so different regions only see the financial data they have access to.
+
+## Custom settings
+
+Custom settings appear at the sub-folder level and affect only the budgets in that sub-folder. Some master settings options aren't available at the custom settings level:
+
+* Currency: Currency settings are managed in master settings only. You can set custom currencies for each investment plan there, so you don't have to update each sub-folder individually.
+
+* Strategic Planning: Options for the entire budget hierarchy are set in master settings to keep configuration centralized.
+
+* Workflow: All investments in the budget hierarchy appear in the master settings workflow tabs.
+
+* Connectors: Connectors are only accessible from master settings because they require data exchange across the entire hierarchy.
+
+* Configuration: Preferences are set in master settings to centralize configuration across the hierarchy.
+
+The following options can be adjusted at the custom settings level:
+
+* Columns: Add columns and fields for specific budgets on the Investment grid, Actuals panel, Details panel, Grand Total panel, PO panel, and Roll-up panel.
+
+* Dependencies: Create dependencies between two Drop-Down List or Multi-Select List fields on the Details panel to help with data entry for specific workspaces.
+
+* Page Layout: Create and adjust what appears in the ![Investments](images/spreadsheet.svg) Investments section, including views, metrics, and columns.
+
+* Categories: Define categories for specific investment plans so they're already populated in the investment grid.
+
+
+
+# User roles
+
+Uptempo Financial Management has five user roles with varying levels of permissions. You can hold multiple roles at different levels of the hierarchy, and your role at each level determines what you can do there.
+
+## Role types
+
+* Owner: The owner has full access to Uptempo Financial Management and is responsible for the entire budget hierarchy and its back-end configuration. Each Uptempo instance has exactly one owner. Typical owner roles include Marketing Operations Manager and Senior Marketing Manager.
+
+* Administrator: Administrators handle back-end configuration and can do almost everything an owner can, except manage the budget hierarchy itself. Keep the number of administrators per team to one or two to make access control easier to manage. Typical administrator roles include Marketing Business Owner, Team Lead, and VP or Director of a region.
+
+* Editor: Editors enter plans, update forecasts, and map POs and actuals. Most marketing team members have this role. Typical editor roles include Marketing Budget Owner, Marketing Manager, and Marketing Coordinator.
+
+* Editor (Data Entry Only): This role is for team members who update data in the investment grid but don't need to create or remove items from the investment plan.
+
+* Viewer: Viewers have read-only access to investments and reports. This role suits executives and managers who need visibility but don't edit data. Editors can also be given Viewer access to other investment plans.
+
+### Roles for Finance team members
+
+Uptempo Financial Management users are typically part of the Marketing team, but it's also common for members of the Finance team to work in Uptempo.
+
+Finance team members typically hold the Editor or Viewer role. Common exceptions are:
+
+* Owner: A financial analyst responsible for implementing Uptempo Financial Management.
+
+* Administrator: A finance team member who imports actuals into Uptempo Financial Management.
+
+* Viewer: A finance stakeholder who needs visibility into investments and reports but shouldn't edit data.
+
+Note: Note
+
+All users have access to the ![Insights](images/chart-increase.svg) Insights section for the investment plans they have been invited to.
+
+## Permissions by role
+
+Permissions only apply to the part of the hierarchy a user has been invited to.
+
+Table legend
+: * ✓ indicates a default permission
+
+* (✓) indicates a permission that requires contacting your Customer Success Manager to enable
+
+* ✓* indicates a default permission that a user with access to Organization Settings can revoke
+
+* (✓*) indicates a permission that a user with access to Organization Settings can grant
+
+### Settings permissions
+
+| Permission |Owner |Administrator (root folder) |Administrator (sub-folder) |Administrator (investment plan) |
+---------------------------------------------------------------------------------------------------------------
+| Access to Organization Settings |(✓) |(✓) |  |  |
+| Access to Master Settings |✓ |✓ |  |  |
+| Access to Custom Settings |✓ |✓ |✓ |(✓) |
+
+Table legend
+: * ✓ indicates a default permission
+
+* (✓) indicates a permission that requires contacting your Customer Success Manager to enable
+
+Settings include access to the following features:
+
+Organization Settings:
+
+* Custom Branding
+
+* Security
+
+* Single Sign-On
+
+* User Management
+
+* Role Management
+
+Master Settings:
+
+* Template Setup: Columns, Column Groups, Dependencies, Views, Categories, Currency
+
+* Strategic Planning: Tags & Scenarios, Strategic Targets, Impact Modeler
+
+* Workflow: Workflow Form, Budget Transfers, Approval & Requests
+
+* Cloud Exchange: Connectors, Actions
+
+* Configuration: Preferences
+
+Custom Settings:
+
+* Template Setup: Columns, Dependencies, Views, Categories
+
+* Cloud Exchange: Actions
+
+### Budgets tab permissions
+
+| Permission |Owner |Administrator |Editor |Editor (Data Entry Only) |Viewer |
+------------------------------------------------------------------------------
+| View Hierarchy |✓ |✓ |✓ |✓ |✓ |
+| Build Hierarchy |✓ |  |  |  |  |
+| Manage User Invites |✓ |✓* |(✓*) |(✓*) |  |
+| Import Activity Plans |✓ |✓ |✓ |  |  |
+| Import POs & Actuals |✓ |✓* |(✓*) |(✓*) |  |
+| Map POs & Actuals |✓ |✓* |✓* |(✓*) |  |
+| Manage Scheduled Imports |✓ |✓ |  |  |  |
+| Manage Fund Requests |✓ |✓ |✓ |  |  |
+
+Table legend
+: * ✓ indicates a default permission
+
+* ✓* indicates a default permission that a user with access to Organization Settings can revoke
+
+* (✓*) indicates a permission that a user with access to Organization Settings can grant
+
+### Investments tab permissions
+
+| Permission |Owner |Administrator |Editor |Editor (Data Entry Only) |Viewer |
+------------------------------------------------------------------------------
+| View Investments |✓ |✓ |✓ |✓ |✓ |
+| Build Investment Structure |✓ |✓* |✓* |(✓*) |  |
+| Enter and edit data in the investment grid and details panel |✓ |✓* |✓* |✓* |  |
+| Submit budget reallocation and change requests |✓ |✓ |✓ |  |  |
+| Manually add and edit POs and actuals |✓ |✓* |✓* |(✓*) |  |
+| View and use outbound actions |✓ |✓ |✓ |✓ |  |
+
+Table legend
+: * ✓ indicates a default permission
+
+* ✓* indicates a default permission that a user with access to Organization Settings can revoke
+
+* (✓*) indicates a permission that a user with access to Organization Settings can grant
+
+### Strategy tab permissions
+
+The Strategy tab is an optional feature. To enable view or edit access for your users, contact your Customer Success Manager.
+
+### Insights permissions
+
+| Permission |Owner (root folder) |Owner (sub-folder / activity plan) |Administrator (root folder) |Administrator (sub-folder / activity plan) |Editor |Editor (Data Entry Only) |Viewer |
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| View Insights |✓ |✓ |✓ |✓ |✓ |✓ |✓ |
+| Build investment structure |✓ |✓ |✓ |✓ |✓ |  |  |
+| Enter and edit data in the Investments grid and details panel |(✓) |(✓) |(✓) |(✓) |  |  |  |
+
+Table legend
+: * ✓ indicates a default permission
+
+* (✓) indicates a permission that requires contacting your Customer Success Manager to enable
+
+
+
+# Manage user access to budgets
+
+In Uptempo Financial Management, users can only access budgets (folders, sub-folders, or investment plans) that they have been invited to. Administrators control which users can view or edit each budget, maintaining clear accountability across users in the instance.
+
+## Invite users to budgets
+
+### Before you begin
+
+Note: Note
+
+These requirements only apply to Uptempo 1.0 instances. If you are using an Uptempo 2.0 instance, you can skip this section.
+
+Before you can invite users to a budget, you must:
+
+* Create at least one permissions role for the Budget module (under ![Administration](images/settings.svg) Administration > Permissions).
+
+* Add the Module Access permission to each permissions role in the Budget module.
+
+Procedure: Invite a user to a folder, sub-folder, or investment plan
+
+### Resend user invitation emails
+
+If an invited user did not receive the invitation email, or if the link in their invitation email expired before they could use it, you can resend their invitation email at any time.
+
+Procedure: Resend an invitation email to a user
+
+## Remove users from budgets
+
+You can remove users from individual budget folders, sub-folders, or investment plans at any time. Removing a user from a given budget does not affect their access to other parts of the budget hierarchy that they are invited to.
+
+Procedure: Remove a user from a budget
+
+
+
+# Manage user access to budgets (Preview)
+
+Note: Note
+
+This document describes a feature that is currently in Preview, and is [available on an opt-in basis](uptempo-s-feature-release-lifecycle.html#stage-1-preview). To learn more, see [What's new: 2026.5](release-2026-5.html).
+
+If you have not enabled this Preview feature in your Uptempo instance, please refer to [Manage user access to budgets](manage-budget-access.html) instead.
+
+In Uptempo Financial Management, users can only access budgets (folders, sub-folders, or investment plans) that they have been invited to. Administrators control which users can view or edit each budget, maintaining clear accountability across users in the instance.
+
+## Invite users to budgets
+
+You can invite users to any budget folder, sub-folder, or investment plan either individually (all Uptempo versions), or as a group (Uptempo 1.0 only).
+
+When you invite users, you also assign them a [user role](understanding-user-roles.html), which determines the permissions that they have within Uptempo Financial Management.
+
+### Before you begin
+
+Note: Note
+
+These requirements only apply to Uptempo 1.0 instances. If you are using an Uptempo 2.0 instance, you can skip this section.
+
+Before you can invite users to a budget, you must:
+
+* Create at least one permissions role for the Budget module (under ![Administration](images/settings.svg) Administration > Permissions).
+
+* Add the Module Access permission to each permissions role in the Budget module. Without this permission, invited users will not be able to access the ![Budgets](images/coins.svg) Budgets or ![Investments](images/spreadsheet.svg) Investments sections in your Uptempo instance.
+
+### Invite users to a budget individually
+
+You can invite users to a budget individually, using their email address as an identifier:
+
+* If an email address does not exist in the Uptempo instance yet, inviting it creates a new user.
+
+* If an email address is already registered to an existing user in the instance, inviting it grants additional access to that user (for example, to another folder or investment plan).
+
+When you invite a user, you can also optionally choose to send them an email notification.
+
+Procedure: Invite an individual user to a budget
+
+If an individually invited user did not receive the invitation email, or if the link in their invitation email expired before they could use it, you can resend their invitation email at any time.
+
+Procedure: Resend an invitation email to a user
+
+### Invite users to budgets as a group
+
+Instead of inviting users to budgets individually, you can invite a permissions role. When you invite a permissions role, all users assigned to that role (under ![Administration](images/settings.svg) Administration > Permissions > Budget) are invited and granted the specified access together.
+
+When you invite a permissions role to a budget, you can add or remove individual users to or from the permissions role to control their access to the budget:
+
+* Adding a user to a permissions role also grants that user access to all budgets the permissions role is invited to
+
+* Removing a user from a permissions role also removes that user's access to all budgets the permissions role is invited to (unless the user was also individually invited to a budget in addition to their access through the permissions role)
+
+Tip: Tip
+
+Inviting users to Financial Management budgets by their permissions role is useful if you manage your Uptempo user accounts in an external Single Sign-On Identity Provider (IdP).
+
+In this case, you can save time and effort by assigning users or groups in the IdP to permissions roles, then giving them access to Financial Management by inviting them collectively via their permissions role (rather than individually).
+
+Procedure: Invite a permissions role to a budget
+
+## Remove users from budgets
+
+You can remove users from specific budget folders, sub-folders, or investment plans at any time. Removing a user from a given budget does not affect their access to other parts of the budget hierarchy that they are invited to.
+
+### Remove an individually invited user from a budget
+
+If you invited a user to a budget individually (using their email address), you can also remove them individually.
+
+Procedure: Remove an individual user from a budget
+
+### Remove an invited permissions role from a budget
+
+If you invited a permissions role to a budget, you can remove the permissions role from the budget at any time. This also removes access to the budget from all users who currently have the permissions role.
+
+Tip: Tip
+
+If you need to remove access to a budget for only some of the users who were invited as part of a permissions role, you can remove them from the permissions role instead by editing their account permissions (under ![Administration](images/settings.svg) Administration > User List).
+
+Procedure: Remove a permissions role from a budget
+
+
+
+# BI Export API
+
+## Overview
+
+The BI Export API gives you programmatic access to a set of raw data files that represent your budgeting data. This data includes all columns and rows from all budgets as well as the mapped purchase orders, invoices, and external campaigns.
+
+The BI Export API consists of two API calls: one to retrieve an individual dataset in the form of a CSV file, and one to retrieve all datasets in the form of ZIP of CSV files. The API documentation describes these two operations in detail.
+
+Note: Note
+
+The BI Export API documentation varies depending on your version of Analytics/Insights.
+
+Contact Uptempo Support or your Customer Success Manager if you need help determining the correct version of the documentation for your instance.
+
+## Documentation
+
+To view the documentation for current and previous versions of the BI Export API, go to:
+
+[Uptempo Manuals &gt; BI Export API](https://knowledge.uptempo.io/doc/BM_Uptempo_en_105000000000/Content/01 Uptempo/Uptempo.htm#BIExportAPI)
 
 
 
@@ -4713,7 +7167,7 @@ You can now view activity funding breakdowns by quarter or fiscal year at every 
 
 ### Invite users to budgets by their Permissions Role
 
-In Uptempo 1.0 instances that use Single Sign-On (SSO), administrators can now invite users to the financial hierarchy using Permissions Roles, making it easier to manage access to Uptempo Financial Management at scale directly from your existing user management system.
+In Uptempo 1.0 instances, administrators can now invite users to the financial hierarchy using Permissions Roles, making it easier to manage access to Uptempo Financial Management at scale directly from your existing user management system.
 
 * Grant access by role: Instead of inviting individual users to the budget hierarchy, you can now invite any Permissions Role in the Budget module (under Administration > Permissions > Budget) to easily grant access to all users assigned to that role.
 
@@ -4722,11 +7176,7 @@ In Uptempo 1.0 instances that use Single Sign-On (SSO), administrators can now i
 * Configure role mappings: When you invite a Permissions Role to a budget, you can conveniently grant the appropriate access level to Uptempo Financial Management by assigning a corresponding User Role, such as Editor or Viewer.
 
 ![Invite by permissions role](images/InviteByPermissionsRole.png)
-Note: Note
-
-This feature requires Single Sign-On (SSO), and is not available in Uptempo 1.0 instances that use Uptempo accounts (email and password) to sign in.
-
-→ [Learn more about inviting users to Uptempo Financial Management budgets]
+→ [Learn more about inviting users to Uptempo Financial Management budgets](manage-budget-access-preview.html)
 
 ### Monitor the progress of data imports from any page
 
@@ -4738,7 +7188,8 @@ You can now monitor the real-time progress of your POs and actuals imports from 
 
 * Instant notifications and quick access: Receive immediate success or error notifications as soon as your import finishes. You can also click the progress indicator at any time to view specific details or return directly to the full Import page.
 
-→ [Learn more about importing data into Uptempo]
+![Background import](images/BackgroundImport.png)
+→ [Learn more about importing data into Uptempo Financial Management](importing.html)
 
 ### Expanded support for Persistent IDs
 
@@ -4757,7 +7208,7 @@ Uptempo now supports Persistent IDs for budgets, columns, and column choices, en
 When you connect activities to an investment, the search function in the Select activity to connect to... dialog now supports searching by Activity ID. This makes it easier to find a specific activity to connect, especially if a lot of your activities have similar names.
 
 ![Connect activity search id](images/ConnectActivitySearchID.png)
-→ [Learn more about connecting activities to investments]
+→ [Learn more about connecting activities to investments](funding-activities-with-investments.html)
 
 
 
@@ -5359,7 +7810,7 @@ The Activity Funding Panel is available on any investment line item that has at 
 
 To follow the instructions in this section:
 
-* You must have access to the Investments section in your Uptempo instance.
+* You must have access to ![Investments](images/spreadsheet.svg) Investments section in your Uptempo instance.
 
 * You must have access to all the activities connected to the investment for which you want to manually set funds allocations.
 
@@ -6023,7 +8474,7 @@ When you use display settings (such as filters and groupings) to customize which
 
 * After you save a view, you can select it from the new Views menu in the Timeline and Summary to apply the same display settings with just one click.
 
-* Any user with access to the Activities section can create their own personal views that aren't visible to other users, either from scratch or by copying an existing view. Administrators can additionally create views that can be used by all users in their organization.
+* Any user with access to the ![Activities](images/calendar.svg) Activities section can create their own personal views that aren't visible to other users, either from scratch or by copying an existing view. Administrators can additionally create views that can be used by all users in their organization.
 
 ![Saved views example](images/SavedViewsExample.png)
 → [Learn more about creating and using saved views](save-activity-hierarchy-display-settings-as-views.html)
@@ -6434,7 +8885,7 @@ With the new List action, administrators can now create access control statement
 
 ### Save Activity Hierarchy Display Settings as Views
 
-When you use display settings (such as filters and groupings) to customize which activities are shown in the Activity Hierarchy, you can now save these settings as views. After you save a view, you can select it from the new Views menu in the Timeline and Summary to apply the same display settings with just one click. Any user with access to the Activities section can create their own personal views that aren't visible to other users, while administrators can additionally create views that can be used by all users in their organization.
+When you use display settings (such as filters and groupings) to customize which activities are shown in the Activity Hierarchy, you can now save these settings as views. After you save a view, you can select it from the new Views menu in the Timeline and Summary to apply the same display settings with just one click. Any user with access to the ![Activities](images/calendar.svg) Activities section can create their own personal views that aren't visible to other users, while administrators can additionally create views that can be used by all users in their organization.
 
 ![Saved views example](images/SavedViewsExample.png)
 → [Learn more about creating and using saved views](save-activity-hierarchy-display-settings-as-views.html)
@@ -6449,7 +8900,7 @@ Previously, inherited attributes were not visible while viewing the details of a
 
 ### Consistent Number Formatting Configuration
 
-Just like Uptempo Financial Management, Uptempo Campaign Management now also applies the number format preference set in each user account. When the Number format setting is configured on the Settings tab of a user account (under Administration > User List), the selected country-specific number format will now also apply to numbers displayed in the Activities section, just as it does in the Investments and Budget sections. This ensures that the way numbers are displayed matches users' expectations, which is particularly important for organizations with global teams: for example, a user in the US would see `12,345.67`, while a user in Germany would see this number as `12.345,67`.
+Just like Uptempo Financial Management, Uptempo Campaign Management now also applies the number format preference set in each user account. When the Number format setting is configured on the Settings tab of a user account (under Administration > User List), the selected country-specific number format will now also apply to numbers displayed in the ![Activities](images/calendar.svg) Activities section, just as it does in the Investments and Budget sections. This ensures that the way numbers are displayed matches users' expectations, which is particularly important for organizations with global teams: for example, a user in the US would see `12,345.67`, while a user in Germany would see this number as `12.345,67`.
 
 → [Learn more about configuring user account settings](https://knowledge.uptempo.io/doc/BM_help_en_100100000001/en-us/Content/Administration/Topics/Benutzerkonto erstellen.htm#Configur)
 
@@ -6621,7 +9072,7 @@ The following bug fixes have been released over the past four weeks, between Apr
 
 * When you are configuring a multi-select attribute where percentage allocations are enabled, highlighting the percentage value for a selected list option no longer causes that list option to become deselected.
 
-* When no activity types have been defined in an Uptempo instance yet, the Create Activity button is no longer hidden in the Activities section. Instead, the button is now visible but deactivated, and displays a tooltip to more clearly explain that creating activities is not possible until at least one activity type has been set up.
+* When no activity types have been defined in an Uptempo instance yet, the Create Activity button is no longer hidden in the ![Activities](images/calendar.svg) Activities section. Instead, the button is now visible but deactivated, and displays a tooltip to more clearly explain that creating activities is not possible until at least one activity type has been set up.
 
 * Overriding roll-up values on the Details > Impact tab no longer causes the activity's In-Market Dates to be changed inadvertently.
 
@@ -6929,7 +9380,7 @@ The following bug fixes have been released over the past four weeks, between Feb
 
 * When you connect an activity to an investment, entering a search term that matches a very large number of activities no longer causes an error.
 
-* When you are in the Investments section, hovering on any other section in the navigation sidebar no longer displays duplicated tooltips for the name of the hovered section.
+* When you are in ![Investments](images/spreadsheet.svg) Investments section, hovering on any other section in the navigation sidebar no longer displays duplicated tooltips for the name of the hovered section.
 
 * If you leave a tab with a Financial Management module page open but inactive for some time, returning to the tab later no longer causes a white page with the text "null" to be displayed. Instead, the system now correctly allows you to resume using the page (if your session is still active), or redirects you to the login page (if your session has expired).
 
@@ -7450,6 +9901,18 @@ Available from January 21, 2025.
 There are several updates across Insight on both the Dashboard and Reports.
 
 Updates include: better color-coding on visuals, label and axis improvements on graphs, date selector fixes, and download image upgrades.
+
+
+
+# v15.15.0
+
+Tip:
+
+Available from May 27, 2026.
+
+## Lagged Value Breakouts in Yield Curves
+
+You can now use Lag Curves to break out forecasted value on Yield Curves into different time horizons, so you can see when your spend actually pays back — not just how much. After your next model refresh, you'll see short, medium, and long-term Lag Curves in Inspire by default.
 
 
 
