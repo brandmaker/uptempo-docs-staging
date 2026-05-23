@@ -4372,9 +4372,9 @@ Uptempo Financial Management consists of four sections to help you drive towards
 
 * ![Budgets](images/coins.svg) Budgets: The access point for all budgets, allowing you to view collaborators, manage imports, POs, actuals, and budget transfers. See [Budgets section](budgets-section.html).
 
-* ![Investments](images/spreadsheet.svg) Investments: The workspace where marketing spend data is tracked and data entry occurs. See [Investments Tab](null).
+* ![Investments](images/spreadsheet.svg) Investments: The workspace where marketing spend data is tracked and data entry occurs. See [Investments section](investments-section.html).
 
-* ![Insights](images/chart-increase.svg) Insights: Contains dashboards and reports populated by your investments, POs, and actuals to answer critical business questions. See [Insights Tab](null).
+* ![Insights](images/chart-increase.svg) Insights: Contains dashboards and reports populated by your investments, POs, and actuals to answer critical business questions. See [Insights section](insights-section.html).
 
 
 
@@ -4457,7 +4457,7 @@ The dialog lists all users who have access to the folder, sub-folder or investme
 
 Your own details are always listed first. All other users are listed below in alphabetical order (by first name). Users who have been invited but have not registered in the system are listed at the end.
 
-Access to the folder, sub-folder and investment plans is organized by invitations. The tasks a user can perform are determined by the assigned role. For more information, see [](null)
+Access to the folder, sub-folder and investment plans is organized by invitations. The tasks a user can perform are determined by the assigned role. For more information, see [Manage user access to budgets](manage-budget-access.html).
 
 ## Imports and budget transfers
 
@@ -5161,7 +5161,7 @@ Auto Distribution
 : ![Auto distribution percentages new](images/AutoDistributionPercentagesNew.png)
 : Note: Note
 
-The Auto Distribution method is only available on budget columns where it has been preconfigured by an administrator. For more information, see [](null).
+The Auto Distribution method is only available on budget columns where it has been preconfigured by an administrator.
 
 ### Manual distribution
 
@@ -5808,7 +5808,7 @@ Use this process to reallocate funds from one investment plan to another, for ex
 
 Procedure: Request a budget transfer
 
-If you are an assigned approver for the investment plan the request is auto-approved. If you are not eligible to approve budget transfers for this investment plan, the approvers are informed about your request by e-mail. Your request is in pending status and you can monitor the request, see [View and manage budget reallocation requests](monitor-a-request.html).
+If you are an assigned approver for the investment plan the request is auto-approved. If you are not eligible to approve budget transfers for this investment plan, the approvers are informed about your request by email. Your request is in pending status and you can monitor the request, see [View and manage budget reallocation requests](monitor-a-request.html).
 
 
 
