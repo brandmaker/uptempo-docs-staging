@@ -4346,8 +4346,6 @@ Phase 1: Plan
 : For more details on this phase, see:
 : * [Align planning with strategy](aligning-planning-with-strategic-objectives.html)
 
-* [](null)
-
 * [Plan investments](planning-investments.html).
 
 Phase 2: Execute
