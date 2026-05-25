@@ -7163,15 +7163,15 @@ You can now view activity funding breakdowns by quarter or fiscal year at every 
 
 ## Financial Management: Budgets
 
-### Invite users to budgets by their Permissions Role
+### Invite users to budgets by their permissions role
 
-In Uptempo 1.0 instances, administrators can now invite users to the financial hierarchy using Permissions Roles, making it easier to manage access to Uptempo Financial Management at scale directly from your existing user management system.
+In Uptempo 1.0 instances, administrators can now invite users to the financial hierarchy using permissions roles, making it easier to manage access to Uptempo Financial Management at scale directly from your existing user management system.
 
-* Grant access by role: Instead of inviting individual users to the budget hierarchy, you can now invite any Permissions Role in the Budget module (under Administration > Permissions > Budget) to easily grant access to all users assigned to that role.
+* Grant access by role: Instead of inviting individual users to the budget hierarchy, you can now invite any permissions role in the Budget module (under Administration > Permissions > Budget) to easily grant access to all users assigned to that role.
 
 * Automate access via SSO: To simplify large-scale user management, you can link your SSO groups directly to specific Budget module roles. This allows you to manage access to Uptempo Financial Management centrally through your organization's user management system.
 
-* Configure role mappings: When you invite a Permissions Role to a budget, you can conveniently grant the appropriate access level to Uptempo Financial Management by assigning a corresponding User Role, such as Editor or Viewer.
+* Configure role mappings: When you invite a permissions role to a budget, you can conveniently grant the appropriate access level to Financial Management by assigning a corresponding user role, such as Editor or Viewer.
 
 ![Invite by permissions role](images/InviteByPermissionsRole.png)
 → [Learn more about inviting users to Uptempo Financial Management budgets](manage-budget-access-preview.html)
