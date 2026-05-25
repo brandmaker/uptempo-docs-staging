@@ -4344,9 +4344,7 @@ Uptempo Financial Management is designed to reflect this strategic operating mod
 Phase 1: Plan
 : Corporate marketing starts with a top-down plan supporting corporate goals. This phase includes budgeting (managed by owners) and creating an initial estimate of your investments (the bottom-up plan) that equals the top-down target.
 : For more details on this phase, see:
-: * [Align planning with strategy](aligning-planning-with-strategic-objectives.html)
-
-* [Plan investments](planning-investments.html).
+: * [Plan](plan-phase.html).
 
 Phase 2: Execute
 : Once planning is complete and the Plan is locked, the Forecast becomes the record of your current estimate. You manage requisition amounts from your finance system as Purchase Orders (POs), and invoice data as Actuals.
@@ -4366,23 +4364,11 @@ Phase 3: Optimize
 Uptempo Financial Management consists of four sections to help you drive towards effective financial planning and execution:
 
 ![Navigation](images/Navigation.png)
-* Strategy: Break down corporate goals into objectives for the marketing department and teams. See [Strategy section](strategy-section.html).
-
 * ![Budgets](images/coins.svg) Budgets: The access point for all budgets, allowing you to view collaborators, manage imports, POs, actuals, and budget transfers. See [Budgets section](budgets-section.html).
 
 * ![Investments](images/spreadsheet.svg) Investments: The workspace where marketing spend data is tracked and data entry occurs. See [Investments section](investments-section.html).
 
 * ![Insights](images/chart-increase.svg) Insights: Contains dashboards and reports populated by your investments, POs, and actuals to answer critical business questions. See [Insights section](insights-section.html).
-
-
-
-# Strategy section
-
-In the Strategy section, your marketing organization breaks down corporate goals into objectives for the marketing department and its teams. Objectives are set for the company and derived for the marketing department and team level. The objectives for each level are displayed in the respective column:
-
-![Strategic planner2](images/StrategicPlanner2.png)
-
-For more information, see [Align planning with strategy](aligning-planning-with-strategic-objectives.html).
 
 
 
@@ -4598,7 +4584,7 @@ In cases where line items are indirectly connected through their parent category
 The columns in the investment grid table are where you enter and maintain the cost and spend data in your investment plan. You can use the display settings near the top of the page to control the data that is shown in the investment grid:
 
 ![Investment tab workspace](images/Investment%20tab%20Workspace.png)
-For more information, see [Setting up the workspace](setting-up-the-workspace.html).
+For more information, see [Set up the workspace](setting-up-the-workspace.html).
 
 ## Performance insight cards
 
@@ -4679,214 +4665,6 @@ For more information see [Optimize](optimize-phase.html).
 
 
 # Plan
-
-The work with Uptempo starts with the planning phase. But before you can plan your actual investments, your organization must first set the goals for the next fiscal year. This is done in strategic planning, see [Align planning with strategy](aligning-planning-with-strategic-objectives.html).
-
-In the second step, you can build on the strategic planning to plan the investments and create corresponding investment plans. This is described in the section [Plan investments](planning-investments.html).
-
-
-
-# Align planning with strategy
-
-Strategic Planner connects your organization's corporate goals to marketing investments by structuring them as objectives at the company, department, and team levels.
-
-## How Strategic Planner works
-
-Objectives break down company goals into departmental and team goals. You enter objectives in Uptempo at three levels: company, marketing department, and team. You then assign team-level objectives to investments to show how each investment contributes to your organization's goals.
-
-![Three-column view of objectives at corporate, marketing, and team levels](images/dataSamples_SM.png)
-For each objective, you specify Key Performance Indicators to make goals measurable. Objective owners maintain these throughout the year.
-
-To reflect priority, you can reorder objectives within each column. For more information, see [Objectives](objectives.html).
-
-Relationships map how objectives cascade through the organization. You can create relationships between Corporate and Marketing objectives, and between Marketing and Team objectives, but not directly between Corporate and Team objectives. For more information, see [Relationships](relationships.html).
-
-## Enable Strategic Planner
-
-Strategic Planner is an optional feature that isn't active by default. Contact your Customer Success Manager to enable it.
-
-When enabling the feature, define which users can access the Strategy tab. Discuss with your Customer Success Manager which users need edit access for objectives, relationships, and key results, and which should have read-only access.
-
-Make sure users who manage investments know they need to link investments to objectives. This is how Uptempo records whether and how spending contributes to goals.
-
-## Best practices
-
-1. Be collaborative
-
-Strategic Planner is a collaborative tool where all users share the same investment plans. Consider using it in a meeting room like an electronic whiteboard to guide planning sessions and support quick decision-making.
-
-Note: Note
-
-All users with access to Strategic Planner share the same investment plans. Adding, modifying, or deleting objectives at any level affects everyone.
-
-2. Make time for planning
-
-Planning takes time. Don't underestimate what it takes to think through what makes your business and teams successful. Brainstorming, collecting feedback, and discussing ideas are the first steps to crafting objectives that filter through all levels of your organization.
-
-3. Think top-down
-
-Setting clear objectives at the corporate level gives marketing departments and teams a foundation to align with. When objectives are visible, individuals can align their own goals accordingly.
-
-4. Plan for measurable results
-
-Set key results for objectives to make goals specific, measurable, and achievable. Quantifiable goals make it easier to track progress and evaluate completion.
-
-5. Link objectives at every tier
-
-Linking objectives across columns shows alignment visually and helps individuals see how their work contributes to key initiatives. Use the view connections mode to see which objectives are connected.
-
-## Next steps
-
-Begin strategic planning by entering your [Objectives](objectives.html).
-
-
-
-# Objectives
-
-Objectives are used to break down the company's goals into departmental and team goals. The CMO and their team enter the objectives in Uptempo for the company level, for the Marketing department and for the team level. The team members who manage the investments assign the team-level objectives to the investments. This records whether and how the investments contribute to the achievement of the objectives.
-
-The CMO and their team specify KPIs for each objective, creating meaningfulness to the objectives. These KPIs are maintained throughout the year by the team members assigned as owners to the objectives.
-
-To reflect the priority between the objectives, the team reorders them accordingly in the respective columns.
-
-## Who can manage objectives?
-
-Users who have access to the Strategy tab and whose role has permission to edit the tab can create objectives and relationships. Note that only the owner of an objective can edit or delete it. This includes editing attributes, ownership, and key results.
-
-## How to assign to levels?
-
-Objectives are created directly in the column of the corresponding level. Objectives can't be moved between columns, for example, Corporate objectives can't be moved to the Marketing or Team objectives columns and vice versa.
-
-If Corporate, Marketing and Team headings are not aligned to your organization, you can change the column labels. Do this
-by clicking on the header and overwriting the text.
-
-You can enter your objectives in all three columns. If this is too granular for your situation, enter the objectives in the Team column only or in the Team and Marketing columns.
-
-## Attributes
-
-| Attribute |Description |
---------------------------
-| Title |Name your target.  Max. 100 characters |
-| Description |The Description field is where you can provide more contextual information on different aspects of these goals. Use this area to describe your approach to reaching the objective, the people who may be required or anything to help you through the planning and implementation process.  Max. 255 characters |
-| Owner |The user who creates the objective is initially entered as the owner. Only the owner can change this assignment and hand-over the objective to another user. |
-| Enter Key Result |This is the field where you can enter a key result. Describe as specifically as possible what measurable result you want to achieve.  Max. 255 characters |
-| Target Date |Set the date when the result should be achieved. |
-| Status Update |Note: Only visible when a key result is created.  This is the place where you can provide status updates to the key results. We recommend to update regularly and clearly describe the situation. Also remember to indicate via the colored marker whether the result is On track, Potentially at risk or At risk.  Max. 255 characters |
-
-## Related actions
-
-* [Create objectives](creating-objectives.html)
-
-* [Reorder objectives](reordering-objectives.html)
-
-* [Update key results](updating-key-results.html)
-
-* [Delete objectives](deleting-objectives.html)
-
-## Next steps
-
-Once you have created your objectives, use [Relationships](relationships.html) to show how the objectives cascade.
-
-
-
-# Create objectives
-
-The CMO and his team have set the objectives and corresponding key results for each necessary level. These objectives are now created in the Strategic Planner.
-
-Procedure: Create an objective
-
-## Next steps
-
-* [Reorder objectives](reordering-objectives.html) to reflect the objectives priorities
-
-* [Update key results](updating-key-results.html) by the objective's owner to get an up-to-date insight into the degree of achievement
-
-* [Delete objectives](deleting-objectives.html) if objectives are no longer current or were created in the wrong column.
-
-* [Create relationships between objectives](creating-relationships-between-objectives.html) to reflect the cascading of the objectives
-
-
-
-# Reorder objectives
-
-The team has created all objectives in Strategic Planner. However, the objectives in the column are not sorted by priority. This makes it difficult for team members to focus on the most important actions.
-
-Note: Note
-
-Coordinate with your team to determine the priority order of all objectives. We recommend that you put the objective with the highest priority at the top and then sort the other objectives in descending order of priority.
-
-Procedure: Reorder an objective
-
-
-
-# Update key results
-
-When the owner of an objective has received new data on the KPIs, they can enter this data in the Strategic Planner so that the target achievement can be measured.
-
-Procedure: Update a key result
-
-
-
-# Delete objectives
-
-When an objective has been completed or it has been created in the wrong column, the owner must delete it.
-
-Warning: Warning
-
-Deleting an objective is irreversible and will delete it from the view of all users. All connections that are associated with that objective will be unlinked.
-
-Procedure: Delete an objective
-
-
-
-# Relationships
-
-Relationships map how objectives cascade from Company to Marketing to Team tier. Note that relationships can be made between Corporate and Marketing objectives, and Marketing to Team objectives, but not between Corporate and Team objectives.
-
-## How relationships are displayed
-
-Relationships are denoted by the link icon in the lower right corner of each card. The left number indicates the number of parent objectives, while the right number indicates the number of child objectives. The example in the following screenshot shows an objective card in the Marketing column that is linked to one parent and two child objectives:
-
-![Relations overview](images/RelationsOverview.png)
-If an objective has at least one relationship, the link icon is blue. As long as an objective is not linked, the icon is gray:
-
-![Unlinked obj](images/UnlinkedObj.png)
-To view the relationships of an objective, click its link icon. The Strategic Planner opens in View mode.
-
-![Strategic planner2](images/StrategicPlanner2.png)
-In View mode, Uptempo shows the clicked objective with a thick blue frame. In addition, only the connected parent and child objectives are displayed with a thin blue frame. Using the buttons below you can switch to Edit mode or close the view by clicking Done.
-
-Alternatively, you can enter the View or Edit mode by clicking the desired objective card, and selecting the respective button in the Connections section.
-
-## Related actions
-
-* [Create relationships between objectives](creating-relationships-between-objectives.html)
-
-* [Delete relationships between objectives](deleting-relationship-between-objectives.html)
-
-
-
-# Create relationships between objectives
-
-The team has created all the objectives and sorted them. Now the team wants to use relationships to map how the objectives are related and cascade.
-
-Procedure: Create relationships between objectives
-
-
-
-# Delete relationships between objectives
-
-The team has created the objectives and the associated relationships. Now the team realizes that a relationship was created incorrectly and wants to delete it.
-
-Warning: Note
-
-Deleting a relationship is irreversible and deletes it from the view of all users.
-
-Procedure: Delete relationships between objectives
-
-
-
-# Plan investments
 
 When you start planning investments, you can structure the planned investments into categories and sub-categories. The investments are represented by line items.
 
@@ -5518,11 +5296,11 @@ When managing investments, data from external systems is usually required, for e
 
 # Set up the workspace
 
-For effective management of investments, you must set up the workspace in the ![Investments](images/spreadsheet.svg) Investments section to meet you needs. To do this, answer the following questions:
+For effective management of investments, you must set up the workspace in the ![Investments](images/spreadsheet.svg) Investments section to meet your needs. To do this, answer the following questions:
 
-* Which line items of an investment plan do I need if I need to edit data or details? Do I need to search or filter the investment plan? If so, by which properties? The answer influences which categories, sub-categories, line items and placeholders are visible in the purple colored area in the following screenshot. For more information see [Searching and filtering investments](searching-and-filtering-marketing-investments.html).
+* Which line items of an investment plan do I need if I need to edit data or details? Do I need to search or filter the investment plan? If so, by which properties? The answer influences which categories, sub-categories, line items and placeholders are visible in the purple colored area in the following screenshot. For more information see [Search and filter investments](searching-and-filtering-marketing-investments.html).
 
-* What data do I need? Do I need plan, forecast or other data? The answer to the question influences which columns are displayed in the green area in the following screenshot. For more information see [Display needed data](display-needed-data.html).
+* What data do I need? Do I need plan, forecast or other data? The answer to the question influences which columns are displayed in the green area in the following screenshot. For more information see [Change the type of data that is displayed](display-needed-data.html).
 
 ![Activities tab workspace](images/Activities%20Tab%20Workspace.png)
 
