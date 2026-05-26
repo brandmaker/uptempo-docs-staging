@@ -4599,26 +4599,26 @@ Performance insight cards contain key marketing plan indicators and are displaye
 
 # About the investment details panel
 
-The investment details panel in the ![Investments](images/spreadsheet.svg) Investments section displays data about each investment item (category, sub-category, line item, or placeholder). The details panel is divided into sections, which each show different types of data. These include:
+The investment details panel in the ![Investments](images/spreadsheet.svg) Investments section shows details about the selected investment item. Items can be categories, sub-categories, line items, or placeholders.
 
 Details
-: Displays basic data about the investment, and lets you view and set attribute values for the investment.
+: Shows basic information and attribute values for the investment.
 
 Metrics
-: Contains different metrics configured for your investment plans, for example your top-down targets, and variance between plan and actual spend, allowing you to view your metrics while planning your bottom up spend.
+: Contains the metrics configured for your investment plans, such as top-down targets and variance between plan and actual spend.
 
 Strategy
 : Displays objectives defined with Strategic Planner.
 
 Alignment
-: Contains information about your alignment score and provides calculations as you make updates to your investment plans while ensuring your plan aligns with your strategic objectives.
+: Shows your alignment score and recalculates as you update your investment plans.
 
 Activities
-: Allows you to connect activities from Uptempo Campaign Management to the investment, and manage how the investment's funds are allocated to the connected activities.
+: Lets you connect activities from Uptempo Campaign Management to the investment and manage fund allocation to connected activities.
 
 Note: Note
 
-The sections in the details panel vary depending on the features that are enabled in your Uptempo instance.
+The sections in the details panel vary depending on which features are enabled in your Uptempo instance.
 
 Procedure: Open an investment's details panel
 
@@ -4626,31 +4626,31 @@ Procedure: Open an investment's details panel
 
 ### Uptempo ID
 
-Marketing investment and spend data are often tracked across multiple systems such as a CRM, procurement system, finance ERP, event tracking platform, digital marketing platforms, and many others. With the data dispersed across the systems it can be challenging to accurately connect all data points for comprehensive reporting.
+Marketing data typically spans multiple systems, including CRMs, procurement tools, finance ERPs, and digital marketing platforms. This makes it difficult to connect all data points for comprehensive reporting.
 
-Uptempo provides marketers with a solution to align their data across all systems with a single unique identifier. Uptempo Financial Management automatically generates unique IDs for each budget folder, sub-folder, and investment plan, and each investment category, sub-category, placeholder, and line item when it’s created. The unique ID for each item can be found on the Roll-Up and details panels, and is named according to the type of item, for example Line Item ID or Investments ID.
+Uptempo Financial Management automatically generates a unique ID for each item when it’s created. These IDs are assigned to budget folders, sub-folders, investment plans, and all investment items (categories, sub-categories, placeholders, and line items). You can find an item’s ID on its Roll-Up and details panels; it’s named after the item type, for example Line Item ID or Investments ID.
 
-An item's ID can be used at three levels.
+You can use an item’s ID at three levels:
 
-* At the budget hierarchy level, it can be connected to other planning tools.
+* Budget hierarchy: Connect it to other planning tools.
 
-* At the investment category or sub-category level, it can be tagged to POs that contain multiple lines or campaigns that have many programs or a parent campaign with many children.
+* Investment category or sub-category: Tag it to POs with multiple lines, or to parent campaigns with multiple programs or children.
 
-* At the investment line item level, it can be tagged to individual PO line items, spend or expense transactions, campaigns, projects and/or investments where appropriate.
+* Line item: Tag it to individual PO line items, transactions, campaigns, or projects.
 
 ### Persistent ID
 
-In addition to the Uptempo ID, Financial Management also generates a Persistent ID for each category, sub-category, or line item. This ID allows for one consistent reference ID to be used across multiple years. This way, only one ID will need to be used across the systems year over year.
+When an investment category, sub-category, or line item is copied for the first time, Financial Management also assigns it a Persistent ID that matches the investment item's original Uptempo ID. The Persistent ID provides a consistent reference ID across multiple years, so you only need one ID across systems year over year.
 
-When line items are copied from one year to the next, during roll-over, a Persistent ID is created which indicates that there was an original version of this object in a previous year. If you copy an item, the original item's Persistent ID is retained on the copy, while a new Uptempo ID is also created (which is specific to the budget year).
-
-The Persistent ID links back to the original item, and exposes all related items. The items that share a Persistent ID do not impact each other: if a value changes in one item, it does not affect any other item with the same Persistent ID. If a new item is created for the first time in a hierarchy without being copied from a previous year, the Persistent ID will be the same as the Uptempo ID.
-
-Persistent IDs are not generated for budget level items like folders, sub-folders, and investment plans.
+Whenever you copy an investment item from one year to the next during rollover, the copy receives a new unique Uptempo ID (specific to the new budget year), but retains the same Persistent ID as the original it was copied from. This means that the same Persistent ID links the original investment item to all of its copies. Investment items that share a Persistent ID are still unique, and don't affect each other: changing a value in one line item doesn't affect any other line item with the same Persistent ID.
 
 Note: Note
 
-An item's Persistent ID can be changed, but only through the API. Reach out to your Customer Success Manager for more details.
+In addition to investment items, Uptempo also assigns Persistent IDs to these Financial Management objects:
+
+* In the ![Investments](images/spreadsheet.svg) Investments section: * Categories * Sub-categories * Line items
+
+* In the [Financial Management settings](differentiating-between-master-settings-and-custom-settings.html): * Columns * Column choices (list options for columns with the types Drop-down list or Multi-select list)
 
 
 
@@ -6992,6 +6992,8 @@ Uptempo now supports Persistent IDs for budgets, columns, and column choices, en
 * Eliminate manual reconciliation: If the name of a budget, column, or column choice is changed during an annual rollover, your data mappings will no longer break. The Persistent ID provides a consistent identifier for an entity across name changes, eliminating the need to manually rebuild data maps in BI tools and reconcile spending.
 
 * More reliable API integrations: Persistent IDs provide a permanent, immutable key for your data pipelines, ensuring that your connections to external systems remain stable and uninterrupted.
+
+→ [Learn more about Persistent IDs in Uptempo Financial Management](about-details-panel.html)
 
 ## Financial Management: Investments
 
