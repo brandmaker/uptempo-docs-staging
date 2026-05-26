@@ -4347,11 +4347,11 @@ Phase 1: Plan
 : * [Plan](plan-phase.html).
 
 Phase 2: Execute
-: Once planning is complete and the Plan is locked, the Forecast becomes the record of your current estimate. You manage requisition amounts from your finance system as Purchase Orders (POs), and invoice data as Actuals.
+: Once planning is complete and the Plan is locked, the Forecast becomes the record of your current estimate. You manage requisition amounts from your finance system as purchase orders (POs), and invoice data as actuals.
 : For more details on this phase, see:
 : * [Forecasting](forecasting.html)
 
-* [Manage Purchase Orders (POs)](managing-pos.html)
+* [Manage purchase orders (POs)](managing-pos.html)
 
 * [Manage actuals](managing-actuals.html).
 
@@ -4464,7 +4464,7 @@ For more information, see:
 
 * [Import investment data](importing-investment-data.html)
 
-* [Create Purchase Orders (POs) by importing](creating-purchase-orders-pos-by-importing.html)
+* [Create purchase orders (POs) by importing](creating-purchase-orders-pos-by-importing.html)
 
 * [Create actuals by importing](creating-actuals-by-importing.html)
 
@@ -5282,7 +5282,7 @@ Note: Note
 
 Tags may vary between organizations. Your organization may use different names, statuses or additional tags. If you have questions, ask your Uptempo administrator for help.
 
-After forecasting, quotations are obtained. These amounts are usually maintained in a third-party system and imported into the PO columns. By comparing the Forecast and PO cells of a line item, you can recognize whether you need to allocate more budget to the line item, or can allocate the excess budget to another line item. For more details on POs, see [Manage Purchase Orders (POs)](managing-pos.html). How reallocate budget is described in [Reallocate investment funds](reallocating-funds.html).
+After forecasting, quotations are obtained. These amounts are usually maintained in a third-party system and imported into the PO columns. By comparing the Forecast and PO cells of a line item, you can recognize whether you need to allocate more budget to the line item, or can allocate the excess budget to another line item. For more details on POs, see [Manage purchase orders (POs)](managing-pos.html). How reallocate budget is described in [Reallocate investment funds](reallocating-funds.html).
 
 As soon as you have placed an order, you can assign the status Committed to the amount in the Forecast cell. This signals that your organization is now contractually obligated to pay the amount, but the money has not yet been spent. At this point, the amounts in the Forecast and PO cells should be identical.
 
@@ -5626,7 +5626,7 @@ Procedure: Approve or deny a reallocation request
 
 
 
-# Manage Purchase Orders (POs)
+# Manage purchase orders (POs)
 
 After forecasting, you will typically obtain quotations. These amounts are often maintained in a third-party system and imported into your Purchase Order (PO) columns. By comparing the Forecast and PO cells for a line item, you can quickly determine if you need to allocate more budget to that item or if you have excess budget you can reallocate elsewhere.
 
@@ -5638,7 +5638,7 @@ Important to know:
 
 * Editing: You can edit a PO the exact same way, regardless of how it was created.
 
-* Deleting: The process for deleting a PO depends on its origin. You can delete an imported PO under the Budget menu. A manually created PO can be deleted under Investments > details panel > PO panel. For more details, see [Delete Purchase Orders (POs)](deleting-purchase-orders-po.html).
+* Deleting: The process for deleting a PO depends on its origin. You can delete an imported PO under the Budget menu. A manually created PO can be deleted under Investments > details panel > PO panel. For more details, see [Delete purchase orders (POs)](deleting-purchase-orders-po.html).
 
 ## Key purchase order data
 
@@ -5654,13 +5654,13 @@ The specific PO data you need to manage depends on your company's configuration,
 
 You may receive a single PO that covers amounts for multiple line items. When this happens, you must split the PO.
 
-If you create a PO manually, you can split it during creation or while editing. For instructions, see [Manually create Purchase Orders (POs)](manually-creating-a-purchase-order-po.html) or [Create Purchase Orders (POs) by importing](creating-purchase-orders-pos-by-importing.html).
+If you create a PO manually, you can split it during creation or while editing. For instructions, see [Manually create purchase orders (POs)](manually-creating-a-purchase-order-po.html) or [Create purchase orders (POs) by importing](creating-purchase-orders-pos-by-importing.html).
 
 You can view details for each split in the PO panel. This includes general PO details, a column showing the split allocation as a percentage, and a currency tooltip.
 
 The Manage Split for PO page provides a detailed overview of how the PO is divided across investments and locations. It displays the investment plan, category, specific investment, and the split percentage.
 
-To learn how to track and retrieve split data, see [Identify split Purchase Orders (POs)](po-splitting-identifying-a-po-split.html).
+To learn how to track and retrieve split data, see [Identify split purchase orders (POs)](po-splitting-identifying-a-po-split.html).
 
 ## Amortizing: One PO, multiple months
 
@@ -5692,85 +5692,103 @@ If you create amortization beyond the fiscal year, it is a rollover. You must ma
 
 ## Related actions
 
-* [Import Purchase Orders (POs)](importing-pos.html)
+* [Import purchase orders (POs)](importing-pos.html)
 
-* [Manually create Purchase Orders (POs)](manually-creating-a-purchase-order-po.html)
+* [Manually create purchase orders (POs)](manually-creating-a-purchase-order-po.html)
 
-* [Edit Purchase Orders (POs)](editing-purchase-order-po.html)
+* [Edit purchase orders (POs)](editing-purchase-order-po.html)
 
-* [Identify split Purchase Orders (POs)](po-splitting-identifying-a-po-split.html)
+* [Identify split purchase orders (POs)](po-splitting-identifying-a-po-split.html)
 
-* [Delete Purchase Orders (POs)](deleting-purchase-orders-po.html)
-
-
-
-# Import Purchase Orders (POs)
-
-When you order services, your purchasing department might compile the purchase order data into an external file, such as an Excel spreadsheet. To easily compare your forecast with these purchase orders, you can import the file directly into the system rather than entering the POs manually. See [Create Purchase Orders (POs) by importing](creating-purchase-orders-pos-by-importing.html).
-
-The import process will automatically map most POs to their corresponding line items. However, some POs might remain unmapped due to missing or incorrect identifiers. When this happens, you must manually map the unassociated PO to the correct line item. See [Map imported Purchase Orders (POs)](mapping-imported-purchase-orders.html).
-
-Purchase orders can also be split across multiple investments. If the imported file does not include these split details, you will need to manually create the split for the unmapped PO after importing. See [Split a Purchase Order (PO)](po-splitting-one-unmapped-purchase-order-to-multiple-investments.html).
-
-If you discover that a PO was assigned to the wrong line item during the import, you can easily correct it. In this case, unmap the PO first, and then manually map it to the correct line item. See [Unmap Purchase Orders (POs)](un-mapping-purchase-orders-po.html).
+* [Delete purchase orders (POs)](deleting-purchase-orders-po.html)
 
 
 
-# Create Purchase Orders (POs) by importing
+# Import purchase orders (POs)
 
-When you order services, your purchasing department might compile the purchase order data into an external file, such as an Excel spreadsheet. To easily compare your forecast with these purchase orders, you can import the file directly into the system rather than entering the POs manually.
+When you order services, your purchasing department might compile the purchase order data into an external file, such as an Excel spreadsheet. To easily compare your forecast with these purchase orders, you can import the file directly into the system rather than entering the POs manually. See [Create purchase orders (POs) by importing](creating-purchase-orders-pos-by-importing.html).
 
-## Preparing the import spreadsheet
+The import process will automatically map most POs to their corresponding line items. However, some POs might remain unmapped due to missing or incorrect identifiers. When this happens, you must manually map the unassociated PO to the correct line item. See [Map imported purchase orders (POs)](mapping-imported-purchase-orders.html).
 
-* First Row: Your first row must have headers. If there is a blank row you will be prompted to add the headers prior to import. Duplicate header names will not be accepted.
+Purchase orders can also be split across multiple investments. If the imported file does not include these split details, you will need to manually create the split for the unmapped PO after importing. See [Split a purchase order (PO)](po-splitting-one-unmapped-purchase-order-to-multiple-investments.html).
 
-* Rows: Empty rows will not be accepted and you will be prompted to delete them.
+If you discover that a PO was assigned to the wrong line item during the import, you can easily correct it. In this case, unmap the PO first, and then manually map it to the correct line item. See [Unmap purchase orders (POs)](un-mapping-purchase-orders-po.html).
 
-* Columns: You can keep columns you don't want to import into your spreadsheet and ignore them during the mapping process, saving you time in prepping your sheet for import.
 
-* Date Formats: Choose one date column as your primary date column. This is the date format that you will use in reporting. If amortizing POs, start dates can't be after end date. Note: Note Uptempo can recognize the following date formats: * 03/14/21 * 14/03/21 * 3/14/2021 * 14/3/2021 * 2021-03-14 * 14-Mar-21 * Mar-21 * Month (1-12) * 3/14/2021 18:25:16 * 2021/3/25 18:25:16 You must use the same date format for all date fields in the file.
 
-* Worksheets: The worksheet that you are importing must be the first tab in the workbook.
+# Create purchase orders (POs) by importing
 
-* Linked Spreadsheets: Linked spreadsheets in your file will cause an error, remove these before importing. * If there are linked spreadsheets within your file it will result in the upload screen cycling, please refresh your screen and log back in.
+In Uptempo, purchase orders (POs) are records of services you've ordered that represent committed spend against your budget. You can import POs directly from a spreadsheet instead of entering them manually.
 
-* Multi-select fields: The import recognizes Option, %, as one option in the multi-select field. Several options have to be separated by ::. For example, you can enter in a multi-select column Brand Awareness, 50.0::Lead Generation, 50.0. However, the multi-select field allocations must equal 100%, otherwise the import will fail. Note: Note Input options must match the multi-select field options exactly. Any variation in spelling, symbols, or otherwise will cause duplicate options to be created.
+## Prepare the import spreadsheet
 
-## Notes for splitting or amortizing POs
+### Requirements
 
-* If you need to split POs then include a PO Split column to indicate the split percentage for each PO. Enter percentage for each split, but ensure your split percentages for one split PO total exactly to 100 %. Do not include the percent symbol. Note: If there is a PO on the imported spreadsheet NOT being split, the PO Split column can be empty for that line.
+* First row: The first row must be a header row with unique column names. If it's blank, you're prompted to add headers before the import proceeds.
 
-* Ensure all other fields are identical for each line of the PO Split such as PO Amount, Vendor Name, Start and End Date, etc. Be aware that the PO Amount value must represent the 100 % value, not the value of the split. ![Po split spreadsheet](images/POSplitSpreadsheet.png)
+* Rows: Empty rows aren't accepted. You're prompted to delete them before the import proceeds.
 
-* If you want to amortize POs, then include a column with an end date. The column will be empty for POs that are not amortized. Note: Note The PO Amount will automatically be equally split among the months of the PO period (start date to end date). If you need a different split, change the split manually after the import, see [Edit Purchase Orders (POs)](editing-purchase-order-po.html).
+* Worksheets: The worksheet you're importing must be the first tab in the workbook.
 
-## Handling duplicates
+* Linked spreadsheets: Remove any linked spreadsheets from your file before importing. If the file includes linked spreadsheets, this causes an error during upload.
 
-When importing data, the Excel file may contain duplicates. The import allows you to effectively handle the following situations:
+### Field formatting
 
-* You are sure that none of the records in the Excel file is a duplicate. This will be especially the case when you import the records for a period for the first time.
+* Unused Columns: You don't need to remove unused columns from your spreadsheet. Skip them during field mapping instead.
 
-* You know that the file contains or may contain duplicates. You then need to determine which fields are used to detect the duplicates, or whether all fields must match for records to be detected as duplicates.
+* Date formats: Designate one date column as your primary date column. This column's format is used in reporting. Uptempo recognizes the following date formats: | Template |Format type |Example | ---------------------------------- | `MM/DD/YY` |Month/Day/Year, 2-digit year |`03/14/21` | | `DD/MM/YY` |Day/Month/Year, 2-digit year |`14/03/21` | | `M/DD/YYYY` |Month/Day/Year, 4-digit year |`3/14/2021` | | `DD/M/YYYY` |Day/Month/Year, 4-digit year |`14/3/2021` | | `YYYY-MM-DD` |Year-Month-Day |`2021-03-14` | | `DD-MMM-YY` |Day-Month abbreviation-Year |`14-Mar-21` | | `MMM-YY` |Month abbreviation-Year |`Mar-21` | | `M` |Month number only |`Month (1-12)` | | `M/DD/YYYY HH:MM:SS` |Month/Day/Year with time |`3/14/2021 18:25:16` | | `YYYY/M/DD HH:MM:SS` |Year/Month/Day with time |`2021/3/25 18:25:16` | Note: Note All date fields in the file must use the same date format.
 
-* If you know that the file contains duplicates and all fields are identical, then you can ignore these duplicates and leave the records in the system untouched.
+* Multi-select fields: Uptempo recognizes `Option, %` as a single multi-select option with a specified percentage allocation. * Separate multiple options with `::`. For example: `Brand Awareness, 50.0::Lead Generation, 50.0`. * Multi-select allocations must total 100% or the import fails. * Input options must match the multi-select field options exactly. Any variation in spelling or symbols creates duplicate options.
 
-* If duplicates are detected based on selected fields, you can decide whether to ignore the data in the Excel file or to update the records in the system. To update is helpful when data like Amount changed externally and you want to adjust the data in the system accordingly.
+### Purchase order splits
 
-## Import Purchase Orders (POs)
+To split a PO across multiple budget line items, include a PO Split column in your spreadsheet with the percentage allocation for each line:
+
+* Split percentages for a single PO must total exactly 100%. Don't include the percent symbol.
+
+* Leave the PO Split column empty for POs that aren't being split.
+
+* All other field values must be identical for each line of the split, including PO Amount, Vendor Name, and start and end dates.
+
+* The PO Amount must represent the full amount, not the individual split portion.
+
+* To learn more about splitting POs, see [Splitting: One PO, multiple line items](managing-pos.html#splitting-one-po-multiple-line-items).
+
+![PO split spreadsheet example](images/POSplitSpreadsheet.png)
+
+### Purchase order amortization
+
+To amortize a PO across multiple months, include an end date column in your spreadsheet:
+
+* Leave the end date column empty for POs that aren't amortized.
+
+* PO Amount is automatically divided equally across the months between the start and end dates.
+
+* To use a different distribution, edit the PO after import. See [Edit purchase orders (POs)](editing-purchase-order-po.html).
+
+* To learn more about amortizing POs, see [Amortizing: One PO, multiple months](managing-pos.html#amortizing-one-po-multiple-months).
+
+## Duplicate handling
+
+During import, Uptempo can check incoming records against existing purchase orders to detect duplicates. You can control how any duplicates are handled.
+
+While setting up an import, you choose whether the system checks for duplicates at all, and how to identify a match (by specific fields or all fields). When a match is found, you choose whether to replace the existing record or ignore the incoming one.
+
+## Import purchase orders (POs)
 
 Procedure: Import POs into Uptempo
 
 
 
-# Map imported Purchase Orders (POs)
+# Map imported purchase orders (POs)
 
 The import process will automatically map most POs to their corresponding line items. However, some POs might remain unmapped due to missing or incorrect identifiers. When this happens, you must manually map the unassociated PO to the correct line item.
 
-## Map Purchase Orders to line items
+## Map purchase orders to line items
 
 Procedure: Map POs to line items
 
-## Map Purchase Orders in bulk
+## Map purchase orders in bulk
 
 You can use Bulk Map to map multiple POs to a single line item.
 
@@ -5778,7 +5796,7 @@ Procedure: Map POs to a line item in bulk
 
 
 
-# Split a Purchase Order (PO)
+# Split a purchase order (PO)
 
 Purchase orders can be split across multiple investments. If the imported file does not include these split details, you will need to manually create the split for the unmapped PO after importing.
 
@@ -5786,7 +5804,7 @@ Procedure: Split a PO between multiple investments
 
 
 
-# Unmap Purchase Orders (POs)
+# Unmap purchase orders (POs)
 
 If you discover that a PO was assigned to the wrong line item during the import, you can easily correct it. In this case, unmap the PO first, and then manually map it to the correct line item.
 
@@ -5798,25 +5816,25 @@ Procedure: Unmap a PO
 
 
 
-# Manually create Purchase Orders (POs)
+# Manually create purchase orders (POs)
 
-You can create Purchase Orders (POs) manually in Uptempo.
+You can create purchase orders (POs) manually in Uptempo.
 
 Procedure: Manually create a PO
 
 
 
-# Edit Purchase Orders (POs)
+# Edit purchase orders (POs)
 
-If you need to make changes to an existing Purchase Order, you can edit it.
+If you need to make changes to an existing purchase order, you can edit it.
 
 Procedure: Edit a PO
 
 
 
-# Identify split Purchase Orders (POs)
+# Identify split purchase orders (POs)
 
-Purchase Order (PO) splitting allows you to associate a PO amount with multiple investments. This provides a more granular and precise view into your actual spend, with the ability to break down and associate your POs to the exact investment.
+Purchase order (PO) splitting allows you to associate a PO amount with multiple investments. This provides a more granular and precise view into your actual spend, with the ability to break down and associate your POs to the exact investment.
 
 For later reference, you can identify and view split POs in both the ![Budgets](images/coins.svg) Budgets and ![Investments](images/spreadsheet.svg) Investments sections.
 
@@ -5826,7 +5844,7 @@ Procedure: Identify and view split POs in the Investments section
 
 
 
-# Delete Purchase Orders (POs)
+# Delete purchase orders (POs)
 
 If needed, you can delete all of the POs created by an import, or just a single PO.
 
@@ -5894,35 +5912,33 @@ If you discover that an actual was assigned to the wrong line item during the im
 
 # Create actuals by importing
 
-After you have received and accepted your ordered services and the corresponding invoices have been processed, you can import the actuals into the system. This allows you to easily compare your forecast status with actual spending without needing to enter the data manually.
+In Uptempo, actuals are spend records from processed invoices that you compare against your budget forecasts. You can import actuals directly from a spreadsheet instead of entering them manually.
 
-## Preparing the import spreadsheet
+## Prepare the import spreadsheet
 
-* First Row: Your first row must have headers. If there is a blank row you will be prompted to add the headers prior to import. Duplicate header names will not be accepted.
+### Requirements
 
-* Rows: Empty rows will not be accepted and you will be prompted to delete them.
+* First row: The first row must be a header row with unique column names. If it's blank, you're prompted to add headers before the import proceeds.
 
-* Columns: You can keep columns you don't want to import into your spreadsheet and ignore them during the mapping process, saving you time in prepping your sheet for import.
+* Rows: Empty rows aren't accepted. You're prompted to delete them before the import proceeds.
 
-* Date Formats: Choose one date column as your primary date column. This is the date format that you will use in reporting. Note: Note Uptempo can recognize the following date formats: * 03/14/21 * 14/03/21 * 3/14/2021 * 14/3/2021 * 2021-03-14 * 14-Mar-21 * Mar-21 * Month (1-12) * 3/14/2021 18:25:16 * 2021/3/25 18:25:16 You must use the same date format for all date fields in the file.
+* Worksheets: The worksheet you're importing must be the first tab in the workbook.
 
-* Worksheets: The worksheet that you are importing must be the first tab in the workbook.
+* Linked spreadsheets: Remove any linked spreadsheets from your file before importing. If the file includes linked spreadsheets, this causes an error during upload.
 
-* Linked Spreadsheets: Linked spreadsheets in your file will cause an error, remove these before importing. * If there are linked spreadsheets within your file it will result in the upload screen cycling, please refresh your screen and log back in.
+### Field formatting
 
-* Multi-select fields: The import recognizes Option, %, as one option in the multi-select field. Several options have to be separated by ::. For example, you can enter in a multi-select column Brand Awareness, 50.0::Lead Generation, 50.0. However, the multi-select field allocations must equal 100%, otherwise the import will fail. Note: Note Input options must match the multi-select field options exactly. Any variation in spelling, symbols, or otherwise will cause duplicate options to be created.
+* Unused Columns: You don't need to remove unused columns from your spreadsheet. Skip them during field mapping instead.
 
-## Handling duplicates
+* Date formats: Designate one date column as your primary date column. This column's format is used in reporting. Uptempo recognizes the following date formats: | Template |Format type |Example | ---------------------------------- | `MM/DD/YY` |Month/Day/Year, 2-digit year |`03/14/21` | | `DD/MM/YY` |Day/Month/Year, 2-digit year |`14/03/21` | | `M/DD/YYYY` |Month/Day/Year, 4-digit year |`3/14/2021` | | `DD/M/YYYY` |Day/Month/Year, 4-digit year |`14/3/2021` | | `YYYY-MM-DD` |Year-Month-Day |`2021-03-14` | | `DD-MMM-YY` |Day-Month abbreviation-Year |`14-Mar-21` | | `MMM-YY` |Month abbreviation-Year |`Mar-21` | | `M` |Month number only |`Month (1-12)` | | `M/DD/YYYY HH:MM:SS` |Month/Day/Year with time |`3/14/2021 18:25:16` | | `YYYY/M/DD HH:MM:SS` |Year/Month/Day with time |`2021/3/25 18:25:16` | Note: Note All date fields in the file must use the same date format.
 
-When importing data, the Excel file may contain duplicates. The import allows you to effectively handle the following situations:
+* Multi-select fields: Uptempo recognizes `Option, %` as a single multi-select option with a specified percentage allocation. * Separate multiple options with `::`. For example: `Brand Awareness, 50.0::Lead Generation, 50.0`. * Multi-select allocations must total 100% or the import fails. * Input options must match the multi-select field options exactly. Any variation in spelling or symbols creates duplicate options.
 
-* You are sure that none of the records in the Excel file is a duplicate. This will be especially the case when you import the records for a period for the first time.
+## Duplicate handling
 
-* You know that the file contains or may contain duplicates. You then need to determine which fields are used to detect the duplicates, or whether all fields must match for records to be detected as duplicates.
+During import, Uptempo can check incoming records against existing actuals to detect duplicates. You can control how any duplicates are handled.
 
-* If you know that the file contains duplicates and all fields are identical, then you can ignore these duplicates and leave the records in the system untouched.
-
-* If duplicates are detected based on selected fields, you can decide whether to ignore the data in the Excel file or to update the records in the system. To update is helpful when data like Amount changed externally and you want to adjust the data in the system accordingly.
+While setting up an import, you choose whether the system checks for duplicates at all, and how to identify a match (by specific fields or all fields). When a match is found, you choose whether to replace the existing record or ignore the incoming one.
 
 ## Import actuals
 
@@ -6002,7 +6018,7 @@ You can create and update investment plans, as well as purchase orders (POs) and
 
 * [Import investment data](importing-investment-data.html)
 
-* [Create Purchase Orders (POs) by importing](creating-purchase-orders-pos-by-importing.html)
+* [Create purchase orders (POs) by importing](creating-purchase-orders-pos-by-importing.html)
 
 * [Create actuals by importing](creating-actuals-by-importing.html)
 
