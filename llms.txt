@@ -3222,7 +3222,7 @@ Example
 "field": {
 "name": "ACTIVITY_TYPE"
 },
-"operator": "IS ONE OF",
+"operator": "IS_ONE_OF",
 "value": ["21", "74", "41"]
 }
 ]
