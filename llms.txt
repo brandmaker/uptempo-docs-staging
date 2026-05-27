@@ -4628,7 +4628,7 @@ Procedure: Open an investment's details panel
 
 Marketing data typically spans multiple systems, including CRMs, procurement tools, finance ERPs, and digital marketing platforms. This makes it difficult to connect all data points for comprehensive reporting.
 
-Uptempo Financial Management automatically generates a unique ID for each item when it’s created. These IDs are assigned to budget folders, sub-folders, investment plans, and all investment items (categories, sub-categories, placeholders, and line items). You can find an item’s ID on its Roll-Up and details panels; it’s named after the item type, for example Line Item ID or Investments ID.
+Uptempo Financial Management automatically generates a unique Uptempo ID for each item when it’s created. These IDs are assigned to budget folders, sub-folders, investment plans, and all investment items (categories, sub-categories, placeholders, and line items). You can find an item’s ID on its Roll-Up and details panels. It’s named after the item type, for example Line Item ID or Investments ID.
 
 You can use an item’s ID at three levels:
 
