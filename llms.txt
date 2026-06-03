@@ -6349,6 +6349,10 @@ Procedure: Add a comment to an investment grid cell
 
 Uptempo Financial Management has two levels of settings that let you configure features globally, or for specific parts of your budget hierarchy: master settings and custom settings.
 
+Note: Note
+
+We are actively migrating the Financial Management documentation. If a topic isn't available here yet, you can still find it on the [legacy documentation site](https://knowledge.uptempo.io/doc/BM_Uptempo_en_109200000000/Content/06%20Administration/Start%20Admin.htm).
+
 ## Master settings
 
 Master settings are the global settings where you turn on and configure features across the entire budget hierarchy. Changes to master settings affect all investments in the hierarchy.
@@ -6656,13 +6660,15 @@ Procedure: Remove a permissions role from a budget
 
 The BI Export API gives you programmatic access to a set of raw data files that represent your budgeting data. This data includes all columns and rows from all budgets as well as the mapped purchase orders, invoices, and external campaigns.
 
-The BI Export API consists of two API calls: one to retrieve an individual dataset in the form of a CSV file, and one to retrieve all datasets in the form of ZIP of CSV files. The API documentation describes these two operations in detail.
+The BI Export API consists of a set of API endpoints that return individual datasets in the form of a CSV file. There is also an endpoint that retrieves a ZIP file containing CVS files of all available datasets. The [BI Export API documentation](#documentation) describes the endpoints and the data contained in the returned datasets.
 
-Note: Note
+Warning: Deprecation notice
 
-The BI Export API documentation varies depending on your version of Analytics/Insights.
+The BI Export API [is now deprecated](deprecations-and-discontinuations-2025-4.html). This legacy API will be retired with a future release.
 
-Contact Uptempo Support or your Customer Success Manager if you need help determining the correct version of the documentation for your instance.
+All data available through the BI Export API is also available from the Allocadia API. If you are currently using the BI Export API, please migrate to the Allocadia API as soon as possible to ensure continued support.
+
+For more information, see the [Allocadia API documentation](https://api-na.allocadia.com/v1/docs/index.xml).
 
 ## Documentation
 
