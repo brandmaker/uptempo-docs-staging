@@ -6486,24 +6486,24 @@ To make your Impact Modeler projections more accurate, pipeline model segments n
 
 ## Campaign Management: Activities
 
-### Activity Impact section UX enhancements
+### Get AI suggestions when creating activities
 
-We've reorganized the Impact section in the activity details panel to make it easier to analyze impact projections.
+Note: Note
 
-* Impact projection charts on their own tab: You can now find the Impact over time chart on its own dedicated Chart tab, making the Planned tab less cluttered and easier to navigate.
+All Uptempo AI features require your explicit consent before activation, even after they reach general availability.
 
-* Funnel visualization always visible: The demand pipeline funnel visualization is now displayed automatically on the Planned tab, so it's easier to find.
+Contact your Customer Success Manager if you would like to use Uptempo AI features in your Uptempo instance.
 
-![Impact new chart tab](images/ImpactNewChartTab.png)
-→ [Learn more about analyzing the pipeline impact of your activities](track-analyze-pipeline-impact.html)
+The activity setup assistant now uses Uptempo AI to suggest values for single-select attributes based on your campaign context, helping to speed up activity creation and reduce manual effort.
 
-### Navigate between activity setup assistant steps without losing data
+* Context-aware suggestions: After you enter a name for a new activity, Uptempo AI analyzes the name and your activity hierarchy (including the details of parent and sibling activities) for context, then suggests likely values for all single-select attributes on the activity.
 
-When you create an activity, the activity setup assistant now remembers all data you entered when you go back to an earlier step.
+* Confidence-based suggestions: The number of suggestions shown depends on Uptempo AI's confidence level. For high-confidence attributes, only a single suggestion is shown to reduce decision fatigue. For medium confidence, Uptempo AI displays up to three options. If Uptempo AI can't find any suggestions that meet the minimum confidence threshold, it doesn't suggest a value at all.
 
-You can now move between steps in the activity setup assistant without losing previously entered information. For example, after you enter Estimated Costs on the Budget step, those details remain intact if you need return to the previous Details step to make adjustments to the activity's attributes.
+* Accept suggestions with a click: Just click a suggestion to set it as the attribute value. If none of the suggestions is what you're looking for, you can also manually select a different value at any time.
 
-→ [Learn more about creating activities](create-activities.html)
+![Create activity ai suggestions](images/CreateActivityAISuggestions.png)
+→ [Learn more about creating activities with the help of Uptempo AI](create-activities.html)
 
 ### Differentiate activity types by color on the Timeline
 
@@ -6518,18 +6518,24 @@ You can now color-code activity bars by their activity type on the Timeline, mak
 ![Color by activity type](images/ColorByActivityType.png)
 → [Learn more about configuring color-coding for activities on the Timeline](configuring-color-coding-on-the-timeline.html)
 
-### Get AI suggestions when creating activities
+### Navigate between activity setup assistant steps without losing data
 
-The activity setup assistant now uses Uptempo AI to suggest values for single-select attributes based on your campaign context, helping to speed up activity creation and reduce manual effort.
+When you create an activity, the activity setup assistant now remembers all data you entered when you go back to an earlier step.
 
-* Context-aware suggestions: After you enter a name for a new activity, Uptempo AI analyzes the name and your activity hierarchy (including the details of parent and sibling activities) for context, then suggests likely values for all single-select attributes on the activity.
+You can now move between steps in the activity setup assistant without losing previously entered information. For example, after you enter Estimated Costs on the Budget step, those details remain intact if you need return to the previous Details step to make adjustments to the activity's attributes.
 
-* Confidence-based suggestions: The number of suggestions shown depends on Uptempo AI's confidence level. For high-confidence attributes, only a single suggestion is shown to reduce decision fatigue. For medium confidence, Uptempo AI displays up to three options. If Uptempo AI can't find any suggestions that meet the minimum confidence threshold, it doesn't suggest a value at all.
+→ [Learn more about creating activities](create-activities.html)
 
-* Accept suggestions with a click: Just click a suggestion to set it as the attribute value. If none of the suggestions is what you're looking for, you can also manually select a different value at any time.
+### Activity Impact section UX enhancements
 
-![Create activity ai suggestions](images/CreateActivityAISuggestions.png)
-→ [Learn more about creating activities with the help of Uptempo AI](create-activities.html)
+We've reorganized the Impact section in the activity details panel to make it easier to analyze impact projections.
+
+* Impact projection charts on their own tab: You can now find the Impact over time chart on its own dedicated Chart tab, making the Planned tab less cluttered and easier to navigate.
+
+* Funnel visualization always visible: The demand pipeline funnel visualization is now displayed automatically on the Planned tab, so it's easier to find.
+
+![Impact new chart tab](images/ImpactNewChartTab.png)
+→ [Learn more about analyzing the pipeline impact of your activities](track-analyze-pipeline-impact.html)
 
 ## Uptempo API
 
