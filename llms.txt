@@ -6509,7 +6509,7 @@ The activity setup assistant now uses Uptempo AI to suggest values for single-se
 
 You can now color-code activity bars by their activity type on the Timeline, making it easier to visualize the mix of tactics across a campaign hierarchy at a glance.
 
-* Assign colors to individual activity types: Administrators can now assign a color to each indivudual activity type — not just the activity type group they belong to. For example, you can assign different colors to the Webinar and Email activity types to make it easy to tell activities of these types apart, even when both belong to the same group.
+* Assign colors to individual activity types: Administrators can now assign a color to each individual activity type — not just the activity type group they belong to. For example, you can assign different colors to the Webinar and Email activity types to make it easy to tell activities of these types apart, even when both belong to the same group.
 
 * Updated color-coding options: On the Timeline in the ![Activities](images/calendar.svg) Activities section, use the new Activity Type option in the Color by menu to color-code by individual activity types. The new Activity Type Group option replaces the previous Default color option, allowing color-coding by group.
 
