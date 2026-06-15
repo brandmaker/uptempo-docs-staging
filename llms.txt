@@ -361,9 +361,13 @@ To learn more, see [Track and analyze pipeline impact](track-analyze-pipeline-im
 
 # Create activities
 
-You can add new activities to the activity hierarchy at any time.
+An activity is any planned initiative you create to promote a product, service, or message to a defined audience. Activities are the core building blocks of Campaign Management and represent every level of your marketing hierarchy, from high-level plans and campaigns down to individual tactics. Each activity is configured, scheduled, tracked, and measured so you can understand its contribution to marketing impact.
 
-Procedure: Create a new activity
+For more information, see [About activities and the activity hierarchy](about-activities.html).
+
+## Create new activities
+
+Procedure: Create an activity
 
 To streamline the activity setup process, you can also create a new activity directly under any existing activity. When you do this:
 
@@ -371,7 +375,25 @@ To streamline the activity setup process, you can also create a new activity dir
 
 * The Activity type field is filtered to only show valid options for the selected parent activity, making it easier to choose the correct activity type.
 
-Procedure: Create a new activity as a child of an existing activity
+Procedure: Create an activity as a child of an existing activity
+
+## Use Uptempo AI suggestions to create activities faster
+
+Note: Note
+
+This section describes a feature that is currently in Preview, and is [available on an opt-in basis](uptempo-s-feature-release-lifecycle.html#stage-1-preview). To learn more, see [What's new: 2026.6](release-2026-6.html).
+
+All Uptempo AI features require your explicit consent before activation, even after they reach general availability.
+
+Contact your Customer Success Manager if you would like to use Uptempo AI features in your Uptempo instance.
+
+When you create a new activity, Uptempo AI helps to speed up the process and reduce manual effort by analyzing the activity to suggests values for its attributes.
+
+Note: Note
+
+Currently, Uptempo AI can suggest values for single-select (dropdown) attributes. Support for additional attribute types is planned for upcoming releases.
+
+Procedure: Use Uptempo AI suggestions when creating a new activity
 
 
 
