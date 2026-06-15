@@ -1,13 +1,6 @@
 @font-face {
-    font-family: "Epilogue SemiBold";
-    src: url(Epilogue-SemiBold.ttf);
-	font-weight: 600;
-}
-
-@font-face {
-    font-family: "Work Sans";
-    src: url(WorkSans-Regular.ttf);
-	font-weight: 400;
+    font-family: "Inter";
+    src: url(Inter-Variable.ttf);
 }
 
 .footer__powered {
@@ -15,19 +8,24 @@
 }
 
 .app__header {
-    background-color: #210532;
+    background-color: #000000;
 }
 
 .app__footer {
-    background-color: #210532;
+    background-color: #000000;
 }
 
 .wh-header__product-name,
 .title__content,
+._modeClassic_joawza_135._dark_joawza_62,
+.custom-banner__type,
+.custom-banner__title,
+.prompt__title,
 .rs-h1,
 .rs-h2,
 .rs-h3 {
-    font-family: "Epilogue SemiBold";
+    font-family: "Inter";
+    font-weight: 600;
  }
 
 .article__p,
@@ -37,16 +35,23 @@
 .label__content,
 .rs-subtitle-2,
 .rs-text-2,
+.sub-title__edit-info,
 .link,
 .navigation-links__prev,
 .navigation-links__next,
 .footer__copyright {
-    font-family: "Work Sans";
+    font-family: "Inter";
+    font-weight: 400;
 }
 
 .inline-icon- {
     vertical-align: baseline;
 }
+
+.wh-header__product-logo--custom {
+    max-width: 130px;
+}
+
 
 .starting-page-card {
     border-radius: 24px;
@@ -56,18 +61,9 @@
     border-color: #4c10dd;
 }
 
-.staging-banner {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background-color: #fff3cd;
-  color: #664d03;
-  border-bottom: 1px solid #ffecb5;
-  padding: 8px 16px;
-  font-size: 14px;
-  text-align: center;
-}
-
-.staging-banner strong {
-  margin-right: 6px;
+.toc-item--selected,
+.toc-item--selected:hover,
+.label__content--color-primary,
+._modeClassic_joawza_135._dark_joawza_62 {
+    color: #19191c;
 }
