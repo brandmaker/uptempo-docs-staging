@@ -389,15 +389,7 @@ Contact your Customer Success Manager if you would like to use Uptempo AI featur
 
 When you create a new activity, Uptempo AI helps to speed up the process and reduce manual effort by analyzing the activity to suggests values for its attributes.
 
-Note: Note
-
-Currently, Uptempo AI can suggest values for single-select (dropdown) attributes. Support for additional attribute types is planned for upcoming releases.
-
 Procedure: Use Uptempo AI suggestions when creating a new activity
-
-1. Click a suggestion to set it as the attribute's value.
-
-In all cases where Uptempo AI makes a suggestion, you can still select a different value manually if you want (including after you accept a suggestion, if you change your mind).
 
 
 
