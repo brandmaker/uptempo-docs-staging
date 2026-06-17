@@ -152,11 +152,11 @@ The following toolbar controls are only available when the Timeline display mode
 ![Activities Toolbar 3](images/ActivitesToolbar3.png)
 
 1. ![Select Color-Coding](images/paintbucket-2.svg) Select Color-Coding
-: Color-code the activity bars in the timeline based on a selected attribute to make it easier to tell activities apart at a glance. Select an attribute to color the activity bars based on which value the activity has set for that attribute.
+: Color-code the activity bars in the timeline to make it easier to tell activities apart at a glance. You can color-code activities based on their activity type group, their activity type, or which value the activity has for a selected attribute.
 : * For more information, see [Color-code Timeline activity bars](color-coding-timeline-activities.html).
 
 2. Select Timeline Scale menu and ![Zoom In](images/zoom-in.svg) Zoom In / ![Zoom Out](images/zoom-out.svg) Zoom Out
-: Select the timescale used for the Timeline display mode directly, or zoom in to shorter time scales,
+: Select the timescale used for the Timeline display mode directly, or zoom in and out to move between available timescales in sequence.
 
 Summary settings:
 
@@ -395,6 +395,10 @@ Currently, Uptempo AI can suggest values for single-select (dropdown) attributes
 
 Procedure: Use Uptempo AI suggestions when creating a new activity
 
+1. Click a suggestion to set it as the attribute's value.
+
+In all cases where Uptempo AI makes a suggestion, you can still select a different value manually if you want (including after you accept a suggestion, if you change your mind).
+
 
 
 # Edit activities
@@ -559,15 +563,38 @@ Procedure: Stop grouping activities
 
 # Color-code Timeline activity bars
 
-In the Timeline display mode, marketing activities are represented by horizontal bars. To make it easier to identify activities at a glance, you can color-code the activity bars based on which option of a specified Drop-Down List attribute is set on each activity.
+In the Timeline display mode, marketing activities are represented by horizontal bars. To make it easier to identify activities at a glance, you can use the ![Select Color-Coding](images/paintbucket-2.svg) Select Color-Coding menu in the toolbar to color-code the activity bars based on:
+
+* Activity Type Group: Color-codes the bars according to the group that the activity's activity type belongs to.
+
+* Activity Type: Color-codes the bars according to the activity's specific activity type.
+
+* Attribute: Color-codes the bars according to which list option of a selected single-select (Drop-Down List) attribute is set on each activity.
 
 Note: Note
 
-Before an attribute can be used for color-coding, an administrator must configure it by assigning colors to its values. For instructions, see [Configure Timeline activity color-coding](configuring-color-coding-on-the-timeline.html).
+Before you can color-code the activity bars by a particular activity type group, activity type, or attribute, an administrator must first configure it for color-coding.
 
-When an attribute has been set up for color-coding, it appears as an option in the ![Select Color-Coding](images/paintbucket-2.svg) Select Color-Coding menu in the toolbar on the Timeline.
+For instructions, see [Configure Timeline activity color-coding](configuring-color-coding-on-the-timeline.html).
 
-After you select an attribute from the ![Select Color-Coding](images/paintbucket-2.svg) Select Color-Coding menu, each activity bar is displayed in a predetermined color based on the attribute option set on that activity.
+## Color-code activities by type
+
+The Activity Type Group and Activity Type options are always available in the ![Select Color-Coding](images/paintbucket-2.svg) Select Color-Coding menu.
+
+Use these options to visually distinguish activities by their activity types:
+
+* Color-coding by activity type group is useful for broadly telling different kinds of activities apart, and this method is always applied to the Timeline by default.
+
+* Use color-coding by activity type for more granularity, for example to assess at a glance if you have the right mix of tactics in a campaign.
+
+Procedure: Color-code activity bars by activity type or type group
+
+## Color-code activities by attribute
+
+When an attribute has been set up for color-coding, the attribute is shown as an option in the ![Select Color-Coding](images/paintbucket-2.svg) Select Color-Coding menu, under the section Attributes:
+
+![Color by attributes list](images/ColorByAttributesList.png)
+After you select an attribute from the ![Select Color-Coding](images/paintbucket-2.svg) Select Color-Coding menu, each activity bar is displayed in a preset color based on the attribute option set on that activity.
 
 Example
 : In this example, the Campaign Objective attribute has color-coding enabled, with the following colors assigned to each attribute value:
@@ -577,19 +604,19 @@ Example
 
 * Demand Creation: Yellow
 : After you select the attribute Campaign Objective in the ![Select Color-Coding](images/paintbucket-2.svg) Select Color-Coding menu, the activity bars for activities with this attribute are displayed in the specified colors according to the attribute value that's assigned to them:
-: * The activity bar for the activity "Glow: Part of Your World" is displayed in green, because its Campaign Objective attribute is set to Sales Enablement.
+: * The activity bar for the activity Glow: Part of Your World is displayed in green, because its Campaign Objective attribute is set to Sales Enablement.
 
-* The activity bar for the activity "Grow and Glow" is displayed in blue, because its Campaign Objective attribute is set to Reputation.
+* The activity bar for the activity Grow and Glow is displayed in blue, because its Campaign Objective attribute is set to Reputation.
 
-* The activity bar for the activity "Up 'n Glow" is displayed in yellow, because its Campaign Objective attribute is set to Demand Creation.
+* The activity bar for the activity Up 'n Glow is displayed in yellow, because its Campaign Objective attribute is set to Demand Creation.
 
-* The activity bar for the parent activity "2025 Media Plan" is displayed in grey, because it either does not have the Campaign Objective attribute, or does not have a value for that attribute. ![Color-Coding Example](images/ColorCodingExample.png)
+* The activity bar for the parent activity 2025 Media Plan is displayed in grey, because it either does not have the Campaign Objective attribute, or does not have a value for that attribute. ![Color-Coding Example](images/ColorCodingExample.png)
 
-Procedure: Color-code activity bars by attribute
+Procedure: Color-code activity bars by attribute value
 
 Tip: Tip
 
-When you save your display settings as a [view](save-activity-hierarchy-display-settings-as-views.html), your current Color by setting is also saved in the view, and will be set whenever you select the view again.
+When you save your display settings as a [view](save-activity-hierarchy-display-settings-as-views.html), your current ![Select Color-Coding](images/paintbucket-2.svg) Select Color-Coding setting is also saved in the view, and is automatically set whenever you select the view again.
 
 
 
@@ -2153,31 +2180,30 @@ Procedure: Set the primary plan currency for the activity hierarchy
 
 # Configure Timeline activity color-coding
 
-As an administrator, you can set up color-coding for activity bars in the Timeline display mode. Color-coding makes it easier for users to identify activities at a glance.
+As an administrator, you can optionally set up color-coding for activity bars in the Timeline display mode. Color-coding makes it easier for users to identify activities at a glance.
 
 There are two methods for color-coding activity bars:
 
-* Default color-coding (based on activity type group): Color-codes the activity bars according to the activity type group that they belong to. After it has been set up, this color-coding method is applied to the Timeline display mode by default.
+* By activity type or type group: Color-codes the activity bars according to the activity type group or individual activity type they belong to. Color-coding by activity type group is applied to the Timeline display mode by default.
 
-* Color-coding by attribute: Color-codes the activity bars based on the value set on an activity for a user-selected attribute.
+* By attribute value: Color-codes the activity bars based on the value set on an activity for a user-selected attribute.
 
-Both color-coding methods are optional, so you can choose to set up only one of the two if needed.
+## Set up color-coding by activity type or type group
 
-## Set up default color-coding
+You can set a Timeline Color for each activity type group, and for each activity type (grouped and ungrouped).
 
-You can set a Timeline Color for each of your activity type groups. The Timeline Color you set on an activity type group is used as the default color on the Timeline for all activities of the activity types within that group. If no Timeline Color is set on an activity type group, the system will display the applicable activity bars in the Timeline using the system-default color (purple).
+Activity type group colors are used as the default for all activities of types in that group, while activity type-specific colors apply when ![Select Color-Coding](images/paintbucket-2.svg) Select Color-Coding is set to Activity Type. Activity types with no Timeline Color set inherit their group's color, or fall back to the system default (purple) if no Timeline Color is set on the group.
 
-Note: Note
-
-If an activity type is not part of a type group, you can also set a default color directly on that activity type. However, for all activity types that belong to a type group, the default color can only be set on the type group it belongs to.
-
-Procedure: Set the default Timeline Color for an activity type group
+Procedure: Set the Timeline Color for an activity type or activity type group
 
 ## Set up color-coding for an attribute
 
 You can set up color-coding for any [Drop-Down List attribute](activity-attribute-config-overview.html) by assigning a color to each of the attribute's values.
 
-After you have configured an attribute for color-coding, that attribute becomes available as an option in the ![Select Color-Coding](images/paintbucket-2.svg) Select Color-Coding > Color by menu on the Timeline. When users select the attribute from this menu, the activity bars are color-coded according to the value the activity holds for the selected attribute, using the colors you have specified for each attribute value. For more details, see [Color-code Timeline activity bars](color-coding-timeline-activities.html).
+After you have configured an attribute for color-coding, that attribute becomes available as an option in the ![Select Color-Coding](images/paintbucket-2.svg) Select Color-Coding > Color by menu on the Timeline:
+
+![Color by attributes list](images/ColorByAttributesList.png)
+When users select an attribute from this menu, the activity bars are color-coded according to the value set on the activity for the selected attribute, using the value's specified color. For more details, see [Color-code Timeline activity bars](color-coding-timeline-activities.html).
 
 Procedure: Set up color-coding for Drop-Down List attribute
 
@@ -6558,6 +6584,10 @@ We've reorganized the Impact section in the activity details panel to make it ea
 
 ![Impact new chart tab](images/ImpactNewChartTab.png)
 → [Learn more about analyzing the pipeline impact of your activities](track-analyze-pipeline-impact.html)
+
+### Drop-Down List attributes save on selection
+
+Drop-Down List attributes on activities now save as soon as you select a value, rather than waiting for you to click outside the field. The Saved notification appears right away to provide instant confirmation that your change was saved.
 
 ## Uptempo API
 
