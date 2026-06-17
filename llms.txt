@@ -87,9 +87,15 @@ The Activities section has two different display modes, which give you different
 
 ### Timeline
 
-The Timeline display mode provides an overview of your activities in a calendar-style timeline. Activities are represented on the timeline as horizontal bars based on their in-market dates, with today's date marked by a vertical green line:
+The Timeline display mode provides an overview of your activities in a calendar-style timeline. Activities are represented on the timeline as horizontal bars based on their in-market dates, with the current date marked by a vertical green line and a Today flag:
 
 ![Activities Overview Timeline](images/ActivitiesOverviewTimeline.png)
+Tip: Tip
+
+Click Today to quickly return the Timeline to the current date:
+
+![Timeline today button](images/TimelineTodayButton.png)
+
 Procedure: Switch to Timeline display mode
 
 Procedure: Adjust the timescale
@@ -155,7 +161,10 @@ The following toolbar controls are only available when the Timeline display mode
 : Color-code the activity bars in the timeline to make it easier to tell activities apart at a glance. You can color-code activities based on their activity type group, their activity type, or which value the activity has for a selected attribute.
 : * For more information, see [Color-code Timeline activity bars](color-coding-timeline-activities.html).
 
-2. Select Timeline Scale menu and ![Zoom In](images/zoom-in.svg) Zoom In / ![Zoom Out](images/zoom-out.svg) Zoom Out
+2. Today
+: Immediately scroll the timeline back to the current date.
+
+3. Select Timeline Scale menu and ![Zoom In](images/zoom-in.svg) Zoom In / ![Zoom Out](images/zoom-out.svg) Zoom Out
 : Select the timescale used for the Timeline display mode directly, or zoom in and out to move between available timescales in sequence.
 
 Summary settings:
@@ -6557,6 +6566,12 @@ You can now color-code activity bars by their activity type on the Timeline, mak
 
 ![Color by activity type](images/ColorByActivityType.png)
 → [Learn more about configuring color-coding for activities on the Timeline](configuring-color-coding-on-the-timeline.html)
+
+### Return to the current date on the Timeline
+
+Click the new Today button on the Timeline to instantly return to the current date, making it easy to reorient after scrolling through your activity schedule.
+
+![Timeline today button](images/TimelineTodayButton.png)
 
 ### Navigate between activity setup assistant steps without losing data
 
