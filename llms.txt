@@ -6567,7 +6567,7 @@ You can now color-code activity bars by their activity type on the Timeline, mak
 ![Color by activity type](images/ColorByActivityType.png)
 → [Learn more about configuring color-coding for activities on the Timeline](configuring-color-coding-on-the-timeline.html)
 
-### Return to the current date on the Timeline
+### Quickly return to the current date on the Timeline
 
 Click the new Today button on the Timeline to instantly return to the current date, making it easy to reorient after scrolling through your activity schedule.
 
@@ -6581,7 +6581,7 @@ You can now move between steps in the activity setup assistant without losing pr
 
 → [Learn more about creating activities](create-activities.html)
 
-### Activity Impact section UX enhancements
+### Navigate impact projections in a reorganized layout
 
 We've reorganized the Impact section in the activity details panel to make it easier to analyze impact projections.
 
@@ -6594,7 +6594,7 @@ We've reorganized the Impact section in the activity details panel to make it ea
 
 ### Drop-Down List attributes save on selection
 
-Drop-Down List attributes on activities now save as soon as you select a value, rather than waiting for you to click outside the field. The Saved notification appears right away to provide instant confirmation that your change was saved.
+Drop-Down List attributes in the activity details panel now save as soon as you select a value, rather than waiting for you to click outside the field. The Saved notification appears right away to provide instant confirmation that your change was saved.
 
 ## Uptempo API
 
