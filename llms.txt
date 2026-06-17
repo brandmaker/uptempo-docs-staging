@@ -92,7 +92,7 @@ The Timeline display mode provides an overview of your activities in a calendar-
 ![Activities Overview Timeline](images/ActivitiesOverviewTimeline.png)
 Tip: Tip
 
-Click Today to quickly return the Timeline to the current date:
+Click Today to quickly scroll the timeline back to the current date:
 
 ![Timeline today button](images/TimelineTodayButton.png)
 
