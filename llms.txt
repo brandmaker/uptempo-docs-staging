@@ -396,7 +396,17 @@ All Uptempo AI features require your explicit consent before activation, even af
 
 Contact your Customer Success Manager if you would like to use Uptempo AI features in your Uptempo instance.
 
-When you create a new activity, Uptempo AI helps to speed up the process and reduce manual effort by analyzing the activity to suggests values for its attributes.
+When you create a new activity, Uptempo AI helps to speed up the process and reduce manual effort by suggesting values for the activity's attributes.
+
+To generate suggested attribute values, Uptempo AI analyzes the following data points for context:
+
+* The activity's name
+
+* The name and attribute values of the activity's immediate parent activity
+
+* The names and attribute values of the activity's sibling activities (activities that share the same parent activity)
+
+Uptempo AI suggestions are completely optional, so you can choose to use them to save time, or to ignore suggestions and set attribute values manually.
 
 Procedure: Use Uptempo AI suggestions when creating a new activity
 
@@ -609,7 +619,7 @@ Example
 
 * The activity bar for the activity Grow and Glow is displayed in blue, because its Campaign Objective attribute is set to Reputation.
 
-* The activity bar for the activity Up 'n Glow is displayed in yellow, because its Campaign Objective attribute is set to Demand Creation.
+* The activity bar for the activity Up n Glow is displayed in yellow, because its Campaign Objective attribute is set to Demand Creation.
 
 * The activity bar for the parent activity 2025 Media Plan is displayed in grey, because it either does not have the Campaign Objective attribute, or does not have a value for that attribute. ![Color-Coding Example](images/ColorCodingExample.png)
 
@@ -4440,7 +4450,7 @@ If a line item has an indirect connection to an activity (because its parent cat
 
 * An unrelated activity from a different part of the activity hierarchy
 
-If you choose to connect the line item to an activity that is in an unrelated part of the activity hierarchy, this is called an out-of-boundary connection, because it is not compatible with the existing activity connection on the line item's parent category or sub-category.  When this happens, the system will automatically adjust the connections to resolve the situation.
+If you choose to connect the line item to an activity that is in an unrelated part of the activity hierarchy, this is called an out-of-boundary connection, because it is not compatible with the existing activity connection on the line item's parent category or sub-category. When this happens, the system automatically adjusts the connections to resolve the situation.
 
 ### Resolving out-of-boundary connections
 
@@ -5608,7 +5618,7 @@ When importing, you can use unique and static rules to map imported records to t
 
 ### Unique rules
 
-Unique rules directly tie a PO or actual to a specific investment. For example, if each investment has a unique ID number, you can include that ID in your import file. The system will then use that ID to automatically connect the PO/actual record to the correct investment.
+Unique rules directly tie a PO or actual to a specific investment. For example, if each investment has a unique ID number, you can include that ID in your import file. The system then uses that ID to automatically connect the PO/actual record to the correct investment.
 
 You can also use regular expressions (search patterns used to identify a specific sequence of characters within a larger string) to extract a direct identifier.
 
@@ -8483,7 +8493,7 @@ The following bug fixes have been released over the past four weeks, between May
 
 * After duplicating an activity, trying to change Estimated Costs quarters on one of the activities no longer causes an error.
 
-* When setting a date range for Estimated Costs, setting an end date that is earlier than the start date no longer causes an error. Instead, the system will automatically switch the two dates in this situation.
+* When setting a date range for Estimated Costs, setting an end date that is earlier than the start date no longer causes an error. Instead, the system automatically switches the two dates in this situation.
 
 * When changing start and end dates on Estimated Costs, the changes no longer fail to save in some cases.
 
