@@ -9421,18 +9421,6 @@ Updates include: better color-coding on visuals, label and axis improvements on 
 
 
 
-# v15.15.0
-
-Tip:
-
-Available from May 27, 2026.
-
-## Lagged Value Breakouts in Yield Curves
-
-You can now use Lag Curves to break out forecasted value on Yield Curves into different time horizons, so you can see when your spend actually pays back — not just how much. After your next model refresh, you'll see short, medium, and long-term Lag Curves in Inspire by default.
-
-
-
 # v15.17.0
 
 Tip:
@@ -9448,6 +9436,18 @@ Three small additions make the Lagged Value Breakouts view easier to read and in
 * The data table now includes a % of Fcst column for the Short-Term, Med-Term, and Long-Term rows, showing each horizon's contribution as a percentage of the total forecasted KPI at your current spend point.
 
 * An inline color legend now appears directly on the chart, making it easier to match each colored band to its time horizon at a glance.
+
+
+
+# v15.15.0
+
+Tip:
+
+Available from May 27, 2026.
+
+## Lagged Value Breakouts in Yield Curves
+
+You can now use Lag Curves to break out forecasted value on Yield Curves into different time horizons, so you can see when your spend actually pays back — not just how much. After your next model refresh, you'll see short, medium, and long-term Lag Curves in Inspire by default.
 
 
 
