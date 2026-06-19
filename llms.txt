@@ -386,6 +386,30 @@ To streamline the activity setup process, you can also create a new activity dir
 
 Procedure: Create an activity as a child of an existing activity
 
+## Use Uptempo AI suggestions to create activities faster
+
+Note: Note
+
+This section describes a feature that is currently in Preview, and is [available on an opt-in basis](uptempo-s-feature-release-lifecycle.html#stage-1-preview). To learn more, see [What's new: 2026.6](release-2026-6.html).
+
+All Uptempo AI features require your explicit consent before activation, even after they reach general availability.
+
+Contact your Customer Success Manager if you would like to use Uptempo AI features in your Uptempo instance.
+
+When you create a new activity, Uptempo AI helps to speed up the process and reduce manual effort by suggesting values for the activity's attributes.
+
+To generate suggested attribute values, Uptempo AI analyzes the following data points for context:
+
+* The activity's name
+
+* The name and attribute values of the activity's immediate parent activity
+
+* The names and attribute values of the activity's sibling activities (activities that share the same parent activity)
+
+Uptempo AI suggestions are completely optional, so you can choose to use them to save time, or to ignore suggestions and set attribute values manually.
+
+Procedure: Use Uptempo AI suggestions when creating a new activity
+
 
 
 # Edit activities
@@ -6520,6 +6544,25 @@ To make your Impact Modeler projections more accurate, pipeline model segments n
 → [Learn more about configuring the pipeline model in Impact Modeler](configure-impact-modeler.html)
 
 ## Campaign Management: Activities
+
+### Get AI suggestions when creating activities
+
+Note: Note
+
+All Uptempo AI features require your explicit consent before activation, even after they reach general availability.
+
+Contact your Customer Success Manager if you would like to use Uptempo AI features in your Uptempo instance.
+
+The activity setup assistant now uses Uptempo AI to suggest values for single-select attributes based on your campaign context, helping to speed up activity creation and reduce manual effort.
+
+* Context-aware suggestions: After you enter a name for a new activity, Uptempo AI analyzes the name and your activity hierarchy (including the details of parent and sibling activities) for context, then suggests likely values for all single-select attributes on the activity.
+
+* Confidence-based suggestions: The number of suggestions shown depends on Uptempo AI's confidence level. For high-confidence attributes, only a single suggestion is shown to reduce decision fatigue. For medium confidence, Uptempo AI displays up to three options. If Uptempo AI can't find any suggestions that meet the minimum confidence threshold, it doesn't suggest a value at all.
+
+* Accept suggestions with a click: Just click a suggestion to set it as the attribute value. If none of the suggestions is what you're looking for, you can also manually select a different value at any time.
+
+![Create activity ai suggestions](images/CreateActivityAISuggestions.png)
+→ [Learn more about creating activities with the help of Uptempo AI](create-activities.html)
 
 ### Differentiate activity types by color on the Timeline
 
