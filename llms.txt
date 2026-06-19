@@ -406,7 +406,7 @@ To generate suggested attribute values, Uptempo AI analyzes the following data p
 
 * The names and attribute values of the activity's sibling activities (activities that share the same parent activity)
 
-Uptempo AI suggestions are completely optional, so you can choose to use them to save time, or to ignore suggestions and set attribute values manually.
+Uptempo AI suggestions are completely optional. For any attribute with suggestions, you can choose to use a suggestion to save time, or you can always ignore the suggestions and set a value manually if you prefer.
 
 Procedure: Use Uptempo AI suggestions when creating a new activity
 
