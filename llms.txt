@@ -368,6 +368,50 @@ To learn more, see [Track and analyze pipeline impact](track-analyze-pipeline-im
 
 
 
+# Create activities
+
+An activity is any planned initiative you create to promote a product, service, or message to a defined audience. Activities are the core building blocks of Campaign Management and represent every level of your marketing hierarchy, from high-level plans and campaigns down to individual tactics. Each activity is configured, scheduled, tracked, and measured so you can understand its contribution to marketing impact.
+
+For more information, see [About activities and the activity hierarchy](about-activities.html).
+
+## Create new activities
+
+Procedure: Create an activity
+
+To streamline the activity setup process, you can also create a new activity directly under any existing activity. When you do this:
+
+* The Parent field is automatically set to the appropriate parent activity (the activity under which you created the activity), so you don't need to set it manually.
+
+* The Activity type field is filtered to only show valid options for the selected parent activity, making it easier to choose the correct activity type.
+
+Procedure: Create an activity as a child of an existing activity
+
+## Use Uptempo AI suggestions to create activities faster
+
+Note: Note
+
+This section describes a feature that is currently in Preview, and is [available on an opt-in basis](uptempo-s-feature-release-lifecycle.html#stage-1-preview). To learn more, see [What's new: 2026.6](release-2026-6.html).
+
+All Uptempo AI features require your explicit consent before activation, even after they reach general availability.
+
+Contact your Customer Success Manager if you would like to use Uptempo AI features in your Uptempo instance.
+
+When you create a new activity, Uptempo AI helps to speed up the process and reduce manual effort by suggesting values for the activity's attributes.
+
+To generate suggested attribute values, Uptempo AI analyzes the following data points for context:
+
+* The activity's name
+
+* The name and attribute values of the activity's immediate parent activity
+
+* The names and attribute values of the activity's sibling activities (activities that share the same parent activity)
+
+Uptempo AI suggestions are completely optional, so you can choose to use them to save time, or to ignore suggestions and set attribute values manually.
+
+Procedure: Use Uptempo AI suggestions when creating a new activity
+
+
+
 # Edit activities
 
 You can make changes to an existing activity from its details panel.
@@ -6448,50 +6492,6 @@ Procedure: Reset your Uptempo password
 Release notes
 
 We release new features every month. Find the latest release notes here.
-
-
-
-# Create activities
-
-An activity is any planned initiative you create to promote a product, service, or message to a defined audience. Activities are the core building blocks of Campaign Management and represent every level of your marketing hierarchy, from high-level plans and campaigns down to individual tactics. Each activity is configured, scheduled, tracked, and measured so you can understand its contribution to marketing impact.
-
-For more information, see [About activities and the activity hierarchy](about-activities.html).
-
-## Create new activities
-
-Procedure: Create an activity
-
-To streamline the activity setup process, you can also create a new activity directly under any existing activity. When you do this:
-
-* The Parent field is automatically set to the appropriate parent activity (the activity under which you created the activity), so you don't need to set it manually.
-
-* The Activity type field is filtered to only show valid options for the selected parent activity, making it easier to choose the correct activity type.
-
-Procedure: Create an activity as a child of an existing activity
-
-## Use Uptempo AI suggestions to create activities faster
-
-Note: Note
-
-This section describes a feature that is currently in Preview, and is [available on an opt-in basis](uptempo-s-feature-release-lifecycle.html#stage-1-preview). To learn more, see [What's new: 2026.6](release-2026-6.html).
-
-All Uptempo AI features require your explicit consent before activation, even after they reach general availability.
-
-Contact your Customer Success Manager if you would like to use Uptempo AI features in your Uptempo instance.
-
-When you create a new activity, Uptempo AI helps to speed up the process and reduce manual effort by suggesting values for the activity's attributes.
-
-To generate suggested attribute values, Uptempo AI analyzes the following data points for context:
-
-* The activity's name
-
-* The name and attribute values of the activity's immediate parent activity
-
-* The names and attribute values of the activity's sibling activities (activities that share the same parent activity)
-
-Uptempo AI suggestions are completely optional, so you can choose to use them to save time, or to ignore suggestions and set attribute values manually.
-
-Procedure: Use Uptempo AI suggestions when creating a new activity
 
 
 
