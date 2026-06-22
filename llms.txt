@@ -6497,7 +6497,7 @@ We release new features every month. Find the latest release notes here.
 
 # What's new: 2026.6
 
-Discover all the new Uptempo features introduced with the 2026.6 release, available from June 24, 2026.
+Discover all the new Uptempo features introduced with the 2026.6 release, available from June 23, 2026.
 
 Note: Note
 
