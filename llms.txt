@@ -6562,7 +6562,7 @@ The activity setup assistant now uses Uptempo AI to suggest values for single-se
 * Accept suggestions with a click: Just click a suggestion to set it as the attribute value. If none of the suggestions is what you're looking for, you can also manually select a different value at any time.
 
 ![Create activity ai suggestions](images/CreateActivityAISuggestions.png)
-→ [Learn more about creating activities with the help of Uptempo AI](create-activities.html)
+→ [Learn more about creating activities with the help of Uptempo AI](create-activities.html#use-uptempo-ai-suggestions-to-create-activities-faster)
 
 ### Differentiate activity types by color on the Timeline
 
@@ -6588,8 +6588,6 @@ Click the new Today button on the Timeline to instantly return to the current da
 When you create an activity, the activity setup assistant now remembers all data you entered when you go back to an earlier step.
 
 You can now move between steps in the activity setup assistant without losing previously entered information. For example, after you enter Estimated Costs on the Budget step, those details remain intact if you need return to the previous Details step to make adjustments to the activity's attributes.
-
-→ [Learn more about creating activities](create-activities.html)
 
 ### Navigate impact projections in a reorganized layout
 
@@ -6628,7 +6626,7 @@ The API endpoints for options on list-type attributes (Drop-Down List and Multi-
 
 * Support for list option labels: The endpoints now also include a `value` field. In responses to `GET` requests, this field provides the current label (name) of each attribute list option. Use this field in `POST` and `PUT` requests to update list option labels programmatically.
 
-→ [Learn more about the Attribute Definitions endpoints in the Uptempo API](https://public-api-release.public.eks1-dev-usw2-g2.allocadia.io/v1/docs/index.xml#attributedefinitions)
+→ [Learn more about the Attribute Definitions endpoints in the Uptempo API](https://api-na.allocadia.com/v1/docs/index.xml#attributedefinitions)
 
 
 
