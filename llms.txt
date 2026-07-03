@@ -6449,7 +6449,7 @@ All of these settings are specific to your user account, and do not affect other
 
 Every country has its own conventions for representing numbers. These include how digits are grouped, and which characters are used to separate decimals and digit groups.
 
-You can customize the regional number format in Uptempo so that all numbers are displayed in a way that is familiar and intuitive to you.
+You can customize the regional number format in Uptempo so that all numbers are displayed in a way that is familiar to you.
 
 Procedure: Set your preferred regional number format
 
