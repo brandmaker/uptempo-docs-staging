@@ -6435,7 +6435,7 @@ You can adjust some aspects of how Uptempo works to personalize the user experie
 
 You can set:
 
-* Your number format, to customize how numbers are displayed (based on regional conventions).
+* Your number format, to customize how numbers (such as for currency amounts) are displayed, based on regional conventions.
 
 * Your date format, to customize how all calendar dates are displayed.
 
@@ -6452,6 +6452,66 @@ Every country has its own conventions for representing numbers. These include ho
 You can customize the regional number format in Uptempo so that all numbers are displayed in a way that is familiar and intuitive to you.
 
 Procedure: Set your preferred regional number format
+
+### Supported number formats
+
+Uptempo supports the following number formats for displaying currency amounts:
+
+#### Format 1: Comma Thousand Separator, Period Decimal Separator
+
+Pattern: `#,###.00`
+
+Example: `123,456,789.00`
+
+Example Countries: Canada, China, Egypt, Europe, Mexico, New Zealand, Singapore, UK, USA
+
+#### Format 2: Period Thousand Separator, Comma Decimal Separator
+
+Pattern: `#.###,00`
+
+Example: `123.456.789,00`
+
+Example Countries: Austria, Belgium, Brazil, Denmark, Germany, Italy, Netherlands, Norway, Spain, Sweden
+
+#### Format 3: Space Thousand Separator, Period Decimal Separator
+
+Pattern: `# ###.00`
+
+Example: `123 456 789.00`
+
+Example Countries: Australia, South Africa
+
+### Format 4: Space Thousand Separator, Comma Decimal Separator
+
+Pattern: `# ###,00`
+
+Example: `123 456 789,00`
+
+Example Countries: France, Poland
+
+#### Format 5: Indian Numbering System
+
+Pattern: `#,##,###.00`
+
+Example: `123,456,789.00`
+
+Example Countries: Bangladesh, India, Nepal, Pakistan, Sri Lanka
+
+#### Format 6: No Decimal Places
+
+Pattern: `#,###`
+
+Example: `123,456,789`
+
+Example Countries: Japan, Vietnam
+
+#### Format 7: Three Decimal Places
+
+Pattern: `#,###.000`
+
+Example: `123,456,789.000`
+
+Countries: Bahrain, Jordan, Kuwait
 
 ## Customize how dates are formatted in Uptempo
 
