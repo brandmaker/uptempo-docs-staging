@@ -6457,61 +6457,54 @@ Procedure: Set your preferred regional number format
 
 Uptempo supports the following number formats for displaying currency amounts:
 
-#### Format 1: Comma Thousand Separator, Period Decimal Separator
+Format 1: Comma Thousand Separator, Period Decimal Separator
+: * Pattern: `###,###,###.00`
 
-Pattern: `#,###.00`
+* Example: `123,456,789.00`
 
-Example: `123,456,789.00`
+* Example Countries: Canada, China, Egypt, Europe, Mexico, New Zealand, Singapore, UK, USA
 
-Example Countries: Canada, China, Egypt, Europe, Mexico, New Zealand, Singapore, UK, USA
+Format 2: Period Thousand Separator, Comma Decimal Separator
+: * Pattern: `###.###.###,00`
 
-#### Format 2: Period Thousand Separator, Comma Decimal Separator
+* Example: `123.456.789,00`
 
-Pattern: `#.###,00`
+* Example Countries: Austria, Belgium, Brazil, Denmark, Germany, Italy, Netherlands, Norway, Spain, Sweden
 
-Example: `123.456.789,00`
+Format 3: Space Thousand Separator, Period Decimal Separator
+: * Pattern: `### ### ###.00`
 
-Example Countries: Austria, Belgium, Brazil, Denmark, Germany, Italy, Netherlands, Norway, Spain, Sweden
+* Example: `123 456 789.00`
 
-#### Format 3: Space Thousand Separator, Period Decimal Separator
+* Example Countries: Australia, South Africa
 
-Pattern: `# ###.00`
+Format 4: Space Thousand Separator, Comma Decimal Separator
+: * Pattern: `### ### ###,00`
 
-Example: `123 456 789.00`
+* Example: `123 456 789,00`
 
-Example Countries: Australia, South Africa
+* Example Countries: France, Poland
 
-### Format 4: Space Thousand Separator, Comma Decimal Separator
+Format 5: Indian Numbering System
+: * Pattern: `##,##,##,###.00`
 
-Pattern: `# ###,00`
+* Example: `1,23,45,678.00`
 
-Example: `123 456 789,00`
+* Example Countries: Bangladesh, India, Nepal, Pakistan, Sri Lanka
 
-Example Countries: France, Poland
+Format 6: No Decimal Places
+: * Pattern: `###,###,###`
 
-#### Format 5: Indian Numbering System
+* Example: `123,456,789`
 
-Pattern: `#,##,###.00`
+* Example Countries: Japan, Vietnam
 
-Example: `123,456,789.00`
+Format 7: Three Decimal Places
+: * Pattern: `###,###,###.000`
 
-Example Countries: Bangladesh, India, Nepal, Pakistan, Sri Lanka
+* Example: `123,456,789.000`
 
-#### Format 6: No Decimal Places
-
-Pattern: `#,###`
-
-Example: `123,456,789`
-
-Example Countries: Japan, Vietnam
-
-#### Format 7: Three Decimal Places
-
-Pattern: `#,###.000`
-
-Example: `123,456,789.000`
-
-Countries: Bahrain, Jordan, Kuwait
+* Countries: Bahrain, Jordan, Kuwait
 
 ## Customize how dates are formatted in Uptempo
 
