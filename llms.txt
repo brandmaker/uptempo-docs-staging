@@ -6186,9 +6186,58 @@ You can invite users to a budget individually, using their email address as an i
 
 * If an email address is already registered to an existing user in the instance, inviting it grants additional access to that user (for example, to another folder or investment plan).
 
-When you invite a user, you can also optionally choose to send them an email notification.
+When you invite a user, you can also choose to send them an email notification, optionally with a customizable message.
+
+Note: Note
+
+If you have set up [Single Sign-On (SSO)](set-up-sso-in-uptempo.html) for your Uptempo instance, the email notification does not include the registration link, as the user does not need to set a password for their Uptempo account.
 
 Procedure: Invite an individual user to a budget
+
+If you selected the Send email to invited user option, the user is sent the following email:
+
+```
+
+Subject: Your Uptempo login
+
+Hi,
+
+[Admin Name] ([admin email address]) has invited you to access one or more Investments they created in Uptempo.
+
+Please continue with registration using the following link:
+
+[Registration URL]
+
+Once registered, you can access the system anytime at our secure login page:
+Login at: [Login URL]
+Email: [User email address]
+Password: As specified during registration
+
+----
+
+Thanks,
+
+The Uptempo Team
+
+Contact Us:
+http://support.uptempo.io
+
+About Uptempo:
+Uptempo Marketing Performance Management helps CMOs and marketing teams manage their plans and investments, while giving full visibility into results and ROI. To learn more, visit https://www.uptempo.io
+```
+
+If you specified a custom message in the Invite Message field, your custom message is added to the email body just before the signature, under the following heading:
+
+```
+Message from [Admin Name] ([admin email address]):
+```
+
+When the invited user clicks the registration link in the email, they are taken to the registration form, where they can enter their name and set their password:
+
+![Uptempo register user form](images/UptempoRegisterUserForm.png)
+Note: Note
+
+The link in the invitation email expires after 72 hours.
 
 If an individually invited user did not receive the invitation email, or if the link in their invitation email expired before they could use it, you can resend their invitation email at any time.
 
@@ -6410,6 +6459,126 @@ If there are changes to your organization's network, you can adjust the IP allow
 Procedure: Edit an IP address on the allowlist
 
 Procedure: Delete an IP address from the allowlist
+
+
+
+# Set up single sign-on (SSO) in Uptempo
+
+Single Sign-On (SSO) lets you manage user access and credentials for Uptempo in a central system outside of Uptempo, called an identity provider (IdP).
+
+Note: Note
+
+This document describes how to configure SSO in Uptempo 2.0 instances. For instructions on configuring SSO in Uptempo 1.0 instances, see [Uptempo 1.0: Single Sign-On with SAML](https://knowledge.uptempo.io/doc/BM_Uptempo_en_105000000000/Uptempo/EN/Uptempo%20-%20Single%20Sign-On%20with%20SAML%20-%20EN.pdf) (PDF).
+
+If you're not sure which version of Uptempo you're using, or if you're interested in upgrading to Uptempo 2.0, please get in touch with your Customer Success contact.
+
+## How SSO works
+
+When you configure SSO, users don't use a username and password to log in to Uptempo directly. Instead, the user authenticates through your IdP (such as Entra ID, Okta, etc.), and Uptempo grants access based on that authentication.
+
+Uptempo supports the SAML 2.0 protocol for SSO. Setting up SSO requires an exchange of SAML metadata between Uptempo and your IdP:
+
+* Your IdP's SAML metadata tells Uptempo how to trust and communicate with your IdP. You download this metadata as a file from your IdP, and upload it to your Uptempo instance.
+
+* Uptempo's SAML configuration values tell your IdP how to trust and communicate with Uptempo. You enter these values when you configure Uptempo as an SSO app in your IdP.
+
+After you have set up SSO, users can log in to Uptempo in two ways:
+
+IdP-initiated login
+: Users log into the IdP, then access Uptempo by selecting it in a list of apps or from a dashboard of app icons.
+
+SP-initiated login
+: Users visit a special Uptempo URL, and are automatically redirected to the IdP to log in. After they log in to the IdP successfully, they are returned to Uptempo.
+
+Note: Note
+
+In SP-initiated login, "SP" stands for Service Provider, which refers to the application you are logging in to with SSO (in this case, Uptempo). Some IdPs use the term RP-initiated login instead, where "RP" stands for Relying Party (which generally has the same meaning as Service Provider).
+
+### Supported standard SAML attributes
+
+Uptempo supports the following standard SAML attributes. Attribute names and values are case-sensitive.
+
+email
+: Required
+: The user's email address. This must match the email address that was used to invite the user to an Uptempo budget.
+
+firstname
+: Optional
+: The user's first name.
+: * If specified along with `lastname`, Uptempo uses this attribute to set the user's first name the first time they log in, and to update it whenever the attribute changes.
+
+* If not specified, Uptempo uses the default value Unnamed.
+
+lastname
+: Optional
+: The user's last name.
+: * If specified along with `firstname`, Uptempo uses this attribute to set the user's last name the first time they log in, and to update it whenever the attribute changes.
+
+* If not specified, Uptempo uses the default value User.
+
+title
+: Optional
+: The user's job title.
+
+## Configure SSO for your Uptempo instance
+
+### Before you begin
+
+To configure SSO in Uptempo, you need:
+
+* Administrator access to your Uptempo instance.
+
+* Access to your IdP, to export its SAML metadata file and to complete SSO app setup on the IdP side. * In many organizations, the IdP is owned and configured by the IT team.
+
+### Add Uptempo to your IdP and get the SAML metadata file
+
+Before you can configure SSO in Uptempo, you must obtain a SAML metadata file from your IdP. The steps to do this vary depending on which IdP your organization uses.
+
+In most cases, you first need to add Uptempo to the IdP as an application before you can download the metadata file.
+
+Procedure: Configure Uptempo as an SSO app in your IdP
+
+After you have created Uptempo as an application in the IdP, you should be able to download the SAML metadata file from the IdP that you need to configure SSO on the Uptempo side.
+
+Procedure: Download your IdP's metadata file
+
+### Configure SSO settings in Uptempo
+
+After you have downloaded the SAML metadata file from your IdP, you can upload it to Uptempo to configure and enable SSO access to your Uptempo instance.
+
+Procedure: Configure and enable SSO in Uptempo
+
+## Configure additional Uptempo SSO settings
+
+To enable SSO in Uptempo, the only setting that you must configure is the Logout Redirect URL. All other settings on the Single Sign On configuration page are optional. You can configure these optional settings before you enable SSO in Uptempo, or at any time while SSO is active in the instance.
+
+### Optional: Configure single logout
+
+When enabled, the Single Logout option also logs users out of the IdP (and all other SSO applications controlled by the IdP) when they log out of Uptempo. This can improve security by preventing lingering open sessions.
+
+Procedure: Configure single logout
+
+### Optional: Configure SAML attribute restrictions
+
+Use the Attribute Restrictions setting to specify access restrictions based on attributes and values in each user's SAML assertion. When these restrictions are in effect, a user can only log in to Uptempo successfully if their SAML assertion contains all the specified attributes, and at least one of the accepted values for each attribute.
+
+You can use this feature as an additional layer of control over who can access your Uptempo instance. For example, you can use it to restrict access to only users who belong to particular groups, or users who have a particular employment type (such as only full-time employees, but not contractors or interns).
+
+#### How SAML attribute restrictions work
+
+To use the Attribute Restrictions feature, configure the assertion in your IdP's SAML response to include the attributes and values you want to use to restrict access.
+
+After you specify at least one restriction in Uptempo, the system evaluates every SSO login attempt by checking the user's SAML assertion against the active restrictions. To successfully log in, the user must satisfy all restrictions. If one or more restrictions are not satisfied, the login attempt is rejected.
+
+Each SAML attribute restriction consists of an attribute name, and one or more values for that attribute to match. Within each restriction, multiple values are evaluated as OR conditions:
+
+* The restriction satisfied when the assertion contains at least one of the allowed values for the specified attribute.
+
+* The restriction is not satisfied when any of the following apply: * The assertion does not contain at least one of the allowed values for the specified attribute. * The assertion does not contain a value (null/empty) for the specified attribute. * The assertion does not contain the specified attribute.
+
+If you specify multiple restrictions (multiple attributes), these are evaluated as AND conditions. To pass, the assertion must satisfy all active restrictions (by containing all specified attributes, and at least one allowed value for each attribute).
+
+Procedure: Configure SAML attribute restrictions
 
 
 
