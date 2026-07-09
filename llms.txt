@@ -1499,134 +1499,6 @@ If two Drop-Down List or Multi-Select List attributes are logically related, you
 
 ## How attribute dependencies work
 
-In an attribute dependency, the value selected for the first attribute (the controlling attribute) determines which values can be selected in the second attribute (the dependent attribute). The controlling attribute's value acts as a filter for the dependent attribute: after you select a value for the controlling attribute, the dependent attribute only displays list options that are valid for the controlling attribute's value (and hides those that are not valid).
-
-Attribute dependencies help to protect the integrity of your data by ensuring that users select valid value combinations. They are also useful for attributes that have a very large number of values: dependencies make it much easier for users to select a value, because they limit the number of options that are displayed.
-
-Note: Note
-
-For details about how attribute dependencies look and behave when working with activities in Uptempo Campaign Management, see [Attribute dependency user experience](#attribute-dependency-user-experience).
-
-Example
-: A common use case for attribute dependencies is for attributes that have hierarchical relationships: for example, geographic categories like State and City. Since City is a subcategory of State, only certain options for City are valid based on the option set for State: if State is set to California, setting City to Miami would not be valid.
-: If you set up an attribute dependency in which State is the controlling attribute and City is the dependent attribute, users would not be able to select Miami when the State attribute is already set to California. Instead, the City attribute would only display options for cities that are actually located in the selected state (such as Los Angeles, San Francisco, etc.).
-
-### Required dependent attributes
-
-Dependencies are active on any activity type where both the controlling attribute and the dependent attribute are present. If the dependent attribute is set as required for that activity type, then it will also be required within the attribute dependency on that activity type.
-
-When a dependent attribute is set as required, it is only conditionally required. This means that it is only required when its controlling attribute is set to an option that makes it relevant.
-
-If the controlling attribute is set to an option that does not have valid options in the dependent attribute, then the dependent attribute is not required in this situation (and is not displayed, see [Auto-hide attribute values](#auto-hide-attribute-values)). This ensures that you don't have to select a value for an attribute when it isn't relevant, but don't miss an attribute when it is needed.
-
-Example
-: In this example, the State attribute is a dependent of the Promotion Type attribute:
-: * If the Promotion Type is set to Samples, the State attribute is not relevant, so it's not required in this case (and not displayed): ![DependentNotRequired](images/DependentNotRequired.png)
-
-* If the Promotion Type is set to Coupon, the State attribute becomes relevant, so it is now conditionally required (and marked as required accordingly): ![DependentIsRequired](images/DependentIsRequired.png)
-
-### Chained dependencies
-
-Each attribute dependency consists of two linked attributes. You can "chain" multiple dependencies together to create a multi-attribute sequence of dependencies. For example, you can chain a Country-State dependency with a State-City dependency to create a three-attribute Country-State-City dependency.
-
-In chained dependencies, the options available for each attribute in the sequence are determined by the selection made in the preceding attribute, starting with the first controlling attribute in the chain. For example, the selected option for Country determines the options available for State, and the selected option for State in turn determines the options available for City.
-
-## Create attribute dependencies
-
-You can create an attribute dependency between two attributes that meet the following requirements:
-
-* Only List-Type attributes: Both attributes must have the attribute type Drop-Down List or Multi-Select List.
-
-* Attributes must exist on the same activity type: You can only set an attribute as the dependent attribute if it is used on at least one activity type where the controlling attribute is also used. It's not possible to create a dependency across activity levels, so you can't set an attribute on a parent activity to control a dependent attribute on a child activity (or vice versa).
-
-Note: Note
-
-Dependencies between attributes take effect on all activity types where both of the attributes involved in the dependency are present.
-
-If you need to make a dependency exclusive to a specific activity type, you can create new attributes that are used only on that activity type, then create a dependency between them.
-
-Procedure: Create a new attribute dependency
-
-Tip: Tip
-
-To create a [chained dependency](#chained-dependencies), set the shared or "middle" attribute between two dependencies as both the dependent attribute of the first attribute, and the controlling attribute of the last attribute.
-
-For example, in a Country-State-City chained dependency, State would be set as the dependent attribute of Country, and the controlling attribute of City.
-
-## Edit attribute dependencies
-
-After an attribute dependency has been created, you can edit it at any time to modify the dependent list options that are selected for each controlling list option.
-
-Note: Note
-
-When an attribute dependency is created, the selected controlling and dependent attributes are fixed, and can't be changed later. If you need to change either of these attributes for an existing attribute dependency, create a new attribute dependency instead.
-
-Procedure: Edit dependent attribute list options
-
-## Delete attribute dependencies
-
-If an attribute dependency is no longer needed, you can delete it at any time. When you delete an attribute dependency, this does not affect the actual values set in the controlling and dependent attributes on activities, and these values will remain unchanged.
-
-Warning: Warning
-
-Deleting an attribute dependency is permanent. You can't undo this action.
-
-Procedure: Delete an attribute dependency
-
-## Attribute dependency user experience
-
-Attribute dependencies are useful for complex activity types that have a large number of attributes, but where not all attributes are relevant in every situation. Attribute dependencies are designed with several features to streamline the user experience when working with these types of activities:
-
-* Fields appear only when relevant: Dependent attributes stay hidden until triggered by a specific selection. This minimizes cognitive load for users, and speeds up the process of creating an activity.
-
-* Reduced manual selections: When a dependent attribute has only one valid option, the form auto-selects it, eliminating unnecessary manual inputs.
-
-* No irrelevant “N/A” selections: Dependent attributes can be conditionally required, so they're mandatory only when relevant. This means users don't have to spend time selecting “N/A” for irrelevant fields, while ensuring that critical data is collected when it matters.
-
-### Grouped dependent attribute controls
-
-When attributes are part of a dependency, the user experience of selecting values for these attributes is different to standard attributes:
-
-* When you create or edit an activity of a type that has one or more attribute dependencies, all the fields for attributes that are part of a dependency are grouped into their own separate section in the list of attributes: ![DependenciesSection](images/DependenciesSection.png)
-
-* Within the attribute dependencies section, the links between attribute dependencies (and chains of dependencies) are visually represented: ![DependenciesSection2](images/DependenciesSection2.png) Note: Note The display order of attributes in an activity is defined centrally in Activity Configuration > Attributes > Attribute Definitions. This display order applies globally across all activity types. On activity types with attribute dependencies, the attribute dependencies section is inserted into the display order at the position of the first controlling attribute, based on the global attribute display order. Because this section also includes all other attributes that are part of dependencies, these attributes may appear higher (or lower) in the display order than they would if they weren’t part of a dependency.
-
-* When you select a value for any attribute in the dependencies section, it is not automatically saved. Instead, you must click Save to manually save the selected values. This helps to ensure that any [required attributes in the dependency](#required-dependent-attributes) have a value set. Note: Note The attribute dependencies section appears in two places: the activity details panel (when you edit an existing activity) and the Details step of the [activity setup assistant](create-activities.html) (when you create a new activity). The section works the same way in both places, with one exception: the Save button and the missing value indicator icon are not used in the activity setup assistant version. Instead, the Next button of the activity setup assistant works the same way as the Save button in this context.
-
-### Auto-hide attribute values
-
-When a dependent attribute is not (yet) relevant to the activity being created, it is automatically hidden. This minimizes the number of attributes that are initially visible when creating an activity, and reduces distracting visual clutter.
-
-A dependent attribute only becomes visible after you set the controlling attribute to a value for which the dependent attribute has valid options:
-
-* If there are no valid options in a dependent attribute, it remains hidden.
-
-* For dependency chains (multiple linked dependencies), additional dependent attributes are progressively revealed (as needed) after each controlling attribute selection.
-
-Example
-: In this example, only one attribute (Promotion Type) is visible initially. Making a selection for Promotion Type reveals the State attribute, and selecting a state further reveals the Radio Station attribute:
-: ![DependenciesSection4](images/DependenciesSection4.png)
-
-### Auto-select attribute value
-
-In some cases, a controlling attribute value has only a one valid option in the dependent attribute. This can happen if an attribute previously had more options that are no longer needed and have been removed, or if you want users to set a value for data consistency.
-
-Whenever you select a value in a controlling attribute that leaves only one possible option in the dependent attribute, the system automatically selects that option in the dependent attribute to save you time and unnecessary clicks.
-
-
-
-# Set up attribute dependencies (Preview)
-
-Note: Note
-
-This document describes a feature that is currently in Preview, and is [available on an opt-in basis](uptempo-s-feature-release-lifecycle.html#stage-1-preview). To learn more, see [What's new: 2026.5](release-2026-5.html).
-
-If you have not enabled this Preview feature in your Uptempo instance, please refer to [Set up attribute dependencies](attribute-dependencies.html) instead.
-
-If two Drop-Down List or Multi-Select List attributes are logically related, you can create an attribute dependency to make the selected option in one attribute control the available options for the other attribute.
-
-## How attribute dependencies work
-
 In an attribute dependency, the value selected for the first attribute (the controlling attribute) determines which values can be selected in the second attribute (the dependent attribute). The controlling attribute's value acts as a filter for the dependent attribute: after you select a value for the controlling attribute, the dependent attribute only displays list options that are valid for the controlling attribute's value, and hides options that are not valid.
 
 Attribute dependencies help to protect the integrity of your data by ensuring that users select valid value combinations. They are also useful for attributes that have a very large number of values: dependencies make it much easier for users to select a value, because they limit the number of options that are displayed.
@@ -6122,46 +5994,6 @@ In Uptempo Financial Management, users can only access budgets (folders, sub-fol
 
 ## Invite users to budgets
 
-### Before you begin
-
-Note: Note
-
-These requirements only apply to Uptempo 1.0 instances. If you are using an Uptempo 2.0 instance, you can skip this section.
-
-Before you can invite users to a budget, you must:
-
-* Create at least one permissions role for the Budget module (under ![Administration](images/settings.svg) Administration > Permissions).
-
-* Add the Module Access permission to each permissions role in the Budget module.
-
-Procedure: Invite a user to a folder, sub-folder, or investment plan
-
-### Resend user invitation emails
-
-If an invited user did not receive the invitation email, or if the link in their invitation email expired before they could use it, you can resend their invitation email at any time.
-
-Procedure: Resend an invitation email to a user
-
-## Remove users from budgets
-
-You can remove users from individual budget folders, sub-folders, or investment plans at any time. Removing a user from a given budget does not affect their access to other parts of the budget hierarchy that they are invited to.
-
-Procedure: Remove a user from a budget
-
-
-
-# Manage user access to budgets (Preview)
-
-Note: Note
-
-This document describes a feature that is currently in Preview, and is [available on an opt-in basis](uptempo-s-feature-release-lifecycle.html#stage-1-preview). To learn more, see [What's new: 2026.5](release-2026-5.html).
-
-If you have not enabled this Preview feature in your Uptempo instance, please refer to [Manage user access to budgets](manage-budget-access.html) instead.
-
-In Uptempo Financial Management, users can only access budgets (folders, sub-folders, or investment plans) that they have been invited to. Administrators control which users can view or edit each budget, maintaining clear accountability across users in the instance.
-
-## Invite users to budgets
-
 You can invite users to any budget folder, sub-folder, or investment plan either individually (all Uptempo versions), or as a group (Uptempo 1.0 only).
 
 When you invite users, you also assign them a [user role](understanding-user-roles.html), which determines the permissions that they have within Uptempo Financial Management.
@@ -6717,6 +6549,158 @@ We release new features every month. Find the latest release notes here.
 
 
 
+# What's new: 2026.7
+
+Discover all the new Uptempo features introduced with the 2026.7 release, available from July 29, 2026.
+
+Note: Note
+
+Features marked with the tags Preview and Beta are opt-in, and are not enabled in your Uptempo instance by default. Contact your Customer Success Manager to enable these features.
+
+For more information, see [Uptempo's feature release lifecycle](uptempo-s-feature-release-lifecycle.html).
+
+## Campaign Management: Activity Configuration
+
+### View a centralized audit trail for activities
+
+Campaign Management admins can now view a centralized audit trail of all activity changes directly in Uptempo.
+
+* Track every change: See exactly which activities changed, which data points were updated, when the change occurred, and who made it. Changes to different areas of an activity, such as Estimated Costs, connected funds, and KPIs, are recorded as separate entries.
+
+* Access logs on demand: Review the logs at any time from Activity Configuration in Campaign Management — no need to make a request to Uptempo Support.
+
+* Find records faster: Search and filter the log to locate specific changes by activity name or ID, date range, user, and the area and type of change.
+
+* View change details: Select Show more on any entry to compare the Old value and New value for that change.
+
+![Activity audit trail](images/ActivityAuditTrail.png)
+→ [Learn more about the Campaign Management audit trail]()
+
+### Create attribute dependencies across activity hierarchy levels
+
+You can now set up attribute dependencies that span multiple levels of the activity hierarchy, where one attribute controls another attribute on a different, lower-level activity.
+
+* Streamline data entry across levels: You no longer need to force high-level attributes down to lower levels of the hierarchy to use attribute dependencies. For example, you can now configure a dependency where users set the Country attribute on a parent activity, and the State attribute on all child activities is automatically filtered to the relevant options.
+
+* Reduce manual effort and input errors: Users now only need to set a controlling attribute once on the parent activity, instead of on every child activity. Eliminating these repeated selections lowers user workload, and reduces the risk of input errors.
+
+* Prevent accidental data loss: If a user attempts to change the value of the controlling attribute in a multi-level dependency, the system now displays a warning that the change may remove existing data in any dependent attributes.
+
+Note: Note
+
+Multi-level attribute dependencies currently do not support required attributes.
+
+If a [dependency chain](attribute-dependencies.html#chained-dependencies) includes a multi-level dependency, all attributes in the chain must set as optional on the activity types they are attached to.
+
+![Multi level dependency](images/MultiLevelDependency.png)
+→ [Learn more about setting up attribute dependencies](attribute-dependencies.html)
+
+## Campaign Management: Activities
+
+### Filter activities by their creator
+
+You can now filter activities by the user who created them in the Timeline and Summary display modes, making it easier to find the activities you or your team own.
+
+* Find relevant activities faster: Use the Created by filter option in the ![Filter Activities](images/filter.svg) Filter Activities menu to show only activities creates by specific users.
+
+* Supported conditions: Filter using is or is one of to target one or more creators.
+
+→ [Learn more about filtering activities](filter-activities.html)
+
+### UX enhancements to prevent accidental changes to in-market dates
+
+We've made some tweaks to activity bars in the Timeline display mode to help prevent accidental changes to in-market dates by dragging the activity bars.
+
+* Check basic details from the Timeline: Hold the pointer over a Timeline activity bar to display a tooltip with the activity name and its in-market dates, so you can review an activity without risking an accidental edit.
+
+* Read activity names more easily: When a bar is too narrow to fit the activity's name, the name now appears as a label directly next to the bar, so users no longer need to drag the bar to make it wider to view the full name — unintentionally changing the in-market dates as a result.
+
+![Timeline hover tooltip](TimelineHoverTooltip.png)
+
+### Compare Estimated Costs and connected spend in a single table
+
+You can now view Estimated Costs and connected investment data together in one table on an activity, making it easier to compare planned budget against actual spend across multiple years.
+
+* Analyze variance without toggling: Compare Estimated Costs and connected investment amounts side-by-side in a single table in the Budget section of an activity's details, instead of switching between two separate tables and mapping the values yourself.
+
+* Work across multiple years: Use a single control to change the year in view, rather than selecting the same year separately on two tables.
+
+![]()
+→ [Learn more about tracking and analyzing activity budgets](track-and-analyze-budgets.html)
+
+### Create financial items directly from an activity
+
+You can now create and connect a new financial item from the activity view when the funding source you need doesn't yet exist in the investment hierarchy.
+
+* Plan without switching context: When you connect an activity to funding, create a new line item directly from the investment picker, instead of leaving the activity to build the item in the investment hierarchy first.
+
+* Reduce planning friction: Complete your budgeting and linking in one place, which keeps your focus on planning and speeds up work for large hierarchies and frequent planning cycles.
+
+![Create financial item from activity](CreateFinancialItemFromActivity.png)
+→ [Learn more about connecting investments to activities](connect-investments-to-activities.html)
+
+## Financial Management: Budgets
+
+### Sync carryover spend items automatically after a rollover
+
+After an annual rollover, you can now sync late-year and newly created spend items into the new fiscal year automatically, without manually rebuilding data mappings.
+
+* Rely on Persistent IDs, not names: Uptempo assigns Persistent IDs to budgets, columns, and column choices, so your data mappings survive year-over-year name changes. For example, a column choice that changes from United States to US Top Market still maps correctly.
+
+* Simplify carryover uploads: Upload a simplified CSV that contains only the line item ID. A destination investment plan ID is optional, and only needed when you created a new budget in the new hierarchy.
+
+* Automate routing and mapping: Uptempo reads the Persistent IDs to route each line item to the correct destination budget, and maps old data to the new fields regardless of any text-based name changes in the new fiscal year.
+
+* Update Persistent IDs through the API: Create or update Persistent IDs for existing items and integrations, either individually or in bulk.
+
+→ [Learn more about Persistent IDs in Uptempo Financial Management](about-details-panel.html)
+
+### Invite users to budgets by their permissions role
+
+In Uptempo 1.0 instances, administrators can now invite users to the financial hierarchy using permissions roles, making it easier to manage access to Uptempo Financial Management at scale directly from your existing user management system.
+
+* Grant access by role: Instead of inviting individual users to the budget hierarchy, you can now invite any permissions role in the Budget module (under Administration > Permissions > Budget) to easily grant access to all users assigned to that role.
+
+* Automate access via SSO: To simplify large-scale user management, you can link your SSO groups directly to specific Budget module roles. This allows you to manage access to Uptempo Financial Management centrally through your organization's user management system.
+
+* Configure role mappings: When you invite a permissions role to a budget, you can conveniently grant the appropriate access level to Financial Management by assigning a corresponding user role, such as Editor or Viewer.
+
+![Invite by permissions role](images/InviteByPermissionsRole.png)
+→ [Learn more about inviting users to Uptempo Financial Management budgets](manage-budget-access.html)
+
+## Uptempo API
+
+### New Uptempo API documentation
+
+The brand new Uptempo API documentation site is now available, providing an Uptempo-branded reference for the same endpoints available today, with improved navigation and in-browser testing.
+
+* Uptempo-branded experience: The new site replaces the Allocadia-branded documentation with modern Uptempo styling and improved navigation to help you find the information you need faster.
+
+* Test endpoints in the browser: Try any endpoint directly from the documentation to explore requests and responses, without a separate API client.
+
+* Built on a new OpenAPI spec: The documentation is generated from a new OpenAPI specification. Export the OpenAPI spec in JSON or YAML format to generate client code, import the API into your own tooling, or set up automated testing.
+
+* Transition at your own pace: Both documentation sites remain available for now, and the existing Allocadia API docs remain up-to-date.
+
+![]()
+→ [Explore the new Uptempo API documentation](https://PLACEHOLDER-uptempo-api-docs-url)
+
+### Access the Uptempo API using uptempo.io URLs
+
+The Uptempo API now supports uptempo.io URLs alongside the existing allocadia.com URLs, so you can align your integrations with the Uptempo domain. The API accepts both uptempo.io and allocadia.com URLs interchangeably, so your existing integrations continue to work while you migrate.
+
+### IP Allowlist extended to API requests
+
+Your Uptempo IP Allowlist now covers access through the public API, so requests to your Uptempo instance through the API are also restricted to your approved networks.
+
+* Protect API access: Restrict API access to your Uptempo instance to the same approved IPv4 addresses, IPv6 addresses, and CIDR ranges that you define in your IP Allowlist. Requests from networks outside the allowlist are blocked.
+
+* Support strict compliance requirements: You can now apply consistent network-level access controls across both the Uptempo application and the API to meet security and compliance requirements in regulated industries.
+
+→ [Learn more about restricting access by IP address](restrict-access-by-ip-address.html)
+
+
+
 # What's new: 2026.6
 
 Discover all the new Uptempo features introduced with the 2026.6 release, available from June 23, 2026.
@@ -6881,7 +6865,7 @@ Multi-level attribute dependencies currently do not support required attributes.
 If a [dependency chain](attribute-dependencies.html#chained-dependencies) includes a multi-level dependency, all attributes in the chain must set as optional on the activity types they are attached to.
 
 ![Multi level dependency](images/MultiLevelDependency.png)
-→ [Learn more about setting up attribute dependencies](attribute-dependencies-preview.html)
+→ [Learn more about setting up attribute dependencies](attribute-dependencies.html)
 
 ## Campaign Management: Activities
 
@@ -6911,7 +6895,7 @@ In Uptempo 1.0 instances, administrators can now invite users to the financial h
 * Configure role mappings: When you invite a permissions role to a budget, you can conveniently grant the appropriate access level to Financial Management by assigning a corresponding user role, such as Editor or Viewer.
 
 ![Invite by permissions role](images/InviteByPermissionsRole.png)
-→ [Learn more about inviting users to Uptempo Financial Management budgets](manage-budget-access-preview.html)
+→ [Learn more about inviting users to Uptempo Financial Management budgets](null)
 
 ### Monitor the progress of data imports from any page
 
