@@ -6553,6 +6553,8 @@ We release new features every month. Find the latest release notes here.
 
 Discover all the new Uptempo features introduced with the 2026.7 release, available from July 29, 2026.
 
+* For notifications about features that are being removed from the Uptempo platform, see the [deprecations and discontinuations for this release](deprecations-and-discontinuations-2026-7.html).
+
 Note: Note
 
 Features marked with the tags Preview and Beta are opt-in, and are not enabled in your Uptempo instance by default. Contact your Customer Success Manager to enable these features.
@@ -6567,14 +6569,13 @@ Campaign Management admins can now view a centralized audit trail of all activit
 
 * Track every change: See exactly which activities changed, which data points were updated, when the change occurred, and who made it. Changes to different areas of an activity, such as Estimated Costs, connected funds, and KPIs, are recorded as separate entries.
 
-* Access logs on demand: Review the logs at any time from Activity Configuration in Campaign Management — no need to make a request to Uptempo Support.
+* Access logs on demand: Review the logs at any time in Activity Configuration > Access Control > Audit Trail in Campaign Management — no need to make a request to Uptempo Support.
 
 * Find records faster: Search and filter the log to locate specific changes by activity name or ID, date range, user, and the area and type of change.
 
 * View change details: Select Show more on any entry to compare the Old value and New value for that change.
 
 ![Activity audit trail](images/ActivityAuditTrail.png)
-→ [Learn more about the Campaign Management audit trail]()
 
 ### Create attribute dependencies across activity hierarchy levels
 
@@ -6615,8 +6616,6 @@ We've made some tweaks to activity bars in the Timeline display mode to help pre
 
 * Read activity names more easily: When a bar is too narrow to fit the activity's name, the name now appears as a label directly next to the bar, so users no longer need to drag the bar to make it wider to view the full name — unintentionally changing the in-market dates as a result.
 
-![]()
-
 ### Compare Estimated Costs and connected spend in a single table
 
 You can now view Estimated Costs and connected investment data together in one table on an activity, making it easier to compare planned budget against actual spend across multiple years.
@@ -6625,7 +6624,6 @@ You can now view Estimated Costs and connected investment data together in one t
 
 * Work across multiple years: Use a single control to change the year in view, rather than selecting the same year separately on two tables.
 
-![]()
 → [Learn more about tracking and analyzing activity budgets](track-and-analyze-budgets.html)
 
 ### Create investment line items directly from an activity
@@ -6636,7 +6634,6 @@ You can now create and connect a new investment line item from the ![Activities]
 
 * Connect right away: You can connect new line items immediately after you create them, so you can finish the task of connecting funding to the activity right away. Line items created from the investment picker start with no funds assigned, so you can close the loop on allocating specific amounts later, during the investment planning phase.
 
-![]()
 → [Learn more about connecting investments to activities](connect-investments-to-activities.html)
 
 ## Financial Management: Budgets
@@ -6682,7 +6679,6 @@ A brand-new Uptempo API documentation experience is now available, providing a m
 
 * Transition at your own pace: You can try out the new API docs experience right away, but both documentation sites are still available for now, and the existing Allocadia API docs remain up-to-date.
 
-![]()
 → [Explore the new Uptempo API documentation](https://api-na.uptempo.io/v1/up-docs/)
 
 ### Access the Uptempo API using uptempo.io URLs
