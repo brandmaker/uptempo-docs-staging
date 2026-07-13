@@ -6701,6 +6701,50 @@ Your Uptempo IP Allowlist now covers access through the public API, so requests 
 
 
 
+# Deprecations and discontinuations: 2026.7
+
+From time to time, Uptempo removes certain features or functions from the platform for various reasons. To give users time to prepare and adjust, these removals are communicated in two stages:
+
+1. Deprecation: Deprecated features are still available in the Uptempo platform as of the current release, but are planned to be removed with a future release. Deprecated features usually do not receive any further updates, and only remain available to already existing users.
+
+2. Discontinuation: Discontinued features have been removed from the Uptempo platform as of the current release, and are no longer available.
+
+If a feature that you use is announced as deprecated in this document, begin preparing for its removal as soon as possible to ensure a smooth transition.
+
+## Deprecations
+
+With this release, the following has been deprecated:
+
+### Legacy public key for scheduled imports
+
+To improve security, Uptempo is retiring a legacy PGP encryption public key that was used to encrypt automated scheduled imports of data into Uptempo. The legacy public key that is being retired was available until June 4, 2026, when the current public key was published.
+
+The legacy public key will be permanently deactivated on June 10, 2027. After this date, any system that still uses the legacy key to encrypt scheduled imports can no longer send data to Uptempo.
+
+#### What you need to do
+
+If you use scheduled imports, identify any systems that still use the legacy Uptempo public key, and update them to the current public key before June 10, 2027. Updating before the deactivation date prevents any disruption to your scheduled imports.
+
+You can find the current Uptempo public key in the [Scheduled Import: File Hosting Setup Instructions for IT Admins](https://support.uptempo.io/hc/en-us/articles/204108868-Scheduled-Import-File-Hosting-Setup-Instructions-for-IT-Admins) article in the Uptempo Help Center.
+
+If you have any questions or need technical assistance, contact your Uptempo customer success manager, or reach out to the support team through the Uptempo Help Center.
+
+#### Key rotation policy
+
+Going forward, Uptempo public keys follow a standard key rotation policy:
+
+* Three-year expiration: Uptempo public keys automatically expire every three years.
+
+* One-year transition period: Uptempo publishes a new key one year before the active key expires. Update your systems with the new public key during this one-year overlap period to keep your scheduled imports running without interruption.
+
+## Discontinuations
+
+With this release, the following has been discontinued:
+
+None this month.
+
+
+
 # What's new: 2026.6
 
 Discover all the new Uptempo features introduced with the 2026.6 release, available from June 23, 2026.
