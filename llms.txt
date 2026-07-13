@@ -6641,7 +6641,7 @@ You can now create and connect a new investment line item from the ![Activities]
 
 ## Financial Management: Budgets
 
-### Sync carryover spend items automatically after a rollover
+### Sync carryover spend items after a rollover
 
 After an annual rollover, it's now easier and faster to sync late-year and newly created investment items into the new fiscal year.
 
