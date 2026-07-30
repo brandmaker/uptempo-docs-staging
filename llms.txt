@@ -6679,7 +6679,7 @@ A brand-new Uptempo API documentation experience is now available, providing a m
 
 * Transition at your own pace: You can try out the new API docs experience right away, but both documentation sites are still available for now, and the existing Allocadia API docs remain up-to-date.
 
-→ [Explore the new Uptempo API documentation](https://api-na.uptempo.io/v1/up-docs/)
+→ [Explore the new Uptempo API documentation](https://api-na.uptempo.io/v1/up-docs)
 
 ### Access the Uptempo API using uptempo.io URLs
 
