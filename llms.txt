@@ -6549,22 +6549,6 @@ We release new features every month. Find the latest release notes here.
 
 
 
-# What's new: 2026.8
-
-Discover all the new Uptempo features introduced with the 2026.8 release.
-
-Note: Note
-
-Features marked with the tags Preview and Beta are opt-in, and are not enabled in your Uptempo instance by default. Contact your Customer Success Manager to enable these features.
-
-For more information, see [Uptempo's feature release lifecycle](uptempo-s-feature-release-lifecycle.html).
-
-## Placeholder section
-
-Content for this release is coming soon.
-
-
-
 # What's new: 2026.7
 
 Discover all the new Uptempo features introduced with the 2026.7 release, available from July 29, 2026.
