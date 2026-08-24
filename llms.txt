@@ -4171,7 +4171,9 @@ The investment details panel in the ![Investments](images/spreadsheet.svg) Inves
 
 Note: Note
 
-As of the August 2026 release, budgets using Strategic Targets, Impact Modeler, or Strategic Planning Insights continue to show the previous details panel design (including the Strategy and Alignment tabs below). Other budgets show the modernized panel, which includes only the Details and Activities tabs. Metrics no longer appears as a panel tab for any budget — it's now shown in a bar above the budget grid.
+The modernized version of this panel is currently in Preview, and is [available on an opt-in basis](uptempo-s-feature-release-lifecycle.html#stage-1-preview). To learn more, see [What's new: 2026.8](release-2026-8.html).
+
+Once enabled, budgets using Strategic Targets, Impact Modeler, or Strategic Planning Insights continue to show the previous details panel design (including the Strategy and Alignment tabs below). Other budgets show the modernized panel, which includes only the Details and Activities tabs. Metrics no longer appears as a panel tab for any budget — it's now shown in a bar above the budget grid.
 
 Details
 : Shows basic information and attribute values for the investment.
@@ -4328,6 +4330,10 @@ The investment details panel is where you can select attributes that allow you t
 Note: Note
 
 The details panel is always customized and adapted to the data by which your organization wants to characterize the investments as well as track and analyze performance. Types of attributes that can be typically found in the details panel are Objectives, Target Audience, Product, Region, Segment, Dates, Top of Funnel Metric or Notes.
+
+Note: Note
+
+The modernized panel shown below is currently in Preview, and is [available on an opt-in basis](uptempo-s-feature-release-lifecycle.html#stage-1-preview). To learn more, see [What's new: 2026.8](release-2026-8.html). For more on which budgets show this version, see [About the investment details panel](about-details-panel.html).
 
 ![Line item details panel](images/Line%20Item%20Details%20Panel.png)
 
@@ -6724,6 +6730,21 @@ If you or your team had a view or session set to Activity Type Group, it now use
 
 ![Color by activity type default](images/color-by-activity-type-default.png)
 → [Learn more about color-coding activities on the Timeline](color-coding-timeline-activities.html)
+
+## Financial Management
+
+### Modernized line item details panel
+
+The investment line item details panel has been redesigned to be faster and more responsive when viewing and editing line item attributes.
+
+* Faster editing: The redesigned panel loads faster and feels more responsive when filling out or updating line item attributes.
+
+* Metrics moved above the grid: The Metrics tab is no longer part of the details panel — it now appears in a bar above the budget grid instead.
+
+* Available on most budgets: Budgets using Strategic Targets, Impact Modeler, or Strategic Planning Insights continue to use the previous panel design, which also includes Strategy and Alignment tabs.
+
+![Line item details panel](images/Line%20Item%20Details%20Panel.png)
+→ [Learn more about the details panel](about-details-panel.html)
 
 
 
