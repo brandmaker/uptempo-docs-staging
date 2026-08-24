@@ -444,6 +444,8 @@ Note: Note
 
 While an activity is in Draft status, it can't be connected to spend. You can still enter Estimated Costs on the Budget step or tab. To connect a Line Item or Category/Sub-Category using Connect to Spend, all required attributes must be completed and the activity must be published. For more information, see [Connect investments to track activity funding](connect-investments-to-activities.html).
 
+![Connect to Spend disabled on a draft activity's Budget tab, with a tooltip prompting the user to publish first](images/drafts-connect-to-spend-disabled.png)
+
 ## Publish a draft
 
 Procedure: Publish a draft activity
@@ -457,6 +459,10 @@ Procedure: Revert a published activity to a draft
 Draft activities live in the existing activity hierarchy alongside published activities, following the same hierarchy sorting order and access control policies as any other activity. Because a draft occupies the same place a published activity would, Uptempo visually differentiates it: a draft activity displays a drafts icon beside its name, and its Timeline bar shows only an outlined border in its type's color, instead of a solid colored bar.
 
 ![Draft activities showing a drafts icon and outlined Timeline bars, alongside the Status filter](images/drafts-status-filter.png)
+Note: Note
+
+A draft activity can't be the parent of a published activity. Uptempo prevents you from creating or moving activities into a hierarchy where a draft activity would sit above a published one.
+
 Tip: Tip
 
 Use the Status filter to show only Draft or only Published activities in the Timeline or Summary display modes. For full filtering instructions, see [Filter activities](filter-activities.html).
