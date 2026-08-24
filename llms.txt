@@ -4163,16 +4163,17 @@ Performance insight cards contain key marketing plan indicators and are displaye
 
 The investment details panel in the ![Investments](images/spreadsheet.svg) Investments section shows details about the selected investment item. Items can be categories, sub-categories, line items, or placeholders.
 
+Note: Note
+
+As of the August 2026 release, budgets using Strategic Targets, Impact Modeler, or Strategic Planning Insights continue to show the previous details panel design (including the Strategy and Alignment tabs below). Other budgets show the modernized panel, which includes only the Details and Activities tabs. Metrics no longer appears as a panel tab for any budget — it's now shown in a bar above the budget grid.
+
 Details
 : Shows basic information and attribute values for the investment.
 
-Metrics
-: Contains the metrics configured for your investment plans, such as top-down targets and variance between plan and actual spend.
-
-Strategy
+Strategy (previous panel only)
 : Displays objectives defined with Strategic Planner.
 
-Alignment
+Alignment (previous panel only)
 : Shows your alignment score and recalculates as you update your investment plans.
 
 Activities
@@ -4183,6 +4184,12 @@ Note: Note
 The sections in the details panel vary depending on which features are enabled in your Uptempo instance.
 
 Procedure: Open an investment's details panel
+
+## Modernized panel
+
+Budgets without Strategic Targets, Impact Modeler, or Strategic Planning Insights show the modernized details panel:
+
+![Line item details panel](images/Line%20Item%20Details%20Panel.png)
 
 ## Uptempo ID and Persistent ID
 
@@ -4315,6 +4322,8 @@ The investment details panel is where you can select attributes that allow you t
 Note: Note
 
 The details panel is always customized and adapted to the data by which your organization wants to characterize the investments as well as track and analyze performance. Types of attributes that can be typically found in the details panel are Objectives, Target Audience, Product, Region, Segment, Dates, Top of Funnel Metric or Notes.
+
+![Line item details panel](images/Line%20Item%20Details%20Panel.png)
 
 Procedure: Edit an investment's attributes
 
