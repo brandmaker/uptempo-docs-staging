@@ -2508,69 +2508,6 @@ At present, activity access controls do not yet have support for all available t
 
 
 
-# View a centralized audit trail for activities
-
-The audit trail records events that take place on activities, giving you a complete historical log of who changed what, and when.
-
-Changes to different areas of an activity, such as Estimated Costs, connected funds, and KPIs, are recorded as separate entries.
-
-Procedure: Open the audit trail
-
-![Audit Trail page with the Date Range filter open](images/activity-audit-trail-filters.png)
-
-The table displays these columns:
-
-Time
-: The date and time the event took place.
-
-User
-: The name of the user associated with the event.
-
-Activity Affected
-: The name of the activity the event relates to. Click the activity name to open it.
-
-Event Area
-: The area of the activity that the event relates to, such as Activities, Estimated Costs, or Connected Investments.
-
-Event Type
-: The type of action that took place, such as Create, Update, or Delete.
-
-Change
-: A short description of the change.
-
-## Filter and search the audit trail
-
-To find specific events, use the search field and filters above the table. By default, the table shows events from Today.
-
-| Filter name |Description |
-----------------------------
-| Search activity name or ID |Only show events for a specific activity, matched by name or ID |
-| Date Range |Only show events that took place within a specific date range. Choose Today, Last 7 Days, Last 30 Days, Last 60 Days, or Custom to specify your own date range. |
-| User |Only show events associated with a specific user |
-| Event Area |Only show events related to a specific area of an activity |
-| Event Type |Only show events of a specific type, such as Create, Update, or Delete. Select Custom to show events for Outbound Actions. |
-
-Tip: Tip
-
-Timestamps in the audit trail are shown in your local time zone, based on your browser settings.
-
-## View event details
-
-To see the full details of an event, click Show more on its row. The Event Details panel opens, showing information about the activity and the event, followed by a comparison of the New value and Old value for the change.
-
-What appears under New value and Old value depends on the type of event:
-
-* For a newly created activity, all the data entered on the Details tab during creation appears under New value, and Old value is empty. Data entered on other tabs, such as Estimated Costs, Connected funds, or KPIs, is recorded as a separate event for each area.
-
-* For an updated activity, a separate event is recorded for each area that was changed, such as Estimated Costs. The panel shows the New value and Old value for that area.
-
-* For a deleted activity, all the data most recently entered on the Details tab appears under Old value, and New value is empty. Data from other tabs is recorded as separate events under their respective areas.
-
-![Event Details panel for a deleted activity](images/activity-audit-trail-deleted-example.png)![Event Details panel for an updated activity](images/activity-audit-trail-updated-example.png)
-Outbound Actions and changes to an activity's connected funding sources also appear as their own events in the audit trail.
-
-
-
 # Manage access control for activities
 
 As an administrator, you can control access to the Campaign Management activities in your Uptempo instance by defining access control policies:
@@ -6811,6 +6748,62 @@ After an annual rollover, it's easier and faster to sync late-year and newly cre
 Note: Note
 
 As the rollover process is performed by an Uptempo specialist, speak with your Customer Success contact or Uptempo Support if you need to synchronize past-year investments into the new budget after your rollover.
+
+
+
+# View a centralized audit trail for activities
+
+The audit trail gives you one central place to see a record of every change made to any activity, showing who made it and when.
+
+Procedure: Open the audit trail
+
+![Audit Trail page with the Date Range filter open](images/activity-audit-trail-filters.png)
+
+Note: Note
+
+Changes to different areas of an activity, such as Estimated Costs, connected funds, and KPIs, are recorded as separate entries.
+
+The table displays these columns:
+
+| Column |Description |
+-----------------------
+| Time |The date and time the entry was recorded. |
+| User |The name of the user associated with the entry. |
+| Activity Affected |The name of the activity the entry relates to. Click the activity name to open it. |
+| Event Area |The area of the activity that the entry relates to, such as Activities, Estimated Costs, or Connected Investments. |
+| Change |A short description of the change, including the type of action, such as Create, Update, or Delete. |
+| Actions |Click Show more to view the full details for that entry. |
+
+## Filter and search the audit trail
+
+To find specific entries, use the search field and filters above the table. By default, the table shows entries from Today.
+
+| Filter name |Description |
+----------------------------
+| Search activity name or ID |Only show entries for a specific activity, matched by name or ID |
+| Date Range |Only show entries recorded within a specific date range. Choose Today, Last 7 Days, Last 30 Days, Last 60 Days, or Custom to specify your own date range. |
+| User |Only show entries associated with a specific user |
+| Event Area |Only show entries related to a specific area of an activity |
+| Event Type |Only show entries of a specific type, such as Create, Update, or Delete. Select Custom to show entries for Outbound Actions. |
+
+Tip: Tip
+
+Timestamps in the audit trail are shown in your local time zone, based on your browser settings.
+
+## View event details
+
+To see the full details of an entry, click Show more on its row. The Event Details panel opens, showing information about the activity and the entry, followed by a comparison of the New value and Old value for the change.
+
+What appears under New value and Old value depends on the type of entry:
+
+* For a newly created activity, all the data entered on the Details tab during creation appears under New value, and Old value is empty. Data entered on other tabs, such as Estimated Costs, Connected funds, or KPIs, is recorded as a separate entry for each area.
+
+* For an updated activity, a separate entry is recorded for each area that was changed, such as Estimated Costs. The panel shows the New value and Old value for that area.
+
+* For a deleted activity, all the data most recently entered on the Details tab appears under Old value, and New value is empty. Data from other tabs is recorded as separate entries under their respective areas.
+
+![Event Details panel for a deleted activity](images/activity-audit-trail-deleted-example.png)![Event Details panel for an updated activity](images/activity-audit-trail-updated-example.png)
+Outbound Actions and changes to an activity's connected funding sources also appear as their own entries in the audit trail.
 
 
 
