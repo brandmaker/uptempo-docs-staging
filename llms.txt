@@ -6736,6 +6736,7 @@ You can view Estimated Costs and connected investment data together in one table
 
 * Work across multiple years: Use a single control to change the year in view, rather than selecting the same year separately on two tables.
 
+![Activity budget table showing Estimated Costs and connected investments in one table](images/activity-budget-tab-multi-year-2026.png)
 → [Learn more about tracking and analyzing activity budgets](track-and-analyze-budgets.html)
 
 ### Create investment line items directly from an activity
@@ -6746,6 +6747,7 @@ You can create and connect a new investment line item from the ![Activities](ima
 
 * Connect right away: You can connect new line items immediately after you create them, so you can finish the task of connecting funding to the activity right away. Line items created from the investment picker start with no funds assigned, so you can close the loop on allocating specific amounts later, during the investment planning phase.
 
+![Investment picker with the option to add a new line item](images/add-line-item-investment-picker.png)
 → [Learn more about connecting investments to activities](connect-investments-to-activities.html)
 
 ## Financial Management: Budgets
@@ -6769,6 +6771,14 @@ After an annual rollover, it's easier and faster to sync late-year and newly cre
 Note: Note
 
 As the rollover process is performed by an Uptempo specialist, speak with your Customer Success contact or Uptempo Support if you need to synchronize past-year investments into the new budget after your rollover.
+
+### Keep actuals and PO imports working after a rollover or rename
+
+Your Uptempo specialist can now base the mapping rules for your actuals and purchase order (PO) imports on the Persistent IDs of budgets and folders, instead of their names.
+
+* Imports survive renames: Mapping rules that use Persistent IDs keep working when you rename a budget or folder, so your actuals and PO imports continue to map to the right budgets and folders.
+
+* Smoother fiscal year rollovers: The rules follow your budgets and folders into the new fiscal year, so your imports run without rule repairs after the rollover.
 
 
 
