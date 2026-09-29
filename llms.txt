@@ -937,9 +937,13 @@ You can:
 
 * Connect activities to one or multiple investments, at any level of the investment hierarchy (category, sub-category, or line item).
 
+* Create a new investment line item while you connect an activity, if the line item you need doesn't exist yet.
+
 To prevent connections between activities and investments that would cause conflicts or are otherwise not valid, the system automatically enforces a set of rules for making connections. To learn more about these rules, see [Rules for connecting investments](rules-for-connecting-investments.html).
 
 Procedure: Connect an activity to an investment
+
+Procedure: Create a line item and connect it to an activity
 
 Procedure: Disconnect an investment from an activity
 
@@ -1043,7 +1047,7 @@ Note: Note
 
 The estimated cost amounts you enter are intended for activity planning and reference purposes only. They are not used by Uptempo Financial Management, and they are not included in Uptempo Analytics reports.
 
-After budgets are set, you can [use Connect to Spend to connect investments to activities](connect-investments-to-activities.html). When you do this, budget data from the connected investment is displayed directly on the activity, so you can easily view the activity's planned, expected, committed, and actual spend, and compare it to the cost assumptions you made during the planning phase.
+After budgets are set, you can [use Connect to Spend to connect investments to activities](connect-investments-to-activities.html). When you do this, budget data from the connected investment is displayed directly on the activity, so you can easily view the activity's planned, expected, committed, and actual spend, and compare it to the cost assumptions you made during the planning phase. Estimated Costs and connected spend appear together in a single table in the Budget section of the activity's details panel.
 
 ## Track estimated costs on activities
 
@@ -1069,46 +1073,57 @@ After an activity has been [connected to an investment](connect-investments-to-a
 
 Procedure: View an activity's spend data
 
+### Compare Estimated Costs and connected spend
+
+Estimated Costs and connected spend appear together in a single table in the Budget section of an activity's details panel. You can compare your planned costs against connected spend in each period without switching between two tables.
+
+* One table for both: The Estimated Costs row is at the top of the table, followed by the Connected Investments section. Both use the same period columns, so you can read the variance for each period across the table.
+
+* One control for the year: On an activity that spans more than one year, click a year tab at the top of the table to change the year. Estimated Costs and connected spend update together.
+
+![Budget section showing 2026](images/activity-budget-tab-multi-year-2026.png)
+![Budget section showing 2027](images/activity-budget-tab-multi-year-2027.png)
+
 ### Break down activity spend data by time period
 
-By default, the system displays total amounts for the spend data on activities, representing the full time period covered by the connected investment.
+By default, the table displays quarterly amounts. Because timing is often a critical consideration with budget spend, you can change how granular the amounts are. This gives you a more detailed view of exactly when spend is happening, which can help you to spot potential issues (such as overspending in a particular quarter).
 
-Because timing is often a critical consideration with budget spend, you can also view more granular annual and quarterly breakdowns of activity spend data. This gives you a more detailed view of exactly when spend is happening, which can help you to spot potential issues (such as overspending in a particular quarter).
+Use the Total, Yearly, and Quarterly options at the top right of the table to change the time period. The selection applies to Estimated Costs and connected spend together.
 
-* Single year: On activities connected to investments from one budget year, select the Quarterly option to see spend data broken down by quarter: ![Breakdown single year quarterly](images/BreakdownSingleYearQuarterly.png)
+* Single year: On activities connected to investments from one budget year, the Total and Quarterly options are available. Select Quarterly to see amounts broken down by quarter: ![Quarterly breakdown for a single year](images/activity-budget-tab-single-year.png)
 
-* Multiple years: On activities connected to investments from more than one budget year, a Yearly option is also available (in addition to Quarterly). With both options, you can use the FY year tabs to choose the fiscal year for which you want to view data: ![Breakdown multi year quarterly](images/BreakdownMultiYearQuarterly.png)
+* Multiple years: On activities connected to investments from more than one budget year, a Yearly option is also available. With Yearly and Quarterly, use the year tabs to choose the year for which you want to view data: ![Quarterly breakdown for one year of a multi-year activity](images/activity-budget-tab-multi-year-2026.png)
 
 Note: Note
 
 Quarterly and yearly spend data breakdowns are only shown if a date range has been set on the corresponding budget columns in Uptempo Financial Management.
 
-You can view spend data breakdowns by time period at any level of the activity hierarchy. On higher-level activities, the system lists amounts aggregated from connected investments on lower-level activities (Roll-up) separately from amounts associated with investments connected to the activity itself (Connected):
+You can view breakdowns by time period at any level of the activity hierarchy. On higher-level activities, the Roll-up row under Estimated Costs lists the estimated costs of child activities, and the Connected Investments Roll-up section lists amounts aggregated from investments connected to lower-level activities. You can also connect investments directly to a higher-level activity, and they are listed the same way as on any other activity:
 
-![Breakdown roll upvs connected](images/BreakdownRollUpvsConnected.png)
+![Roll-up on a parent activity](images/activity-budget-tab-parent-roll-up.png)
 
-### Understanding spend data panel amounts
+### Understand roll-up and remaining amounts
 
-Both activities and investments exist within multi-level hierarchies, and you can make connections between activities and investments at multiple levels. The amounts shown when you expand the spend data panels are designed to make it easy to understand how connections made at lower levels of the activity hierarchy impact funding at the level you're currently viewing.
+Both activities and investments exist within multi-level hierarchies, and you can enter estimated costs and make connections at multiple levels. The Roll-up and Left rows are designed to make it easy to understand how amounts at lower levels of the activity hierarchy relate to the level you're currently viewing.
 
-For example, assume you have an activity called Demand Gen Campaign, and you connect it to a corresponding budget category in Uptempo Financial Management called Demand Gen Campaign Budget:
+For example, the parent activity Program 2026 has an estimated cost of $5,000 in 2026 Q1, and two child activities have estimated costs in that quarter:
 
-* The Demand Gen Campaign Budget budget category contains line items for specific funding amounts that total $15,000. Therefore, when you connect Demand Gen Campaign to this budget category, you know that you have $15,000 available to fund the campaign.
+* Ferrari Hospitality has an estimated cost of $8,000.
 
-* As you plan out the campaign, you create child activities under Demand Gen Campaign for each of the tactics you plan to use. You connect each child activity to a corresponding line item in the connected Demand Gen Campaign Budget budget category to track how much of the overall budget each tactic is consuming. * For example, you allocate $7,000 to Tactic A and $3,000 to Tactic B. Together, these two tactics consume $10,000 of the $15,000 available.
+* Ferrari Merchandise has an estimated cost of $4,500.
 
-At this point, the Details > Budget section of the Demand Gen Campaign activity looks like this:
-![Activity Rollup Example](images/ActivityRoll-UpExample.png)
+The details panel of Program 2026 shows the following amounts for 2026 Q1:
 
-Here, you can see at a glance that:
+* Estimated Costs: $5,000, the amount entered on Program 2026 itself.
 
-* The total planned spend for this campaign is $15,000.
+* Roll-up: $12,500, the sum of the estimated costs of the child activities ($8,000 + $4,500).
 
-* The portion of the investment that is already consumed by child activities is $10,000 (the amount shown on the Activity Roll-Up row).
+* Left: $-7,500, calculated by subtracting the $12,500 Roll-up amount from the $5,000 Estimated Costs amount.
 
-* The amount of the total planned spend that remains available for activities in this campaign is $5,000 (the amount shown on the Demand Gen Campaign Budget row). * This amount is calculated by subtracting the $10,000 Activity Roll-Up amount from the $15,000 Planned Spend total amount.
+The negative Left amount tells you that the estimated costs of the child activities exceed the estimated cost of the parent activity, so you can adjust either amount.
 
-This breakdown allows you to quickly understand exactly how much has been spent, and how much remains available to fund other tactics (or reassign elsewhere), when looking at any level of your activity hierarchy.
+![Roll-up example](images/activity-budget-tab-parent-roll-up.png)
+The Connected Investments Roll-up section works the same way for spend: it adds up the amounts from investments connected to the child activities. In this example, $9,750 from Ferrari Hospitality and $4,500 from Ferrari Merchandise add up to $14,250 of Expected Spend in 2026 Q1.
 
 
 
@@ -6744,6 +6759,12 @@ After an annual rollover, it's easier and faster to sync late-year and newly cre
 * Customizable data transfers: You can specify exactly what data you want to copy with each synchronized line item, whether that's only the line item itself, or everything from attribute data, to cell values, to activity connections and allocation amounts.
 
 * Automated routing and mapping: Uptempo reads the Persistent IDs to route each line item to the correct destination budget, and maps old data to the new fields regardless of any text-based name changes in the new fiscal year.
+
+* Missing parent categories are created for you: If a line item's parent category doesn't exist in the destination budget, Uptempo creates it first, including its Persistent ID, and then copies the line item into it. If a category with the same name already exists, Uptempo reuses it rather than creating a duplicate.
+
+* Unmatched items don't stop the sync: Line items that have no matching destination budget are skipped and listed in an output file. The rest of the sync completes, and you can review the skipped items afterward.
+
+* Redirect items after a restructure: If your budget hierarchy changed, your Uptempo specialist can specify a destination budget for individual line items, so they land in the right place in the new fiscal year.
 
 Note: Note
 
