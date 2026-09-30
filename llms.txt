@@ -6780,6 +6780,68 @@ Your Uptempo specialist can now base the mapping rules for your actuals and purc
 
 * Smoother fiscal year rollovers: The rules follow your budgets and folders into the new fiscal year, so your imports run without rule repairs after the rollover.
 
+### What's new: Uptempo Public API
+
+The Uptempo Public API reference is now the single, official source for API documentation.
+
+* Find everything in one place: Every endpoint, schema, and example is in the [Uptempo Public API reference](https://api-na.uptempo.io/v1/up-docs#description/introduction).
+
+* Build new integrations on Uptempo URLs: Use the Uptempo base URL for new integrations, and store it in configuration rather than hardcoding it.
+
+* Existing integrations keep working: Integrations that call Allocadia URLs today need no changes right now. We will share advance notice before anything changes.
+
+Note: Note
+
+The legacy Allocadia API documentation (`api-na.allocadia.com/v1/docs`) has been retired and is no longer maintained. Update any bookmarks, runbooks, or internal references to point to the Uptempo Public API reference.
+
+→ [Go to the Uptempo Public API reference](https://api-na.uptempo.io/v1/up-docs#description/introduction)
+
+### Activity API is now generally available
+
+The Activity endpoints that were in Early Access are now available to all customers, with no feature enablement needed.
+
+* Now generally available: Activities, activity actual results (read and write), activity KPIs, activity actual KPIs, Estimated Costs, and planned impact.
+
+### Delete activities through the API
+
+You can now delete an activity by ID through the API, so you can clean up incorrectly created activities without administrator help.
+
+### See who created an activity and when it last changed
+
+Activity responses now include creator and change tracking, so integrations can attribute records and pick up only what changed.
+
+* Created by: Each activity returns a `createdBy` object with the user's `id`, `username`, `firstName`, `lastName`, and `enabled` status. The `username` is the user's email address.
+
+* Last modified date: Detect changed activities without comparing full records.
+
+* Older records: Activities created before March 2026 don't include `createdBy`.
+
+### Work with currencies and exchange rates
+
+You can now handle multi-currency budgets through the API instead of calculating conversions in your integration.
+
+* Read exchange rates: Get a budget's currency and exchange rates.
+
+* Entry currency on line items: Read and write the original currency a line item was entered in.
+
+* Create in any currency: Specify a currency when you create a line item.
+
+### See who created a line item
+
+Line item responses now include the same `createdBy` object as activities, across single, list, tree, and bulk job results. Line items created before March 2026 don't include `createdBy`.
+
+### Read column dependencies
+
+You can now read a budget's column dependency mappings, meaning each controlling column and its dependent columns, using standard API authentication. Budgets with no mappings return an empty result.
+
+### Fixes and behavior changes
+
+* Linking a line item to an activity now reports failures: `POST /v1/activity-investments/link` returns `409 Conflict` with an explanation when a link isn't created, for example when the line item is already linked or is in automatic allocation. It previously returned `200` without linking. Review any integration that treats `200` as the only expected response.
+
+* Timestamps now return correct UTC values: Activity created, updated, and in-market dates, line item created and updated dates, and user account creation dates were shifted by the server's time zone offset in some cases. If your integration adjusted for this offset, remove that adjustment.
+
+* Duplicate attribute option names: Saving attribute options with the same name now returns an error instead of reporting success without saving.
+
 
 
 # View a centralized audit trail for activities
