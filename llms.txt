@@ -1029,6 +1029,258 @@ In this example, there are no connections above Program FT, so it is the highest
 
 
 
+# About activity approvals
+
+Activity approvals let your organization require formal sign-off on an activity before it moves forward. An approval covers the whole activity, including its details, budget, Impact, and KPIs.
+
+Note: Note
+
+Activity approvals are in Preview, and are not enabled in your Uptempo instance by default. Contact your Customer Success Manager to enable this feature.
+
+## How activity approvals work
+
+Activity approvals involve three roles:
+
+Admin
+: Creates approval processes, decides which activity types need approval and who approves them, and sets how approval emails are sent.
+
+Submitter
+: Submits an activity for approval and sets a deadline for the decision.
+
+Approver
+: Reviews requests and approves or denies them, either on the Approvals page or from the activity's details panel on the Timeline.
+
+A typical approval follows these steps:
+
+1. An admin creates an approval process that covers one or more activity types.
+
+2. A submitter opens an activity of a covered type, selects Submit for Approval, and sets a deadline. Uptempo creates an approval request with the status Pending review, and emails the assigned approvers.
+
+3. Any one of the assigned approvers approves or denies the request, on the Approvals page or from the activity's details panel on the Timeline.
+
+4. The request moves to Approved or Denied, and the decision is recorded in the request history.
+
+### Approval processes
+
+An approval process defines which activity types need approval, and how approvers are assigned. Each process has:
+
+* A name, an optional description, and a status (active or inactive).
+
+* One or more activity types that it covers. One process can cover several activity types, but each activity type belongs to only one active process.
+
+* An approver source: a submitter-to-approver mapping, or Selected by submitter.
+
+Only activities whose type is covered by an active process can be submitted for approval. Activities of other types don't show Submit for Approval, and don't appear on the Approvals page.
+
+### How approvers are assigned
+
+Each approval process uses one of two approver sources:
+
+Submitter-to-approver mapping
+: An admin uploads a file that maps each submitter to one or more approvers, plus one default admin. When a submitter submits an activity, Uptempo assigns all approvers on that submitter's row. The submitter can't change them.
+
+Selected by submitter
+: The submitter chooses one approver when submitting. Only users who can edit the activity can be selected.
+
+With a submitter-to-approver mapping, Uptempo routes a request to the default admin when:
+
+* The submitter isn't listed in the mapping file.
+
+* None of the submitter's mapped approvers can edit the activity.
+
+Submission is never blocked in these cases.
+
+Note: Note
+
+Approvers are fixed when a request is submitted. Changes to a process or its submitter-to-approver mapping apply to new requests only.
+
+### Request statuses
+
+Every request has one of the following statuses:
+
+Pending review
+: The request has been submitted and is waiting for a decision.
+
+Approved
+: An assigned approver approved the request. Approval is final, and the activity can't be submitted for approval again.
+
+Denied
+: An assigned approver denied the request. The submitter can update the activity and resubmit the request.
+
+Each activity has only one approval request. If the request is denied, the submitter resubmits the same request instead of creating a new one.
+
+### Any one approver decides
+
+When a request has several assigned approvers, the first approver to approve or deny settles the request. The other approvers see that the request has been decided, and by whom.
+
+### What an approval covers
+
+An approval covers the activity as it stands when the decision is made. Activity fields aren't locked while a request is pending, so the activity can still be edited during review.
+
+## Who can see and decide on requests
+
+* To see a request, you need view access to the activity. You can see requests for every activity you can view, including requests that aren't assigned to you.
+
+* To approve or deny a request, you must be one of its assigned approvers, or an admin.
+
+## Approval emails
+
+Uptempo emails approvers about new approval requests. Admins choose whether approvers get an email as soon as each request is submitted, a daily or weekly digest, or both.
+
+
+
+# Submit activities for approval
+
+You can submit an activity for approval when its activity type is covered by an active approval process. Each submission creates an approval request that the assigned approvers review on the Approvals page.
+
+## Before you begin
+
+* Activity approvals must be enabled in your Uptempo instance. This feature is in Preview; contact your Customer Success Manager to enable it.
+
+* The activity's type must be covered by an active approval process. If Submit for Approval isn't shown on an activity, its type isn't covered; contact your Campaign Management admin.
+
+* The activity can't already have an approval request. If its request was denied, resubmit it instead (see the section on resubmitting after a denial).
+
+## How submission works
+
+### Who reviews your request
+
+The approval process for the activity type decides who reviews your request:
+
+Submitter-to-approver mapping
+: Your approvers are assigned automatically and listed for you when you submit. You can't change them. Any one of them can approve or deny the request. If you aren't listed in the mapping, your request goes to the process's default admin.
+
+Selected by submitter
+: You choose one approver when you submit. You can choose only users who can edit the activity.
+
+### Request description
+
+The request description starts with the activity's own description. You can add more context for your approvers, such as what you need approved and why. Approvers see the description on the Approvals page.
+
+### After you submit
+
+* The request has the status Pending review, and your approvers get an email.
+
+* The activity shows who the request is waiting on and its due date, and Submit for Approval is unavailable.
+
+* You can keep editing the activity while the request is pending. The approval covers the activity as it stands when the decision is made.
+
+## Submit an activity for approval
+
+Procedure: Submit an activity for approval
+
+## Track your request
+
+You can check the status of your request in two places:
+
+* On the activity: While the request is pending, the activity shows "Waiting for approval from" the assigned approvers and the due date. After approval, the activity shows that it's approved.
+
+* On the Approvals page: Find your request on the Pending review, Approved, or Denied tab. Click the request to open its details, including its history and any approver comments.
+
+## Resubmit after a denial
+
+If your request is denied, check the approver's comment in the request history, update the activity, and resubmit the request. Each activity has only one approval request, so resubmitting reopens the same request for review.
+
+Note: Note
+
+Approval is final. After an activity is approved, it can't be submitted for approval again.
+
+
+
+# Review and decide on approval requests
+
+The Approvals page lists the approval requests for activities you can view. As an approver, you can approve or deny requests on the Approvals page, or directly from an activity's details panel on the Timeline.
+
+## Before you begin
+
+* Activity approvals must be enabled in your Uptempo instance. This feature is in Preview; contact your Customer Success Manager to enable it.
+
+* To see a request, you need view access to the activity.
+
+* To approve or deny a request, you must be one of its assigned approvers, or an admin.
+
+## How the Approvals page works
+
+### Open the Approvals page
+
+Open the Approvals page in either of these ways:
+
+* Click Approvals in the navigation menu.
+
+* Click the link in an approval email. The link opens the request on the Approvals page.
+
+### Tabs
+
+Requests are organized into tabs. Each tab shows a count of its requests.
+
+Awaiting my review
+: Pending requests assigned to you. Requests are sorted by soonest deadline.
+
+Pending review
+: All pending requests for activities you can view, including requests assigned to other approvers.
+
+Approved
+: Requests that have been approved.
+
+Denied
+: Requests that have been denied.
+
+![Approvals page awaiting my review](images/approvals-page-awaiting-my-review.png)
+
+### Columns
+
+Each request shows the following columns:
+
+* Name: The activity name.
+
+* Description: The description entered at submission, which starts with the activity's own description. Long descriptions are shortened; open the request to read the full text.
+
+* Activity type
+
+* Submitter
+
+* Approvers: The first assigned approver, plus a count (for example, +2) when several are assigned.
+
+* Deadline: Requests that are overdue, or due within 7 days, are flagged.
+
+* Submitted: The date the request was submitted.
+
+### Search
+
+Use the search field to find requests by activity name, submitter, approver, or parent activity.
+
+### Request details
+
+Click any request to open its details, which show:
+
+* The submitter, all assigned approvers, and how the approvers were assigned
+
+* The deadline, its urgency, and the request status
+
+* The approval process and the description
+
+* The request history, including who submitted, who decided, when, and any comments
+
+Click Open in Activities to view the activity on the Timeline.
+
+### Decisions and comments
+
+* A comment is required when you deny a request, and optional when you approve. Comments are saved on the approval request and shown in its history.
+
+* When several approvers are assigned, the first one to decide settles the request. The other approvers see that the request has been decided, and by whom.
+
+* Decisions are final and can't be undone.
+
+## Approve or deny a request on the Approvals page
+
+Procedure: Approve or deny a request on the Approvals page
+
+## Approve or deny a request from the Timeline
+
+Procedure: Approve or deny a request from the activity details panel
+
+
+
 # Track and analyze activity budgets
 
 In Uptempo Campaign Management, Estimated Costs and Connect to Spend help you to plan, track, and evaluate your marketing budgets more effectively.
@@ -3540,6 +3792,157 @@ You can also use the Uptempo API to find Activity Type IDs, Activity Type Group 
 * All Attribute Option IDs (for a specified attribute): `GET /attribute-definitions/{attributeDefinitionId}`
 
 For instructions on how to use the Uptempo API, refer to [the API documentation](https://public-api-release.public.eks1-dev-usw2-g2.allocadia.io/v1/docs/index.xml).
+
+
+
+# Set up activity approval processes
+
+An approval process defines which activity types need approval, and who approves them. As an admin, you create and manage approval processes from the Approvals page.
+
+## Before you begin
+
+* Activity approvals must be enabled in your Uptempo instance. This feature is in Preview; contact your Customer Success Manager to enable it.
+
+* You must have administrator access to Campaign Management.
+
+* If you plan to use a submitter-to-approver mapping, collect the email address of each submitter, their approvers, and the user who acts as the default admin. Approvers must be able to edit the activities they approve.
+
+## How approval processes work
+
+### Process scope
+
+Each approval process covers one or more activity types. One process can cover several activity types, but each activity type belongs to only one active process. When you select activity types for a process, types already covered by another active process can't be selected, and Uptempo shows which process covers them.
+
+Only activities whose type is covered by an active process can be submitted for approval.
+
+### Approver sources
+
+Each process uses one of two approver sources:
+
+Submitter-to-approver mapping
+: You upload a CSV file that maps each submitter's email to one or more approver emails, plus exactly one default admin. Uptempo assigns approvers automatically based on who submits the request. Submitters can't change their approvers.
+
+Selected by submitter
+: Submitters choose one approver when they submit. Only users who can edit the activity can be selected. No file is needed.
+
+### Default admin
+
+The default admin is the fallback approver for a process that uses a submitter-to-approver mapping. Uptempo routes a request to the default admin when:
+
+* The submitter isn't listed in the mapping file.
+
+* None of the submitter's mapped approvers can edit the activity.
+
+### Mapping file checks
+
+When you upload a submitter-to-approver mapping file, Uptempo checks it for problems:
+
+Errors
+: A missing default admin, or the same submitter listed more than once. You can't save the file or continue until you fix these and upload the file again.
+
+Warnings
+: Unknown email addresses or inactive users. You can continue, but fix these to make sure requests reach the right people.
+
+Access warnings
+: Approvers who can't edit the activities of the submitters they're mapped to. Uptempo lists each affected approver. You can upload a corrected file, or continue; if you continue, requests from those submitters go to the default admin.
+
+### Changes to existing processes
+
+* Changes to a process or its submitter-to-approver mapping apply to new requests only. Requests already in progress keep the approvers assigned when they were submitted.
+
+* Uploading a new mapping file merges it into the current mapping: new submitters are added, and submitters with changed approvers are updated.
+
+## Create an approval process
+
+Procedure: Create an approval process
+
+## Upload a submitter-to-approver mapping
+
+Procedure: Upload a submitter-to-approver mapping
+
+Tip: Tip
+
+To add submitters or change approvers later, upload a file that contains only the new or changed rows. Uptempo merges it into the current mapping.
+
+## Edit an approval process
+
+Procedure: Edit an approval process
+
+## Deactivate an approval process
+
+When you deactivate a process, users can no longer submit activities for approval for the activity types it covers. Requests already in progress continue, and approvers can still decide on them.
+
+Procedure: Deactivate an approval process
+
+Note: Note
+
+Approval processes can't be deleted.
+
+
+
+# Configure approval emails
+
+Uptempo emails approvers about approval requests that are waiting for their review. As an admin, you choose how approvers get these emails: an email as soon as each request is submitted, a daily or weekly digest, or both.
+
+## Before you begin
+
+* Activity approvals must be enabled in your Uptempo instance. This feature is in Preview; contact your Customer Success Manager to enable it.
+
+* To change approval email settings, you must be an admin who can configure approval processes.
+
+## How approval emails work
+
+### Email options
+
+Approval email settings apply to your whole organization and to every approval process. You can't set different options for a single process or user.
+
+Immediate emails
+: Each assigned approver gets an email with a link to the request on the Approvals page as soon as it's submitted.
+
+Daily digest
+: Each approver gets one email a day listing the new requests submitted for their review.
+
+Weekly digest
+: Each approver gets one email a week summarizing their open requests.
+
+You can turn on immediate emails, a digest, or both.
+
+Emails are notifications only. Approvers approve and deny requests on the Approvals page or from the activity's details panel on the Timeline, not from an email. Uptempo doesn't email submitters when a request is approved or denied; the decision and any comment are shown on the approval request.
+
+### Daily digest
+
+The daily digest covers every request submitted for an approver's review since the last digest, across all approval processes.
+
+* New submissions and resubmissions after a denial are included.
+
+* Requests that have already been decided before the digest is sent, by any approver, are left out.
+
+* Each request shows the activity name, submitter, and due date.
+
+* A button opens the Awaiting my review tab on the Approvals page.
+
+* No email is sent when nothing new was submitted for that approver.
+
+### Weekly digest
+
+The weekly digest summarizes each approver's open work.
+
+* Open requests are counted as Overdue, Approaching deadline, or On track, using the same deadline rule as the Approvals page.
+
+* The 10 requests with the soonest due dates are listed, followed by a link to the Approvals page.
+
+* No email is sent to anyone who has no open requests assigned to them currently.
+
+### Send times and time zones
+
+You set one send time for the daily digest and one for the weekly digest. Each time uses the time zone of the admin who saves the setting, and the digest goes out at that moment for everyone in your organization, regardless of where they are.
+
+Example
+: An admin in Denver sets the daily digest to send at 7:00 a.m. Approvers in Denver get the digest at 7:00 a.m. local time, approvers in New York get it at 9:00 a.m. local time, and approvers in London get it at 2:00 p.m. local time.
+
+## Change approval email settings
+
+Procedure: Choose approval email options and digest times
 
 
 
@@ -6696,6 +7099,99 @@ Procedure: Reset your Uptempo password
 Release notes
 
 We release new features every month. Find the latest release notes here.
+
+
+
+# What's new: 2026.10
+
+Discover all the new Uptempo features introduced with the 2026.10 release, available from October 29, 2026.
+
+Note: Note
+
+Features marked with the tags Preview and Beta are opt-in, and are not enabled in your Uptempo instance by default. Contact your Customer Success Manager to enable these features.
+
+For more information, see [Uptempo's feature release lifecycle](uptempo-s-feature-release-lifecycle.html).
+
+## Campaign Management: Activity approvals
+
+Get formal sign-off on marketing activities before they move forward. Admins set up an approval process for the activity types that need one, submitters send activities for approval in a few clicks, and approvers review and decide on requests from a single Approvals page, one at a time or in bulk.
+
+### Set up approval processes for activity types
+
+Admins can now create approval processes that define which activity types need approval, and who approves them.
+
+* Choose which activity types need approval: One process can cover several activity types, and each activity type belongs to only one active process. Only activities whose type is covered by an active process can be submitted for approval.
+
+* Decide who approves: Use a submitter-to-approver mapping to route each submitter's requests to set approvers automatically, or let submitters choose an approver when they submit (Selected by submitter).
+
+* Upload your submitter-to-approver mapping: Download the CSV template, then list each submitter's email with one or more approver emails, plus one default admin. Requests from submitters who aren't in the file go to the default admin. Uploading a new file adds new submitters and updates changed approvers.
+
+* Catch problems before they cause issues: Uptempo blocks files with a missing default admin or duplicate submitters. It warns you about unknown or inactive users, and about approvers who can't edit the submitter's activities. Requests for those submitters go to the default admin.
+
+* Change processes safely: Edits and deactivations apply only to new requests. Requests already in progress keep their approvers.
+
+![Approval process details step](images/approval-process-details-step.png)
+→ [Learn more about setting up activity approval processes](configure-activity-approval-processes.html)
+
+### Submit activities for approval
+
+You can now submit an activity for approval directly from the activity.
+
+* Submit with context: Select Submit for Approval on the activity and set an approval deadline. The request description starts with the activity's own description, and you can add more context for your approvers.
+
+* See who reviews: With a submitter-to-approver mapping, your approvers are listed for you, and any one of them can approve. With Selected by submitter, you choose one approver from the users who can edit the activity.
+
+* Track status on the activity: While the request is pending, the activity shows who it's waiting on and when it's due.
+
+* Resubmit after a denial: Each activity has one approval request, and approval is final. If the request is denied, update the activity and resubmit it.
+
+![Finalize submission request](images/finalize-submission-request.png)
+→ [Learn more about submitting activities for approval](submit-activities-for-approval.html)
+
+### Review and decide on the Approvals page
+
+Approvers can now find, review, and decide on approval requests from a single page, or decide directly from an activity's details panel on the Timeline.
+
+* Find requests fast: Use the Awaiting my review, Pending review, Approved, and Denied tabs, each with a count. Search by activity name, submitter, approver, or parent.
+
+* Stay ahead of deadlines: Awaiting my review is sorted by soonest deadline. Requests that are overdue or due within 7 days are flagged.
+
+* Decide with context: Each row shows the activity name, description, activity type, submitter, approvers, deadline, and submission date. Open a request to see its full details and history, or select Open in Activities to view the activity on the Timeline.
+
+* Explain your decision: A comment is required when you deny a request, and optional when you approve. Comments are saved on the approval request and shown in its history.
+
+* One decision settles it: When several approvers are assigned, the first one to approve or deny settles the request, and the others see who decided.
+
+* Visibility follows access: You can see requests for any activity you can view. Only assigned approvers and admins can approve or deny.
+
+![Approvals page awaiting my review](images/approvals-page-awaiting-my-review.png)
+→ [Learn more about reviewing approval requests](review-and-decide-on-approval-requests.html)
+
+### Approve or deny requests in bulk
+
+Approvers who handle large volumes, for example during annual planning, can now decide on many requests in one action instead of opening each one.
+
+* Select requests on the page: On Awaiting my review, select individual requests, or use the header checkbox to select every request on the current page (up to 25).
+
+* Approve or deny in one step: Select Approve or Deny. A comment is optional when approving and required when denying. The comment is applied to every selected request.
+
+* Every decision is still recorded: Each request keeps its own decision and comment in its history, the same as a single decision.
+
+### Choose how approvers get approval emails
+
+Admins can now choose how approvers are emailed about approval requests: an email for each new request, a daily or weekly digest, or both.
+
+* Immediate emails: Approvers get an email with a direct link as soon as a request is submitted for their review.
+
+* Daily digest: Approvers get one email a day covering every new request across all approval processes, with the activity name, submitter, and due date. Requests already decided are left out, and no email is sent on days with nothing new.
+
+* Weekly digest: Approvers get one email a week showing how many of their open requests are overdue, approaching their deadline, or on track, plus the 10 requests due soonest.
+
+* Choose when digests go out: Admins set one send time for the daily digest and one for the weekly digest. Times use the time zone of the admin who sets them, and each digest goes out at that moment for everyone in the organization.
+
+Emails are notifications only. Approve and deny requests on the Approvals page or from the activity's details panel on the Timeline.
+
+→ [Learn more about approval email settings](configure-approval-emails.html)
 
 
 
