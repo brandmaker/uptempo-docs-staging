@@ -296,7 +296,7 @@ Type
 : * Fixed: Can't be manually edited on existing activities.
 
 Status
-: Indicates whether the activity is a draft or has been published. For more information, see [Work with activity drafts (Preview)](work-with-activity-drafts.html).
+: Indicates whether the activity is a draft or has been published. For more information, see [Work with activity drafts](work-with-activity-drafts.html).
 : * User-defined: Set during activity creation.
 : * Editable: Can be manually edited on existing activities.
 
@@ -417,11 +417,7 @@ Procedure: Use Uptempo AI suggestions when creating a new activity
 
 
 
-# Work with activity drafts (Preview)
-
-Note: Note
-
-This feature is currently in Preview, and is [available on an opt-in basis](uptempo-s-feature-release-lifecycle.html#stage-1-preview). To learn more, see [What's new: 2026.8](release-2026-8.html).
+# Work with activity drafts
 
 You can save a new activity with just filling in its Name, Activity type, and Parent , instead of needing every required field completed up front.
 
@@ -481,7 +477,7 @@ Procedure: Edit an existing activity
 
 Note: Note
 
-You can also revert a published activity back to a draft, by holding the pointer on ![Actions](images/dots-horizontal-circle.svg) Actions and clicking Revert to Draft. For more information, see [Work with activity drafts (Preview)](work-with-activity-drafts.html).
+You can also revert a published activity back to a draft, by holding the pointer on ![Actions](images/dots-horizontal-circle.svg) Actions and clicking Revert to Draft. For more information, see [Work with activity drafts](work-with-activity-drafts.html).
 
 Tip: Tip
 
@@ -537,7 +533,7 @@ Procedure: Duplicate an activity
 
 Note: Note
 
-You can also duplicate an activity as a draft, rather than as a published activity, by holding the pointer on ![Actions](images/dots-horizontal-circle.svg) Actions and clicking Duplicate as Draft instead of Duplicate. For more information, see [Work with activity drafts (Preview)](work-with-activity-drafts.html).
+You can also duplicate an activity as a draft, rather than as a published activity, by holding the pointer on ![Actions](images/dots-horizontal-circle.svg) Actions and clicking Duplicate as Draft instead of Duplicate. For more information, see [Work with activity drafts](work-with-activity-drafts.html).
 
 See [Move activities](move-activities.html) to learn how to move a duplicated activity (and its descendants) to another part of the activity hierarchy.
 
@@ -623,34 +619,6 @@ Procedure: Clear all filters from the activity hierarchy
 
 By default, the activity hierarchy in Uptempo Campaign Management displays all activities that you have access to, at all levels of the hierarchy. To make a large activity hierarchy easier to work with, you can use grouping to adjust how they are displayed.
 
-You can group activities together based their selected value for a specified Drop-Down List or Multi-Select List attribute.
-
-In the following example, the selected attribute is Target Persona. Activities are grouped according to their value for this attribute, such as Traveler. Activities to which no value is assigned for the selected attribute are shown grouped under the No value set grouping:
-
-![Grouping no value](images/Grouping%20no%20value.png)
-
-A grouping can only be applied to the activity types to which the attribute is assigned. If you see multiple levels of the activity hierarchy and the hierarchy contains multiple ancestors to whose descendant activities the grouping can be applied, then the descendants are displayed grouped under the respective ancestor.
-
-Note: Note
-
-If you want to see a grouping over all activities to which the attribute is assigned, combine the grouping with a filtering that hides all other activities. An example would be an appropriately restricting type filter.
-
-Procedure: Group activities by attribute
-
-Procedure: Stop grouping activities
-
-
-
-# Group activities (Preview)
-
-Note: Note
-
-This is the Preview version of grouping activities, and is [available on an opt-in basis](uptempo-s-feature-release-lifecycle.html#stage-1-preview). To learn more, see [What's new: 2026.8](release-2026-8.html).
-
-If your organization hasn't enabled this feature yet, see [Group activities](group-activities.html) for the current grouping behavior.
-
-By default, the activity hierarchy in Uptempo Campaign Management displays all activities that you have access to, at all levels of the hierarchy. To make a large activity hierarchy easier to work with, you can use grouping to adjust how they are displayed.
-
 You can group activities together based on their selected value for a specified Activity Type, Drop-Down List, or Multi-Select List attribute. You can select up to three of these at once to build a multi-level grouping.
 
 In the following example, a marketer needs to quickly see activities by Target Persona, so they group by that attribute.
@@ -661,7 +629,7 @@ Activities to which no value is assigned for a selected attribute are grouped un
 
 ## View the number of activities in a group
 
-Each group header row now shows a badge with the number of activities that belong directly to that group. This count doesn't include activities in any nested subgroups. You'll see this badge for every group, including No value set, in both the Timeline and Summary display modes.
+Each group header row shows a badge with the number of activities that belong directly to that group. This count doesn't include activities in any nested subgroups. You'll see this badge for every group, including No value set, in both the Timeline and Summary display modes.
 
 ![Group By Count Badge](images/group-by-count-badge.png)![Group By Summary Totals](images/group-by-summary-totals.png)
 
@@ -745,7 +713,7 @@ You can use Views to save your display settings for the ![Activities](images/cal
 
 Note: Note
 
-If your organization has the Preview version of grouping enabled, views also save groupings of up to three dimensions. To learn more, see [Group activities (Preview)](group-activities-preview.html).
+Views save groupings of up to three dimensions. To learn more, see [Group activities](group-activities.html).
 
 You can:
 
@@ -2053,6 +2021,206 @@ Whenever you select a value in a local or multi-level controlling attribute that
 
 
 
+# Set up attribute dependencies (Preview)
+
+Note: Note
+
+This document describes a feature that is currently in Preview, and is available on an opt-in basis. To learn more, see [What's new: 2026.10](release-2026-10.html). If you have not enabled this Preview feature in your Uptempo instance, please refer to [Set up attribute dependencies](attribute-dependencies.html) instead.
+
+If two Drop-Down List or Multi-Select List attributes are logically related, you can create an attribute dependency to make the selected option in one attribute control the available options for the other attribute.
+
+## How attribute dependencies work
+
+In an attribute dependency, the value selected for the first attribute (the controlling attribute) determines which values can be selected in the second attribute (the dependent attribute). The controlling attribute's value acts as a filter for the dependent attribute: after you select a value for the controlling attribute, the dependent attribute only displays list options that are valid for the controlling attribute's value, and hides options that are not valid.
+
+Attribute dependencies help to protect the integrity of your data by ensuring that users select valid value combinations. They are also useful for attributes that have a very large number of values: dependencies make it much easier for users to select a value, because they limit the number of options that are displayed.
+
+Note: Note
+
+For details about how attribute dependencies look and behave when working with activities in Uptempo Campaign Management, see [Attribute dependency user experience](#attribute-dependency-user-experience).
+
+Example
+: A common use case for attribute dependencies is for attributes that have hierarchical relationships: for example, geographic categories like State and City. Since City is a subcategory of State, only certain options for City are valid based on the option set for State: if State is set to California, setting City to Miami would not be valid.
+: If you set up an attribute dependency in which State is the controlling attribute and City is the dependent attribute, users would not be able to select Miami when the State attribute is already set to California. Instead, the City attribute would only display options for cities that are actually located in the selected state (such as Los Angeles, San Francisco, etc.).
+
+### Local vs. multi-level dependencies
+
+You can choose to configure any attribute dependency as local or multi-level:
+
+Local dependency
+: Both the controlling and the dependent attribute are attached to the same activity type. Users select values for both attributes on the same activity.
+
+Multi-level dependency
+: The controlling and dependent attributes are attached to different activity types, which are at different levels of the activity hierarchy. Users select the controlling attribute value on one activity, and the dependent attribute value on a separate activity that is a descendant of the first activity.
+
+Note: Note
+
+Attributes can be attached directly to an activity type, or inherited from an activity type group. Whenever an attribute is attached to an activity type group, all activity types within that group automatically inherit it.
+
+In these definitions, an attribute "attached to an activity type" includes both directly attached and inherited attributes.
+
+Because local dependencies are displayed together on the same activity, they're simple for users to understand and work with. Local dependencies work well for most attributes that are logically related, in particular when the related attributes are all specific to the activity where they are shown.
+
+Multi-level dependencies are useful when a controlling attribute's value can be applied to multiple separate activities. By leveraging the fact that descendant activities [inherit the attribute values of their ancestor activities](about-activities.html#custom-attribute-inheritance), multi-level dependencies can reduce the amount of data entry on any given activity. This is because users only need to select the controlling attribute's value once on the higher-level activity, instead of individually on every lower-level activity.
+
+Multi-level dependencies also allow you to distribute attributes more evenly across the activity hierarchy, while still maintaining all the benefits of a dependency. For example, you can use multi-level dependencies to reduce the number of attributes attached to the activity types at lowest level of your activity hierarchy, which creates a better experience for users when configuring this type of activity.
+
+Example
+: Say your Program activities are region-specific. For example, the Country attribute on all Tactic activities within a particular Program is set to United States.
+: If you attach the Country attribute to the Program activity type, and the State attribute to the Tactic activity type, you can then set up a multi-level dependency between these two attributes.
+: This means that when a user sets the Country attribute to United States on a Program, this value is automatically applied to all Tactics under that Program. The dependency then ensures that when a user selects a value for State on any of those Tactics, the list of states they can choose between is automatically filtered to only display US states (and not Canadian provinces, for instance).
+
+Note: Note
+
+Both local and multi-level dependencies support required attributes. In a multi-level dependency, changing the controlling attribute on a higher-level activity can leave required values on lower-level activities without a valid option. When this happens, Uptempo asks you to choose replacement values before your change is saved. For details, see [Choose replacement values for required attributes](#choose-replacement-values).
+
+### Chained dependencies
+
+Each attribute dependency consists of two linked attributes. By setting the dependent attribute in one dependency as the controlling attribute in another dependency, you can "chain" dependencies to create a multi-attribute sequence of dependencies. For example, you can chain a Country-State dependency with a State-City dependency to create a three-attribute Country-State-City dependency.
+
+In chained dependencies, each attribute in the chain controls the available options for all of the attributes that follow it. For example, the selected Country determines the options available for State, and the selected State in turn determines the options available for City. As a result, Country indirectly controls City.
+
+You can chain both local and multi-level dependencies. Multi-level dependency chains can span multiple levels of the activity hierarchy, for example:
+
+Example 1: Multi-level dependency chain
+: This example shows a chain of two multi-level dependencies that spans three levels of the activity hierarchy:
+: * First dependency: The Country attribute on the top-level activity type Campaign (level 1) controls the State attribute on the mid-level activity type Program (level 2).
+
+* Second dependency: The State attribute on the mid-level activity type Program (level 2) controls the City attribute on the bottom-level activity type Tactic (level 3).
+
+You can also construct chains that contain both types of dependency. For example:
+
+Example 2: Mixed dependency chain
+: This example shows a mixed chain of two dependencies, one multi-level and one local:
+: 1. First dependency (multi-level): The Country attribute on the parent activity type Program controls the State attribute on the child activity type Tactic.
+
+2. Second dependency (local): The State attribute on the activity type Tactic controls the City attribute on the same activity type.
+
+### Required dependent attributes
+
+Local dependencies are active on any activity type where both the controlling attribute and the dependent attribute are attached. If the dependent attribute is set as required for that activity type, then it is also required within the attribute dependency on that activity type, so users must select a value for it.
+
+The same applies to multi-level dependencies. If the dependent attribute is set as required on the lower-level activity type, users must select a value for it on those activities.
+
+When a dependent attribute is set as required, it is only conditionally required. This means that it is only required when its controlling attribute is set to an option that makes it relevant.
+
+If the controlling attribute is set to an option that does not have valid options in the dependent attribute, then the dependent attribute is not required in this situation (and is not displayed, see [Auto-hide attribute values](#auto-hide-attribute-values)). This ensures that you don't have to select a value for an attribute when it isn't relevant, but don't miss an attribute when it is needed.
+
+Example
+: In this example, the State attribute is a dependent of the Promotion Type attribute:
+: * If the Promotion Type is set to Samples, the State attribute is not relevant, so it's not required in this case (and not displayed): ![DependentNotRequired](images/DependentNotRequired.png)
+
+* If the Promotion Type is set to Coupon, the State attribute becomes relevant, so it is now conditionally required (and marked as required accordingly): ![DependentIsRequired](images/DependentIsRequired.png)
+
+## Create attribute dependencies
+
+You can create an attribute dependency between two attributes that meet the following requirements:
+
+* Both attributes must have the attribute type Drop-Down List or Multi-Select List.
+
+* For a local dependency, both attributes must be attached to the same activity type. The attributes may be set as required or optional.
+
+* For a multi-level dependency, the attributes must be attached to at least two different activity types, where: * The controlling attribute is attached to an activity type at a higher level of the hierarchy than the dependent attribute * The dependent attribute is attached to an activity type at a lower level of the hierarchy than the controlling attribute The attributes may be set as required or optional, including when they are part of a dependency chain.
+
+Tip: Tip
+
+A local dependency is automatically active on every activity type that both attributes are attached to.
+
+If you need to make a local dependency exclusive to a specific activity type, you can create new attributes that are used only on that activity type, then create a dependency between them.
+
+Procedure: Create a new attribute dependency
+
+## Edit attribute dependencies
+
+You can edit an existing attribute dependency at any time. You can:
+
+* Change which dependent list options are selected for each controlling list option
+
+* Change the description text displayed for the dependency
+
+* Change the dependency's scope (local or multi-level)
+
+Note: Note
+
+After an attribute dependency is created, the selected controlling and dependent attributes are fixed, and can't be changed later.
+
+If you need to change either attribute on an existing attribute dependency, create a new attribute dependency instead.
+
+Procedure: Edit an attribute dependency
+
+## Delete attribute dependencies
+
+If an attribute dependency is no longer needed, you can delete it at any time. When you delete an attribute dependency, this does not affect the actual values set in the controlling and dependent attributes on activities, and these values remain unchanged.
+
+Warning: Warning
+
+Deleting an attribute dependency is permanent. You can't undo this action.
+
+Procedure: Delete an attribute dependency
+
+## Attribute dependency user experience
+
+Attribute dependencies are useful for complex activity types that have a large number of attributes, but where not all attributes are relevant in every situation. Attribute dependencies are designed with several features to streamline the user experience when working with these types of activities.
+
+### Visual appearance of attribute dependencies
+
+When attributes are part of a dependency, they are presented differently within an activity's details panel than attributes that are not part of a dependency.
+
+#### Local attribute dependencies
+
+* On the details panel for an activity that has one or more local attribute dependencies, all the fields for attributes that are part of a local dependency are grouped into their own separate section in the list of attributes: ![DependenciesSection](images/DependenciesSection.png)
+
+* The attributes are marked with a ![Controlling Attribute](images/align-arrow-right.svg) Controlling Attribute or a ![Dependent Attribute](images/align-arrow-left.svg) Dependent Attribute icon to indicate that they are part of a dependency. Placing the pointer on an attribute's icon displays a hint that indicates what the attribute controls or is controlled by: ![Dependency icon tooltip](images/DependencyIconTooltip.png)
+
+* The links between attribute dependencies (and chains of dependencies) are visually represented: ![DependenciesSection2](images/DependenciesSection2.png) Note: Note The display order of attributes in an activity is defined centrally in Activity Configuration > Attributes > Attribute Definitions. This display order applies globally across all activity types. On activity types with attribute dependencies, the attribute dependencies section is inserted into the display order at the position of the first controlling attribute, based on the global attribute display order. Because this section also includes all other attributes that are part of dependencies, these attributes may appear higher (or lower) in the display order than they would if they weren’t part of a dependency.
+
+* When you select a value for any attribute in the local dependencies section, it is not automatically saved. Instead, you must click Save to manually save the selected values. This helps to ensure that any [required attributes in the dependency](#required-dependent-attributes) have a value set. Note: Note The attribute dependencies section appears in two places: the activity details panel (when you edit an existing activity) and the Details step of the [activity setup assistant](create-activities.html) (when you create a new activity). The section works the same way in both places, with one exception: the Save button and the missing value indicator icon are not used in the activity setup assistant version. Instead, the Next button of the activity setup assistant works the same way as the Save button in this context.
+
+#### Multi-level attribute dependencies
+
+* Attributes that are part of a multi-level dependency are usually not displayed within the local dependencies section. Instead, they look similar to standard non-dependency attributes, but are still marked with the ![Controlling Attribute](images/align-arrow-right.svg) Controlling Attribute and ![Dependent Attribute](images/align-arrow-left.svg) Dependent Attribute icons: ![Dependency multi level standalone](images/DependencyMultiLevelStandalone.png) Note: Note An attribute that is part of a multi-level dependency is displayed in the local dependencies section if it is chained with a local dependency (that is, if it is part of both a multi-level dependency and a local dependency).
+
+* Whenever a user changes the value in the controlling attribute of a multi-level dependency, the system displays a confirmation dialog. The dialog warns the user that their change might affect the values of linked attributes on other activities, and is intended to help prevent accidentally changing or removing values on attributes that aren't currently visible to the user.
+
+### Choose replacement values for required attributes
+
+When a multi-level dependency includes required attributes, changing a controlling attribute's value can leave required attributes on lower-level activities without a valid option. Uptempo opens the Choose Replacement Values dialog so you can pick new values before your change is saved.
+
+Admins see the same dialog when they [create](#create-attribute-dependencies) or [edit](#edit-attribute-dependencies) an attribute dependency for required attributes. Because existing activities may already have values that the new or changed dependency doesn't allow, the dialog lets you replace those values.
+
+In the following example, a marketer changes the Program Family of a program to Customer Advocacy. The Event Type currently set on 7 activities under that program isn't valid for Customer Advocacy, so the marketer needs to choose a new event type for them.
+
+![Choose Replacement Values dialog asking for a new Event Type for 7 affected activities](images/attribute-dependencies-choose-replacement-values.png)
+Procedure: Choose replacement values
+
+To keep things as they were, click Cancel. When you change a controlling attribute on an activity, the attribute goes back to its previous value, and nothing is saved.
+
+Note: Note
+
+Draft activities aren't included in the Choose Replacement Values dialog. Required attributes are softly enforced on drafts, so you can complete any missing values before you publish the draft. For more information, see [Work with activity drafts](work-with-activity-drafts.html).
+
+### Auto-hide attribute values
+
+When a local or multi-level dependent attribute is not (yet) relevant to the activity being created, it is automatically hidden. This minimizes the number of attributes that are initially visible when creating an activity, and reduces distracting visual clutter.
+
+A dependent attribute only becomes visible after you set the controlling attribute to a value for which the dependent attribute has valid options:
+
+* If there are no valid options in a dependent attribute, it remains hidden.
+
+* For dependency chains (multiple linked dependencies), additional dependent attributes are progressively revealed (as needed) after each controlling attribute selection.
+
+Example
+: In this example, only one attribute (Promotion Type) is visible initially. Making a selection for Promotion Type reveals the State attribute, and selecting a state further reveals the Radio Station attribute:
+: ![DependenciesSection4](images/DependenciesSection4.png)
+
+### Auto-select attribute value
+
+In some cases, a controlling attribute value has only a one valid option in the dependent attribute. This can happen if an attribute previously had more options that are no longer needed and have been removed, or if you want users to set a value for data consistency.
+
+Whenever you select a value in a local or multi-level controlling attribute that leaves only one possible option in the dependent attribute, the system automatically selects that option in the dependent attribute to save you time and unnecessary clicks.
+
+
+
 # Set up attribute groups
 
 To make it easier for users to enter and view attribute data when they are working with activities, you can organize related attributes into attribute groups. For example, you could create attribute groups for all marketing channel-related attributes or all budget-related attributes.
@@ -2428,7 +2596,7 @@ Outbound actions are typically configured for you during the implementation phas
 
 Note: Note
 
-When configuring an outbound action, your Uptempo specialist can choose whether it applies to draft activities or only to published activities. For more information about draft activities, see [Work with activity drafts (Preview)](work-with-activity-drafts.html).
+When configuring an outbound action, your Uptempo specialist can choose whether it applies to draft activities or only to published activities. For more information about draft activities, see [Work with activity drafts](work-with-activity-drafts.html).
 
 
 
@@ -7112,6 +7280,55 @@ Features marked with the tags Preview and Beta are opt-in, and are not enabled i
 
 For more information, see [Uptempo's feature release lifecycle](uptempo-s-feature-release-lifecycle.html).
 
+## Campaign Management: Activity Configuration
+
+### Use required attributes in multi-level dependencies
+
+You can now set attributes as required in multi-level attribute dependencies, so marketers enter a value once on a higher-level activity and still get complete, valid data on every activity below it.
+
+* Require values anywhere in the dependency: The controlling attribute, the dependent attribute, or both can be required, including in dependency chains that span several levels of the activity hierarchy.
+
+* Keep required data valid when plans change: If changing a controlling value leaves required values on lower-level activities without a valid option, Uptempo asks you to choose a replacement for each affected attribute. Your change is saved only after every replacement is chosen. If you cancel, nothing changes.
+
+* Add dependencies to existing plans: When admins create or edit a dependency for required attributes on activities that already have values, Uptempo asks them to choose replacements for values that are no longer valid.
+
+* Drafts stay flexible: Draft activities aren't included in the replacement step. Complete their required values before you publish them.
+
+![Attribute dependencies choose replacement values](images/attribute-dependencies-choose-replacement-values.png)
+→ [Learn more about setting up attribute dependencies](attribute-dependencies-preview.html)
+
+## Campaign Management: Activities
+
+### Save activities as drafts
+
+Activity drafts are now available to all customers. You can save a new activity with just a Name, Activity type, and Parent, then fill in the rest of its details and publish it whenever you're ready. You no longer need every required field complete up front to create an activity.
+
+* Start now, finish later: Save an activity as a draft at any point during creation (other than the Budget step, once it's connected to spend), then return anytime to complete its remaining details and publish it.
+
+* Required fields stay flexible until you publish: While an activity is a draft, required fields are softly enforced, so you can save without completing them. When you're ready to publish, Uptempo validates the activity and highlights anything still missing.
+
+* Tell drafts apart and filter by status: Draft activities show a drafts icon in the hierarchy and an outlined Timeline bar instead of a solid one. Use the Status filter to show only drafts or only published activities.
+
+* No spend connections until published: You can enter Estimated Costs on a draft, but you can't connect it to a Line Item or Category/Sub-Category until all required fields are complete and the activity is published.
+
+![Drafts status filter](images/drafts-status-filter.png)
+→ [Learn more about working with activity drafts](work-with-activity-drafts.html)
+
+### Group activities by up to three dimensions
+
+Grouping by up to three dimensions is now available to all customers. You can group activities in the activity hierarchy by up to three dimensions at once, including by Activity Type, making it faster to scan large marketing plans without repeated filtering.
+
+* See activity types at a glance: Activity Type is available as a Group By dimension, so you no longer need to filter by one type at a time or repeat the type name in every activity's title to tell them apart.
+
+* Combine up to three dimensions: Select up to three Group By dimensions at once (for example Activity Type, Industry, and Product Line), and drag to reorder them to control how the resulting groups nest.
+
+* See group sizes without expanding: Every group shows a badge with the number of activities directly in it, in both Timeline and Summary display modes.
+
+You can group by up to three dimensions at a time; grouping by more than three isn't supported.
+
+![Group by applied multi dimension](images/group-by-applied-multi-dimension.png)
+→ [Learn more about grouping activities](group-activities.html)
+
 ## Campaign Management: Activity approvals
 
 Get formal sign-off on marketing activities before they move forward. Admins set up an approval process for the activity types that need one, submitters send activities for approval in a few clicks, and approvers review and decide on requests from a single Approvals page, one at a time or in bulk.
@@ -7436,7 +7653,7 @@ You can now group activities in the activity hierarchy by up to three dimensions
 You can group by up to three dimensions at a time; grouping by more than three isn't supported.
 
 ![Group by applied multi dimension](images/group-by-applied-multi-dimension.png)
-→ [Learn more about grouping activities](group-activities-preview.html)
+→ [Learn more about grouping activities](group-activities.html)
 
 ### Get one clear way to color-code activities by type
 
