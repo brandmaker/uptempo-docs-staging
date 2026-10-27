@@ -4555,6 +4555,13 @@ For each folder and sub-folder you can display a roll-up. To do so, click view r
 
 For each element of the hierarchy, you can also open a panel that displays the essential data for the element. The data was set during implementation. To open the panel, click ![Open Roll-Up Panel](images/fa-columns.svg) Open Roll-Up Panel in the Panel column.
 
+Note: Note
+
+The Roll-Up Sum on Calculation fields is currently in Preview, and is [available on an opt-in basis](uptempo-s-feature-release-lifecycle.html#stage-1-preview). To learn more, see [What's new: 2026.10](release-2026-10.html).
+
+On a folder or sub-folder that has children, a Calculation field in the panel shows two lines: its Roll-Up Sum, and the folder's own calculated value. The Roll-Up Sum adds up the Roll-Up Sums of the fields in the formula. It is available for formulas that use addition and subtraction only.
+
+![Roll-Up Panel showing Roll-Up Sums on a Calculation field](images/roll-up-sum-calculation-field.png)
 You can also see in which currency the data for the folder, sub-folder or investment plan is managed. This is displayed in the Currency column. You can plan and forecast in a local currency, and this will roll up to a top-level investment plan currency.
 
 ### Structuring options
@@ -4761,9 +4768,7 @@ The investment details panel in the ![Investments](images/spreadsheet.svg) Inves
 
 Note: Note
 
-The modernized version of this panel is currently in Preview, and is [available on an opt-in basis](uptempo-s-feature-release-lifecycle.html#stage-1-preview). To learn more, see [What's new: 2026.8](release-2026-8.html).
-
-Once enabled, budgets using Strategic Targets, Impact Modeler, or Strategic Planning Insights continue to show the previous details panel design (including the Strategy and Alignment tabs below). Other budgets show the modernized panel, which includes only the Details and Activities tabs. Metrics no longer appears as a panel tab for any budget — it's now shown in a bar above the budget grid.
+Budgets that use Strategic Targets, Impact Modeler, or Strategic Planning Insights continue to show the previous details panel design, including the Strategy and Alignment tabs described below. All other budgets show the modernized panel, which includes only the Details and Activities tabs. Metrics doesn't appear as a panel tab for any budget. It appears in a bar above the budget grid instead.
 
 Details
 : Shows basic information and attribute values for the investment.
@@ -4884,6 +4889,11 @@ Procedure: Add an investment
 To streamline data entry your organization can set up a quick entry form. If the quick entry form is activated, it will show up when you add a new line item. The form will contain the most important fields you have to fill when creating a line item. Fields you must fill are marked red as required fields.
 
 ![Quick entry form](images/Quick%20Entry%20Form.png)
+Note: Note
+
+A modernized version of this form is currently in Preview, and is [available on an opt-in basis](uptempo-s-feature-release-lifecycle.html#stage-1-preview). To learn more, see [What's new: 2026.10](release-2026-10.html). In the modernized form, the dialog is titled Add new line item, the Description field is named Name, and required fields are marked with a red asterisk.
+
+![Modernized Add new line item form](images/add-new-line-item-form.png)
 
 ## Next steps:
 
@@ -4923,7 +4933,7 @@ The details panel is always customized and adapted to the data by which your org
 
 Note: Note
 
-The modernized panel shown below is currently in Preview, and is [available on an opt-in basis](uptempo-s-feature-release-lifecycle.html#stage-1-preview). To learn more, see [What's new: 2026.8](release-2026-8.html). For more on which budgets show this version, see [About the investment details panel](about-details-panel.html).
+The panel shown below is the modernized details panel. Budgets that use Strategic Targets, Impact Modeler, or Strategic Planning Insights show the previous panel design instead. For more on which budgets show which version, see [About the investment details panel](about-details-panel.html).
 
 ![Line item details panel](images/Line%20Item%20Details%20Panel.png)
 
@@ -5392,6 +5402,8 @@ Export All fields
 
 Export All fields for Import
 : Exports all of the data in your account to an Excel spreadsheet (.xls). The order of columns in the export is based on how your columns are listed in the Customize > Columns page. Categories, sub-categories, line items and placeholders are annotated for import, for details see [Structural annotation reference](importing-investment-data.html#structural-annotation-reference).
+
+The Export All fields and Export All fields for Import options include a Persistent ID column with each line item's [Persistent ID](about-details-panel.html#persistent-id). The column is for reference only. It doesn't change how the file is imported.
 
 Tip: Tip
 
@@ -7409,6 +7421,61 @@ Admins can now choose how approvers are emailed about approval requests: an emai
 Emails are notifications only. Approve and deny requests on the Approvals page or from the activity's details panel on the Timeline.
 
 → [Learn more about approval email settings](configure-approval-emails.html)
+
+## Financial Management: Budgets
+
+### See Roll-Up Sums for Calculation fields
+
+Calculation fields on the Roll-Up Panel can now show a Roll-Up Sum, so you can see totals across a folder's children without leaving the panel.
+
+* Totals across the roll-up: On a folder or sub-folder that has children, a Calculation field shows two lines: the Roll-Up Sum, and the folder's own calculated value. The Roll-Up Sum adds up the Roll-Up Sums of the fields in the formula. For example, if a field is calculated as Q1 + Q2 + Q3 + Q4, its Roll-Up Sum is the total of the four quarters' Roll-Up Sums.
+
+* Addition and subtraction only: Roll-Up Sums are available for formulas that use + and -. Formulas that use multiplication or division don't show a Roll-Up Sum.
+
+* Items without children: An item that has no children shows one line, the same as before.
+
+![Roll-Up Panel showing Roll-Up Sums on a Calculation field](images/roll-up-sum-calculation-field.png)
+→ [Learn more about the Budgets section](budgets-section.html)
+
+## Financial Management: Investments
+
+### Modernized line item details panel
+
+The modernized line item details panel is now turned on automatically, so you no longer need to opt in.
+
+* Faster editing: The panel loads faster and responds more quickly when you view and edit line item attributes.
+
+* Metrics above the grid: Metrics no longer appears as a tab in the panel. It now appears in a bar above the budget grid.
+
+* Some budgets keep the previous panel: Budgets that use Strategic Targets, Impact Modeler, or Strategic Planning Insights continue to show the previous panel design, which also includes the Strategy and Alignment tabs.
+
+![Modernized line item details panel](images/Line%20Item%20Details%20Panel.png)
+→ [Learn more about the details panel](about-details-panel.html)
+
+### Export Persistent IDs for line items
+
+Exports from the ![Investments](images/spreadsheet.svg) Investments section now include each line item's Persistent ID, so you can match line items across fiscal years in bulk.
+
+* See Persistent IDs in bulk: The Persistent ID column is included in Export All fields and Export All fields for Import. Before, you could only see a Persistent ID in the UI, one line item at a time.
+
+* Match items when names change: Names can change every fiscal year, but a line item's Persistent ID stays the same, so you can use it to compare line items across hierarchies and years.
+
+* For reference only: The column is for reference. Importing a file works exactly as before.
+
+→ [Learn more about exporting investment data](exporting-investment-data.html)
+
+### Add line items in a modernized form
+
+The form you use to add a line item to an investment plan has been redesigned to be faster and more responsive.
+
+* Faster to use: The form responds more quickly as you fill it in.
+
+* A consistent look: The form looks and behaves like the equivalent screens in Campaign Management.
+
+* Required fields stand out: Required fields show a red asterisk next to the field name.
+
+![Modernized Add new line item form](images/add-new-line-item-form.png)
+→ [Learn more about adding investments](adding-investments.html)
 
 
 
