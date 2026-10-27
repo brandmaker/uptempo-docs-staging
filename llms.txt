@@ -7292,6 +7292,22 @@ Features marked with the tags Preview and Beta are opt-in, and are not enabled i
 
 For more information, see [Uptempo's feature release lifecycle](uptempo-s-feature-release-lifecycle.html).
 
+## Announcement: Release schedule update
+
+We're updating our monthly release schedule, moving feature releases from the last Wednesday to the last Thursday of each month to better align with our Engineering team's deployment schedule.
+
+Release notes will continue to be published on Wednesdays, giving customers a day to review upcoming updates before new features go live.
+
+We're also excited to introduce a December release for the first time! This release takes place on the third Thursday of the month to avoid the holiday period.
+
+Upcoming release dates:
+
+* October: Thursday, October 29
+
+* November: Thursday, November 26
+
+* December: Thursday, December 17
+
 ## Campaign Management: Activity Configuration
 
 ### Use required attributes in multi-level dependencies
@@ -7345,55 +7361,44 @@ You can group by up to three dimensions at a time; grouping by more than three i
 
 Get formal sign-off on marketing activities before they move forward. Admins set up an approval process for the activity types that need one, submitters send activities for approval in a few clicks, and approvers review and decide on requests from a single Approvals page, one at a time or in bulk.
 
-### Set up approval processes for activity types
+### Single-step approval processes
 
-Admins can now create approval processes that define which activity types need approval, and who approves them.
+You can now require approval on activities, with a single approval step that any one assigned approver can complete.
+
+Set up approval processes for activity types
 
 * Choose which activity types need approval: One process can cover several activity types, and each activity type belongs to only one active process. Only activities whose type is covered by an active process can be submitted for approval.
 
-* Decide who approves: Use a submitter-to-approver mapping to route each submitter's requests to set approvers automatically, or let submitters choose an approver when they submit (Selected by submitter).
+* Decide who approves: Upload a submitter-to-approver mapping (CSV template provided) to route each submitter's requests automatically, or let submitters choose an approver when they submit. Requests from submitters who aren't mapped go to a default admin.
 
-* Upload your submitter-to-approver mapping: Download the CSV template, then list each submitter's email with one or more approver emails, plus one default admin. Requests from submitters who aren't in the file go to the default admin. Uploading a new file adds new submitters and updates changed approvers.
-
-* Catch problems before they cause issues: Uptempo blocks files with a missing default admin or duplicate submitters. It warns you about unknown or inactive users, and about approvers who can't edit the submitter's activities. Requests for those submitters go to the default admin.
+* Catch problems before they cause issues: Uptempo blocks mapping files with duplicate submitters and warns you about unknown or inactive users and approvers who can't edit the submitter's activities.
 
 * Change processes safely: Edits and deactivations apply only to new requests. Requests already in progress keep their approvers.
 
 ![Approval process details step](images/approval-process-details-step.png)
-→ [Learn more about setting up activity approval processes](configure-activity-approval-processes.html)
+Submit activities for approval
 
-### Submit activities for approval
-
-You can now submit an activity for approval directly from the activity.
-
-* Submit with context: Select Submit for Approval on the activity and set an approval deadline. The request description starts with the activity's own description, and you can add more context for your approvers.
-
-* See who reviews: With a submitter-to-approver mapping, your approvers are listed for you, and any one of them can approve. With Selected by submitter, you choose one approver from the users who can edit the activity.
+* Submit with context: Select Submit for Approval on an activity and set an approval deadline. The request description starts with the activity's own description, and you can add more context for your approvers.
 
 * Track status on the activity: While the request is pending, the activity shows who it's waiting on and when it's due.
 
 * Resubmit after a denial: Each activity has one approval request, and approval is final. If the request is denied, update the activity and resubmit it.
 
-![Finalize submission request](images/finalize-submission-request.png)
-→ [Learn more about submitting activities for approval](submit-activities-for-approval.html)
+Review and decide on the Approvals page
 
-### Review and decide on the Approvals page
+* Find requests fast: Use the Awaiting my review, Pending review, Approved, and Denied tabs, sorted by soonest deadline, with overdue and approaching requests flagged. Search by activity name, submitter, approver, or parent.
 
-Approvers can now find, review, and decide on approval requests from a single page, or decide directly from an activity's details panel on the Timeline.
-
-* Find requests fast: Use the Awaiting my review, Pending review, Approved, and Denied tabs, each with a count. Search by activity name, submitter, approver, or parent.
-
-* Stay ahead of deadlines: Awaiting my review is sorted by soonest deadline. Requests that are overdue or due within 7 days are flagged.
-
-* Decide with context: Each row shows the activity name, description, activity type, submitter, approvers, deadline, and submission date. Open a request to see its full details and history, or select Open in Activities to view the activity on the Timeline.
+* Decide with context: Each row shows the activity name, description, activity type, submitter, approvers, deadline, and submission date. Decide on the Approvals page, or directly from an activity's details panel on the Timeline.
 
 * Explain your decision: A comment is required when you deny a request, and optional when you approve. Comments are saved on the approval request and shown in its history.
 
 * One decision settles it: When several approvers are assigned, the first one to approve or deny settles the request, and the others see who decided.
 
-* Visibility follows access: You can see requests for any activity you can view. Only assigned approvers and admins can approve or deny.
-
 ![Approvals page awaiting my review](images/approvals-page-awaiting-my-review.png)
+→ [Learn more about setting up activity approval processes](configure-activity-approval-processes.html)
+
+→ [Learn more about submitting activities for approval](submit-activities-for-approval.html)
+
 → [Learn more about reviewing approval requests](review-and-decide-on-approval-requests.html)
 
 ### Approve or deny requests in bulk
@@ -7406,9 +7411,9 @@ Approvers who handle large volumes, for example during annual planning, can now 
 
 * Every decision is still recorded: Each request keeps its own decision and comment in its history, the same as a single decision.
 
-### Choose how approvers get approval emails
+### Choose how approvers get approval requests
 
-Admins can now choose how approvers are emailed about approval requests: an email for each new request, a daily or weekly digest, or both.
+Admins can now choose how approvers are emailed about approval requests: an email for each new request and/or a daily or weekly digest.
 
 * Immediate emails: Approvers get an email with a direct link as soon as a request is submitted for their review.
 
@@ -7476,6 +7481,18 @@ The form you use to add a line item to an investment plan has been redesigned to
 
 ![Modernized Add new line item form](images/add-new-line-item-form.png)
 → [Learn more about adding investments](adding-investments.html)
+
+## Uptempo API
+
+### Retrieve Campaign Management audit events through the API
+
+You can now access Campaign Management audit events through the Uptempo API, so you can work with your audit data outside of Uptempo.
+
+* Connect audit data to your security tools: Send audit events to your SIEM or monitoring tools, such as Splunk, to support alerting and anomaly detection.
+
+* Automate compliance reporting: Pull a record of who changed what, and when, into your own reporting and governance workflows, without exporting data manually or contacting Uptempo Support.
+
+→ [Learn more about the Audit Events endpoints in the Uptempo API](https://api-na.uptempo.io/v1/docs#tag/audit-events)
 
 
 
