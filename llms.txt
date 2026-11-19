@@ -7496,6 +7496,26 @@ Admins can now require all users to sign in with single sign-on (SSO) with the n
 ![Sso settings require sso](images/sso-settings-require-sso.png)
 → [Learn more about requiring single sign-on](set-up-sso-in-uptempo.html#optional-require-single-sign-on)
 
+## Uptempo Public API
+
+### Read user access and roles through the API
+
+You can now read who can access which budgets, and with which role, through the Uptempo API, so you can audit access without maintaining your own lookup tables.
+
+* Look up a user: Get a user's email, organization roles, and the budgets they can access, with their role on each. Company admins can look up any user. Other users can look up only themselves.
+
+* Look up a budget: Get the users on a budget, with their email and role. You need read access to the budget.
+
+* Protected by design: A user or budget you can't access returns the same response as one that doesn't exist, so the endpoints can't be used to list records you aren't entitled to see.
+
+→ [Go to the Uptempo Public API reference](https://api-na.uptempo.io/v1/up-docs#description/introduction)
+
+### Fixes and behavior changes
+
+* New activities fill single-option dependent attributes: When you create an activity through the API or an import, and a value on a parent activity leaves only one valid option for a multi-level dependent attribute, Uptempo now fills that option, as the create wizard does. If your request sends the attribute empty, it stays empty.
+
+* Exchange rates no longer include calculated columns: `GET /budgets/{budgetId}/column-exchange-rates` now returns only currency columns. Calculated columns can combine columns with different rates, so they were removed from the response.
+
 
 
 # What's new: 2026.10
