@@ -5011,14 +5011,9 @@ Procedure: Add an investment
 
 ## Quick entry form
 
-To streamline data entry your organization can set up a quick entry form. If the quick entry form is activated, it will show up when you add a new line item. The form will contain the most important fields you have to fill when creating a line item. Fields you must fill are marked red as required fields.
+To streamline data entry your organization can set up a quick entry form. If the quick entry form is activated, the Add new line item form shows up when you add a new line item. The form contains the most important fields you have to fill when creating a line item. Required fields are marked with a red asterisk.
 
-![Quick entry form](images/Quick%20Entry%20Form.png)
-Note: Note
-
-A modernized version of this form is currently in Preview, and is [available on an opt-in basis](uptempo-s-feature-release-lifecycle.html#stage-1-preview). To learn more, see [What's new: 2026.10](release-2026-10.html). In the modernized form, the dialog is titled Add new line item, the Description field is named Name, and required fields are marked with a red asterisk.
-
-![Modernized Add new line item form](images/add-new-line-item-form.png)
+![Add new line item form](images/add-new-line-item-form.png)
 
 ## Next steps:
 
@@ -6372,6 +6367,64 @@ Your system may be configured with scheduled imports. This means that data from 
 
 Scheduled imports are managed by administrators. Contact your system administrator if you have any questions about this schedule or if you notice any data irregularities.
 
+### Sign in to an SFTP server with an SSH key
+
+Note: Note
+
+Signing in with an SSH key is currently in Preview, and is [available on an opt-in basis](uptempo-s-feature-release-lifecycle.html#stage-1-preview). To learn more, see [What's new: 2026.11](release-2026-11.html).
+
+Instead of a password, a scheduled import can sign in to your SFTP server with your organization's SSH key. This also works with SFTP servers that only accept key sign-in. Each organization has one Ed25519 key. Uptempo keeps the private key and never shows it. Company admins manage the key in Organization Settings.
+
+Procedure: Add your organization's SSH key to your SFTP server
+
+![SSH Key page in Organization Settings](images/ssh-key-settings.png)
+Procedure: Use the SSH key for a scheduled import
+
+![Scheduled import that signs in with the SSH key](images/scheduled-import-ssh-key.png)
+The Authentication option is available only for the SFTP protocol. Password is the default, and existing schedules that sign in with a password keep working without any changes. If you switch a schedule to SSH Key, its saved password is removed.
+
+#### Regenerate the SSH key
+
+Regenerating replaces your organization's SSH key. The current key stops working immediately, and you can't undo this. Scheduled imports that use the SSH key fail until you add the new public key to your SFTP server.
+
+1. Go to Organization Settings > SSH Key and click Regenerate.
+
+2. Select I understand that the current key stops working immediately, and then click Regenerate.
+
+3. Copy the new public key and replace the old one on your SFTP server.
+
+![Regenerate SSH key confirmation](images/regenerate-ssh-key.png)
+
+### Decrypt import files with your organization's PGP key
+
+Note: Note
+
+Using your organization's own PGP key is currently in Preview, and is [available on an opt-in basis](uptempo-s-feature-release-lifecycle.html#stage-1-preview). To learn more, see [What's new: 2026.11](release-2026-11.html).
+
+If your import files are encrypted, scheduled imports can decrypt them with your organization's own PGP key instead of the Uptempo shared key. Each organization has one RSA 4096 key. Uptempo keeps the private key and never shows it. Company admins manage the key in Organization Settings.
+
+Files encrypted with the Uptempo shared key keep working, so existing schedules don't need any changes.
+
+Procedure: Share your organization's PGP public key
+
+![Import File Encryption page in Organization Settings](images/import-file-encryption-settings.png)
+Procedure: Decrypt files for a scheduled import
+
+![Scheduled import that decrypts files with the organization's PGP key](images/scheduled-import-pgp-key.png)
+If a file was encrypted with a key that is neither your organization's current key nor the Uptempo shared key, the import fails. The schedule event log shows which key the file was encrypted with.
+
+#### Regenerate the PGP key
+
+Regenerating creates a new key pair. Your current key keeps decrypting files for 30 more days, then stops. The confirmation and the Import File Encryption page show the date it stops.
+
+1. Go to Organization Settings > Import File Encryption and click Regenerate.
+
+2. Click Regenerate to confirm.
+
+3. Give the new public key to the system that encrypts your import files before the 30 days end.
+
+![Regenerate PGP key confirmation](images/regenerate-pgp-key.png)
+
 
 
 # Import templates
@@ -7480,6 +7533,53 @@ When submitters choose their own approver, they can select only users with edit 
 → [Learn more about customizing the approver not listed message](configure-activity-approval-processes.html#customize-the-approver-not-listed-message)
 
 → [Learn more about submitting when your approver isn't listed](submit-activities-for-approval.html#approver-not-listed)
+
+## Financial Management: Imports
+
+### Sign in to SFTP servers with an SSH key
+
+Scheduled imports can now sign in to your SFTP server with your organization's SSH key instead of a password, including servers that only accept key sign-in.
+
+* Generate your organization's key: In Organization Settings > SSH Key, company admins can generate a key and copy the public key. Add it to the authorized keys of the SFTP user that you upload files with.
+
+* Choose a sign-in method for each schedule: When you add or edit an SFTP scheduled import, select SSH Key under Authentication. Password stays the default.
+
+* Existing schedules keep working: Schedules that sign in with a password don't need any changes.
+
+* Regenerating replaces the key right away: When you regenerate the key, the previous key stops working immediately. Add the new public key to your SFTP server to keep your schedules running.
+
+![SSH Key page in Organization Settings](images/ssh-key-settings.png)
+→ [Learn more about signing in with an SSH key](importing.html#sign-in-with-an-ssh-key)
+
+### Manage your own PGP key for encrypted imports
+
+You can now generate your organization's own PGP key to encrypt files for scheduled imports, instead of using only the Uptempo shared key.
+
+* Generate and share your public key: In Organization Settings > Import File Encryption, company admins can generate a key, then copy it or download it as an `.asc` file for the system that encrypts your import files.
+
+* The Uptempo shared key still works: Files encrypted with the Uptempo shared key continue to import, so existing schedules don't need any changes.
+
+* 30 days to switch after you regenerate: When you regenerate your key, the previous key keeps decrypting files for 30 days. The settings page shows the date it stops.
+
+* Clearer error messages: If a file was encrypted with a key that doesn't match, the schedule event log tells you which key the file used.
+
+![Import File Encryption page in Organization Settings](images/import-file-encryption-settings.png)
+→ [Learn more about decrypting import files with your PGP key](importing.html#decrypt-with-your-pgp-key)
+
+## Financial Management: Investments
+
+### Add line items in a modernized form
+
+The redesigned form for adding a line item to an investment plan now replaces the previous form for all customers.
+
+* Faster to use: The form responds more quickly as you fill it in.
+
+* A consistent look: The form looks and behaves like the equivalent screens in Campaign Management.
+
+* Required fields stand out: Required fields show a red asterisk next to the field name.
+
+![Modernized Add new line item form](images/add-new-line-item-form.png)
+→ [Learn more about adding investments](adding-investments.html)
 
 ## Organization Settings
 
